@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-06T15:10:13.756276-04:00",
+ "generated_at": "2026-10-06T16:36:49.827083-04:00",
  "tonight": {
   "run_date": "2026-10-06",
   "session": "2026-10-07",
@@ -63,9 +63,9 @@
  "scoreboard": [
   {
    "model": "claude",
-   "total_pnl": 0,
+   "total_pnl": 0.0,
    "win_rate": null,
-   "positions": 0
+   "positions": 15
   },
   {
    "model": "chatgpt",
