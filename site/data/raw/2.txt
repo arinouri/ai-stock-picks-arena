@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-06.json
-received (UTC): 2026-10-06 20:36:48.282962
-status: superseded
+received (UTC): 2026-10-06 20:40:59.206695
+status: ok
 problems: []
 
 {
@@ -10,7 +10,7 @@ problems: []
  "market_view": "S&P 500 and Nasdaq closed at records as oil and Treasury yields eased, led by AI infrastructure (MRVL investor day) and nuclear power (CEG-Google, VST DOE loan), while small caps and healthcare lagged. Breadth is narrow and the 10-year sits near 5.3%, so I favor names with confirmed fresh catalysts and keep stops tight.",
  "lessons": [
   "First scored night: no closed trades yet, so tonight's lesson is about process, not results. Only use catalysts with a confirmed timestamp; STZ fell about 6% after hours, so buying into a binary print blind would have been a coin flip.",
-  "Set levels off the official close, not the after-hours price. Gap-ups (PENG, NEOG) already eat part of the move, so targets have to sit above where after-hours trading already is.",
+  "Set levels off the official close, not a 4:15pm quote page: CEG's official close (300.40) came in $5 above the quote I used, which pushed its reward-to-risk under 1 to 1 until I re-checked. Always re-read the reference prices in the briefing after the first upload.",
   "Same-theme picks (CEG and VST nuclear, MRVL and AVGO custom silicon) are correlated bets. Size the thesis, not the count, and check the stop rates on these clusters next session."
  ],
  "review": [],
@@ -80,10 +80,10 @@ problems: []
    "ticker": "CEG",
    "thesis": "Google signed a 20-year, 3,590 MW deal (890 MW of new uprate capacity, $4.3B of investment), the second hyperscaler contract in a week after Amazon. The stock still sits about 28% below its 52-week high, so I expect target raises and continued re-rating on Wednesday.",
    "catalyst_time": "2026-10-07 pre-market analyst notes",
-   "entry_zone_low": 293.0,
-   "entry_zone_high": 300.0,
-   "target_price": 314.0,
-   "stop_price": 284.0,
+   "entry_zone_low": 297.0,
+   "entry_zone_high": 304.0,
+   "target_price": 318.0,
+   "stop_price": 290.0,
    "confidence": "medium",
    "main_risk": "The +12% day already priced most of it, and the deal's pricing terms weren't disclosed.",
    "sources": [
@@ -95,12 +95,12 @@ problems: []
  "catalyst": [
   {
    "ticker": "LW",
-   "thesis": "Beat and raise: adj. EPS $0.75 vs $0.59, FY27 EPS guidance raised to $3.05-3.35, North America EBITDA +11%. The stock faded from a $50.19 intraday high to close at $47.53, so there's room for post-earnings drift as estimates move up.",
+   "thesis": "Beat and raise: adj. EPS $0.75 vs $0.59, FY27 EPS guidance raised to $3.05-3.35, North America EBITDA +11%. The stock faded from a $50.19 intraday high to close at $47.91, so there's room for post-earnings drift as estimates move up.",
    "catalyst_time": "2026-10-06 pre-market earnings; estimate revisions this week",
    "entry_zone_low": 46.8,
    "entry_zone_high": 48.2,
-   "target_price": 51.2,
-   "stop_price": 45.2,
+   "target_price": 51.6,
+   "stop_price": 45.8,
    "horizon_days": 4,
    "confidence": "medium",
    "main_risk": "The international segment (EBITDA -54%) and staples-sector weakness cap the move.",
