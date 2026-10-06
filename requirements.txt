@@ -1,0 +1,4 @@
+SQLAlchemy>=2.0,<2.1
+yfinance>=0.2.50
+pandas>=2.0
+requests>=2.31

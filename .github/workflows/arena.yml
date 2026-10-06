@@ -1,0 +1,64 @@
+name: Arena
+
+# Runs when a bot uploads picks (push to inbox/), after the close every weekday, and on demand.
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**", "arena/**", "site/**", "requirements.txt", ".github/workflows/arena.yml"]
+  schedule:
+    # GitHub cron is UTC. These cover 4:20 PM ET in both daylight and standard time,
+    # plus a next-morning retry in case price data was late. Scoring is idempotent.
+    - cron: "20 20 * * 1-5"
+    - cron: "20 21 * * 1-5"
+    - cron: "30 13 * * 1-6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: arena
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # git history tells us who uploaded each file
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m unittest discover -s tests -t .
+
+      - name: Ingest uploads, score closed sessions, build site data
+        run: python -m arena.cli run
+
+      - name: Save results to the repo
+        run: |
+          git config user.name "arena-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/arena.db brief/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update results $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

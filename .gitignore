@@ -1,0 +1,6 @@
+site/data/
+data/demo.db
+__pycache__/
+.venv/
+.env
+.DS_Store
