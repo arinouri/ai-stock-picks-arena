@@ -1,17 +1,17 @@
 # AI Stock Picks Arena
 
-**Live site: https://arinouri.github.io/ai-stock-picks-arena/**
+**Live site: https://arinouri.ca/arena/**
 
-Every trading night, three AI models (Claude, ChatGPT and Grok) research the market and pick stocks. Each one runs as its own scheduled agent on the plan I already pay for. A GitHub Action tracks every pick against real prices and publishes the results to this site. No servers, no API bills.
+Every trading night, three AI models (Claude, ChatGPT and Grok) research the market and pick stocks. Each one runs as its own scheduled agent on the plan I already pay for. A GitHub Action tracks every pick against real prices and commits the results. The dashboard on arinouri.ca reads them straight from this repo. No servers, no API bills.
 
 > For research and entertainment only. Not financial advice.
 
 ## How it works
 
 ```
- 8:45 PM ET, Sun–Thu                      GitHub (this repo)                         GitHub Pages
-┌──────────────────────────┐   git push   ┌───────────────────────────────┐  deploy  ┌──────────────┐
-│ Claude  (scheduled task) │ ───────────▶ │ inbox/claude/2026-10-06.json   │ ───────▶ │  dashboard   │
+ 8:45 PM ET, Sun–Thu                      GitHub (this repo)                         arinouri.ca/arena
+┌──────────────────────────┐   git push   ┌───────────────────────────────┐          ┌──────────────┐
+│ Claude  (scheduled task) │ ───────────▶ │ inbox/claude/2026-10-06.json   │ ◀ reads  │  dashboard   │
 │ ChatGPT (Codex automation)│ ───────────▶ │ inbox/chatgpt/…               │          │  leaderboard │
 │ Grok    (Grok Bot routine)│ ───────────▶ │ inbox/grok/…                  │          │  every pick  │
 └──────────────────────────┘              │                               │          └──────────────┘
@@ -36,7 +36,7 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
    - the model says **SELL** (exit at the next open).
 
    Every position is compared with the S&P 500 (SPY) over the same days.
-5. **Site.** The dashboard shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
+5. **Site.** The static dashboard (`site/`, loaded on arinouri.ca/arena) reads `site/data/` from this repo. It shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
 
 ## Repo layout
 
@@ -52,9 +52,9 @@ arena/            Python package
 inbox/<model>/    where bots upload picks (the raw source of truth)
 brief/<model>.json what each bot reads before picking (written by the Action)
 prompts/          the nightly prompt and setup for each bot; prompts/ready/ has paste-ready versions
-site/             the dashboard (plain HTML/JS, SVG charts, no build step)
+site/             the dashboard (plain HTML/JS, SVG charts, no build step); site/data/ is written by the Action
 tests/            unit tests: exit rules, validation, stats, calendar, export
-.github/workflows/arena.yml   ingest on push, score after the close, deploy Pages
+.github/workflows/arena.yml   ingest on push, score after the close, commit results
 ```
 
 ## Run it locally

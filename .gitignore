@@ -1,4 +1,3 @@
-site/data/
 data/demo.db
 __pycache__/
 .venv/

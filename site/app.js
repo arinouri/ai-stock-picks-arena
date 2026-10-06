@@ -1,5 +1,7 @@
 import { lineChart, sparkline, shortDate } from "./charts.js";
 
+// Where the data lives. On arinouri.ca the page sets window.ARENA_DATA to the repo's raw files.
+const DATA = (window.ARENA_DATA || "data/").replace(/\/?$/, "/");
 const $ = (sel, root = document) => root.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const state = { dash: null, model: {}, bucket: "all", window: "all", per: 100, open: new Set(), openFilter: "all" };
@@ -24,9 +26,10 @@ async function getJSON(path) {
 
 // ------------------------------------------------------------------ boot
 async function load() {
-  state.dash = await getJSON("data/dashboard.json");
+  state.dash = await getJSON(`${DATA}dashboard.json`);
   const m = state.dash.meta;
   $("#repo-link").href = `https://github.com/${m.repo}`;
+  $("#csv-link").href = `${DATA}export.csv`;
   const updated = new Date(m.generated_at).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   $("#status").textContent = `Next picks are due by 11:59 PM ET on ${longDate(m.next_night.run_date)} for ${longDate(m.next_night.session)}. Updated ${updated}.`;
   render();
@@ -151,7 +154,7 @@ function tonightSection() {
         <p class="muted">${holds} held${sells.length ? `, ${sells.length} sold at the next open` : ""}.</p></div>` : ""}
       ${books || '<p class="muted">No new picks.</p>'}
       ${s.errors.length ? `<details class="audit"><summary>${s.errors.length} problem${s.errors.length > 1 ? "s" : ""} with this upload</summary><ul>${s.errors.map((e) => `<li>${esc(e)}</li>`).join("")}</ul></details>` : ""}
-      <p class="audit"><a href="data/raw/${s.id}.txt" target="_blank" rel="noopener">See the raw upload</a></p>
+      <p class="audit"><a href="${DATA}raw/${s.id}.txt" target="_blank" rel="noopener">See the raw upload</a></p>
     </div>`;
   }).join("");
   const scored = L.target_date === state.dash.session.date;
@@ -300,7 +303,7 @@ function rulesSection() {
         <ul class="inbox">${inbox.map((u) => `<li><span class="chip ${u.status === "ok" ? "target" : u.status === "partial" ? "" : "stop"}">${esc(u.status)}</span>
           ${esc(model(u.model).display_name)} <span class="muted">${new Date(u.received_at).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}</span>
           ${u.errors.length ? `<br><small class="muted">${esc(u.errors[0])}${u.errors.length > 1 ? ` (+${u.errors.length - 1} more)` : ""}</small>` : ""}</li>`).join("") || "<li>None yet.</li>"}</ul>
-        <p class="muted">Bots read their briefing at <code>data/brief/&lt;model&gt;.json</code>.</p>
+        <p class="muted">Bots read their briefing at <code>brief/&lt;model&gt;.json</code> in the repo.</p>
       </div>
     </div></section>`;
 }
@@ -310,7 +313,7 @@ async function renderModel(key) {
   const view = $("#view");
   if (!state.model[key]) {
     view.innerHTML = `<p class="lede">Loading…</p>`;
-    state.model[key] = await getJSON(`data/models/${key}.json`);
+    state.model[key] = await getJSON(`${DATA}models/${key}.json`);
   }
   const h = state.model[key];
   const m = model(key);
@@ -324,7 +327,7 @@ async function renderModel(key) {
       ${s.reviews.filter((r) => r.action === "SELL").map((r) => `<p><span class="chip stop">Sell</span> <strong>${esc(r.ticker)}</strong> <span class="serif">${esc(r.reason)}</span></p>`).join("")}
       <ul class="picklist">${s.picks.map((p) => pickRow(p, `h${p.id}`)).join("")}</ul>
       ${s.errors.length ? `<details class="audit"><summary>${s.errors.length} problems</summary><ul>${s.errors.map((e) => `<li>${esc(e)}</li>`).join("")}</ul></details>` : ""}
-      <p class="audit"><a href="data/raw/${s.id}.txt" target="_blank" rel="noopener">Raw upload</a></p>
+      <p class="audit"><a href="${DATA}raw/${s.id}.txt" target="_blank" rel="noopener">Raw upload</a></p>
     </div>`).join("");
   view.innerHTML = `<a class="back" href="#/">Back to the arena</a>
     <section><h2>${esc(m.display_name)}</h2>
