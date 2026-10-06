@@ -1,0 +1,1 @@
+id,model,bucket,ticker,status,entry_date,first_session,entry_price,orig_target,orig_stop,target,stop,horizon_days,sessions_held,exit_date,exit_price,exit_reason,last_price,return,pnl_usd,spy_return,d1_pct_to_close,d1_pct_to_high,boom,confidence,thesis,main_risk,sources,flags
