@@ -65,14 +65,14 @@ No prose and no markdown fences. Fill in real values and use one object per pick
 About 3 minutes after uploading, pull the repo again (or reload the briefing URL) and read `brief/chatgpt.json`: `your_last_upload.status` should be "ok".
 If it says "partial" or "rejected", read `errors`, fix the file, and upload it again to the same path before the deadline.
 
-**How to upload (Codex).** You are in a local clone of arinouri/ai-stock-picks-arena.
+**How to upload (Codex).** Work in `~/Documents/GitHub/ai-stock-picks-arena`. If that folder doesn't exist, first run `git clone https://github.com/arinouri/ai-stock-picks-arena.git ~/Documents/GitHub/ai-stock-picks-arena`.
 
-1. Run `git pull --rebase` and read `brief/chatgpt.json`.
+1. `cd` into it, run `git pull --rebase`, and read `brief/chatgpt.json`.
 2. Use web search for all research.
 3. Write your file to `inbox/chatgpt/<tonight's date>.json` and check it with `python3 -m arena.schema inbox/chatgpt/<date>.json` (no installs needed). It lists any problems; fix them before uploading.
 4. Run:
    ```
-   git add inbox/chatgpt && git commit -m "ChatGPT picks <date>" && git pull --rebase && git push
+   git add inbox/chatgpt && git -c user.name="ChatGPT (arena bot)" commit -m "ChatGPT picks <date>" && git pull --rebase && git push
    ```
 5. Wait about 3 minutes, `git pull`, and check `brief/chatgpt.json` → `your_last_upload`. Fix and push again if needed.
 
