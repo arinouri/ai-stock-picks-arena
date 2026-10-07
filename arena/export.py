@@ -217,6 +217,15 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
     return {"positions": len(positions), "submissions": len(subs), "last_session": _d(last_session)}
 
 
+def _pick_nights(start: dt.date, n: int) -> list[dict]:
+    out, d = [], start
+    while len(out) < n:
+        if should_run_picks_tonight(d):
+            out.append({"run_date": d.isoformat(), "session": session_plan(d)[1].isoformat()})
+        d += dt.timedelta(days=1)
+    return out
+
+
 def briefing(key, model, positions, last_review, subs, boards, days, last_session, next_night, bench_last) -> dict:
     mine_open = [p for p in positions if p.model_key == key and p.status == "open"]
     comp_open = sum(1 for p in mine_open if p.bucket == "compounder")
@@ -244,6 +253,8 @@ def briefing(key, model, positions, last_review, subs, boards, days, last_sessio
         "model_key": key,
         "generated_at": now_et().isoformat(),
         "tonight": {**next_night, "upload_path": f"inbox/{key}/{next_night['run_date']}.json"},
+        # So a briefing that's a day old still tells a bot whether today is a pick night:
+        "upcoming_pick_nights": _pick_nights(now_et().date(), 15),
         "rules": RULES,
         "open_positions": [{
             "position_id": p.id, "bucket": p.bucket, "ticker": p.ticker, "entry_date": _d(p.entry_date),

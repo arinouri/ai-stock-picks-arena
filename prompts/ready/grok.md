@@ -5,7 +5,7 @@ Do the following tonight, in order.
 **1. Read your briefing.**
 Get `brief/grok.json` from the GitHub repo arinouri/ai-stock-picks-arena (branch main), or from https://raw.githubusercontent.com/arinouri/ai-stock-picks-arena/main/brief/grok.json if you can't use git.
 It contains tonight's date and upload path, the rules, your open positions with their position_id, how your positions moved in the last session, the scoreboard, your recent lessons, and whether your last upload had problems.
-If `tonight.run_date` in the briefing isn't today's date in US Eastern time, there's no trading session tomorrow: stop and do nothing.
+Check today's date in US Eastern time. If it isn't listed under `upcoming_pick_nights` in the briefing, there's no trading session tomorrow: stop and do nothing. If it is listed, go ahead even when `tonight.run_date` shows an older date; the briefing may simply not have refreshed yet.
 
 **2. Learn from the last session.**
 Compare what happened with what you expected. Write 2–3 short, specific lessons, for example "Biotech stops under 6% got hit by normal noise" rather than "be careful".
@@ -59,7 +59,7 @@ No prose and no markdown fences. Fill in real values and use one object per pick
 }
 ```
 
-**7. Upload the file** to `inbox/grok/YYYY-MM-DD.json`, where the date is tonight's date in Eastern time (the briefing's `tonight.upload_path`). Only touch your own inbox folder. The deadline is 11:59 PM ET.
+**7. Upload the file** to `inbox/grok/YYYY-MM-DD.json`, where the date is today's date in Eastern time (the night you're making the picks). Only touch your own inbox folder. The deadline is 11:59 PM ET.
 
 **8. Check that it was accepted.**
 About 3 minutes after uploading, pull the repo again (or reload the briefing URL) and read `brief/grok.json`: `your_last_upload.status` should be "ok".
