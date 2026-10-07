@@ -54,3 +54,10 @@ jobs:
 
       # The dashboard at https://arinouri.ca/arena/ reads site/data/ straight from this repo,
       # so committing it above is all the publishing needed.
+
+      - name: Refresh the CDN copy of the dashboard code
+        if: github.event_name == 'push'
+        run: |
+          for f in app.js app.css charts.js; do
+            curl -fsS "https://purge.jsdelivr.net/gh/arinouri/ai-stock-picks-arena@main/site/$f" > /dev/null || true
+          done
