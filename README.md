@@ -38,12 +38,22 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
    Every position is compared with the S&P 500 (SPY) over the same days.
 5. **Site.** The static dashboard (`site/`, loaded on arinouri.ca/arena) reads `site/data/` from this repo. It shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
 
+## Two extra contestants
+
+- **The Learner** (`arena/agents.py`) is a reinforcement learning agent: a Thompson-sampling contextual bandit built on Bayesian linear regression.
+  - **What it sees.** Every AI pick is described by 12 features: which AI made it, which book it's in, the AI's stated confidence, upside to target, stop width, reward-to-risk and holding period.
+  - **What it's rewarded for.** When any AI pick closes, the reward is that trade's return minus the S&P 500's return over the same days. The prediction error on each outcome (the "dopamine" signal) updates its beliefs.
+  - **How it picks.** Each night it samples weights from its posterior, so it explores while it's uncertain and exploits once it's confident. It copies up to 5 AI picks it expects to beat the index. Its copies follow the original AI's later sell calls.
+  - **Reproducible.** Its state is recomputed from the database on every run.
+- **The Fruit Fly** is the control group. It picks random liquid stocks for the same three books, with fixed exits (moonshots +10%/−5% over 1 day, catalyst plays +12%/−6% over 3 days, compounders +30%/−15% over 60 days). If an AI can't beat the fly, its research isn't adding anything.
+
 ## Repo layout
 
 ```
 arena/            Python package
   schema.py         parse + validate a bot's JSON (stdlib only: python3 -m arena.schema FILE)
   engine.py         ingest uploads, open positions, daily exit engine
+  agents.py         the Learner (RL bandit) and the Fruit Fly (random control)
   stats.py          leaderboard math (pure functions)
   export.py         static JSON for the site + per-bot briefings
   market_calendar.py NYSE holidays, rule-based (Good Friday, observed dates, …)

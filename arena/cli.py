@@ -23,6 +23,7 @@ from .engine import ET, ingest, ingest_file, now_et, score, sha256
 from .export import export_site
 from .market_calendar import session_plan, should_run_picks_tonight
 from .prices import FakeProvider, get_provider
+from .agents import run_fly, run_learner
 from .schema import parse_submission
 
 logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"), format="%(levelname)s %(name)s: %(message)s")
@@ -37,7 +38,7 @@ def _git(*args: str) -> str:
 
 
 def inbox_files(inbox: Path) -> list[Path]:
-    files = [p for p in inbox.glob("*/*.json") if p.parent.name in config.MODELS]
+    files = [p for p in inbox.glob("*/*.json") if p.parent.name in config.AI_MODELS]
 
     def order(p: Path):
         ct = _git("log", "-1", "--format=%ct", "--", str(p))
@@ -93,6 +94,10 @@ def main(argv=None):
     if args.cmd in ("run", "score"):
         with Session() as db:
             log.info("score: %s", score(db, provider, now))
+    if args.cmd == "run":
+        with Session() as db:
+            log.info("fly: %s", run_fly(db, provider, now))
+            log.info("learner: %s", run_learner(db, now))
     if args.cmd in ("run", "export"):
         with Session() as db:
             log.info("export: %s", export_site(db, now=now, brief_dir=config.ROOT / "brief"))
@@ -165,12 +170,15 @@ def demo(days: int) -> int:
     with Session() as db:
         for night in sorted(nights):
             ref, target = session_plan(night)
-            for k in config.MODELS:
+            for k in config.AI_MODELS:
                 rng = random.Random(f"{k}{night}")
                 raw = json.dumps(_fake_submission(db, rng, k, provider, ref))
                 ingest(db, provider, k, f"inbox/{k}/{night}.json", night.isoformat(), raw,
                        dt.datetime.combine(night, dt.time(20, 45), ET), author=f"{k}-bot")
                 db.commit()
+            agent_time = dt.datetime.combine(night, dt.time(22, 0), ET)
+            run_fly(db, provider, agent_time)
+            run_learner(db, agent_time)
             if target < today:
                 score(db, provider, now=dt.datetime.combine(target, dt.time(16, 30), ET), with_intraday=True)
         export_site(db)

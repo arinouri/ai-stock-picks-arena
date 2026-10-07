@@ -80,6 +80,7 @@ class Position(Base):
     entry_price: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     benchmark_entry: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     flags: Mapped[list] = mapped_column(JSON, default=list)
+    source_position_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)  # Learner copies
 
     status: Mapped[str] = mapped_column(String(12), default="open", index=True)  # open | closed | void
     sell_at_open_on: Mapped[Optional[dt.date]] = mapped_column(Date, nullable=True)
@@ -180,11 +181,26 @@ class Benchmark(Base):
     close: Mapped[float] = mapped_column(Float)
 
 
+def _migrate(engine) -> None:
+    """Add columns introduced after the database was first created (SQLite has no auto-migrate)."""
+    from sqlalchemy import inspect, text
+
+    added = {"positions": {"source_position_id": "INTEGER"}}
+    insp = inspect(engine)
+    with engine.begin() as conn:
+        for table, cols in added.items():
+            have = {c["name"] for c in insp.get_columns(table)}
+            for name, sqltype in cols.items():
+                if name not in have:
+                    conn.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {sqltype}"))
+
+
 def connect(url: Optional[str] = None) -> sessionmaker:
     url = url or config.DATABASE_URL
     kwargs = {"connect_args": {"check_same_thread": False}} if url.startswith("sqlite") else {}
     engine = create_engine(url, future=True, **kwargs)
     Base.metadata.create_all(engine)
+    _migrate(engine)
     Session = sessionmaker(bind=engine, expire_on_commit=False, future=True)
     with Session() as s:
         for key, m in config.MODELS.items():

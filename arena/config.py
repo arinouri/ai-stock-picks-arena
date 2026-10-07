@@ -12,6 +12,22 @@ MODELS = {
     "claude": {"display_name": "Claude", "maker": "Anthropic", "color": "#C2410C"},
     "chatgpt": {"display_name": "ChatGPT", "maker": "OpenAI", "color": "#0F8A6A"},
     "grok": {"display_name": "Grok", "maker": "xAI", "color": "#4F5BD5"},
+    # Built-in contestants that run inside the GitHub Action (no inbox):
+    "learner": {"display_name": "The Learner", "maker": "Reinforcement learning agent", "color": "#B4237A"},
+    "fly": {"display_name": "Fruit Fly", "maker": "Random picks (control group)", "color": "#7C7F87"},
+}
+AI_MODELS = ("claude", "chatgpt", "grok")  # the ones that upload files
+AGENT_MODELS = ("learner", "fly")
+
+# The Learner: picks this many of the AIs' picks each night (those it expects to beat the S&P 500)
+LEARNER_PICKS_PER_NIGHT = 5
+LEARNER_PRIOR_PRECISION = 4.0  # how strongly weights are pulled toward 0 before there's evidence
+LEARNER_NOISE_SD = 0.06  # assumed spread of a single trade's return vs the S&P 500
+# The Fruit Fly: same books as the AIs, random tickers, fixed exits
+FLY_RULES = {
+    "moonshot": {"n": 5, "target": 0.10, "stop": 0.05, "horizon": 1},
+    "catalyst": {"n": 5, "target": 0.12, "stop": 0.06, "horizon": 3},
+    "compounder": {"n": None, "target": 0.30, "stop": 0.15, "horizon": 60},
 }
 
 # The three books every model runs

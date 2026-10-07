@@ -79,7 +79,7 @@ def ingest(db: Session, provider: PriceProvider, model_key: str, path: str, stem
                      target_date=target_date, received_at=now.astimezone(dt.timezone.utc).replace(tzinfo=None),
                      author=author[:128], raw=raw[:200_000])
 
-    if model_key not in config.MODELS:
+    if model_key not in config.AI_MODELS:
         log.warning("ignoring %s: unknown model folder %r", path, model_key)
         return None
     parsed = parse_submission(raw)
@@ -321,7 +321,8 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
                     break
                 continue
             sell = False
-            for r in reviews.get((pos.id, day), []):
+            # The Learner's positions copy an AI's pick, so they follow that AI's nightly calls too
+            for r in reviews.get((pos.id, day), []) + reviews.get((pos.source_position_id, day), []):
                 if r.new_stop:
                     pos.stop = r.new_stop
                 if r.new_target:

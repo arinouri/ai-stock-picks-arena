@@ -178,7 +178,7 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
             "repo": config.REPO, "site_url": config.SITE_URL, "notional": config.NOTIONAL,
             "buckets": RULES["buckets"],
             "models": [{"key": k, "display_name": models[k].display_name, "maker": models[k].maker,
-                        "color": models[k].color} for k in keys]}
+                        "color": models[k].color, "kind": "ai" if k in config.AI_MODELS else "agent"} for k in keys]}
 
     dashboard = {
         "meta": meta,
@@ -191,10 +191,13 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
         "open": open_positions,
         "closed": [serialize_position(p, last_review.get(p.id), bench_last) for p in closed[:80]],
         "ideas": [{"model": s.model_key, "date": _d(s.run_date), "market_view": s.market_view, "lessons": s.lessons}
-                  for s in reversed(subs) if s.status in ACTIVE and (s.lessons or s.market_view)][:24],
+                  for s in reversed(subs) if s.status in ACTIVE and s.model_key in config.AI_MODELS
+                  and (s.lessons or s.market_view)][:24],
         "inbox": [{"model": s.model_key, "path": s.path, "status": s.status, "received_at": s.received_at.isoformat() + "Z",
                    "errors": (s.errors or [])[:6]} for s in reversed(subs)][:20],
         "benchmark": [{"date": _d(b.date), "close": b.close} for b in bench_rows[-260:]],
+        "contestants": contestant_status(subs, keys, now),
+        "learner": _learner_state(db),
     }
     _write(data / "dashboard.json", dashboard)
 
@@ -204,6 +207,8 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
             "model": k, "submissions": [serialize_sub(s) for s in reversed(mine)],
             "positions": [serialize_position(p, last_review.get(p.id), bench_last)
                           for p in sorted(positions, key=lambda p: p.id, reverse=True) if p.model_key == k]})
+        if k not in config.AI_MODELS:
+            continue
         brief = briefing(k, models[k], positions, last_review, mine, boards, days, last_session, next_night, bench_last)
         _write(data / "brief" / f"{k}.json", brief)
         if brief_dir is not None:  # also committed to the repo so git-based bots can read it after a pull
@@ -224,6 +229,50 @@ def _pick_nights(start: dt.date, n: int) -> list[dict]:
             out.append({"run_date": d.isoformat(), "session": session_plan(d)[1].isoformat()})
         d += dt.timedelta(days=1)
     return out
+
+
+SCHEDULES = {
+    "claude": "8:45 PM ET, Claude scheduled task (cloud)",
+    "chatgpt": "8:45 PM ET, ChatGPT app automation (needs the Mac awake)",
+    "grok": "9:13 PM ET, Grok Bot routine (cloud)",
+    "learner": "After each AI upload, inside the GitHub Action",
+    "fly": "After the close, inside the GitHub Action",
+}
+
+
+def contestant_status(subs, keys, now) -> list[dict]:
+    """Is each contestant connected? Status of the most recent pick night, plus its last upload."""
+    today = now.date()
+    night = today
+    while not should_run_picks_tonight(night):
+        night -= dt.timedelta(days=1)
+    target = session_plan(night)[1]
+    deadline = dt.datetime.combine(night, config.SUBMISSION_DEADLINE, ET)
+    out = []
+    for k in keys:
+        mine = [s for s in subs if s.model_key == k]
+        last = mine[-1] if mine else None
+        tonight = [s for s in mine if s.target_date == target and s.status != "superseded"]
+        if tonight:
+            t = tonight[-1]
+            state = "in" if t.status in ACTIVE else t.status
+            at = t.received_at.isoformat() + "Z"
+        else:
+            state, at = ("waiting" if now < deadline else "missed"), None
+        out.append({"model": k, "kind": "ai" if k in config.AI_MODELS else "agent", "schedule": SCHEDULES.get(k, ""),
+                    "night": night.isoformat(), "session": target.isoformat(), "state": state, "at": at,
+                    "last_upload": None if last is None else {"at": last.received_at.isoformat() + "Z",
+                                                              "status": last.status, "night": _d(last.run_date)}})
+    return out
+
+
+def _learner_state(db) -> dict:
+    from .agents import learner_state
+
+    try:
+        return learner_state(db)
+    except Exception as e:  # never let the brain view break the site
+        return {"error": str(e)}
 
 
 def briefing(key, model, positions, last_review, subs, boards, days, last_session, next_night, bench_last) -> dict:

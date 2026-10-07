@@ -41,12 +41,12 @@ function render() {
   const d = state.dash;
   const view = $("#view");
   if (!d.latest.target_date && !d.session.date) {
-    view.innerHTML = `<div class="empty"><h2>The first picks haven't arrived</h2>
+    view.innerHTML = `${statusSection()}<div class="empty"><h2>The first picks haven't arrived</h2>
       <p class="lede">Each AI uploads its picks every trading night. They'll show up here a minute after the first upload.</p></div>${rulesSection()}`;
     return;
   }
-  view.innerHTML = [raceSection(), standingsSection(), tonightSection(), resultsSection(), openSection(),
-    closedSection(), ideasSection(), rulesSection()].join("");
+  view.innerHTML = [statusSection(), raceSection(), standingsSection(), learnerSection(), tonightSection(),
+    resultsSection(), openSection(), closedSection(), ideasSection(), rulesSection()].join("");
   bind();
 }
 
@@ -125,7 +125,8 @@ function standingsSection() {
         <th>Best</th><th>Worst</th><th>Closed / open</th><th>Days won</th></tr></thead>
       <tbody>${body}</tbody></table></div>
     ${series.length ? `<div class="chart-box">${lineChart(series, { baseline: 0, label: "Cumulative profit by model", fmt: (v) => `${v < 0 ? "−" : ""}$${Math.abs(Math.round(v)).toLocaleString()}` })}
-      <div class="legend">${series.map((s) => `<span><span class="swatch" style="background:${s.color}"></span>${esc(s.name)}</span>`).join("")}<span>Cumulative profit, dashed line is break-even</span></div></div>` : ""}
+      <div class="legend">${series.map((s) => `<span><span class="swatch" style="background:${s.color}"></span>${esc(s.name)}</span>`).join("")}<span>Cumulative profit, dashed line is break-even</span></div></div>` :
+      `<p class="chart-empty">The profit chart appears after the first session is scored. Prices are pulled after each close (4:15 PM ET on trading days).</p>`}
   </section>`;
 }
 
@@ -133,7 +134,7 @@ function standingsSection() {
 function tonightSection() {
   const L = state.dash.latest;
   if (!L.target_date) return "";
-  const cols = state.dash.meta.models.map((m) => {
+  const cols = state.dash.meta.models.filter((m) => m.kind === "ai").map((m) => {
     const s = L.submissions[m.key];
     if (!s) return `<div class="col" style="--c:${m.color}"><div class="col-head"><h3>${esc(m.display_name)}</h3><p>No upload yet.</p></div></div>`;
     const books = Object.keys(state.dash.meta.buckets).map((b) => {
@@ -161,7 +162,20 @@ function tonightSection() {
   return `<section id="tonight"><h2>Picks for ${longDate(L.target_date)}</h2>
     <p class="lede">${scored ? "Scored against that session. Open a pick for its thesis, sources and price path." :
       "Locked in and waiting for the session. Entry is the last close; results appear after 4:15 PM ET."}</p>
-    <div class="columns">${cols}</div></section>`;
+    <div class="columns">${cols}</div>${agentStrip(L.submissions)}</section>`;
+}
+
+function agentStrip(subs) {
+  const rows = state.dash.meta.models.filter((m) => m.kind === "agent").map((m) => {
+    const s = subs[m.key];
+    if (!s || !s.picks.length) return `<p><strong style="color:${m.color}">${esc(m.display_name)}</strong> <span class="muted">hasn't picked yet; it goes after the AIs upload.</span></p>`;
+    const list = s.picks.map((p) => {
+      const from = p.thesis.startsWith("Copied from") ? p.thesis.split(":")[0].replace("Copied from ", "") : "";
+      return `<a href="#p${p.id}" class="agent-pick">${esc(p.ticker)}${from ? ` <small>from ${esc(from)}</small>` : ""}${p.ret != null && p.sessions_held ? ` <small class="${cls(p.ret)}">${pct(p.ret)}</small>` : ""}</a>`;
+    }).join("");
+    return `<p><strong style="color:${m.color}">${esc(m.display_name)}</strong> ${list}</p>`;
+  }).join("");
+  return `<div class="agents">${rows}</div>`;
 }
 
 function pickRow(p, id) {
@@ -206,11 +220,65 @@ function pickDetail(p) {
 }
 const hostname = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 
+// ------------------------------------------------------------------ who's connected
+const STATE = {
+  in: ["Picks in", "ok"], waiting: ["Waiting", "wait"], missed: ["Missed", "bad"],
+  late: ["Late, not counted", "bad"], rejected: ["Rejected", "bad"], partial: ["Picks in, some voided", "ok"],
+};
+
+function statusSection() {
+  const c = state.dash.contestants || [];
+  if (!c.length) return "";
+  const night = c[0].night;
+  const cards = c.map((x) => {
+    const m = model(x.model);
+    const [label, tone] = STATE[x.state] || [x.state, "wait"];
+    const when = x.at ? new Date(x.at).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "";
+    const last = x.last_upload ? `Last upload ${new Date(x.last_upload.at).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}` : "Never uploaded yet";
+    return `<li class="contestant" style="--c:${m.color}">
+      <span class="dot ${tone}" aria-hidden="true"></span>
+      <span><strong>${esc(m.display_name)}</strong> <span class="state ${tone}">${label}${when ? ` at ${when}` : ""}</span><br>
+      <small class="muted">${esc(x.schedule)}. ${last}.</small></span></li>`;
+  }).join("");
+  return `<section class="status" aria-labelledby="status-h">
+    <h2 id="status-h" class="small-h">Picks for ${longDate(c[0].session)}, due ${longDate(night)} at 11:59 PM ET</h2>
+    <ul class="contestants">${cards}</ul></section>`;
+}
+
+// ------------------------------------------------------------------ the Learner's brain
+function learnerSection() {
+  const L = state.dash.learner;
+  if (!L || L.error) return "";
+  const m = model("learner");
+  const maxAbs = Math.max(0.005, ...L.weights.map((w) => Math.abs(w.mean) + w.sd));
+  const bar = (w) => {
+    const pos = (v) => 50 + (v / maxAbs) * 50;
+    const lo = pos(Math.max(-maxAbs, w.mean - w.sd)), hi = pos(Math.min(maxAbs, w.mean + w.sd));
+    return `<tr><td>${esc(w.feature)}</td>
+      <td class="wbar"><span class="range" style="left:${lo}%;width:${hi - lo}%"></span><span class="mid"></span>
+        <span class="pt ${cls(w.mean)}" style="left:${pos(w.mean)}%"></span></td>
+      <td class="${cls(w.mean)}">${pct(w.mean, 2)}</td></tr>`;
+  };
+  const recent = L.recent.slice(0, 8).map((e) => `<li><span class="${cls(e.rpe)}"><strong>${e.rpe >= 0 ? "Better" : "Worse"} than expected by ${pct(Math.abs(e.rpe), 1).replace("+", "")}</strong></span>
+      ${esc(e.ticker)} (${esc(model(e.model).display_name)}, ${esc(e.bucket)}): expected ${pct(e.expected, 1)} vs the S&amp;P 500, got ${pct(e.reward, 1)}.</li>`).join("");
+  const learning = L.observations === 0
+    ? `<p class="lede">It hasn't seen a closed trade yet, so every weight is still zero with wide uncertainty. Each night it explores by sampling from those beliefs. As trades close, the bars below will start to move.</p>`
+    : `<p class="lede">Learned from ${L.observations} closed AI trades. Each bar is how much that feature adds to a pick's expected return against the S&amp;P 500; the shaded band is its uncertainty. Narrow bands mean it's confident.</p>`;
+  return `<section id="learner"><h2 style="color:${m.color}">The Learner's brain</h2>
+    <p class="lede">A reinforcement learning agent that doesn't read the news. It learns which AI, which book and which kind of setup actually beats the market, then each night copies up to 5 of the AIs' picks it expects to win. Every closed trade is a reward; the gap between what it expected and what happened is its prediction error, the same "dopamine" signal real brains learn from.</p>
+    ${learning}
+    <div class="brain">
+      <div class="table-wrap"><table class="weights"><thead><tr><th>Feature</th><th>Effect on expected return vs S&amp;P 500</th><th></th></tr></thead>
+        <tbody>${L.weights.map(bar).join("")}</tbody></table></div>
+      <div><h3>Latest surprises</h3>${recent ? `<ul class="surprises">${recent}</ul>` : '<p class="muted">None yet. The first ones arrive when trades close.</p>'}</div>
+    </div></section>`;
+}
+
 // ------------------------------------------------------------------ last session results
 function resultsSection() {
   const s = state.dash.session;
   if (!s.date || s.date === state.dash.latest.target_date) return "";
-  const subs = Object.values(s.picks || {}).filter(Boolean);
+  const subs = Object.values(s.picks || {}).filter((x) => x && model(x.model).kind === "ai");
   if (!subs.length) return "";
   const cols = subs.map((sub) => {
     const m = model(sub.model);
