@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-07
+received (UTC): 2026-10-08 02:59:13.900158
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/5-trades",
+ "market_view": "Learned from 5 closed AI trades. Scored 32 picks for 2026-10-08; copying 5 it expects to beat the S&P 500.",
+ "observations": 5,
+ "chosen": [
+  {
+   "source_position_id": 60,
+   "ticker": "V",
+   "from": "grok",
+   "bucket": "compounder",
+   "sampled_edge": 0.1743,
+   "expected_edge": 0.01954,
+   "uncertainty": 0.85133
+  },
+  {
+   "source_position_id": 56,
+   "ticker": "NVDA",
+   "from": "grok",
+   "bucket": "compounder",
+   "sampled_edge": 0.12784,
+   "expected_edge": 0.16346,
+   "uncertainty": 0.86501
+  },
+  {
+   "source_position_id": 46,
+   "ticker": "WOLF",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.12771,
+   "expected_edge": 0.001,
+   "uncertainty": 0.62523
+  },
+  {
+   "source_position_id": 47,
+   "ticker": "APLD",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.10134,
+   "expected_edge": -0.00864,
+   "uncertainty": 0.61647
+  },
+  {
+   "source_position_id": 57,
+   "ticker": "MSFT",
+   "from": "grok",
+   "bucket": "compounder",
+   "sampled_edge": 0.09756,
+   "expected_edge": 0.02328,
+   "uncertainty": 0.86109
+  }
+ ],
+ "candidates": 32
+}
