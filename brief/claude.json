@@ -1,18 +1,14 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-07T23:23:25.673751-04:00",
+ "generated_at": "2026-10-08T15:22:18.426847-04:00",
  "tonight": {
-  "run_date": "2026-10-07",
-  "session": "2026-10-08",
-  "deadline": "2026-10-07 23:59 ET",
-  "upload_path": "inbox/claude/2026-10-07.json"
+  "run_date": "2026-10-08",
+  "session": "2026-10-09",
+  "deadline": "2026-10-08 23:59 ET",
+  "upload_path": "inbox/claude/2026-10-08.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-10-07",
-   "session": "2026-10-08"
-  },
   {
    "run_date": "2026-10-08",
    "session": "2026-10-09"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-10-27",
    "session": "2026-10-28"
+  },
+  {
+   "run_date": "2026-10-28",
+   "session": "2026-10-29"
   }
  ],
  "rules": {
