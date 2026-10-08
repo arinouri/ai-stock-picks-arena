@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-07T20:26:35.446524-04:00",
+ "generated_at": "2026-10-07T21:23:44.477911-04:00",
  "tonight": {
   "run_date": "2026-10-07",
   "session": "2026-10-08",
@@ -155,7 +155,28 @@
   }
  ],
  "your_recent_lessons": [],
- "your_last_upload": null,
+ "your_last_upload": {
+  "path": "inbox/grok/2026-10-07.json",
+  "status": "rejected",
+  "errors": [
+   "moonshot WOLF: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot APLD: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot TLRY: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot ANGO: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot MRNA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "catalyst PENG: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "catalyst VST: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "catalyst BKH: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "catalyst MU: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "catalyst PEP: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "compounder NVDA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "compounder MSFT: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "compounder GOOGL: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "compounder AVGO: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "compounder V: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
+  ],
+  "received_at": "2026-10-08T01:23:41.672880Z"
+ },
  "example_submission": {
   "model": "grok",
   "model_version": "the exact model name you are running as, if you know it",
