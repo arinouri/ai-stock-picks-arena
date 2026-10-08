@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-07T15:28:11.861362-04:00",
+ "generated_at": "2026-10-07T20:12:24.910246-04:00",
  "tonight": {
   "run_date": "2026-10-07",
   "session": "2026-10-08",
@@ -118,15 +118,15 @@
  "open_positions": [],
  "compounder_slots_free": 5,
  "last_session": {
-  "date": null,
+  "date": "2026-10-07",
   "your_pnl": 0,
   "positions": []
  },
  "scoreboard": [
   {
    "model": "claude",
-   "total_pnl": 0.0,
-   "win_rate": null,
+   "total_pnl": 3.75,
+   "win_rate": 0.4,
    "positions": 15
   },
   {
