@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-07T21:23:44.466462-04:00",
+ "generated_at": "2026-10-07T21:37:59.828798-04:00",
  "tonight": {
   "run_date": "2026-10-07",
   "session": "2026-10-08",
@@ -487,19 +487,19 @@
    "positions": 15
   },
   {
-   "model": "chatgpt",
-   "total_pnl": 0,
-   "win_rate": null,
-   "positions": 0
-  },
-  {
    "model": "grok",
-   "total_pnl": 0,
+   "total_pnl": 0.0,
    "win_rate": null,
-   "positions": 0
+   "positions": 15
   },
   {
    "model": "learner",
+   "total_pnl": 0.0,
+   "win_rate": null,
+   "positions": 5
+  },
+  {
+   "model": "chatgpt",
    "total_pnl": 0,
    "win_rate": null,
    "positions": 0

@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-07T21:23:44.468076-04:00",
+ "generated_at": "2026-10-07T21:37:59.830414-04:00",
  "tonight": {
   "run_date": "2026-10-07",
   "session": "2026-10-08",
@@ -130,19 +130,19 @@
    "positions": 15
   },
   {
-   "model": "chatgpt",
-   "total_pnl": 0,
-   "win_rate": null,
-   "positions": 0
-  },
-  {
    "model": "grok",
-   "total_pnl": 0,
+   "total_pnl": 0.0,
    "win_rate": null,
-   "positions": 0
+   "positions": 15
   },
   {
    "model": "learner",
+   "total_pnl": 0.0,
+   "win_rate": null,
+   "positions": 5
+  },
+  {
+   "model": "chatgpt",
    "total_pnl": 0,
    "win_rate": null,
    "positions": 0
