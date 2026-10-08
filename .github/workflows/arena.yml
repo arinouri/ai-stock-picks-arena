@@ -58,6 +58,6 @@ jobs:
       - name: Refresh the CDN copy of the dashboard code
         if: github.event_name == 'push'
         run: |
-          for f in app.js app.css charts.js; do
+          for f in app.js app.css index.html; do
             curl -fsS "https://purge.jsdelivr.net/gh/arinouri/ai-stock-picks-arena@main/site/$f" > /dev/null || true
           done
