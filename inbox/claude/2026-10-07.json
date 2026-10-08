@@ -3,7 +3,7 @@
  "model_version": "claude-opus-5-5",
  "market_view": "S&P 500 and Nasdaq slipped about 0.2% from records on Oct 7 while the 30-year Treasury yield hit a 24-year high and the Dow lagged on Caterpillar's 5.7% drop; AI semis (Micron +4%) held up. Tomorrow is earnings-driven (PEP, HELE, TLRY, ANGO before the open) with DAL on Friday, so I lean on confirmed after-hours reactions and keep stops wider than last night.",
  "lessons": [
-  "Moonshots built on an after-hours-confirmed beat worked: PENG (EPS $1.00 vs $0.75, shares +7% after hours) hit its target for +11.4%. Tonight WOLF and PROF are the same setup, with the gap already visible after hours.",
+  "Moonshots built on an after-hours-confirmed beat worked: PENG (EPS $1.00 vs $0.75, +7% after hours) hit its target for +11.4%. Check eligibility data before submitting: my first upload of tonight's file had three picks voided (no price data, and average volume under 500K), so I now verify average volume, not just the price.",
   "Sympathy and re-rating moonshots on big, crowded names (MRVL, CEG) were stopped at about -3% by normal intraday ranges; CEG's low was 4.7% under entry yet it closed near flat. I'm setting stops at least 5-7% below on volatile names and not leaning on 'more target raises' as a catalyst.",
   "Holding APLD into its print cost -6% beforehand, but the print was a large beat (revenue $341.9M vs about $126M expected, adj. EPS $0.01 vs -$0.30, new 210 MW lease) and shares are up about 5% after hours, so holding through confirmed binary events can pay when the setup is skewed; I'm still keeping the number of binary-print bets small."
  ],
@@ -91,35 +91,6 @@
  ],
  "moonshot": [
   {
-   "ticker": "WOLF",
-   "thesis": "Wolfspeed announced a conditional 30-year, up to $1.5B senior secured loan commitment from the Department of War's Office of Strategic Capital (with warrants for up to 7.5% of equity); shares closed at $31.37 and traded around $37.6-39 after hours (+20-25%).",
-   "catalyst_time": "2026-10-07 after close",
-   "entry_zone_low": 31.37,
-   "entry_zone_high": 31.37,
-   "target_price": 38.5,
-   "stop_price": 29.5,
-   "confidence": "medium",
-   "main_risk": "The commitment is conditional on definitive agreements, and the warrants dilute holders; the after-hours gap could fade at the open.",
-   "sources": [
-    "https://www.sec.gov/Archives/edgar/data/0000895419/000119312526416987/d122407dex991.htm",
-    "https://stockanalysis.com/stocks/wolf/"
-   ]
-  },
-  {
-   "ticker": "PROF",
-   "thesis": "Profound Medical pre-announced Q3 revenue of $9.8-10.0M, about 45% above the Bloomberg consensus, with gross margin above 70%; shares closed at $5.68 and were +23% after hours at $6.99.",
-   "catalyst_time": "2026-10-07 after close",
-   "entry_zone_low": 5.68,
-   "entry_zone_high": 5.68,
-   "target_price": 7.0,
-   "stop_price": 5.2,
-   "confidence": "medium",
-   "main_risk": "Thin liquidity (regular-session volume about 395K) and a gap that may fade; a stock this small can reverse hard.",
-   "sources": [
-    "https://stockanalysis.com/stocks/prof/"
-   ]
-  },
-  {
    "ticker": "ANGO",
    "thesis": "AngioDynamics reports fiscal Q1 2027 results before the open Oct 8 after a record fiscal Q4; the stock is +3.5% after hours, and TipRanks flagged it among small caps analysts expect to rally.",
    "catalyst_time": "2026-10-08 before open",
@@ -135,21 +106,6 @@
    ]
   },
   {
-   "ticker": "HELE",
-   "thesis": "Helen of Troy reports fiscal Q2 2027 before the open Oct 8 with options implying about a 17.8% move; shares sit at $25.55 versus a $31.33 analyst target, 17% below the 52-week high, and Canaccord just raised its target.",
-   "catalyst_time": "2026-10-08 before open",
-   "entry_zone_low": 25.55,
-   "entry_zone_high": 25.75,
-   "target_price": 28.6,
-   "stop_price": 23.7,
-   "confidence": "low",
-   "main_risk": "A binary earnings print with a consumer-tariff overhang; a guide-down would gap it through the stop.",
-   "sources": [
-    "https://www.digrin.com/stocks/earnings_calendar/2026-10-08",
-    "https://stockanalysis.com/stocks/hele/"
-   ]
-  },
-  {
    "ticker": "TLRY",
    "thesis": "Tilray reports fiscal Q1 2027 before the open Oct 8 with the stock near an all-time low ($3.715) after a rally that peaked at $4.94 in August, so a decent print could trigger a squeeze.",
    "catalyst_time": "2026-10-08 before open",
@@ -162,6 +118,53 @@
    "sources": [
     "https://finviz.com/news/395595/tilray-brands-to-announce-first-quarter-fiscal-year-2027-financial-results-on-october-8-2026",
     "https://stockanalysis.com/stocks/tlry/"
+   ]
+  },
+  {
+   "ticker": "CIFR",
+   "thesis": "AI data-center hosts sold off into the close (CIFR -6.1% to $14.56) just before Applied Digital reported after the bell: revenue $341.9M vs about $126M expected, a new 210 MW 15-year lease, and APLD +4.75% after hours. That read-through to the peer AI-hosting group is not yet in CIFR's price, which also has a freshly extended 20-year Barber Lake lease.",
+   "catalyst_time": "2026-10-07 after close (APLD results)",
+   "entry_zone_low": 14.56,
+   "entry_zone_high": 14.7,
+   "target_price": 16.2,
+   "stop_price": 13.6,
+   "confidence": "low",
+   "main_risk": "A sympathy trade can fail if peers ignore APLD's print or rates keep pressuring the group (30-year yield at a 24-year high).",
+   "sources": [
+    "https://www.globenewswire.com/news-release/2026/10/07/3376854/0/en/applied-digital-reports-fiscal-first-quarter-2027-results.html",
+    "https://stockanalysis.com/stocks/apld/",
+    "https://stockanalysis.com/stocks/cifr/"
+   ]
+  },
+  {
+   "ticker": "CORZ",
+   "thesis": "Core Scientific fell 4.4% to $15.94 into the close, before Applied Digital's blowout FQ1 (revenue $341.9M vs about $126M expected, new 210 MW lease, shares +4.75% after hours) reset the read-through for AI data-center hosts; CORZ has an AMD partnership for up to 2.5 GW.",
+   "catalyst_time": "2026-10-07 after close (APLD results)",
+   "entry_zone_low": 15.94,
+   "entry_zone_high": 16.1,
+   "target_price": 17.7,
+   "stop_price": 14.9,
+   "confidence": "low",
+   "main_risk": "Sector sympathy only; CORZ is flat after hours so far, and the group has been weak for weeks.",
+   "sources": [
+    "https://www.globenewswire.com/news-release/2026/10/07/3376854/0/en/applied-digital-reports-fiscal-first-quarter-2027-results.html",
+    "https://stockanalysis.com/stocks/apld/",
+    "https://stockanalysis.com/stocks/corz/"
+   ]
+  },
+  {
+   "ticker": "NG",
+   "thesis": "NovaGold reports before the open Oct 8 (options imply about 16.5%) after a 3.9% drop to $6.36, near the low end of its $5.08-$14.40 range; the Paulson buyout that gives it 100% of Donlin was announced Sept 29.",
+   "catalyst_time": "2026-10-08 before open",
+   "entry_zone_low": 6.3,
+   "entry_zone_high": 6.45,
+   "target_price": 7.3,
+   "stop_price": 5.9,
+   "confidence": "low",
+   "main_risk": "The report is not a real catalyst for a pre-revenue developer, gold fell 1.3% Wednesday, and Morgan Stanley just cut its target.",
+   "sources": [
+    "https://www.benzinga.com/markets/market-summary/26/10/62152419/earnings-volatility-watch-micron-novagold-applied-digital-delta-implied-moves-october-2026",
+    "https://stockanalysis.com/stocks/ng/"
    ]
   }
  ],
