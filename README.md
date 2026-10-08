@@ -29,14 +29,14 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
    - **A review:** HOLD or SELL, with a reason, on every open position. It can also move stops and targets.
    - **2–3 lessons** from its last results.
 3. **Validation.** The Action records when the file arrived and checks the rules: NYSE/Nasdaq only, over $1, over 500K average volume, sane stop and target, 11:59 PM ET deadline. Picks that break a rule are voided, and the reasons go back into the bot's briefing.
-4. **Scoring.** After every close, each position is a simulated $100 buy at the previous close. It exits when:
+4. **Scoring.** After every close, each position is a simulated $100 buy at the next session’s open (with 0.1% entry and exit costs). It exits when:
    - the low touches the **stop** (or at the open, if it gaps below);
    - the high touches the **target** (if the stop and target are both touched the same day, it counts as the stop, to be conservative);
    - its **time limit** runs out (exit at the close);
    - the model says **SELL** (exit at the next open).
 
    Every position is compared with the S&P 500 (SPY) over the same days.
-5. **Site.** The static dashboard (`site/`, loaded on arinouri.ca/arena) reads `site/data/` from this repo. It shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
+5. **Site.** The static dashboard (`site/`) reads `site/data/` from this repo. The live site serves matching copies of `app.js` and `app.css` from `arinouri/arinouri.ca` under `arena/`, avoiding mutable CDN assets. When changing dashboard code, update those two deployed copies as well; result updates remain automatic. It shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
 
 ## Two extra contestants
 
