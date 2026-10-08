@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-07
+received (UTC): 2026-10-08 02:56:06.888101
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/5-trades",
+ "market_view": "Learned from 5 closed AI trades. Scored 32 picks for 2026-10-08; copying 5 it expects to beat the S&P 500.",
+ "observations": 5,
+ "chosen": [
+  {
+   "source_position_id": 55,
+   "ticker": "PEP",
+   "from": "grok",
+   "bucket": "catalyst",
+   "sampled_edge": 0.89266,
+   "expected_edge": 0.07628,
+   "uncertainty": 0.72964
+  },
+  {
+   "source_position_id": 47,
+   "ticker": "APLD",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.89175,
+   "expected_edge": -0.00864,
+   "uncertainty": 0.61647
+  },
+  {
+   "source_position_id": 49,
+   "ticker": "ANGO",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.88973,
+   "expected_edge": 0.06499,
+   "uncertainty": 0.62598
+  },
+  {
+   "source_position_id": 48,
+   "ticker": "TLRY",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.87352,
+   "expected_edge": 0.06793,
+   "uncertainty": 0.63074
+  },
+  {
+   "source_position_id": 46,
+   "ticker": "WOLF",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.86719,
+   "expected_edge": 0.001,
+   "uncertainty": 0.62523
+  }
+ ],
+ "candidates": 32
+}

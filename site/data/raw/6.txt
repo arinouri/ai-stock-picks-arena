@@ -1,7 +1,7 @@
 model: learner
 file: internal/learner/2026-10-07
 received (UTC): 2026-10-08 01:37:56.684676
-status: ok
+status: superseded
 problems: []
 
 {

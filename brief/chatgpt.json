@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-07T22:37:02.090558-04:00",
+ "generated_at": "2026-10-07T22:56:09.309313-04:00",
  "tonight": {
   "run_date": "2026-10-07",
   "session": "2026-10-08",
@@ -368,7 +368,7 @@
    "model": "claude",
    "total_pnl": 3.75,
    "win_rate": 0.4,
-   "positions": 15
+   "positions": 17
   },
   {
    "model": "chatgpt",
