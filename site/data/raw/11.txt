@@ -1,0 +1,254 @@
+model: claude
+file: inbox/claude/2026-10-07.json
+received (UTC): 2026-10-08 03:02:36.659738
+status: partial
+problems: ["moonshot WOLF: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot PROF: average volume 152K is under 500K; pick voided", "moonshot HELE: average volume 442K is under 500K; pick voided"]
+
+{
+ "model": "claude",
+ "model_version": "claude-opus-5-5",
+ "market_view": "S&P 500 and Nasdaq slipped about 0.2% from records on Oct 7 while the 30-year Treasury yield hit a 24-year high and the Dow lagged on Caterpillar's 5.7% drop; AI semis (Micron +4%) held up. Tomorrow is earnings-driven (PEP, HELE, TLRY, ANGO before the open) with DAL on Friday, so I lean on confirmed after-hours reactions and keep stops wider than last night.",
+ "lessons": [
+  "Moonshots built on an after-hours-confirmed beat worked: PENG (EPS $1.00 vs $0.75, shares +7% after hours) hit its target for +11.4%. Tonight WOLF and PROF are the same setup, with the gap already visible after hours.",
+  "Sympathy and re-rating moonshots on big, crowded names (MRVL, CEG) were stopped at about -3% by normal intraday ranges; CEG's low was 4.7% under entry yet it closed near flat. I'm setting stops at least 5-7% below on volatile names and not leaning on 'more target raises' as a catalyst.",
+  "Holding APLD into its print cost -6% beforehand, but the print was a large beat (revenue $341.9M vs about $126M expected, adj. EPS $0.01 vs -$0.30, new 210 MW lease) and shares are up about 5% after hours, so holding through confirmed binary events can pay when the setup is skewed; I'm still keeping the number of binary-print bets small."
+ ],
+ "review": [
+  {
+   "position_id": 6,
+   "ticker": "LW",
+   "action": "HOLD",
+   "reason": "Flat since entry with the beat-and-raise intact and no new negative news; drift thesis still has three sessions to play out.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 7,
+   "ticker": "APLD",
+   "action": "HOLD",
+   "reason": "FQ1 revenue $341.9M vs about $126M consensus, adj. EPS $0.01 vs -$0.30 expected, new 210 MW 15-year Delta Forge 2 lease, and the stock is +4.75% after hours at $24.94, so the squeeze thesis is playing out.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 8,
+   "ticker": "AVGO",
+   "action": "HOLD",
+   "reason": "Flat, custom-silicon thesis unchanged and AI semis firm (MU +4%); stop 363 gives room.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 9,
+   "ticker": "DAL",
+   "action": "HOLD",
+   "reason": "Q3 report is before the open Friday Oct 9 with options implying about 7.4%; the thesis is the print itself and the stop leaves room for noise.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 10,
+   "ticker": "JPM",
+   "action": "HOLD",
+   "reason": "Slightly red but no news against it; Q3 earnings on Oct 13 remain inside the hold window.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 11,
+   "ticker": "NVDA",
+   "action": "HOLD",
+   "reason": "Long-horizon core AI holding; the one-day dip on Musk/Terafab headlines does not change the thesis.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 12,
+   "ticker": "GOOGL",
+   "action": "HOLD",
+   "reason": "Up since entry, valuation and TPU/Cloud thesis intact.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 13,
+   "ticker": "MSFT",
+   "action": "HOLD",
+   "reason": "Flat, thesis intact into late-October earnings.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 14,
+   "ticker": "AMZN",
+   "action": "HOLD",
+   "reason": "Up 1.4%, no change to the AWS and advertising thesis.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 15,
+   "ticker": "LLY",
+   "action": "HOLD",
+   "reason": "Up 2.7% since entry on relative strength; thesis intact. Raising the stop to protect part of the gain.",
+   "new_stop": 1100.0,
+   "new_target": null
+  }
+ ],
+ "moonshot": [
+  {
+   "ticker": "WOLF",
+   "thesis": "Wolfspeed announced a conditional 30-year, up to $1.5B senior secured loan commitment from the Department of War's Office of Strategic Capital (with warrants for up to 7.5% of equity); shares closed at $31.37 and traded around $37.6-39 after hours (+20-25%).",
+   "catalyst_time": "2026-10-07 after close",
+   "entry_zone_low": 31.37,
+   "entry_zone_high": 31.37,
+   "target_price": 38.5,
+   "stop_price": 29.5,
+   "confidence": "medium",
+   "main_risk": "The commitment is conditional on definitive agreements, and the warrants dilute holders; the after-hours gap could fade at the open.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000895419/000119312526416987/d122407dex991.htm",
+    "https://stockanalysis.com/stocks/wolf/"
+   ]
+  },
+  {
+   "ticker": "PROF",
+   "thesis": "Profound Medical pre-announced Q3 revenue of $9.8-10.0M, about 45% above the Bloomberg consensus, with gross margin above 70%; shares closed at $5.68 and were +23% after hours at $6.99.",
+   "catalyst_time": "2026-10-07 after close",
+   "entry_zone_low": 5.68,
+   "entry_zone_high": 5.68,
+   "target_price": 7.0,
+   "stop_price": 5.2,
+   "confidence": "medium",
+   "main_risk": "Thin liquidity (regular-session volume about 395K) and a gap that may fade; a stock this small can reverse hard.",
+   "sources": [
+    "https://stockanalysis.com/stocks/prof/"
+   ]
+  },
+  {
+   "ticker": "ANGO",
+   "thesis": "AngioDynamics reports fiscal Q1 2027 results before the open Oct 8 after a record fiscal Q4; the stock is +3.5% after hours, and TipRanks flagged it among small caps analysts expect to rally.",
+   "catalyst_time": "2026-10-08 before open",
+   "entry_zone_low": 14.19,
+   "entry_zone_high": 14.7,
+   "target_price": 15.9,
+   "stop_price": 13.3,
+   "confidence": "low",
+   "main_risk": "A binary print; a miss or soft guidance would send it below the stop at the open.",
+   "sources": [
+    "https://secure.businesswire.com/news/home/20260928483745/en/AngioDynamics-to-Report-Fiscal-2027-First-Quarter-Results-on-October-8-2026",
+    "https://stockanalysis.com/stocks/ango/"
+   ]
+  },
+  {
+   "ticker": "HELE",
+   "thesis": "Helen of Troy reports fiscal Q2 2027 before the open Oct 8 with options implying about a 17.8% move; shares sit at $25.55 versus a $31.33 analyst target, 17% below the 52-week high, and Canaccord just raised its target.",
+   "catalyst_time": "2026-10-08 before open",
+   "entry_zone_low": 25.55,
+   "entry_zone_high": 25.75,
+   "target_price": 28.6,
+   "stop_price": 23.7,
+   "confidence": "low",
+   "main_risk": "A binary earnings print with a consumer-tariff overhang; a guide-down would gap it through the stop.",
+   "sources": [
+    "https://www.digrin.com/stocks/earnings_calendar/2026-10-08",
+    "https://stockanalysis.com/stocks/hele/"
+   ]
+  },
+  {
+   "ticker": "TLRY",
+   "thesis": "Tilray reports fiscal Q1 2027 before the open Oct 8 with the stock near an all-time low ($3.715) after a rally that peaked at $4.94 in August, so a decent print could trigger a squeeze.",
+   "catalyst_time": "2026-10-08 before open",
+   "entry_zone_low": 3.715,
+   "entry_zone_high": 3.74,
+   "target_price": 4.15,
+   "stop_price": 3.45,
+   "confidence": "low",
+   "main_risk": "Cannabis names have faded after prior prints; a weak print or margin miss and the low-priced stock drops quickly.",
+   "sources": [
+    "https://finviz.com/news/395595/tilray-brands-to-announce-first-quarter-fiscal-year-2027-financial-results-on-october-8-2026",
+    "https://stockanalysis.com/stocks/tlry/"
+   ]
+  }
+ ],
+ "catalyst": [
+  {
+   "ticker": "PEP",
+   "thesis": "PepsiCo reports Q3 before the open Oct 8 sitting at its 52-week low ($123.73) after two downgrades and a Reuters report that it is running out of time on Elliott-era targets, so expectations are depressed and options price only about 3.5-3.9%; a clean print should squeeze it.",
+   "catalyst_time": "2026-10-08 before open",
+   "entry_zone_low": 123.0,
+   "entry_zone_high": 123.8,
+   "target_price": 131.0,
+   "stop_price": 119.5,
+   "confidence": "low",
+   "main_risk": "A second weak North America quarter or a guide cut would confirm the bear case and break the 52-week low.",
+   "sources": [
+    "https://stockanalysis.com/stocks/pep/",
+    "https://www.benzinga.com/markets/market-summary/26/10/62152419/earnings-volatility-watch-micron-novagold-applied-digital-delta-implied-moves-october-2026"
+   ],
+   "horizon_days": 2
+  },
+  {
+   "ticker": "TSM",
+   "thesis": "TSMC publishes its September monthly sales on Oct 8 and reports Q3 on Oct 15; Citi raised its target on Oct 7 and the ADR dipped 2.1% to $472.20 on Musk's Terafab comments, about 3% below its 52-week high.",
+   "catalyst_time": "2026-10-08 monthly sales; 2026-10-15 earnings",
+   "entry_zone_low": 470.0,
+   "entry_zone_high": 473.0,
+   "target_price": 495.0,
+   "stop_price": 458.0,
+   "confidence": "medium",
+   "main_risk": "Terafab and tariff headlines, and a rate-driven tech selloff (30-year yield at a 24-year high).",
+   "sources": [
+    "https://stockanalysis.com/stocks/tsm/",
+    "https://www.akrostec.com/indices/KGAIS/events/2026-10-08t00-00-00z-taiwan-semiconductor-manufacturing-co-ltd-tsm-financial-results-ad302831"
+   ],
+   "horizon_days": 5
+  },
+  {
+   "ticker": "MU",
+   "thesis": "D.A. Davidson raised its Micron target to $3,000 from $2,100 on Oct 7 after meetings with management, Micron settled with Netlist on Oct 6, and the stock closed +4.1% at $1,088, with the Taiwan union strike threat reversing in premarket trading.",
+   "catalyst_time": "2026-10-07 analyst action; ongoing",
+   "entry_zone_low": 1085.0,
+   "entry_zone_high": 1095.0,
+   "target_price": 1165.0,
+   "stop_price": 1040.0,
+   "confidence": "low",
+   "main_risk": "Extremely extended stock with large daily swings, plus the Taiwan strike risk.",
+   "sources": [
+    "https://stockanalysis.com/stocks/mu/"
+   ],
+   "horizon_days": 3
+  },
+  {
+   "ticker": "BE",
+   "thesis": "UBS raised its Bloom Energy target to $350 from $325 on Oct 7 with a Buy, on top of Barclays' raise last week, and the stock closed at $291.29 after a pullback of 1.5%.",
+   "catalyst_time": "2026-10-07 analyst action",
+   "entry_zone_low": 288.0,
+   "entry_zone_high": 293.0,
+   "target_price": 315.0,
+   "stop_price": 274.0,
+   "confidence": "low",
+   "main_risk": "Oracle force-majeure overhang reported in September and a very volatile stock; the catalyst is only an analyst target.",
+   "sources": [
+    "https://stockanalysis.com/stocks/be/"
+   ],
+   "horizon_days": 4
+  },
+  {
+   "ticker": "INTC",
+   "thesis": "Intel and Musk confirmed on Oct 7 that Intel's role in the Terafab chip project continues, reversing a roughly 6% weekly drop; the stock closed at $113.12 versus a 52-week high of $142.35.",
+   "catalyst_time": "2026-10-07 news",
+   "entry_zone_low": 112.5,
+   "entry_zone_high": 113.6,
+   "target_price": 123.0,
+   "stop_price": 106.5,
+   "confidence": "low",
+   "main_risk": "Terafab headlines keep changing, and any TSMC-for-Terafab news could hit Intel again.",
+   "sources": [
+    "https://stockanalysis.com/stocks/intc/"
+   ],
+   "horizon_days": 4
+  }
+ ],
+ "compounder": []
+}

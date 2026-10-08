@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-07.json
 received (UTC): 2026-10-08 02:56:06.888101
-status: partial
+status: superseded
 problems: ["moonshot: expected 5 picks, got 2", "catalyst: expected 5 picks, got 1", "moonshot HELE: average volume 442K is under 500K; pick voided"]
 
 {
