@@ -69,7 +69,7 @@ class LearnerTests(unittest.TestCase):
             sub.positions.append(Position(
                 model_key=model, bucket="catalyst", ticker=f"N{model[:2].upper()}{i}", horizon_days=3,
                 orig_target=110, orig_stop=95, target=110, stop=95, entry_date=run, first_session=target,
-                entry_price=100, last_price=100, status="open", confidence="medium"))
+                ref_price=100, status="open", confidence="medium"))
 
     def test_learner_copies_the_ai_that_has_been_winning(self):
         for k, day in enumerate([d(2026, 9, 21), d(2026, 9, 28)]):
@@ -108,9 +108,9 @@ class FlyTests(unittest.TestCase):
         self.assertEqual(out["picks"], 15)
         picks = db.query(Position).filter_by(model_key="fly").all()
         self.assertEqual(sorted({p.bucket for p in picks}), ["catalyst", "compounder", "moonshot"])
-        self.assertTrue(all(p.entry_price for p in picks))
+        self.assertTrue(all(p.ref_price for p in picks))
         p = picks[0]
-        self.assertAlmostEqual(p.orig_target / p.entry_price, 1.10, places=2)
+        self.assertAlmostEqual(p.orig_target / p.ref_price, 1.10, places=2)
         self.assertEqual(agents.run_fly(db, FakeProvider(), at(MON, 23))["fly"], "already picked")
         # Next night the compounder book is already full
         engine.score(db, FakeProvider(), now=at(TUE, 16, 30), with_intraday=False)
@@ -136,7 +136,7 @@ class MirrorTests(unittest.TestCase):
         db.add(sub)
         sub.positions.append(Position(model_key="learner", bucket="compounder", ticker="AAA", horizon_days=60,
                                       orig_target=150, orig_stop=80, target=150, stop=80, entry_date=MON,
-                                      first_session=TUE, entry_price=100, source_position_id=src.id))
+                                      first_session=TUE, ref_price=100, source_position_id=src.id))
         db.commit()
         engine.score(db, p, now=at(TUE, 16, 30), with_intraday=False)
         engine.ingest(db, p, "claude", "inbox/claude/y.json", TUE.isoformat(),

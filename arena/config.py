@@ -59,6 +59,10 @@ BUCKETS = {
 }
 
 NOTIONAL = 100.0  # every position is a simulated $100 buy, so dollar P&L is comparable across models
+# Picks are made after the close, so the earliest anyone could act on them is the next session's open.
+# Every position is bought at that open. Trading isn't free: each side costs this much (spread + slippage).
+COST_PER_SIDE = 0.001  # 0.10% in, 0.10% out
+LEARNER_HALF_LIFE_DAYS = 90  # the Learner trusts a trade's lesson half as much after this many days
 BOOM_THRESHOLD = 0.10  # first-session high at least +10% from entry
 MIN_PRICE = 1.0
 MIN_AVG_VOLUME = 500_000

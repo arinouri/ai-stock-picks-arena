@@ -53,7 +53,7 @@ class Submission(Base):
 
 
 class Position(Base):
-    """A simulated $100 buy at the reference close, held until stop, target, time limit or the model sells."""
+    """A simulated $100 buy at the next session's open, held until stop, target, time limit or the model sells."""
 
     __tablename__ = "positions"
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
@@ -77,7 +77,8 @@ class Position(Base):
 
     entry_date: Mapped[dt.date] = mapped_column(Date)  # = submission.ref_date
     first_session: Mapped[dt.date] = mapped_column(Date, index=True)  # = submission.target_date
-    entry_price: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    ref_price: Mapped[Optional[float]] = mapped_column(Float, nullable=True)  # close when picked (rules check)
+    entry_price: Mapped[Optional[float]] = mapped_column(Float, nullable=True)  # open of first_session
     benchmark_entry: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     flags: Mapped[list] = mapped_column(JSON, default=list)
     source_position_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)  # Learner copies
@@ -106,11 +107,16 @@ class Position(Base):
     )
 
     # ---- derived values
-    def ret(self) -> Optional[float]:
+    def gross_ret(self) -> Optional[float]:
         price = self.exit_price if self.status == "closed" else self.last_price
         if price is None or not self.entry_price:
             return None
         return price / self.entry_price - 1
+
+    def ret(self) -> Optional[float]:
+        """Return after trading costs (in and out; open positions are valued as if sold now)."""
+        g = self.gross_ret()
+        return None if g is None else g - 2 * config.COST_PER_SIDE
 
     def pnl(self) -> float:
         r = self.ret()
@@ -154,8 +160,9 @@ class PositionDay(Base):
 
     @property
     def pnl(self) -> float:
-        """Dollar P&L of the $100 position on this session."""
-        return config.NOTIONAL * (self.mark - self.prev_mark) / self.position.entry_price
+        """Dollar P&L of the $100 position on this session (trading costs are charged on the first one)."""
+        cost = 2 * config.COST_PER_SIDE * config.NOTIONAL if self.date == self.position.first_session else 0.0
+        return config.NOTIONAL * (self.mark - self.prev_mark) / self.position.entry_price - cost
 
 
 class Review(Base):
@@ -179,13 +186,14 @@ class Benchmark(Base):
     __tablename__ = "benchmark"
     date: Mapped[dt.date] = mapped_column(Date, primary_key=True)
     close: Mapped[float] = mapped_column(Float)
+    open: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
 
 
 def _migrate(engine) -> None:
     """Add columns introduced after the database was first created (SQLite has no auto-migrate)."""
     from sqlalchemy import inspect, text
 
-    added = {"positions": {"source_position_id": "INTEGER"}}
+    added = {"positions": {"source_position_id": "INTEGER", "ref_price": "FLOAT"}, "benchmark": {"open": "FLOAT"}}
     insp = inspect(engine)
     with engine.begin() as conn:
         for table, cols in added.items():
@@ -193,6 +201,12 @@ def _migrate(engine) -> None:
             for name, sqltype in cols.items():
                 if name not in have:
                     conn.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {sqltype}"))
+                    if (table, name) == ("positions", "ref_price"):
+                        # Switch from "bought at the close" to "bought at the next open": positions that
+                        # haven't traded yet keep the close as their reference and get their entry at the open.
+                        conn.execute(text("UPDATE positions SET ref_price = entry_price"))
+                        conn.execute(text("UPDATE positions SET entry_price = NULL, last_price = NULL, "
+                                          "benchmark_entry = NULL WHERE status = 'open' AND sessions_held = 0"))
 
 
 def connect(url: Optional[str] = None) -> sessionmaker:

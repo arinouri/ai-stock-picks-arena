@@ -192,8 +192,10 @@ def _supersede(db: Session, old: Submission) -> None:
 
 
 def fill_entries(db: Session, provider: PriceProvider, positions: list[Position], now: dt.datetime) -> list[str]:
-    """Set entry price = reference close and enforce the listing rules. Invalid picks are voided."""
-    todo = [p for p in positions if p.entry_price is None and p.status == "open" and close_is_final(p.entry_date, now)]
+    """Record the reference close and enforce the listing rules. Invalid picks are voided.
+
+    The position is bought later, at the open of its first session (see score)."""
+    todo = [p for p in positions if p.ref_price is None and p.status == "open" and close_is_final(p.entry_date, now)]
     if not todo:
         return []
     errors = []
@@ -230,9 +232,7 @@ def fill_entries(db: Session, provider: PriceProvider, positions: list[Position]
                 p.flags = [problem]
                 errors.append(f"{p.bucket} {p.ticker}: {problem}; pick voided")
             else:
-                p.entry_price = round(bar.close, 4)
-                p.last_price = p.entry_price
-                p.benchmark_entry = bench.close if bench else None
+                p.ref_price = round(bar.close, 4)  # checked against the rules; the buy happens at the next open
     db.flush()
     return errors
 
@@ -283,8 +283,8 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
     now = (now or now_et()).astimezone(ET)
     last = last_closed_session(now)
     fill_entries(db, provider, db.scalars(select(Position).where(Position.status == "open",
-                                                                 Position.entry_price.is_(None))).all(), now)
-    positions = db.scalars(select(Position).where(Position.status == "open", Position.entry_price.isnot(None),
+                                                                 Position.ref_price.is_(None))).all(), now)
+    positions = db.scalars(select(Position).where(Position.status == "open", Position.ref_price.isnot(None),
                                                   Position.first_session <= last)).all()
     if not positions:
         _update_benchmark(db, provider, last)
@@ -299,6 +299,8 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
         log.warning("daily bars failed: %s", e)
         return {"error": str(e)}
 
+    _update_benchmark(db, provider, last, since=min(p.entry_date for p in positions))
+    bench_open = {b.date: b.open for b in db.scalars(select(Benchmark)).all() if b.open}
     reviews: dict[tuple[int, dt.date], list[Review]] = {}
     for r in db.scalars(select(Review).join(Submission).where(Submission.status.in_(ACTIVE),
                                                               Review.effective_date >= start)).all():
@@ -330,6 +332,10 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
                 sell = sell or r.action == "SELL"
             if pos.sessions_held == 0:
                 first_days.append(pos)
+                if pos.entry_price is None:  # bought at the open, the first moment anyone could act on the pick
+                    pos.entry_price = round(bar.open, 4)
+                    pos.last_price = pos.entry_price
+                    pos.benchmark_entry = bench_open.get(day)
             processed += 1
             if step(pos, day, bar, sell):
                 closed += 1
@@ -353,7 +359,7 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
 
 
 def _update_benchmark(db: Session, provider: PriceProvider, last: dt.date, since: Optional[dt.date] = None) -> None:
-    have = set(db.scalars(select(Benchmark.date)).all())
+    have = set(db.scalars(select(Benchmark.date).where(Benchmark.open.isnot(None))).all())
     needed = [d for d in _sessions(since or last - dt.timedelta(days=45), last) if d not in have]
     if not needed:
         return
@@ -363,6 +369,11 @@ def _update_benchmark(db: Session, provider: PriceProvider, last: dt.date, since
         log.warning("benchmark fetch failed: %s", e)
         return
     for d, b in bars.items():
-        if d not in have:
-            db.add(Benchmark(date=d, close=b.close))
+        if d in have:
+            continue
+        row = db.get(Benchmark, d)
+        if row is None:
+            db.add(Benchmark(date=d, close=b.close, open=b.open))
+        else:
+            row.open = b.open
     db.flush()

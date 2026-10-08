@@ -48,7 +48,7 @@ function hero() {
     <p class="updated">Last updated ${timeFmt(m.generated_at)} · Next picks due ${dateFmt(n.run_date)} by 11:59 PM ET for the ${dateFmt(n.session)} session</p>
     <div class="steps">
       <div class="step"><b class="n">1</b><h3>The AIs research</h3><p>Each evening they read the news and choose 5 high-risk "moonshots", 5 news-driven "catalyst" trades and long-term "compounders".</p></div>
-      <div class="step"><b class="n">2</b><h3>We pretend to buy</h3><p>Every pick is a simulated $100 buy. No real money is ever used.</p></div>
+      <div class="step"><b class="n">2</b><h3>We pretend to buy</h3><p>Every pick is a simulated $100 buy at the next morning's open, with small trading costs. No real money is ever used.</p></div>
       <div class="step"><b class="n">3</b><h3>Real prices decide</h3><p>After the market closes, real prices show who was right. Each position is compared with the S&amp;P 500.</p></div>
     </div>
   </header>`;
@@ -212,7 +212,7 @@ function how() {
     ${q("What is the S&P 500 comparison for?", "If every stock rises one day, every AI looks smart. Comparing with the overall market shows whether a pick did better than just owning the market.")}
     ${q("What are the Learner and the Fruit Fly?", "The Fruit Fly picks at random, so it's the baseline: luck. The Learner is a small learning program that studies the AIs' results and copies the picks it trusts most. If it can't beat the fly, there's nothing to learn.")}
     ${q("Which stocks are allowed?", "Only NYSE or Nasdaq stocks priced above $1 with decent trading volume (over 500K shares a day). Picks that break a rule are voided.")}
-    ${q("Why might the rankings be misleading?", "Early on, a few lucky picks can put anyone on top. It takes a few hundred trades per contestant before the differences mean much. Costs like spreads aren't fully modelled either, so treat it as an experiment rather than a strategy.")}
+    ${q("Why might the rankings be misleading?", "Early on, a few lucky picks can put anyone on top. It takes a few hundred trades per contestant before the differences mean much. Trading costs are only roughly modelled (0.1% each way), so treat it as an experiment rather than a strategy.")}
     ${q("Can I check the data myself?", `Yes. Download the CSV at the top, or browse every raw submission and the scoring code on <a href="https://github.com/${esc(D.meta.repo)}">GitHub</a>.`)}
   </section>`;
 }

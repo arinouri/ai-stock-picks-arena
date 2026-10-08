@@ -45,8 +45,8 @@ EXAMPLE_SUBMISSION = {
 }
 
 RULES = {
-    "notional": f"Every position is a simulated ${config.NOTIONAL:.0f} buy at the reference price.",
-    "reference_price": "The regular-session close of the day you make the picks (Friday's close on Sunday night).",
+    "notional": f"Every position is a simulated ${config.NOTIONAL:.0f} buy at the next session's opening price, with {config.COST_PER_SIDE:.1%} trading cost each way.",
+    "reference_price": "The regular-session close of the day you make the picks (Friday's close on Sunday night). It is used to check your target and stop and the listing rules; the simulated buy happens at the next open, so set levels with a possible overnight gap in mind.",
     "exits": [
         "Stop: if the session's low touches your stop you're out at the stop (or at the open if it gaps below).",
         "Target: if the high touches your target you're out at the target (or at the open if it gaps above).",

@@ -3,7 +3,7 @@ import json
 import unittest
 from zoneinfo import ZoneInfo
 
-from arena import engine
+from arena import config, engine
 from arena.db import Position, Submission, connect
 from arena.prices import Bar, FakeProvider
 
@@ -30,6 +30,7 @@ def sub(moon=(), cat=(), comp=(), review=(), lessons=("Watch the open",)):
 
 class EngineBase(unittest.TestCase):
     def setUp(self):
+        self._cost, config.COST_PER_SIDE = config.COST_PER_SIDE, 0.0  # costs have their own test
         self.Session = connect("sqlite://")
         self.db = self.Session()
         self.bars = {}
@@ -44,6 +45,7 @@ class EngineBase(unittest.TestCase):
                 self.bars[(t, d)] = Bar(100, 101, 99, 100, 2e6)
 
     def tearDown(self):
+        config.COST_PER_SIDE = self._cost
         self.db.close()
 
     def ingest(self, raw, day=MON, when=None, model="claude", stem=None):
@@ -66,7 +68,7 @@ class IngestTests(EngineBase):
         self.assertEqual(s.status, "ok", s.errors)
         self.assertEqual((s.ref_date, s.target_date), (MON, TUE))
         self.assertEqual(len(s.positions), 14)
-        self.assertTrue(all(p.entry_price == 100 for p in s.positions))
+        self.assertTrue(all(p.ref_price == 100 for p in s.positions))  # bought later, at the open
         self.assertEqual(self.pos("F").horizon_days, 3)
         self.assertEqual(self.pos("A").horizon_days, 1)  # moonshots are always 1 session
 
@@ -128,7 +130,7 @@ class ExitRuleTests(EngineBase):
         return self.pos("A")
 
     def test_target_hit(self):
-        self.bars[("A", TUE)] = Bar(101, 112, 100, 108)
+        self.bars[("A", TUE)] = Bar(100, 112, 100, 108)
         p = self.open_one()
         self.score(TUE)
         self.assertEqual((p.status, p.exit_reason, p.exit_price), ("closed", "target", 110))
@@ -144,9 +146,10 @@ class ExitRuleTests(EngineBase):
         self.assertFalse(p.d1()["hit_target"])
 
     def test_gap_down_exits_at_open(self):
-        self.bars[("A", TUE)] = Bar(80, 85, 78, 82)
+        self.bars[("A", WED)] = Bar(80, 85, 78, 82)
         p = self.open_one()
         self.score(TUE)
+        self.score(WED)
         self.assertEqual((p.exit_reason, p.exit_price), ("stop", 80))
         self.assertAlmostEqual(p.pnl(), -20.0)
 
@@ -155,6 +158,16 @@ class ExitRuleTests(EngineBase):
         p = self.open_one()
         self.score(TUE)
         self.assertEqual((p.exit_reason, p.exit_price), ("target", 130))
+
+    def test_bought_at_next_open_and_costs_charged(self):
+        config.COST_PER_SIDE = 0.001
+        self.bars[("A", TUE)] = Bar(104, 108, 103, 106)  # gaps up on the news: the buy is at 104, not Monday's 100
+        p = self.open_one("moonshot", 1)
+        self.assertEqual((p.ref_price, p.entry_price), (100, None))
+        self.score(TUE)
+        self.assertEqual(p.entry_price, 104)
+        self.assertAlmostEqual(p.ret(), 106 / 104 - 1 - 0.002)
+        self.assertAlmostEqual(sum(d.pnl for d in p.days), p.pnl())
 
     def test_moonshot_exits_at_first_close(self):
         self.bars[("A", TUE)] = Bar(100, 104, 98, 103)
@@ -222,7 +235,7 @@ class ExportTests(EngineBase):
 
         from arena.export import export_site
 
-        self.bars[("A", TUE)] = Bar(101, 112, 100, 108)
+        self.bars[("A", TUE)] = Bar(100, 112, 100, 108)
         self.ingest(sub(moon=[pick("A")], cat=[pick("B", horizon_days=3)], comp=[pick("C", 150, 80)]))
         self.score(TUE)
         with tempfile.TemporaryDirectory() as tmp:

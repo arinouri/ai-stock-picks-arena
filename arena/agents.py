@@ -93,7 +93,7 @@ def _new_sub(db: Session, model: str, run: dt.date, ref: dt.date, target: dt.dat
 
 
 def features(p: Position) -> np.ndarray:
-    e = p.entry_price or 1.0
+    e = p.entry_price or p.ref_price or 1.0
     up = min(max(p.orig_target / e - 1, 0.0), 1.0)
     down = min(max(1 - p.orig_stop / e, 0.001), 1.0)
     return np.array([
@@ -177,7 +177,7 @@ def run_learner(db: Session, now: Optional[dt.datetime] = None) -> dict:
     run, ref, target = window
     candidates = [p for p in db.scalars(select(Position).join(Submission).where(
         Position.model_key.in_(config.AI_MODELS), Position.first_session == target, Position.status == "open",
-        Position.entry_price.isnot(None), Position.sessions_held == 0, Submission.status.in_(ACTIVE))).all()]
+        Position.ref_price.isnot(None), Position.sessions_held == 0, Submission.status.in_(ACTIVE))).all()]
     if not candidates:
         return {"learner": "no AI picks yet"}
     brain, _ = train(db, before=target)  # only outcomes known before this session
@@ -223,7 +223,7 @@ def run_learner(db: Session, now: Optional[dt.datetime] = None) -> dict:
             main_risk=f"Expected edge vs S&P 500: {s['expected']:+.2%} (±{s['uncertainty']:.2%}). {src.main_risk}"[:600],
             horizon_days=src.horizon_days, orig_target=src.orig_target, orig_stop=src.orig_stop,
             target=src.target, stop=src.stop, entry_date=src.entry_date, first_session=src.first_session,
-            entry_price=src.entry_price, last_price=src.entry_price, benchmark_entry=src.benchmark_entry,
+            ref_price=src.ref_price,
             source_position_id=src.id))
     db.commit()
     return {"learner": "picked", "chosen": len(chosen), "observations": brain.n}
