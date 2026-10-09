@@ -1,0 +1,72 @@
+model: fly
+file: internal/fly/2026-10-08
+received (UTC): 2026-10-09 00:22:27.416140
+status: ok
+problems: []
+
+{
+ "version": "uniform-random",
+ "market_view": "Picked at random. If an AI can't beat this, its research isn't adding anything.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "CRM"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NFLX"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PYPL"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HD"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SCHW"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "INTU"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SBUX"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VZ"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ZS"
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "GE"
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "ADBE"
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "CVS"
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "DASH"
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "DUK"
+  }
+ ]
+}
