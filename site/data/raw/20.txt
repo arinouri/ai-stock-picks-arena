@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-08
+received (UTC): 2026-10-09 02:39:11.296159
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/29-trades",
+ "market_view": "Learned from 29 closed AI trades. Scored 20 picks for 2026-10-09; copying 5 it expects to beat the S&P 500.",
+ "observations": 29,
+ "chosen": [
+  {
+   "source_position_id": 149,
+   "ticker": "MRNA",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.03395,
+   "expected_edge": 0.0101,
+   "uncertainty": 0.03623
+  },
+  {
+   "source_position_id": 150,
+   "ticker": "UAL",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.0327,
+   "expected_edge": 0.00739,
+   "uncertainty": 0.03498
+  },
+  {
+   "source_position_id": 147,
+   "ticker": "DAL",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.03182,
+   "expected_edge": 0.00221,
+   "uncertainty": 0.03288
+  },
+  {
+   "source_position_id": 142,
+   "ticker": "CCI",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.02855,
+   "expected_edge": -0.02517,
+   "uncertainty": 0.05897
+  },
+  {
+   "source_position_id": 146,
+   "ticker": "CLOV",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02701,
+   "expected_edge": -0.02921,
+   "uncertainty": 0.08456
+  }
+ ],
+ "candidates": 20
+}
