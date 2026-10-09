@@ -1,0 +1,32 @@
+model: learner
+file: internal/learner/2026-10-08
+received (UTC): 2026-10-09 01:28:07.761187
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/29-trades",
+ "market_view": "Learned from 29 closed AI trades. Scored 10 picks for 2026-10-09; copying 2 it expects to beat the S&P 500.",
+ "observations": 29,
+ "chosen": [
+  {
+   "source_position_id": 142,
+   "ticker": "CCI",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.0625,
+   "expected_edge": -0.02517,
+   "uncertainty": 0.05897
+  },
+  {
+   "source_position_id": 143,
+   "ticker": "WFC",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.0199,
+   "expected_edge": -0.03149,
+   "uncertainty": 0.03038
+  }
+ ],
+ "candidates": 10
+}
