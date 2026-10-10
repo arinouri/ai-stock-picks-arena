@@ -188,3 +188,15 @@ h2{font-size:23px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 }
 
+
+/* Arena research transparency panels */
+.health-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.health-card{display:flex;flex-direction:column;gap:6px;min-height:130px}
+.health-card strong{font-size:22px;letter-spacing:-.025em}
+.health-label{font-size:12px;font-weight:650;color:var(--muted)}
+.health-card small,.health-details small{color:var(--muted);font-size:12px}
+.health-ok{color:var(--up)}.health-warning{color:var(--warn)}
+.health-details{margin-top:12px}.health-details p{margin:12px 0}
+#research .cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#research .card{padding:21px}#research h3{margin:0 0 9px;font-size:15px}#research p{font-size:13px;line-height:1.7}
+@media(max-width:760px){.health-grid,#research .cols3{grid-template-columns:1fr}}
