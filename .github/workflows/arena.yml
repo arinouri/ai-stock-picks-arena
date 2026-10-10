@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
     paths: ["inbox/**", "arena/**", "site/**", "requirements.txt", ".github/workflows/arena.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["arena/**", "site/**", "tests/**", "prompts/**", "requirements.txt", ".github/workflows/arena.yml"]
   schedule:
     # GitHub cron is UTC and scheduled runs are often delayed by an hour or more, so scoring
     # is attempted several times between the close and the 8:45 PM ET pick time (both daylight
@@ -18,16 +21,38 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: arena
   cancel-in-progress: false
 
 jobs:
-  update:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - run: pip check
+
+      - name: Tests
+        run: python -m unittest discover -s tests -t .
+
+  update:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,12 +64,6 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
-
-      - name: Verify dependency consistency
-        run: pip check
-
-      - name: Tests
-        run: python -m unittest discover -s tests -t .
 
       - name: Ingest uploads, score closed sessions, build site data
         run: python -m arena.cli run
