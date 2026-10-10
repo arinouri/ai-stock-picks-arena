@@ -102,6 +102,30 @@ class LearnerTests(unittest.TestCase):
 
 
 class FlyTests(unittest.TestCase):
+    def test_fly_recovers_when_first_quote_batch_fails(self):
+        class FlakyProvider(FakeProvider):
+            calls = 0
+
+            def bars_on(self, tickers, day):
+                self.calls += 1
+                if self.calls == 1:
+                    raise RuntimeError("temporary market-data error")
+                return super().bars_on(tickers, day)
+
+        db = connect("sqlite://")()
+        provider = FlakyProvider()
+        outcome = agents.run_fly(db, provider, at(MON, 22))
+        self.assertEqual(outcome["fly"], "picked")
+        self.assertEqual(outcome["picks"], 15)
+        self.assertGreater(provider.calls, 1)
+
+    def test_fly_does_not_create_empty_submission_when_quotes_missing(self):
+        db = connect("sqlite://")()
+        provider = FakeProvider(missing=set(agents.FLY_UNIVERSE))
+        outcome = agents.run_fly(db, provider, at(MON, 22))
+        self.assertIn("no eligible", outcome["fly"])
+        self.assertEqual(db.query(Submission).filter_by(model_key="fly").count(), 0)
+
     def test_fly_picks_once_per_night(self):
         db = connect("sqlite://")()
         out = agents.run_fly(db, FakeProvider(), at(MON, 22))
@@ -117,6 +141,60 @@ class FlyTests(unittest.TestCase):
         agents.run_fly(db, FakeProvider(), at(TUE, 22))
         comps = db.query(Position).filter_by(model_key="fly", bucket="compounder", status="open").count()
         self.assertLessEqual(comps, 5)
+
+
+class FlyEvoTests(unittest.TestCase):
+    def test_evo_is_independent_reproducible_and_forward_only(self):
+        class RecordingProvider(FakeProvider):
+            def __init__(self):
+                super().__init__()
+                self.ends = []
+
+            def daily_bars(self, tickers, start, end):
+                self.ends.append(end)
+                return super().daily_bars(tickers, start, end)
+
+        db = connect("sqlite://")()
+        provider = RecordingProvider()
+        outcome = agents.run_evo(db, provider, at(MON, 22))
+        self.assertEqual(outcome["fly_evo"], "picked")
+        self.assertEqual(outcome["picks"], 15)
+        self.assertTrue(provider.ends)
+        self.assertLessEqual(max(provider.ends), MON)  # the decision never asks for Tuesday data
+        picks = db.query(Position).filter_by(model_key="fly_evo").all()
+        self.assertEqual(len(picks), 15)
+        self.assertEqual(len({p.ticker for p in picks}), 15)
+        self.assertTrue(all(len(p.selection_features) == len(agents.EVO_FEATURES) for p in picks))
+        self.assertTrue(all(p.agent_version for p in picks))
+        self.assertEqual(agents.run_evo(db, provider, at(MON, 23))["fly_evo"], "already picked")
+
+    def test_evo_does_not_create_partial_book_without_history(self):
+        db = connect("sqlite://")()
+        provider = FakeProvider(missing=set(agents.FLY_UNIVERSE) | {"SPY"})
+        outcome = agents.run_evo(db, provider, at(MON, 22))
+        self.assertIn("insufficient", outcome["fly_evo"])
+        self.assertEqual(db.query(Submission).filter_by(model_key="fly_evo").count(), 0)
+
+
+class MomentumTests(unittest.TestCase):
+    def test_point_in_time_momentum_baseline(self):
+        class RecordingProvider(FakeProvider):
+            def __init__(self):
+                super().__init__()
+                self.ends = []
+
+            def daily_bars(self, tickers, start, end):
+                self.ends.append(end)
+                return super().daily_bars(tickers, start, end)
+
+        db = connect("sqlite://")()
+        provider = RecordingProvider()
+        outcome = agents.run_momentum(db, provider, at(MON, 22))
+        self.assertEqual(outcome["momentum"], "picked")
+        self.assertEqual(outcome["picks"], 15)
+        self.assertLessEqual(max(provider.ends), MON)
+        picks = db.query(Position).filter_by(model_key="momentum").all()
+        self.assertTrue(all(p.agent_version == "simple-momentum/1" for p in picks))
 
 
 class MirrorTests(unittest.TestCase):

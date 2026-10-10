@@ -24,6 +24,7 @@ import hashlib
 import json
 import math
 import random
+import statistics
 from typing import Optional
 from zoneinfo import ZoneInfo
 
@@ -46,6 +47,11 @@ FEATURES = [
     "Moonshot", "Catalyst play", "Compounder",
     "AI said high confidence", "AI said low confidence",
     "Big upside to target", "Wide stop", "Reward-to-risk ratio", "Longer holding period",
+]
+
+EVO_FEATURES = [
+    "Intercept", "5-session momentum", "20-session momentum", "20-session strength vs SPY",
+    "20-session volatility", "Volume trend", "20-session drawdown",
 ]
 
 
@@ -246,6 +252,182 @@ def learner_state(db: Session) -> dict:
             "features": FEATURES}
 
 
+# =========================================================================== Fruit Fly EVO
+
+
+def _evo_reward(p: Position) -> Optional[float]:
+    """Risk-adjusted excess return using only the realized path of a completed trade."""
+    if p.status != "closed" or not p.entry_price or p.exit_price is None:
+        return None
+    peak = p.entry_price
+    max_drawdown = 0.0
+    for day in sorted(p.days, key=lambda d: d.date):
+        peak = max(peak, day.high)
+        max_drawdown = min(max_drawdown, day.low / peak - 1)
+    benchmark = p.benchmark_ret()
+    if benchmark is None:
+        return None
+    raw = (p.gross_ret() or 0.0) - benchmark - config.EVO_DRAWDOWN_PENALTY * abs(max_drawdown) \
+          - 2 * config.COST_PER_SIDE
+    return float(max(-config.EVO_REWARD_CLIP, min(config.EVO_REWARD_CLIP, raw)))
+
+
+def _train_evo(db: Session, before: Optional[dt.date] = None) -> tuple[Brain, list[dict]]:
+    brain = Brain(dim=len(EVO_FEATURES))
+    brain.A = np.eye(len(EVO_FEATURES)) * config.EVO_PRIOR_PRECISION
+    brain.noise = config.EVO_NOISE_SD ** 2
+    q = select(Position).where(Position.model_key == "fly_evo", Position.status == "closed",
+                               Position.selection_features.isnot(None))
+    if before is not None:
+        q = q.where(Position.exit_date < before)
+    rows = sorted(db.scalars(q).all(), key=lambda p: (p.exit_date, p.id))
+    events = []
+    for p in rows:
+        y = _evo_reward(p)
+        if y is None:
+            continue
+        x = np.asarray(p.selection_features, dtype=float)
+        if x.shape != (len(EVO_FEATURES),) or not np.all(np.isfinite(x)):
+            continue
+        expected = brain.predict(x)
+        rpe = brain.learn(x, y)
+        events.append({"position_id": p.id, "date": p.exit_date.isoformat(), "ticker": p.ticker,
+                       "bucket": p.bucket, "reward": y, "expected": expected, "rpe": rpe})
+    return brain, events
+
+
+def _signal_vector(bars: dict[dt.date, object], spy: dict[dt.date, object], ref: dt.date) -> Optional[list[float]]:
+    rows = [b for d, b in sorted(bars.items()) if d <= ref][-21:]
+    spy_rows = [b for d, b in sorted(spy.items()) if d <= ref][-21:]
+    if len(rows) < 21 or len(spy_rows) < 21 or rows[-1].close <= config.MIN_PRICE:
+        return None
+    closes = [b.close for b in rows]
+    returns = [closes[i] / closes[i - 1] - 1 for i in range(1, len(closes))]
+    spy_ret = spy_rows[-1].close / spy_rows[0].close - 1
+    vols = [b.volume for b in rows]
+    avg_volume = statistics.fmean(vols[-20:])
+    if avg_volume < config.MIN_AVG_VOLUME:
+        return None
+    peak = max(closes)
+    vector = [
+        1.0,
+        max(-1.0, min(1.0, (closes[-1] / closes[-6] - 1) * 5)),
+        max(-1.0, min(1.0, (closes[-1] / closes[0] - 1) * 3)),
+        max(-1.0, min(1.0, ((closes[-1] / closes[0] - 1) - spy_ret) * 3)),
+        max(0.0, min(1.0, statistics.pstdev(returns) * math.sqrt(252) / 1.5)),
+        max(-1.0, min(1.0, (statistics.fmean(vols[-5:]) / avg_volume - 1))),
+        max(-1.0, min(0.0, (closes[-1] / peak - 1) * 3)),
+    ]
+    return vector
+
+
+def run_evo(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = None) -> dict:
+    """Select independent stocks with a reproducible Bayesian contextual bandit."""
+    now = (now or now_et()).astimezone(ET)
+    window = pick_window(now)
+    if window is None:
+        return {"fly_evo": "outside pick window"}
+    run, ref, target = window
+    if _active_sub(db, "fly_evo", target) is not None:
+        return {"fly_evo": "already picked"}
+
+    held_rows = db.scalars(select(Position).where(Position.model_key == "fly_evo",
+                                                  Position.status == "open")).all()
+    held = {p.ticker for p in held_rows}
+    comp_open = sum(p.bucket == "compounder" for p in held_rows)
+    pool = [t for t in FLY_UNIVERSE if t not in held]
+    rng = random.Random(f"fruit-fly-evo-universe-{run}")
+    rng.shuffle(pool)
+    history: dict[str, dict] = {}
+    spy = {}
+    failed_batches = 0
+    for i in range(0, len(pool), 10):
+        batch = pool[i:i + 10]
+        try:
+            found = provider.history([*batch, config.BENCHMARK], ref, calendar_days=50)
+        except Exception:
+            failed_batches += 1
+            if failed_batches >= 3:
+                break
+            continue
+        spy.update(found.get(config.BENCHMARK, {}))
+        for ticker in batch:
+            if found.get(ticker):
+                history[ticker] = found[ticker]
+
+    brain, _ = _train_evo(db, before=target)
+    sample_rng = np.random.default_rng(int(target.strftime("%Y%m%d")) * 10_000 + brain.n)
+    weights = brain.sample(sample_rng)
+    candidates = []
+    for ticker, bars in history.items():
+        x = _signal_vector(bars, spy, ref)
+        if x is None:
+            continue
+        close = bars[ref].close if ref in bars else None
+        if close is None:
+            continue
+        arr = np.asarray(x)
+        candidates.append({"ticker": ticker, "close": close, "features": x,
+                           "sampled": float(arr @ weights), "expected": brain.predict(arr),
+                           "uncertainty": float(math.sqrt(max(arr @ brain.cov @ arr, 0)))})
+    candidates.sort(key=lambda row: (row["sampled"], row["ticker"]), reverse=True)
+
+    needed = 10 + max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+    if len(candidates) < needed:
+        return {"fly_evo": "insufficient eligible history; retry on next run", "eligible": len(candidates),
+                "needed": needed, "reference_date": ref.isoformat(), "failed_batches": failed_batches}
+
+    plan, cursor = [], 0
+    for bucket, rule in config.FLY_RULES.items():
+        n = rule["n"] if rule["n"] is not None else max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+        for _ in range(n):
+            plan.append((bucket, candidates[cursor], rule))
+            cursor += 1
+    raw = {
+        "version": config.EVO_MODEL_VERSION,
+        "data_version": config.EVO_DATA_VERSION,
+        "market_view": (f"Independent contextual bandit trained on {brain.n} completed EVO trades. "
+                        f"Ranked {len(candidates)} liquid stocks using only data through {ref}."),
+        "observations": brain.n,
+        "exploration_seed": int(target.strftime("%Y%m%d")) * 10_000 + brain.n,
+        "picks": [{"bucket": b, "ticker": row["ticker"], "sampled_score": round(row["sampled"], 6),
+                   "expected_reward": round(row["expected"], 6),
+                   "uncertainty": round(row["uncertainty"], 6)} for b, row, _ in plan],
+    }
+    sub = _new_sub(db, "fly_evo", run, ref, target, raw, now)
+    for rank, (bucket, row, rule) in enumerate(plan, 1):
+        c = row["close"]
+        labels = sorted(zip(EVO_FEATURES, row["features"]), key=lambda item: abs(item[1]), reverse=True)
+        explanation = ", ".join(f"{label} {value:+.2f}" for label, value in labels[1:4])
+        sub.positions.append(Position(
+            model_key="fly_evo", bucket=bucket, rank=rank, ticker=row["ticker"],
+            thesis=f"Bandit selection from measured signals: {explanation}.", confidence="medium",
+            main_risk=(f"Estimated reward {row['expected']:+.2%}; posterior uncertainty "
+                       f"{row['uncertainty']:.2%}. Signals may not persist."),
+            horizon_days=rule["horizon"], orig_target=round(c * (1 + rule["target"]), 2),
+            orig_stop=round(c * (1 - rule["stop"]), 2), target=round(c * (1 + rule["target"]), 2),
+            stop=round(c * (1 - rule["stop"]), 2), entry_date=ref, first_session=target,
+            ref_price=round(c, 4), selection_features=row["features"], agent_version=config.EVO_MODEL_VERSION))
+    db.commit()
+    return {"fly_evo": "picked", "picks": len(plan), "observations": brain.n,
+            "eligible": len(candidates), "failed_batches": failed_batches}
+
+
+def evo_state(db: Session) -> dict:
+    brain, events = _train_evo(db)
+    mean, sd = brain.mean, np.sqrt(np.diag(brain.cov))
+    weights = [{"feature": f, "mean": float(m), "sd": float(s)} for f, m, s in zip(EVO_FEATURES, mean, sd)]
+    weights.sort(key=lambda w: abs(w["mean"]), reverse=True)
+    cumulative, history = 0.0, []
+    for event in events:
+        cumulative += event["reward"]
+        history.append({**event, "cumulative_reward": cumulative})
+    return {"version": config.EVO_MODEL_VERSION, "data_version": config.EVO_DATA_VERSION,
+            "observations": brain.n, "cumulative_reward": cumulative, "weights": weights,
+            "recent": events[-20:][::-1], "history": history,
+            "reward": "gross return - SPY return - drawdown penalty - round-trip trading costs"}
+
+
 # =========================================================================== the Fruit Fly
 
 FLY_UNIVERSE = [
@@ -260,6 +442,71 @@ FLY_UNIVERSE = [
     "SPOT", "T", "VZ", "TMUS", "NEE", "DUK", "SO", "F", "GM", "RIVN", "LCID", "NIO", "ENPH", "FSLR", "VST", "CEG",
     "SMCI", "ARM", "DELL", "HPQ", "IBM", "CSCO", "PINS", "SNAP", "RBLX", "U", "DKNG", "MSTR", "RKLB", "IONQ", "HIMS",
 ]
+
+
+def run_momentum(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = None) -> dict:
+    """Point-in-time 20-session momentum baseline with no learned parameters."""
+    now = (now or now_et()).astimezone(ET)
+    window = pick_window(now)
+    if window is None:
+        return {"momentum": "outside pick window"}
+    run, ref, target = window
+    if _active_sub(db, "momentum", target) is not None:
+        return {"momentum": "already picked"}
+    held_rows = db.scalars(select(Position).where(Position.model_key == "momentum",
+                                                  Position.status == "open")).all()
+    held = {p.ticker for p in held_rows}
+    comp_open = sum(p.bucket == "compounder" for p in held_rows)
+    pool = [t for t in FLY_UNIVERSE if t not in held]
+    history, spy, failed_batches = {}, {}, 0
+    for i in range(0, len(pool), 10):
+        batch = pool[i:i + 10]
+        try:
+            found = provider.history([*batch, config.BENCHMARK], ref, calendar_days=50)
+        except Exception:
+            failed_batches += 1
+            if failed_batches >= 3:
+                break
+            continue
+        spy.update(found.get(config.BENCHMARK, {}))
+        for ticker in batch:
+            if found.get(ticker):
+                history[ticker] = found[ticker]
+    candidates = []
+    for ticker, bars in history.items():
+        x = _signal_vector(bars, spy, ref)
+        if x is None or ref not in bars:
+            continue
+        candidates.append({"ticker": ticker, "close": bars[ref].close, "features": x, "score": x[2]})
+    candidates.sort(key=lambda row: (row["score"], row["ticker"]), reverse=True)
+    needed = 10 + max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+    if len(candidates) < needed:
+        return {"momentum": "insufficient eligible history; retry on next run", "eligible": len(candidates),
+                "needed": needed, "reference_date": ref.isoformat(), "failed_batches": failed_batches}
+    plan, cursor = [], 0
+    for bucket, rule in config.FLY_RULES.items():
+        n = rule["n"] if rule["n"] is not None else max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+        for _ in range(n):
+            plan.append((bucket, candidates[cursor], rule))
+            cursor += 1
+    raw = {"version": "simple-momentum/1", "data_version": config.EVO_DATA_VERSION,
+           "market_view": f"Rules baseline ranked {len(candidates)} stocks by trailing 20-session momentum through {ref}.",
+           "picks": [{"bucket": b, "ticker": row["ticker"], "momentum_score": round(row["score"], 6)}
+                     for b, row, _ in plan]}
+    sub = _new_sub(db, "momentum", run, ref, target, raw, now)
+    for rank, (bucket, row, rule) in enumerate(plan, 1):
+        c = row["close"]
+        sub.positions.append(Position(
+            model_key="momentum", bucket=bucket, rank=rank, ticker=row["ticker"],
+            thesis=f"Rules baseline: trailing 20-session momentum score {row['score']:+.3f}.",
+            confidence="medium", main_risk="Recent momentum can reverse and is not a forecast.",
+            horizon_days=rule["horizon"], orig_target=round(c * (1 + rule["target"]), 2),
+            orig_stop=round(c * (1 - rule["stop"]), 2), target=round(c * (1 + rule["target"]), 2),
+            stop=round(c * (1 - rule["stop"]), 2), entry_date=ref, first_session=target,
+            ref_price=round(c, 4), selection_features=row["features"], agent_version="simple-momentum/1"))
+    db.commit()
+    return {"momentum": "picked", "picks": len(plan), "eligible": len(candidates),
+            "failed_batches": failed_batches}
 
 
 def run_fly(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = None) -> dict:
@@ -277,11 +524,35 @@ def run_fly(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = N
                                                                  Position.bucket == "compounder")).all())
     pool = [t for t in FLY_UNIVERSE if t not in held]
     rng.shuffle(pool)
-    try:
-        bars = provider.bars_on(pool[:40], ref)
-    except Exception as e:
-        return {"fly": f"price fetch failed: {e}"}
-    usable = [t for t in pool[:40] if bars.get(t) is not None and bars[t].close > config.MIN_PRICE]
+    # Fetch in small batches. Yahoo sometimes fails large multi-symbol requests;
+    # a failed batch must not prevent the control from making any picks.
+    # Do not scan future data: only the last completed session is eligible.
+    needed = sum(rule["n"] or 0 for rule in config.FLY_RULES.values())
+    needed += max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+    bars = {}
+    usable = []
+    failed_batches = 0
+    for i in range(0, len(pool), 10):
+        batch = pool[i:i + 10]
+        try:
+            found = provider.bars_on(batch, ref)
+        except Exception:
+            failed_batches += 1
+            if failed_batches >= 3:
+                break
+            continue
+        for ticker in batch:
+            bar = found.get(ticker)
+            if (bar is not None and math.isfinite(bar.close)
+                    and bar.close > config.MIN_PRICE
+                    and bar.volume >= config.MIN_AVG_VOLUME):
+                usable.append(ticker)
+                bars[ticker] = bar
+        if len(usable) >= needed:
+            break
+    if not usable:
+        return {"fly": "no eligible reference prices; retry on next run",
+                "reference_date": ref.isoformat(), "failed_batches": failed_batches}
     plan = []
     for bucket, rule in config.FLY_RULES.items():
         n = rule["n"] if rule["n"] is not None else max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)

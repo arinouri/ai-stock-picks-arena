@@ -15,9 +15,11 @@ MODELS = {
     # Built-in contestants that run inside the GitHub Action (no inbox):
     "learner": {"display_name": "The Learner", "maker": "Reinforcement learning agent", "color": "#B4237A"},
     "fly": {"display_name": "Fruit Fly", "maker": "Random picks (control group)", "color": "#7C7F87"},
+    "fly_evo": {"display_name": "Fruit Fly EVO", "maker": "Independent contextual bandit", "color": "#D69E2E"},
+    "momentum": {"display_name": "Momentum", "maker": "Rules-based baseline", "color": "#2A9D8F"},
 }
 AI_MODELS = ("claude", "chatgpt", "grok")  # the ones that upload files
-AGENT_MODELS = ("learner", "fly")
+AGENT_MODELS = ("learner", "fly", "fly_evo", "momentum")
 
 # The Learner: picks this many of the AIs' picks each night (those it expects to beat the S&P 500)
 LEARNER_PICKS_PER_NIGHT = 5
@@ -29,6 +31,15 @@ FLY_RULES = {
     "catalyst": {"n": 5, "target": 0.12, "stop": 0.06, "horizon": 3},
     "compounder": {"n": None, "target": 0.30, "stop": 0.15, "horizon": 60},
 }
+
+# Fruit Fly EVO: an independent market-signal bandit. The original Fruit Fly stays
+# uniformly random so it remains a valid scientific control.
+EVO_MODEL_VERSION = "bayesian-linear-bandit/1"
+EVO_DATA_VERSION = "daily-ohlcv-v1"
+EVO_PRIOR_PRECISION = 6.0
+EVO_NOISE_SD = 0.08
+EVO_DRAWDOWN_PENALTY = 0.20
+EVO_REWARD_CLIP = 0.50
 
 # The three books every model runs
 BUCKETS = {
@@ -59,6 +70,10 @@ BUCKETS = {
 }
 
 NOTIONAL = 100.0  # every position is a simulated $100 buy, so dollar P&L is comparable across models
+# A separate, fully funded portfolio view. It never changes the historical $100-per-pick metric.
+PORTFOLIO_INITIAL_CAPITAL = 10_000.0
+PORTFOLIO_POSITION_FRACTION = 0.05
+PORTFOLIO_MAX_OPEN = 20
 # Picks are made after the close, so the earliest anyone could act on them is the next session's open.
 # Every position is bought at that open. Trading isn't free: each side costs this much (spread + slippage).
 COST_PER_SIDE = 0.001  # 0.10% in, 0.10% out

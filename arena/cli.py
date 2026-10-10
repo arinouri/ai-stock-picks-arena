@@ -23,7 +23,7 @@ from .engine import ET, ingest, ingest_file, now_et, score, sha256
 from .export import export_site
 from .market_calendar import session_plan, should_run_picks_tonight
 from .prices import FakeProvider, get_provider
-from .agents import run_fly, run_learner
+from .agents import run_evo, run_fly, run_learner, run_momentum
 from .schema import parse_submission
 
 logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"), format="%(levelname)s %(name)s: %(message)s")
@@ -93,11 +93,23 @@ def main(argv=None):
         cmd_ingest(Session, provider, now)
     if args.cmd in ("run", "score"):
         with Session() as db:
-            log.info("score: %s", score(db, provider, now))
+            result = score(db, provider, now)
+            log.info("score: %s", result)
+            if "error" in result:
+                raise RuntimeError(f"scoring failed after provider retries: {result['error']}")
     if args.cmd == "run":
         with Session() as db:
-            log.info("fly: %s", run_fly(db, provider, now))
+            fly_result = run_fly(db, provider, now)
+            evo_result = run_evo(db, provider, now)
+            momentum_result = run_momentum(db, provider, now)
+            log.info("fly: %s", fly_result)
+            log.info("fly evo: %s", evo_result)
+            log.info("momentum: %s", momentum_result)
             log.info("learner: %s", run_learner(db, now))
+            if ("retry" in fly_result.get("fly", "") or "retry" in evo_result.get("fly_evo", "")
+                    or "retry" in momentum_result.get("momentum", "")):
+                raise RuntimeError(f"built-in agent market-data failure: fly={fly_result}; evo={evo_result}; "
+                                   f"momentum={momentum_result}")
     if args.cmd in ("run", "export"):
         with Session() as db:
             log.info("export: %s", export_site(db, now=now, brief_dir=config.ROOT / "brief"))
@@ -178,6 +190,8 @@ def demo(days: int) -> int:
                 db.commit()
             agent_time = dt.datetime.combine(night, dt.time(22, 0), ET)
             run_fly(db, provider, agent_time)
+            run_evo(db, provider, agent_time)
+            run_momentum(db, provider, agent_time)
             run_learner(db, agent_time)
             if target < today:
                 score(db, provider, now=dt.datetime.combine(target, dt.time(16, 30), ET), with_intraday=True)

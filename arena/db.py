@@ -82,6 +82,8 @@ class Position(Base):
     benchmark_entry: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     flags: Mapped[list] = mapped_column(JSON, default=list)
     source_position_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)  # Learner copies
+    selection_features: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    agent_version: Mapped[str] = mapped_column(String(64), default="")
 
     status: Mapped[str] = mapped_column(String(12), default="open", index=True)  # open | closed | void
     sell_at_open_on: Mapped[Optional[dt.date]] = mapped_column(Date, nullable=True)
@@ -193,7 +195,15 @@ def _migrate(engine) -> None:
     """Add columns introduced after the database was first created (SQLite has no auto-migrate)."""
     from sqlalchemy import inspect, text
 
-    added = {"positions": {"source_position_id": "INTEGER", "ref_price": "FLOAT"}, "benchmark": {"open": "FLOAT"}}
+    added = {
+        "positions": {
+            "source_position_id": "INTEGER",
+            "ref_price": "FLOAT",
+            "selection_features": "JSON",
+            "agent_version": "VARCHAR(64) NOT NULL DEFAULT ''",
+        },
+        "benchmark": {"open": "FLOAT"},
+    }
     insp = inspect(engine)
     with engine.begin() as conn:
         for table, cols in added.items():

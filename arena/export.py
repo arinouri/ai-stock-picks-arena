@@ -15,7 +15,9 @@ from sqlalchemy.orm import Session, selectinload
 from . import config
 from .db import AIModel, Benchmark, Position, PositionDay, Review, Submission
 from .engine import ACTIVE, ET, last_closed_session, now_et
+from .evaluation import evaluate
 from .market_calendar import next_trading_day, session_plan, should_run_picks_tonight
+from .portfolio import simulate_all
 from .stats import Day, Trade, board, session_summary
 
 EXAMPLE_SUBMISSION = {
@@ -81,6 +83,7 @@ def serialize_position(p: Position, last_review: Optional[Review] = None, bench_
         "ret": p.ret(), "pnl": round(p.pnl(), 2), "bench_ret": p.benchmark_ret(bench_last), "d1": p.d1(),
         "flags": p.flags or [], "sell_at_open_on": _d(p.sell_at_open_on), "submission_id": p.submission_id,
         "has_intraday": bool(p.d1_intraday),
+        "agent_version": p.agent_version or "", "selection_features": p.selection_features,
     }
     if intraday and p.d1_intraday:
         out["intraday"] = p.d1_intraday
@@ -111,6 +114,7 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
     last_review = {r.position_id: r for r in reviews}
     bench_rows = db.scalars(select(Benchmark).order_by(Benchmark.date)).all()
     bench_last = bench_rows[-1].close if bench_rows else None
+    portfolios = simulate_all(positions, bench_rows, keys)
 
     trades = [Trade(id=p.id, model=p.model_key, bucket=p.bucket, ticker=p.ticker, first_session=p.first_session,
                     status=p.status, ret=p.ret(), exit_reason=p.exit_reason, sessions_held=p.sessions_held,
@@ -198,6 +202,10 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
         "benchmark": [{"date": _d(b.date), "close": b.close} for b in bench_rows[-260:]],
         "contestants": contestant_status(subs, keys, now),
         "learner": _learner_state(db),
+        "fly_evo": _evo_state(db),
+        "portfolios": portfolios,
+        "health": _health(positions, subs, bench_rows, now),
+        "evaluation": evaluate(db),
     }
     _write(data / "dashboard.json", dashboard)
 
@@ -237,6 +245,8 @@ SCHEDULES = {
     "grok": "9:13 PM ET, Grok Bot routine (cloud)",
     "learner": "After each AI upload, inside the GitHub Action",
     "fly": "After the close, inside the GitHub Action",
+    "fly_evo": "After the close, inside the GitHub Action",
+    "momentum": "After the close, inside the GitHub Action",
 }
 
 
@@ -273,6 +283,47 @@ def _learner_state(db) -> dict:
         return learner_state(db)
     except Exception as e:  # never let the brain view break the site
         return {"error": str(e)}
+
+
+def _evo_state(db) -> dict:
+    from .agents import evo_state
+
+    try:
+        return evo_state(db)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _health(positions, subs, benchmarks, now) -> dict:
+    """Publish checkable facts; the UI must not infer health from freshness alone."""
+    last_closed = last_closed_session(now)
+    missing_prices = [p for p in positions if p.status == "open" and p.missing_sessions > 0]
+    awaiting_entry = [p for p in positions if p.status == "open" and p.first_session <= last_closed
+                      and p.entry_price is None]
+    recent_cutoff = now.astimezone(dt.timezone.utc).replace(tzinfo=None) - dt.timedelta(days=7)
+    failed_submissions = [s for s in subs if s.received_at >= recent_cutoff
+                          and s.status in ("rejected", "late", "partial")]
+    latest_benchmark = benchmarks[-1].date if benchmarks else None
+    issues = []
+    if awaiting_entry:
+        issues.append(f"{len(awaiting_entry)} positions are missing an entry price after their first session")
+    if missing_prices:
+        issues.append(f"{len(missing_prices)} open positions have one or more missing price sessions")
+    if latest_benchmark is None or latest_benchmark < last_closed:
+        issues.append("SPY benchmark data is not current through the last closed session")
+    if failed_submissions:
+        issues.append(f"{len(failed_submissions)} partial, rejected or late submissions in the last 7 days")
+    return {
+        "state": "degraded" if issues else "operational",
+        "checked_at": now.isoformat(),
+        "last_scored_session": _d(max((p.last_date for p in positions if p.last_date), default=None)),
+        "last_benchmark_session": _d(latest_benchmark),
+        "missing_price_positions": len(missing_prices),
+        "awaiting_entry_positions": len(awaiting_entry),
+        "recent_failed_submissions": len(failed_submissions),
+        "issues": issues,
+        "workflow_status": "See linked GitHub Actions history; not inferred from this export.",
+    }
 
 
 def briefing(key, model, positions, last_review, subs, boards, days, last_session, next_night, bench_last) -> dict:
