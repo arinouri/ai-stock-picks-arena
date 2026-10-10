@@ -211,6 +211,20 @@ class ExitRuleTests(EngineBase):
         self.score(TUE, 15, 0)
         self.assertEqual(self.pos("A").sessions_held, 0)
 
+    def test_weekend_run_skips_inverted_provider_range_when_current(self):
+        self.open_one("compounder", 60, 150, 80)
+        self.score(FRI)
+        original = self.p.daily_bars
+
+        def reject_inverted(tickers, start, end):
+            self.assertLessEqual(start, end)
+            return original(tickers, start, end)
+
+        self.p.daily_bars = reject_inverted
+        result = self.score(dt.date(2026, 10, 10))
+        self.assertEqual(result["processed_sessions"], 0)
+        self.assertEqual(result["last_session"], FRI.isoformat())
+
     def test_missing_data_voids_after_five_sessions(self):
         p = self.open_one()
         for d in (TUE, WED, THU, FRI):

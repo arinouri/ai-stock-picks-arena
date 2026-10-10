@@ -292,6 +292,13 @@ def score(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = Non
         return {"processed_sessions": 0, "closed": 0, "last_session": last.isoformat()}
 
     start = min((p.last_date and next_trading_day(p.last_date)) or p.first_session for p in positions)
+    # On weekends (and after an already-scored close), every open position may
+    # already be current through ``last``.  Avoid asking providers for an
+    # inverted future range such as Monday..Friday.
+    if start > last:
+        _update_benchmark(db, provider, last)
+        db.commit()
+        return {"processed_sessions": 0, "closed": 0, "last_session": last.isoformat()}
     tickers = sorted({p.ticker for p in positions})
     try:
         bars = provider.daily_bars(tickers, start, last)
