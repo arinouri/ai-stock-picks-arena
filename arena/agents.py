@@ -277,11 +277,33 @@ def run_fly(db: Session, provider: PriceProvider, now: Optional[dt.datetime] = N
                                                                  Position.bucket == "compounder")).all())
     pool = [t for t in FLY_UNIVERSE if t not in held]
     rng.shuffle(pool)
-    try:
-        bars = provider.bars_on(pool[:40], ref)
-    except Exception as e:
-        return {"fly": f"price fetch failed: {e}"}
-    usable = [t for t in pool[:40] if bars.get(t) is not None and bars[t].close > config.MIN_PRICE]
+    # Fetch in small batches. Yahoo sometimes fails large multi-symbol requests;
+    # a failed batch must not prevent the control from making any picks.
+    # Do not scan future data: only the last completed session is eligible.
+    needed = sum(rule["n"] or 0 for rule in config.FLY_RULES.values())
+    needed += max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
+    bars = {}
+    usable = []
+    failed_batches = 0
+    for i in range(0, len(pool), 10):
+        batch = pool[i:i + 10]
+        try:
+            found = provider.bars_on(batch, ref)
+        except Exception:
+            failed_batches += 1
+            continue
+        for ticker in batch:
+            bar = found.get(ticker)
+            if (bar is not None and math.isfinite(bar.close)
+                    and bar.close > config.MIN_PRICE
+                    and bar.volume >= config.MIN_AVG_VOLUME):
+                usable.append(ticker)
+                bars[ticker] = bar
+        if len(usable) >= needed:
+            break
+    if not usable:
+        return {"fly": "no eligible reference prices; retry on next run",
+                "reference_date": ref.isoformat(), "failed_batches": failed_batches}
     plan = []
     for bucket, rule in config.FLY_RULES.items():
         n = rule["n"] if rule["n"] is not None else max(0, config.BUCKETS["compounder"]["max_open"] - comp_open)
