@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-10T13:56:43.746144-04:00",
+ "generated_at": "2026-10-10T15:10:49.175152-04:00",
  "tonight": {
   "run_date": "2026-10-11",
   "session": "2026-10-12",
@@ -367,6 +367,18 @@
   },
   {
    "model": "fly",
+   "total_pnl": 0,
+   "win_rate": null,
+   "positions": 0
+  },
+  {
+   "model": "fly_evo",
+   "total_pnl": 0,
+   "win_rate": null,
+   "positions": 0
+  },
+  {
+   "model": "momentum",
    "total_pnl": 0,
    "win_rate": null,
    "positions": 0
