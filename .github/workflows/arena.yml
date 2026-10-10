@@ -12,6 +12,8 @@ on:
     - cron: "17 20,21,22,23 * * 1-5"
     - cron: "47 20,21,22,23 * * 1-5"
     - cron: "30 13 * * 1-6"
+    # Sunday evening ET is Monday UTC; required for Monday session picks.
+    - cron: "17 1 * * 1"
   workflow_dispatch:
 
 permissions:
