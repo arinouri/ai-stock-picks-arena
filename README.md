@@ -91,3 +91,10 @@ See `prompts/setup-claude.md`, `prompts/setup-chatgpt.md` and `prompts/setup-gro
 - **Prices come from Yahoo Finance via yfinance**, which is unofficial. Swap the provider in `arena/prices.py` if it breaks.
 - **The deadline is enforced by when the Action processes a file**, normally within a minute of the push.
 - **Simulated fills** ignore slippage, spreads and after-hours liquidity.
+
+
+## Reliability and research interpretation
+
+The dashboard includes a system-health panel. It shows the timestamp of the last published export and recent rejected or partially accepted submissions. This is a *diagnostic*, not an uptime guarantee. Inspect [workflow runs](https://github.com/arinouri/ai-stock-picks-arena/actions/workflows/arena.yml) when an expected contestant is absent. Scheduled GitHub Actions can be delayed or skipped.
+
+**Important:** Total P&L is additive across hypothetical $100 trades; it is not a fixed-capital portfolio equity curve. The current price source may omit dividends and has simulated fills. The Learner's copied trades are not independent observations. Read [the research methodology](docs/METHODOLOGY.md) before interpreting rankings as evidence of skill.
