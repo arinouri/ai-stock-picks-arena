@@ -102,6 +102,30 @@ class LearnerTests(unittest.TestCase):
 
 
 class FlyTests(unittest.TestCase):
+    def test_fly_recovers_when_first_quote_batch_fails(self):
+        class FlakyProvider(FakeProvider):
+            calls = 0
+
+            def bars_on(self, tickers, day):
+                self.calls += 1
+                if self.calls == 1:
+                    raise RuntimeError("temporary market-data error")
+                return super().bars_on(tickers, day)
+
+        db = connect("sqlite://")()
+        provider = FlakyProvider()
+        outcome = agents.run_fly(db, provider, at(MON, 22))
+        self.assertEqual(outcome["fly"], "picked")
+        self.assertEqual(outcome["picks"], 15)
+        self.assertGreater(provider.calls, 1)
+
+    def test_fly_does_not_create_empty_submission_when_quotes_missing(self):
+        db = connect("sqlite://")()
+        provider = FakeProvider(missing=set(agents.FLY_UNIVERSE))
+        outcome = agents.run_fly(db, provider, at(MON, 22))
+        self.assertIn("no eligible", outcome["fly"])
+        self.assertEqual(db.query(Submission).filter_by(model_key="fly").count(), 0)
+
     def test_fly_picks_once_per_night(self):
         db = connect("sqlite://")()
         out = agents.run_fly(db, FakeProvider(), at(MON, 22))

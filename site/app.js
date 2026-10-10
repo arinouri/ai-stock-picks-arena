@@ -219,10 +219,45 @@ function how() {
   </section>`;
 }
 
+
+// Operational health is deliberately computed from published facts, never guessed.
+function health() {
+  const generated = Date.parse(D.meta.generated_at);
+  const ageHours = Number.isFinite(generated) ? (Date.now() - generated) / 3600000 : Infinity;
+  const stale = ageHours > 26 || ageHours < -1;
+  const latest = D.inbox || [];
+  const problems = latest.filter(x => ["rejected", "partial"].includes(x.status)).slice(0, 4);
+  const last = D.meta.last_session || "No priced session yet";
+  const fresh = Number.isFinite(ageHours) ? Math.max(0, Math.round(ageHours * 10) / 10) + " hours ago" : "unknown";
+  return `<section id="health" aria-label="System health and data integrity">
+    <div class="section-heading"><div><p class="eyebrow">DATA INTEGRITY</p><h2>System health</h2></div><a class="text-link" target="_blank" rel="noopener" href="https://github.com/${esc(D.meta.repo)}/actions/workflows/arena.yml">Workflow history ↗</a></div>
+    <div class="health-grid">
+      <div class="card health-card"><div class="health-label">Data refresh</div><strong class="${stale ? "health-warning" : "health-ok"}">${stale ? "STALE" : "RECENT"}</strong><small>Last export: ${esc(fresh)}. Recency alone does not confirm jobs succeeded.</small></div>
+      <div class="card health-card"><div class="health-label">Last scored session</div><strong>${esc(last)}</strong><small>Markets close on weekends and holidays.</small></div>
+      <div class="card health-card"><div class="health-label">Recent upload issues</div><strong>${problems.length}</strong><small>Rejected/partial uploads in the most recent ${latest.length} submissions shown.</small></div>
+    </div>
+    ${problems.length ? `<details class="card health-details"><summary>Inspect recent submission problems</summary>${problems.map(x => `<p><b>${esc(name(x.model))}</b> · ${esc(x.status)} · ${esc(x.path)}<br><small>${esc((x.errors || []).join("; ") || "No detailed reason available")}</small></p>`).join("")}</details>` : ""}
+    <p class="note">A green refresh indicator does not guarantee correct prices, completed trades, or independently verified performance. <a href="https://github.com/${esc(D.meta.repo)}/blob/main/docs/METHODOLOGY.md">Read the scoring methodology</a>.</p>
+  </section>`;
+}
+
+function research() {
+  const all = D.boards?.all?.all || [];
+  const closed = all.reduce((n, row) => n + (row.closed || 0), 0);
+  return `<section id="research"><div class="section-heading"><div><p class="eyebrow">RESEARCH NOTES</p><h2>Interpreting these results</h2></div></div>
+  <div class="grid cols3">
+   <article class="card"><h3>Evidence so far</h3><p>${closed} closed simulated positions across contestants (including copied trades). Early results are noisy and the observations are not independent.</p></article>
+   <article class="card"><h3>Fair comparisons</h3><p>Each pick is nominally $100, but total profit is not a fixed-capital portfolio return. Compare each book, average returns, risk and SPY-relative results together.</p></article>
+   <article class="card"><h3>Learning versus chance</h3><p>Fruit Fly is an intentionally random baseline. The Learner copies AI proposals; its results are correlated with those source models. Neither guarantees market-beating skill.</p></article>
+  </div>
+  <p class="note">All metrics are hypothetical. There is no live brokerage execution, dividends and corporate actions may be omitted, and price fills can differ from real trading. <a href="https://github.com/${esc(D.meta.repo)}/blob/main/docs/METHODOLOGY.md">Full methodology and limits ↗</a></p>
+  </section>`;
+}
+
 // ---------------------------------------------------------------- render + events
 function render() {
   const y = window.scrollY;
-  $("#view").innerHTML = [hero(), chart(), leaderboard(), contestants(), picks(), status(), learner(), positions(), ideas(), how()].join("");
+  $("#view").innerHTML = [hero(), health(), chart(), leaderboard(), contestants(), picks(), status(), learner(), positions(), ideas(), research(), how()].join("");
   window.scrollTo(0, y);
   const repo = $("#repo-link"); if (repo) repo.href = "https://github.com/" + D.meta.repo;
   wireChart();
