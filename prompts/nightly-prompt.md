@@ -24,7 +24,8 @@ Don't sell just to make changes, and don't keep holding when the thesis is broke
 
 **4. Research with live web search.**
 Use current information only: today's news, earnings after today's close or before tomorrow's open, FDA and trial dates, deals, analyst actions, investor days, index changes, unusual volume, and after-hours movers.
-Check every fact you rely on against a source from the last few days, and put 1–3 URLs in `sources`.
+Check every fact you rely on against a source from the last few days, record the publication date in your thesis, and put 1–3 direct URLs in `sources`. Prefer company filings, investor-relations releases and exchange notices over summaries.
+For every pick, verify the current price, average trading volume, the timing of the catalyst, and the relevant financial fact (such as reported revenue, guidance or balance-sheet risk). Describe the broad market/sector condition and any after-hours move that could make the planned entry unrealistic.
 Never invent a catalyst. If you can't verify something, don't use it.
 
 **5. Make your picks.**
@@ -37,7 +38,8 @@ Rules:
 - No pump-and-dump micro-caps. Nothing already up 30%+ unless there's a fresh catalyst.
 - `target_price` must be above, and `stop_price` below, today's closing price. Picks that break a rule are voided.
 - Set levels you would actually trade, with at least 1.5 to 1 reward to risk for moonshots and catalyst plays. Keep targets realistic: a +40% target on a one-day trade won't get hit.
-- `confidence` should mean something: say "high" only when the catalyst is confirmed and the setup is clean.
+- State the main fact that would invalidate the thesis. Treat uncertainty explicitly; do not turn missing information into confidence.
+- `confidence` should mean something: say "high" only when the catalyst is confirmed, liquidity is sufficient, financial context is checked, and the setup is clean.
 
 **6. Write one JSON file in exactly this shape.**
 No prose and no markdown fences. Fill in real values and use one object per pick:

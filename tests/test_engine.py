@@ -249,3 +249,6 @@ class ExportTests(EngineBase):
             self.assertEqual(brief["tonight"]["upload_path"], f"inbox/claude/{TUE}.json")
             self.assertEqual(brief["compounder_slots_free"], 4)
             self.assertTrue((Path(tmp) / "data" / "export.csv").read_text().startswith("id,model"))
+            self.assertIn("out_of_sample", dash["evaluation"]["learner"])
+            self.assertIn("portfolios", dash)
+            self.assertIn("health", dash)

@@ -11,6 +11,7 @@ import logging
 import math
 import os
 import random
+import time
 from dataclasses import dataclass
 from typing import Optional
 from zoneinfo import ZoneInfo
@@ -50,6 +51,61 @@ class PriceProvider:
 
     def history(self, tickers: list[str], end: dt.date, calendar_days: int = 40) -> dict[str, dict[dt.date, Bar]]:
         return self.daily_bars(tickers, end - dt.timedelta(days=calendar_days), end)
+
+
+class ResilientProvider(PriceProvider):
+    """Retry partial provider responses and reject impossible OHLC values."""
+
+    def __init__(self, inner: PriceProvider, attempts: int = 3, delay: float = 1.0):
+        self.inner, self.attempts, self.delay = inner, attempts, delay
+        self.name = f"{inner.name}+retry"
+
+    @staticmethod
+    def _valid(bar: Bar) -> bool:
+        values = (bar.open, bar.high, bar.low, bar.close, bar.volume)
+        return (all(math.isfinite(v) for v in values) and min(bar.open, bar.high, bar.low, bar.close) > 0
+                and bar.high >= max(bar.open, bar.close, bar.low)
+                and bar.low <= min(bar.open, bar.close, bar.high) and bar.volume >= 0)
+
+    def daily_bars(self, tickers, start, end):
+        wanted = sorted(set(tickers))
+        out: dict[str, dict[dt.date, Bar]] = {}
+        pending = wanted
+        last_error = None
+        for attempt in range(self.attempts):
+            try:
+                found = self.inner.daily_bars(pending, start, end)
+                for ticker, bars in found.items():
+                    clean = {day: bar for day, bar in bars.items() if start <= day <= end and self._valid(bar)}
+                    if clean:
+                        out.setdefault(ticker, {}).update(clean)
+                pending = [ticker for ticker in wanted if ticker not in out]
+                if not pending:
+                    break
+            except Exception as exc:  # pragma: no cover - exact network failures vary
+                last_error = exc
+                log.warning("%s attempt %s/%s failed: %s", self.inner.name, attempt + 1, self.attempts, exc)
+            if attempt + 1 < self.attempts and self.delay:
+                time.sleep(self.delay * (attempt + 1))
+        if wanted and not out:
+            if last_error is not None:
+                raise last_error
+            raise RuntimeError(f"{self.inner.name} returned no valid bars after {self.attempts} attempts")
+        if pending:
+            log.warning("%s returned no valid bars for %s", self.inner.name, ",".join(pending))
+        return out
+
+    def intraday(self, ticker, day):
+        for attempt in range(self.attempts):
+            try:
+                points = self.inner.intraday(ticker, day)
+                if points:
+                    return points
+            except Exception:
+                pass
+            if attempt + 1 < self.attempts and self.delay:
+                time.sleep(self.delay * (attempt + 1))
+        return []
 
 
 # --------------------------------------------------------------------------- yfinance
@@ -303,11 +359,11 @@ def get_provider(name: Optional[str] = None) -> PriceProvider:
 
     name = (name or config.PRICE_PROVIDER).lower()
     if name == "yfinance":
-        return YFinanceProvider()
+        return ResilientProvider(YFinanceProvider())
     if name == "polygon":
-        return PolygonProvider(config.POLYGON_API_KEY)
+        return ResilientProvider(PolygonProvider(config.POLYGON_API_KEY))
     if name == "alpaca":
-        return AlpacaProvider(config.ALPACA_API_KEY_ID, config.ALPACA_API_SECRET)
+        return ResilientProvider(AlpacaProvider(config.ALPACA_API_KEY_ID, config.ALPACA_API_SECRET))
     if name == "fake":
         return FakeProvider()
     raise ValueError(f"Unknown PRICE_PROVIDER {name!r} (use yfinance, polygon, alpaca or fake)")

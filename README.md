@@ -38,7 +38,7 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
    Every position is compared with the S&P 500 (SPY) over the same days.
 5. **Site.** The static dashboard (`site/`) reads `site/data/` from this repo. The live site serves matching copies of `app.js` and `app.css` from `arinouri/arinouri.ca` under `arena/`, avoiding mutable CDN assets. When changing dashboard code, update those two deployed copies as well; result updates remain automatic. It shows the session winner, standings per book (profit, win rate, average trade, alpha vs SPY, hit and stop rates, booms), tonight's picks and hold/sell calls, open positions, closed trades and an idea board. Every raw upload is published for auditing, and there's a CSV export.
 
-## Two extra contestants
+## Automated contestants and baselines
 
 - **The Learner** (`arena/agents.py`) is a reinforcement learning agent: a Thompson-sampling contextual bandit built on Bayesian linear regression.
   - **What it sees.** Every AI pick is described by 12 features: which AI made it, which book it's in, the AI's stated confidence, upside to target, stop width, reward-to-risk and holding period.
@@ -46,6 +46,12 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
   - **How it picks.** Each night it samples weights from its posterior, so it explores while it's uncertain and exploits once it's confident. It copies up to 5 AI picks it expects to beat the index. Its copies follow the original AI's later sell calls.
   - **Reproducible.** Its state is recomputed from the database on every run.
 - **The Fruit Fly** is the control group. It picks random liquid stocks for the same three books, with fixed exits (moonshots +10%/−5% over 1 day, catalyst plays +12%/−6% over 3 days, compounders +30%/−15% over 60 days). If an AI can't beat the fly, its research isn't adding anything.
+- **Fruit Fly EVO** is an independent contextual bandit. It does not copy AI picks and never changes the original random control. It ranks a liquid universe from price momentum, SPY-relative strength, volatility, volume trend and drawdown known at the reference close. Its stored reward is excess return minus drawdown and trading-cost penalties. Model/data versions, features and exploration seeds are auditable.
+- **Momentum** is a transparent non-AI baseline. It ranks the same eligible universe by trailing 20-session momentum using only data available at the reference close and uses the same fixed exit rules as the flies.
+
+## Fair portfolio accounting
+
+The original $100-per-pick score remains unchanged for historical continuity. A separate fixed-capital simulation gives every contestant $10,000, invests 5% per admitted position, caps exposure at 20 open positions and prevents cash from being spent twice. The dashboard reports portfolio return, SPY-relative return, drawdown, exposure, turnover, costs and statistically gated risk ratios. Missing metrics display as unavailable.
 
 ## Repo layout
 
@@ -53,7 +59,8 @@ Every trading night, three AI models (Claude, ChatGPT and Grok) research the mar
 arena/            Python package
   schema.py         parse + validate a bot's JSON (stdlib only: python3 -m arena.schema FILE)
   engine.py         ingest uploads, open positions, daily exit engine
-  agents.py         the Learner (RL bandit) and the Fruit Fly (random control)
+  agents.py         the Learner, Fruit Fly control and independent Fruit Fly EVO
+  portfolio.py      reproducible $10,000 accounting and risk analytics
   stats.py          leaderboard math (pure functions)
   export.py         static JSON for the site + per-bot briefings
   market_calendar.py NYSE holidays, rule-based (Good Friday, observed dates, …)
@@ -64,6 +71,7 @@ brief/<model>.json what each bot reads before picking (written by the Action)
 prompts/          the nightly prompt and setup for each bot; prompts/ready/ has paste-ready versions
 site/             the dashboard (plain HTML/JS, SVG charts, no build step); site/data/ is written by the Action
 tests/            unit tests: exit rules, validation, stats, calendar, export
+docs/             methodology, architecture, deployment and troubleshooting
 .github/workflows/arena.yml   ingest on push, score after the close, commit results
 ```
 
@@ -91,10 +99,11 @@ See `prompts/setup-claude.md`, `prompts/setup-chatgpt.md` and `prompts/setup-gro
 - **Prices come from Yahoo Finance via yfinance**, which is unofficial. Swap the provider in `arena/prices.py` if it breaks.
 - **The deadline is enforced by when the Action processes a file**, normally within a minute of the push.
 - **Simulated fills** ignore slippage, spreads and after-hours liquidity.
+- **Sector results are intentionally unavailable** until the project stores point-in-time sector classifications without present-day leakage.
 
 
 ## Reliability and research interpretation
 
 The dashboard includes a system-health panel. It shows the timestamp of the last published export and recent rejected or partially accepted submissions. This is a *diagnostic*, not an uptime guarantee. Inspect [workflow runs](https://github.com/arinouri/ai-stock-picks-arena/actions/workflows/arena.yml) when an expected contestant is absent. Scheduled GitHub Actions can be delayed or skipped.
 
-**Important:** Total P&L is additive across hypothetical $100 trades; it is not a fixed-capital portfolio equity curve. The current price source may omit dividends and has simulated fills. The Learner's copied trades are not independent observations. Read [the research methodology](docs/METHODOLOGY.md) before interpreting rankings as evidence of skill.
+**Important:** The trade-level P&L view is additive across hypothetical $100 trades. Use the separate $10,000 fixed-capital view for funded comparisons. The current price source may omit dividends and has simulated fills. The Learner's copied trades are not independent observations. Read [the methodology](docs/METHODOLOGY.md), [architecture](docs/ARCHITECTURE.md), and [operations guide](docs/OPERATIONS.md) before interpreting rankings as evidence of skill.
