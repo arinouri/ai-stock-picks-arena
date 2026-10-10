@@ -13,7 +13,8 @@ on:
     - cron: "47 20,21,22,23 * * 1-5"
     - cron: "30 13 * * 1-6"
     # Sunday evening ET is Monday UTC; required for Monday session picks.
-    - cron: "17 1 * * 1"
+    - cron: "17,47 1 * * 1"
+    - cron: "17 2 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -26,6 +27,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,6 +39,9 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - name: Verify dependency consistency
+        run: pip check
 
       - name: Tests
         run: python -m unittest discover -s tests -t .
