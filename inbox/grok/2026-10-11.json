@@ -1,0 +1,230 @@
+{
+ "model": "grok",
+ "model_version": "Grok Bot",
+ "market_view": "S&P and Nasdaq futures were slightly higher Sunday night (ES ~7,881, NQ ~31,212) with crude down near $90; Monday is Columbus Day with the bond market closed, so volume may be light, and the week's real tests are bank earnings Tuesday and September CPI Wednesday. Monday has no major US earnings, so stock-specific news (Mirum's Phase 3 readout) and day-2 follow-through on Friday's news should drive the biggest moves.",
+ "lessons": [
+  "Real beat-and-raise drift kept working (PENG added another 6.6% on its third session), while a staples beat (PEP) drifted only ~1% before the time exit, so save multi-day drift trades for growth names that raised guidance.",
+  "Compounders bought right after record highs (NVDA, AVGO) slipped 2-3% within two sessions while V, bought off a pullback, gained 3.6%, so add compounders on pullbacks instead of at fresh highs.",
+  "Day-2 follow-through on Friday news has given mild moves in my parallel watchlist, so on day-2 names keep one-session targets near a realistic +5-8% and stops just under the reference close."
+ ],
+ "review": [
+  {
+   "position_id": 51,
+   "ticker": "PENG",
+   "action": "HOLD",
+   "reason": "Post-earnings drift is intact (closed 76.28, +5% from entry) with one session left; raising the stop to breakeven and trimming the target toward Friday's 78.75 high to lock the gain.",
+   "new_stop": 72.5,
+   "new_target": 80.5
+  },
+  {
+   "position_id": 53,
+   "ticker": "BKH",
+   "action": "HOLD",
+   "reason": "The Google Cheyenne data-center agreements are unchanged and the stock is holding just above entry; a soft after-hours print (75.20) is noise, not a broken thesis.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 56,
+   "ticker": "NVDA",
+   "action": "HOLD",
+   "reason": "A 2.6% dip after a record high with no change to the AI-demand story; TSMC's results Thursday are the next read-through.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 57,
+   "ticker": "MSFT",
+   "action": "HOLD",
+   "reason": "Up 0.9% and Azure thesis intact into Oct 28 earnings.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 58,
+   "ticker": "GOOGL",
+   "action": "HOLD",
+   "reason": "Flat since entry with the Cloud backlog thesis intact into Oct 28 results.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 59,
+   "ticker": "AVGO",
+   "action": "HOLD",
+   "reason": "Down 2.7% with the AI semis pullback but no company-specific negative news; the stop at 335 still has room.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 60,
+   "ticker": "V",
+   "action": "HOLD",
+   "reason": "Up 3.6% on steady momentum into late-October earnings; raising the stop to 360 to cut downside.",
+   "new_stop": 360.0,
+   "new_target": null
+  }
+ ],
+ "moonshot": [
+  {
+   "ticker": "MIRM",
+   "thesis": "Mirum announced on Oct 11, 2026 that it will release topline Phase 3 EXPAND results for LIVMARLI in ultra-rare cholestatic liver diseases including biliary atresia on a Monday 8:30 AM ET call; clean data opens a label expansion analysts size near $500M. Reference close 86.01 (Fri +5.7%), 20-day avg volume ~0.88M.",
+   "catalyst_time": "2026-10-12 before open (8:30 AM ET call)",
+   "entry_zone_low": 86.0,
+   "entry_zone_high": 90.0,
+   "target_price": 96.0,
+   "stop_price": 81.5,
+   "confidence": "low",
+   "main_risk": "Binary readout: a missed primary endpoint or messy subgroups could drop it 15-25%; invalidated if EXPAND misses its primary pruritus endpoint. Still unprofitable.",
+   "sources": [
+    "https://www.stocktitan.net/news/MIRM/mirum-pharmaceuticals-to-host-investor-call-to-share-topline-results-cwwgleom41l1.html",
+    "https://ir.mirumpharma.com/news/news-details/2026/Mirum-Pharmaceuticals-Completes-Enrollment-in-Phase-3-EXPAND-Study-of-LIVMARLI-maralixibat-in-Additional-Rare-Cholestatic-Liver-Diseases/default.aspx"
+   ]
+  },
+  {
+   "ticker": "HL",
+   "thesis": "Silver closed back above $60 Friday (Kitco/USAGold, Oct 9, 2026) and Comex silver futures were up another ~1.5% to ~$61.6 Sunday night, which should lift high-beta silver miner Hecla at Monday's open. Reference close 17.07, 20-day avg volume ~39M.",
+   "catalyst_time": "2026-10-11 overnight futures into 2026-10-12 open",
+   "entry_zone_low": 17.0,
+   "entry_zone_high": 17.5,
+   "target_price": 18.2,
+   "stop_price": 16.5,
+   "confidence": "low",
+   "main_risk": "No company-specific news; invalidated if silver futures give back the overnight gain below ~$60.5 before the open, and CPI Wednesday can hit metals.",
+   "sources": [
+    "https://www.kitco.com/news/article/2026-10-09/gold-silver-rebound-dollar-yields-and-oil-ease-kitco-am-report",
+    "https://www.usagold.com/daily-precious-metals-market-report-october-9-2026/"
+   ]
+  },
+  {
+   "ticker": "FSLY",
+   "thesis": "Oppenheimer upgraded Fastly to Outperform with a $35 target on Oct 9, 2026, citing bigger security deals and early monetization of AI-agent traffic; the stock rose 15.9% on ~15M shares (2x average) and held 29.40 after hours, setting up day-2 follow-through. Reference close 29.30, 20-day avg volume ~7.8M.",
+   "catalyst_time": "2026-10-09 upgrade; 2026-10-12 is day 2",
+   "entry_zone_low": 28.8,
+   "entry_zone_high": 30.3,
+   "target_price": 32.0,
+   "stop_price": 27.6,
+   "confidence": "low",
+   "main_risk": "Upgrade-only move with no new financials, and FSLY's ~8.6% ATR means day-2 fades are common; invalidated if it opens and holds below Friday's close.",
+   "sources": [
+    "https://www.investing.com/news/stock-market-news/oppenheimer-upgrades-fastly-to-outperform-with-35-target-on-ai-traffic-4940956",
+    "https://www.tipranks.com/news/the-fly/oppenheimer-upgrades-fastly-on-solid-industry-checks-agentic-ai-opportunity-thefly-news"
+   ]
+  },
+  {
+   "ticker": "SVC",
+   "thesis": "SVC confirmed on Oct 9, 2026 an unsolicited $2.0B all-cash proposal from TKO Hotels for its 93-hotel portfolio, which TKO says exceeds SVC's whole market cap (~$0.93B); the stock rose 15% and traded 7.54 after hours, and any board engagement could push it toward the 20-day high near 7.94 and beyond. Reference close 7.15, 20-day avg volume ~1.5M.",
+   "catalyst_time": "2026-10-09 after close confirmation; 2026-10-12 is day 2",
+   "entry_zone_low": 7.3,
+   "entry_zone_high": 7.7,
+   "target_price": 8.3,
+   "stop_price": 6.95,
+   "confidence": "low",
+   "main_risk": "A proposal only, from a little-known bidder with no named financing; heavy debt and an RMR-managed board that may reject or stall. Invalidated if the board rejects it or financing looks doubtful; an opening gap near 7.5 shrinks the real reward.",
+   "sources": [
+    "https://www.stocktitan.net/news/SVC/service-properties-trust-confirms-receipt-of-unsolicited-proposal-01p1po6wvagl.html",
+    "https://www.prnewswire.com/news-releases/tko-hotels-announces-proposed-2-billion-acquisition-of-service-properties-trusts-hotel-portfolio-302903819.html",
+    "https://www.marketwatch.com/story/service-properties-trust-rises-after-tko-llc-proposes-offer-for-hotels-b959ae48"
+   ]
+  },
+  {
+   "ticker": "QSI",
+   "thesis": "Quantum-Si reported on Oct 8, 2026 (8-K) detection of 19 amino acids on its Proteus platform, with all 20 targeted by year-end and launch planned for Q2 2027; the stock rose 25% Friday on 40.7M shares (5x average) and held 1.54 after hours. Reference close 1.53, 20-day avg volume ~7.5M.",
+   "catalyst_time": "2026-10-08 release; 2026-10-12 is momentum day 2-3",
+   "entry_zone_low": 1.5,
+   "entry_zone_high": 1.62,
+   "target_price": 1.7,
+   "stop_price": 1.42,
+   "confidence": "low",
+   "main_risk": "Pre-revenue, retail-heavy, already about double its 20-day low, and could sell shares into strength; invalidated by a share offering or a red open below 1.50.",
+   "sources": [
+    "https://www.quantum-si.com/press-releases/quantum-si-demonstrates-detection-of-19-amino-acids-in-proteus-development-program/",
+    "https://www.sec.gov/Archives/edgar/data/1816431/000181643126000064/qsi-20261008.htm"
+   ]
+  }
+ ],
+ "catalyst": [
+  {
+   "ticker": "HUM",
+   "thesis": "Humana's Oct 9, 2026 8-K says 95% of its Medicare Advantage members are in 4+ star plans for 2027 (vs 20% for 2026), worth about $160 per member per month in Stars revenue versus its $115 goal, and it affirmed FY26 adjusted EPS of at least $9.00; the stock rose 11.6% to its highest close since Jan 2024 and analysts have yet to fully reprice 2028 earnings. Reference close 431.87 (AH 438.49), 20-day avg volume ~1.3M.",
+   "catalyst_time": "2026-10-09 8-K; analyst revisions 2026-10-12 to 10-14",
+   "entry_zone_low": 428.0,
+   "entry_zone_high": 442.0,
+   "target_price": 466.0,
+   "stop_price": 420.0,
+   "horizon_days": 3,
+   "confidence": "medium",
+   "main_risk": "Humana says part of the 2028 benefit is one-time, and UNH reports Tuesday before the open and can swing the group; invalidated if it loses Friday's 428 low.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/49071/000004907126000057/hum-20261009.htm",
+    "https://www.stocktitan.net/news/HUM/humana-announces-improved-cms-star-ratings-with-95-percent-of-1ue2lkh2lgdj.html",
+    "https://www.cnbc.com/2026/10/09/stocks-making-the-biggest-moves-midday-tmus-vz-t-cci-teva.html"
+   ]
+  },
+  {
+   "ticker": "TEVA",
+   "thesis": "FDA approved Teva's WELTRUZA, the first once-monthly subcutaneous long-acting olanzapine for schizophrenia, on Oct 9, 2026 with launch 'in the coming weeks'; the stock rose 4.7% to a 3-month high on ~15M shares (nearly 3x average), and launch notes plus estimate raises can extend it. Reference close 41.10, 20-day avg volume ~5.3M.",
+   "catalyst_time": "2026-10-09 approval; launch and analyst notes over the next sessions",
+   "entry_zone_low": 40.6,
+   "entry_zone_high": 41.5,
+   "target_price": 43.6,
+   "stop_price": 39.9,
+   "horizon_days": 3,
+   "confidence": "medium",
+   "main_risk": "A large, slow stock where the approval was expected, so it may already be priced in; invalidated by a close back below 40.",
+   "sources": [
+    "https://ir.tevapharm.com/news-and-events/press-releases/press-release-details/2026/Teva-Announces-U-S--Food-and-Drug-Administration-FDA-Approval-of-WELTRUZA-Olanzapine-For-Extended-Release-Injectable-Suspension-as-the-First-and-Only-Once-Monthly-Subcutaneous-Injectable-Olanzapine-for-Adults-with-Schizophrenia/default.aspx",
+    "https://www.cnbc.com/2026/10/09/teva-wins-fda-approval-for-monthly-schizophrenia-injection-weltruza.html"
+   ]
+  },
+  {
+   "ticker": "LITE",
+   "thesis": "Lumentum CEO Michael Hurlston said Oct 9, 2026 its optical components are sold out through early 2029 and it can meet only ~30% of demand for some products next year, implying pricing power and estimate raises; the stock rose 5.2% to a record close with TSMC results Thursday as a further AI read. Reference close 1103.35, 20-day avg volume ~4.7M.",
+   "catalyst_time": "2026-10-09 CEO comments; follow-through 2026-10-12 to 10-13",
+   "entry_zone_low": 1090.0,
+   "entry_zone_high": 1125.0,
+   "target_price": 1185.0,
+   "stop_price": 1058.0,
+   "horizon_days": 2,
+   "confidence": "low",
+   "main_risk": "Already up ~33% off its 20-day low and AI hardware has been choppy; comments are not new guidance. Invalidated if it loses Friday's 1,048-1,060 area.",
+   "sources": [
+    "https://www.investing.com/news/stock-market-news/why-is-lumentum-stock-surging-today-93CH-4940532",
+    "https://markets.businessinsider.com/news/stocks/lumentum-ceo-says-optoelectronics-parts-sold-out-through-2029-bloomberg-says-1036611400"
+   ]
+  },
+  {
+   "ticker": "MRNA",
+   "thesis": "Moderna rose 14.2% to a 52-week high on Oct 9, 2026 as it rejoined the Nasdaq-100 and reports said an NIH-backed public-private cancer-vaccine program is planned for December, where its Merck-partnered Phase 3 melanoma vaccine is the lead mRNA asset; it closed at the day's high and held 225.47 after hours. Reference close 225.00, 20-day avg volume ~17M.",
+   "catalyst_time": "2026-10-09 news; follow-through 2026-10-12 to 10-13",
+   "entry_zone_low": 218.0,
+   "entry_zone_high": 228.0,
+   "target_price": 244.0,
+   "stop_price": 213.0,
+   "horizon_days": 2,
+   "confidence": "low",
+   "main_risk": "Index buying is finished, the stock is ~60% off its 20-day low, and a policy report can be walked back; invalidated if the NIH program is denied or it breaks below 213.",
+   "sources": [
+    "https://www.fool.com/investing/2026/10/09/why-moderna-stock-surged-today/",
+    "https://finance.yahoo.com/markets/stocks/article/moderna-stock-jumps-on-planned-national-cancer-vaccine-effort-161458165.html"
+   ]
+  },
+  {
+   "ticker": "CCI",
+   "thesis": "SpaceX's Oct 8-9, 2026 deal to buy up to 14 MHz of 800 MHz spectrum from Grain Management gives Starlink Mobile 'the outline of a real network' (Evercore), and a new terrestrial carrier needs tower leases; Crown Castle jumped 15.6% Friday on ~14M shares (nearly 4x average) to a 3-month high while carriers sold off. Reference close 79.64, 20-day avg volume ~3.8M.",
+   "catalyst_time": "2026-10-09 deal reaction; analyst tower-lease notes 2026-10-12 to 10-14",
+   "entry_zone_low": 78.8,
+   "entry_zone_high": 80.2,
+   "target_price": 84.0,
+   "stop_price": 77.0,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "Any SpaceX build-out takes years (JPMorgan sees limited near-term impact), and a weaker carrier base is a risk to tower tenants; invalidated if CCI gives back half of Friday's gain (below ~74) or SpaceX signals a satellite-only plan.",
+   "sources": [
+    "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
+    "https://www.cnbc.com/2026/10/09/stocks-making-the-biggest-moves-midday-tmus-vz-t-cci-teva.html"
+   ]
+  }
+ ],
+ "compounder": []
+}
