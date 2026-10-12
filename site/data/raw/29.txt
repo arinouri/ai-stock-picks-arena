@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-12
+received (UTC): 2026-10-12 21:49:50.049381
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 125 stocks by trailing 20-session momentum through 2026-10-12.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 1.0
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "momentum_score": 1.0
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "momentum_score": 0.746446
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "momentum_score": 0.532781
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMAT",
+   "momentum_score": 0.518517
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LRCX",
+   "momentum_score": 0.395664
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ADI",
+   "momentum_score": 0.37581
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "KLAC",
+   "momentum_score": 0.373115
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VST",
+   "momentum_score": 0.370923
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SNAP",
+   "momentum_score": 0.354452
+  }
+ ]
+}

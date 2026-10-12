@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-12
+received (UTC): 2026-10-12 21:49:50.049381
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 6 completed EVO trades. Ranked 126 liquid stocks using only data through 2026-10-12.",
+ "observations": 6,
+ "exploration_seed": 202610130006,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "sampled_score": 0.707654,
+   "expected_reward": -0.181398,
+   "uncertainty": 0.60461
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRVL",
+   "sampled_score": 0.526852,
+   "expected_reward": -0.117367,
+   "uncertainty": 0.425077
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "sampled_score": 0.524235,
+   "expected_reward": -0.194776,
+   "uncertainty": 0.562353
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMD",
+   "sampled_score": 0.426775,
+   "expected_reward": -0.149622,
+   "uncertainty": 0.369436
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "sampled_score": 0.413933,
+   "expected_reward": -0.167223,
+   "uncertainty": 0.431199
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VST",
+   "sampled_score": 0.393147,
+   "expected_reward": -0.081388,
+   "uncertainty": 0.402729
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CEG",
+   "sampled_score": 0.386608,
+   "expected_reward": -0.07363,
+   "uncertainty": 0.41398
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PLTR",
+   "sampled_score": 0.379912,
+   "expected_reward": -0.129984,
+   "uncertainty": 0.439513
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ZS",
+   "sampled_score": 0.365498,
+   "expected_reward": -0.129492,
+   "uncertainty": 0.425476
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMAT",
+   "sampled_score": 0.356292,
+   "expected_reward": -0.144604,
+   "uncertainty": 0.319469
+  }
+ ]
+}
