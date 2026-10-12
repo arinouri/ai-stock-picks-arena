@@ -1,0 +1,50 @@
+model: learner
+file: internal/learner/2026-10-11
+received (UTC): 2026-10-12 01:26:30.465545
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/43-trades",
+ "market_view": "Learned from 43 closed AI trades. Scored 10 picks for 2026-10-12; copying 4 it expects to beat the S&P 500.",
+ "observations": 43,
+ "chosen": [
+  {
+   "source_position_id": 162,
+   "ticker": "HL",
+   "from": "grok",
+   "bucket": "moonshot",
+   "sampled_edge": 0.01175,
+   "expected_edge": -0.02179,
+   "uncertainty": 0.02641
+  },
+  {
+   "source_position_id": 166,
+   "ticker": "HUM",
+   "from": "grok",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00281,
+   "expected_edge": -0.02599,
+   "uncertainty": 0.03259
+  },
+  {
+   "source_position_id": 167,
+   "ticker": "TEVA",
+   "from": "grok",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00218,
+   "expected_edge": -0.01877,
+   "uncertainty": 0.02956
+  },
+  {
+   "source_position_id": 170,
+   "ticker": "CCI",
+   "from": "grok",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00198,
+   "expected_edge": -0.02377,
+   "uncertainty": 0.0269
+  }
+ ],
+ "candidates": 10
+}

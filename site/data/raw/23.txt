@@ -1,0 +1,120 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-11
+received (UTC): 2026-10-12 01:26:30.465545
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 0 completed EVO trades. Ranked 137 liquid stocks using only data through 2026-10-09.",
+ "observations": 0,
+ "exploration_seed": 202610120000,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "TMUS",
+   "sampled_score": 0.276482,
+   "expected_reward": 0.0,
+   "uncertainty": 0.629576
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "VZ",
+   "sampled_score": 0.242663,
+   "expected_reward": 0.0,
+   "uncertainty": 0.62903
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DKNG",
+   "sampled_score": 0.236779,
+   "expected_reward": 0.0,
+   "uncertainty": 0.639781
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HPQ",
+   "sampled_score": 0.231808,
+   "expected_reward": 0.0,
+   "uncertainty": 0.558043
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "T",
+   "sampled_score": 0.213097,
+   "expected_reward": 0.0,
+   "uncertainty": 0.596702
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "FSLR",
+   "sampled_score": 0.2068,
+   "expected_reward": 0.0,
+   "uncertainty": 0.555642
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LCID",
+   "sampled_score": 0.199161,
+   "expected_reward": 0.0,
+   "uncertainty": 0.524608
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ARM",
+   "sampled_score": 0.195457,
+   "expected_reward": 0.0,
+   "uncertainty": 0.622921
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RIVN",
+   "sampled_score": 0.166807,
+   "expected_reward": 0.0,
+   "uncertainty": 0.509435
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SLB",
+   "sampled_score": 0.157331,
+   "expected_reward": 0.0,
+   "uncertainty": 0.507909
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "DE",
+   "sampled_score": 0.156566,
+   "expected_reward": 0.0,
+   "uncertainty": 0.510765
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "GS",
+   "sampled_score": 0.155402,
+   "expected_reward": 0.0,
+   "uncertainty": 0.507924
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "CMG",
+   "sampled_score": 0.152348,
+   "expected_reward": 0.0,
+   "uncertainty": 0.561187
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "BAC",
+   "sampled_score": 0.148042,
+   "expected_reward": 0.0,
+   "uncertainty": 0.511678
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "F",
+   "sampled_score": 0.145863,
+   "expected_reward": 0.0,
+   "uncertainty": 0.506974
+  }
+ ]
+}
