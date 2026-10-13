@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-12.json
 received (UTC): 2026-10-13 01:27:29.721545
-status: partial
+status: superseded
 problems: ["moonshot CCC: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {

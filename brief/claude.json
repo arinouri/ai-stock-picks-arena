@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-12T21:27:31.083578-04:00",
+ "generated_at": "2026-10-12T21:31:24.215074-04:00",
  "tonight": {
   "run_date": "2026-10-12",
   "session": "2026-10-13",
@@ -768,11 +768,9 @@
  ],
  "your_last_upload": {
   "path": "inbox/claude/2026-10-12.json",
-  "status": "partial",
-  "errors": [
-   "moonshot CCC: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
-  ],
-  "received_at": "2026-10-13T01:27:29.721545Z"
+  "status": "ok",
+  "errors": [],
+  "received_at": "2026-10-13T01:31:22.904282Z"
  },
  "example_submission": {
   "model": "claude",
