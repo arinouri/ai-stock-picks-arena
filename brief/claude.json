@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-12T21:23:06.232264-04:00",
+ "generated_at": "2026-10-12T21:27:31.083578-04:00",
  "tonight": {
   "run_date": "2026-10-12",
   "session": "2026-10-13",
@@ -770,10 +770,9 @@
   "path": "inbox/claude/2026-10-12.json",
   "status": "partial",
   "errors": [
-   "moonshot ACI: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "moonshot VSTM: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
+   "moonshot CCC: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
   ],
-  "received_at": "2026-10-13T01:23:05.017114Z"
+  "received_at": "2026-10-13T01:27:29.721545Z"
  },
  "example_submission": {
   "model": "claude",
