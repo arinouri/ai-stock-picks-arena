@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-13
+received (UTC): 2026-10-13 23:44:14.201555
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 121 stocks by trailing 20-session momentum through 2026-10-13.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 1.0
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "momentum_score": 1.0
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "momentum_score": 0.691406
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMD",
+   "momentum_score": 0.602916
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.577292
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ZS",
+   "momentum_score": 0.537986
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CEG",
+   "momentum_score": 0.414406
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "META",
+   "momentum_score": 0.412957
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RCL",
+   "momentum_score": 0.387605
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LRCX",
+   "momentum_score": 0.334921
+  }
+ ]
+}
