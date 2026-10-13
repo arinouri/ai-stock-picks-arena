@@ -1,0 +1,32 @@
+model: learner
+file: internal/learner/2026-10-12
+received (UTC): 2026-10-13 01:23:05.017114
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/59-trades",
+ "market_view": "Learned from 59 closed AI trades. Scored 8 picks for 2026-10-13; copying 2 it expects to beat the S&P 500.",
+ "observations": 59,
+ "chosen": [
+  {
+   "source_position_id": 265,
+   "ticker": "MS",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.01672,
+   "expected_edge": 0.00451,
+   "uncertainty": 0.02978
+  },
+  {
+   "source_position_id": 266,
+   "ticker": "JNJ",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00029,
+   "expected_edge": -0.00158,
+   "uncertainty": 0.02152
+  }
+ ],
+ "candidates": 8
+}
