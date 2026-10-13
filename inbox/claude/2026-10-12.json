@@ -201,18 +201,18 @@
    ]
   },
   {
-   "ticker": "CCC",
-   "thesis": "Bloomberg reported Oct 9 that GTCR and Elliott are in advanced talks to take CCC Intelligent Solutions private, with an announcement possible 'as soon as next week', i.e. this week (Reuters via WMBD, Oct 9). Shares closed $7.59 Oct 12, below the ~$8 after-hours spike on the report, so a signed deal at a typical take-private premium would gap the stock above the target on any morning this week.",
-   "catalyst_time": "Deal announcement possible any day this week (reported Oct 9); one-session hold on 2026-10-13",
-   "entry_zone_low": 7.4,
-   "entry_zone_high": 7.8,
-   "target_price": 8.2,
-   "stop_price": 7.19,
+   "ticker": "ELV",
+   "thesis": "UnitedHealth's Q3 print before the open Oct 13 is the first 2026 read on Medicare Advantage and commercial cost trends, and it moves the whole managed-care group. Elevance closed $422.15 (+2.3%, Benzinga, Oct 12), near its $436.24 high, after recently reaffirming FY26 EPS guidance ahead of investor meetings, so a contained UNH MCR should push the strongest-balance-sheet peer to a new high Tuesday before its own Oct 21 report.",
+   "catalyst_time": "2026-10-13 before open (UNH read-through)",
+   "entry_zone_low": 418.0,
+   "entry_zone_high": 428.0,
+   "target_price": 438.5,
+   "stop_price": 411.5,
    "confidence": "low",
-   "main_risk": "No agreement has been signed; if Tuesday passes without an announcement the stock drifts, and talks could collapse or price below expectations.",
+   "main_risk": "This is a peer read-through, which has had poor results for me; a high UNH MCR would hit ELV just as hard, and ELV already rallied into the print.",
    "sources": [
-    "https://wmbdradio.com/2026/10/09/gtcr-elliott-in-advanced-talks-to-acquire-ccc-intelligent-solutions-bloomberg-news-reports/",
-    "https://investrade.com/market-review-october-12-2026/"
+    "https://benzinga.com/quote/ELV",
+    "https://www.investing.com/news/stock-market-news/unh-earnings-preview-key-metrics-and-estimates-ahead-of-q3-2026-results-93CH-4945004"
    ]
   }
  ],
