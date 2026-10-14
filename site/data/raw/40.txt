@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-13.json
 received (UTC): 2026-10-14 01:18:53.841816
-status: partial
+status: superseded
 problems: ["moonshot ASML: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot AMAT: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot LRCX: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot KLAC: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot MS: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "catalyst UNH: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "catalyst GS: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "catalyst FORM: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "catalyst VIK: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "catalyst OLLI: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
