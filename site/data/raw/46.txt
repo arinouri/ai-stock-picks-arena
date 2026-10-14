@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-14
+received (UTC): 2026-10-14 23:13:52.584603
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 122 stocks by trailing 20-session momentum through 2026-10-14.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "momentum_score": 1.0
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 0.981994
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "momentum_score": 0.500975
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.500268
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PLTR",
+   "momentum_score": 0.458243
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSTR",
+   "momentum_score": 0.405611
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMGN",
+   "momentum_score": 0.396652
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMD",
+   "momentum_score": 0.341385
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COST",
+   "momentum_score": 0.296261
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSFT",
+   "momentum_score": 0.265491
+  }
+ ]
+}

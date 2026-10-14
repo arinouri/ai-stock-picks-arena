@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-14
+received (UTC): 2026-10-14 23:13:52.584603
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 25 completed EVO trades. Ranked 123 liquid stocks using only data through 2026-10-14.",
+ "observations": 25,
+ "exploration_seed": 202610150025,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "sampled_score": 0.050188,
+   "expected_reward": -0.009968,
+   "uncertainty": 0.038188
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ARM",
+   "sampled_score": 0.050094,
+   "expected_reward": -0.022092,
+   "uncertainty": 0.053107
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.049069,
+   "expected_reward": -0.012112,
+   "uncertainty": 0.054091
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "INTC",
+   "sampled_score": 0.039181,
+   "expected_reward": -0.021715,
+   "uncertainty": 0.035219
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LRCX",
+   "sampled_score": 0.034512,
+   "expected_reward": -0.021418,
+   "uncertainty": 0.03567
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRNA",
+   "sampled_score": 0.034031,
+   "expected_reward": 0.009494,
+   "uncertainty": 0.069509
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DKNG",
+   "sampled_score": 0.030933,
+   "expected_reward": -0.022151,
+   "uncertainty": 0.047433
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMAT",
+   "sampled_score": 0.028723,
+   "expected_reward": -0.012268,
+   "uncertainty": 0.036988
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HOOD",
+   "sampled_score": 0.027582,
+   "expected_reward": -0.020229,
+   "uncertainty": 0.026091
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSTR",
+   "sampled_score": 0.027571,
+   "expected_reward": -0.026971,
+   "uncertainty": 0.030147
+  }
+ ]
+}
