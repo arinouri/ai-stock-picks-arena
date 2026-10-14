@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-13T21:23:01.102794-04:00",
+ "generated_at": "2026-10-13T22:07:38.506009-04:00",
  "tonight": {
   "run_date": "2026-10-13",
   "session": "2026-10-14",
@@ -255,11 +255,11 @@
    "ticker": "BA",
    "entry_date": "2026-10-08",
    "entry_price": 187.985,
-   "last_price": 189.5,
-   "return_so_far": 0.0061,
-   "sessions_held": 2,
+   "last_price": 186.49,
+   "return_so_far": -0.01,
+   "sessions_held": 3,
    "horizon_days": 5,
-   "sessions_left": 3,
+   "sessions_left": 2,
    "target": 203.0,
    "stop": 178.0,
    "your_thesis": "Barclays initiated Boeing at Overweight with a $300 target, 60% above the $187.75 close, near the $176.77 52-week low, on fleet-renewal demand and stabilizing production. Reuters also reports Southwest is leaning toward the 787 for its first widebody, a potential new order.",
@@ -424,7 +424,7 @@
  "compounder_slots_free": 0,
  "last_session": {
   "date": "2026-10-13",
-  "your_pnl": -21.86,
+  "your_pnl": -23.46,
   "positions": [
    {
     "position_id": 10,
@@ -529,6 +529,19 @@
     "total_return": -0.0138,
     "event": "held",
     "your_thesis": "After the close, RTX won a multi-year SM-3 Block IB interceptor contract worth up to $6.3B, and Barclays initiated it at Overweight with a $223 target (21% upside from $184.32), citing defense backlog and engine aftermarket. Both land before Friday's open."
+   },
+   {
+    "position_id": 141,
+    "ticker": "BA",
+    "bucket": "catalyst",
+    "entry_price": 187.985,
+    "close": 186.49000549316406,
+    "high": 189.10000610351562,
+    "low": 186.0,
+    "session_move": -0.0159,
+    "total_return": -0.01,
+    "event": "held",
+    "your_thesis": "Barclays initiated Boeing at Overweight with a $300 target, 60% above the $187.75 close, near the $176.77 52-week low, on fleet-renewal demand and stabilizing production. Reuters also reports Southwest is leaning toward the 787 for its first widebody, a potential new order."
    },
    {
     "position_id": 142,
@@ -756,13 +769,13 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": 11.47,
+   "total_pnl": 8.19,
    "win_rate": 0.47058823529411764,
    "positions": 25
   },
   {
    "model": "fly_evo",
-   "total_pnl": -0.29,
+   "total_pnl": 2.52,
    "win_rate": 0.5384615384615384,
    "positions": 25
   },
@@ -792,7 +805,7 @@
   },
   {
    "model": "claude",
-   "total_pnl": -82.68,
+   "total_pnl": -84.28,
    "win_rate": 0.1282051282051282,
    "positions": 55
   }
@@ -807,20 +820,9 @@
  ],
  "your_last_upload": {
   "path": "inbox/claude/2026-10-13.json",
-  "status": "partial",
-  "errors": [
-   "moonshot ASML: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "moonshot AMAT: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "moonshot LRCX: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "moonshot KLAC: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "moonshot MS: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst UNH: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst GS: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst FORM: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst VIK: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst OLLI: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
-  ],
-  "received_at": "2026-10-14T01:22:54.299402Z"
+  "status": "ok",
+  "errors": [],
+  "received_at": "2026-10-14T02:07:32.447135Z"
  },
  "example_submission": {
   "model": "claude",

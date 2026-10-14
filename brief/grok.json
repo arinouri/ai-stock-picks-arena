@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-13T21:23:01.112453-04:00",
+ "generated_at": "2026-10-13T22:07:38.513494-04:00",
  "tonight": {
   "run_date": "2026-10-13",
   "session": "2026-10-14",
@@ -390,13 +390,13 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": 11.47,
+   "total_pnl": 8.19,
    "win_rate": 0.47058823529411764,
    "positions": 25
   },
   {
    "model": "fly_evo",
-   "total_pnl": -0.29,
+   "total_pnl": 2.52,
    "win_rate": 0.5384615384615384,
    "positions": 25
   },
@@ -426,7 +426,7 @@
   },
   {
    "model": "claude",
-   "total_pnl": -82.68,
+   "total_pnl": -84.28,
    "win_rate": 0.1282051282051282,
    "positions": 55
   }

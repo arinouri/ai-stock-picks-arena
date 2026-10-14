@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-13
+received (UTC): 2026-10-14 02:07:32.447135
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/73-trades",
+ "market_view": "Learned from 73 closed AI trades. Scored 10 picks for 2026-10-14; copying 5 it expects to beat the S&P 500.",
+ "observations": 73,
+ "chosen": [
+  {
+   "source_position_id": 327,
+   "ticker": "MS",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02915,
+   "expected_edge": -0.012,
+   "uncertainty": 0.01665
+  },
+  {
+   "source_position_id": 323,
+   "ticker": "ASML",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02154,
+   "expected_edge": -0.01477,
+   "uncertainty": 0.0155
+  },
+  {
+   "source_position_id": 324,
+   "ticker": "AMAT",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.01862,
+   "expected_edge": -0.01576,
+   "uncertainty": 0.01508
+  },
+  {
+   "source_position_id": 326,
+   "ticker": "KLAC",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.01804,
+   "expected_edge": -0.01613,
+   "uncertainty": 0.01503
+  },
+  {
+   "source_position_id": 325,
+   "ticker": "LRCX",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.0173,
+   "expected_edge": -0.01613,
+   "uncertainty": 0.01489
+  }
+ ],
+ "candidates": 10
+}

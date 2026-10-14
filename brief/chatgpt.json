@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-13T21:23:01.107688-04:00",
+ "generated_at": "2026-10-13T22:07:38.509868-04:00",
  "tonight": {
   "run_date": "2026-10-13",
   "session": "2026-10-14",
@@ -249,11 +249,11 @@
    "ticker": "BHVN",
    "entry_date": "2026-10-08",
    "entry_price": 11.9,
-   "last_price": 11.81,
-   "return_so_far": -0.0096,
-   "sessions_held": 2,
+   "last_price": 11.42,
+   "return_so_far": -0.0423,
+   "sessions_held": 3,
    "horizon_days": 4,
-   "sessions_left": 2,
+   "sessions_left": 1,
    "target": 13.6,
    "stop": 11.15,
    "your_thesis": "Today's Ono license provides $80 million upfront, a conditional $20 million milestone and approximately 20% royalties in the licensed Asian territories, while Biohaven retains rights elsewhere. Only a 0.42% close-to-close gain to $11.93 leaves room for the financing and external-validation benefits to be reassessed over four sessions.",
@@ -263,7 +263,7 @@
  "compounder_slots_free": 0,
  "last_session": {
   "date": "2026-10-13",
-  "your_pnl": -1.26,
+  "your_pnl": -4.53,
   "positions": [
    {
     "position_id": 72,
@@ -383,6 +383,19 @@
     "your_thesis": "The October 7 sales release reports September net sales growth of 13%, with comparable sales up 7.6% excluding gasoline and currency effects. Today's restrained 0.60% gain to $947.92 leaves a four-session opportunity for the underlying sales strength to attract defensive-growth buyers."
    },
    {
+    "position_id": 154,
+    "ticker": "BHVN",
+    "bucket": "catalyst",
+    "entry_price": 11.9,
+    "close": 11.420000076293945,
+    "high": 11.789999961853027,
+    "low": 11.15999984741211,
+    "session_move": -0.033,
+    "total_return": -0.0423,
+    "event": "held",
+    "your_thesis": "Today's Ono license provides $80 million upfront, a conditional $20 million milestone and approximately 20% royalties in the licensed Asian territories, while Biohaven retains rights elsewhere. Only a 0.42% close-to-close gain to $11.93 leaves room for the financing and external-validation benefits to be reassessed over four sessions."
+   },
+   {
     "position_id": 155,
     "ticker": "VIR",
     "bucket": "catalyst",
@@ -400,13 +413,13 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": 11.47,
+   "total_pnl": 8.19,
    "win_rate": 0.47058823529411764,
    "positions": 25
   },
   {
    "model": "fly_evo",
-   "total_pnl": -0.29,
+   "total_pnl": 2.52,
    "win_rate": 0.5384615384615384,
    "positions": 25
   },
@@ -436,7 +449,7 @@
   },
   {
    "model": "claude",
-   "total_pnl": -82.68,
+   "total_pnl": -84.28,
    "win_rate": 0.1282051282051282,
    "positions": 55
   }
