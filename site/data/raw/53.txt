@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-15
+received (UTC): 2026-10-15 23:04:39.102751
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 37 completed EVO trades. Ranked 124 liquid stocks using only data through 2026-10-15.",
+ "observations": 37,
+ "exploration_seed": 202610160037,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "AMAT",
+   "sampled_score": 0.027626,
+   "expected_reward": 0.008841,
+   "uncertainty": 0.034348
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LRCX",
+   "sampled_score": 0.012355,
+   "expected_reward": 0.002971,
+   "uncertainty": 0.029407
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.010072,
+   "expected_reward": 0.003673,
+   "uncertainty": 0.028208
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "KLAC",
+   "sampled_score": 0.006957,
+   "expected_reward": -0.011084,
+   "uncertainty": 0.026972
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "INTC",
+   "sampled_score": 0.005566,
+   "expected_reward": 0.008131,
+   "uncertainty": 0.029516
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ARM",
+   "sampled_score": 0.005447,
+   "expected_reward": 0.011769,
+   "uncertainty": 0.036537
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RKLB",
+   "sampled_score": -0.000578,
+   "expected_reward": -0.000332,
+   "uncertainty": 0.028503
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UNH",
+   "sampled_score": -0.001145,
+   "expected_reward": -0.044671,
+   "uncertainty": 0.038175
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CAT",
+   "sampled_score": -0.002016,
+   "expected_reward": -0.019883,
+   "uncertainty": 0.026791
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SHOP",
+   "sampled_score": -0.003776,
+   "expected_reward": -0.035383,
+   "uncertainty": 0.036068
+  }
+ ]
+}
