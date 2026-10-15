@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-14T19:30:00.601714-04:00",
+ "generated_at": "2026-10-14T21:05:11.882636-04:00",
  "tonight": {
   "run_date": "2026-10-14",
   "session": "2026-10-15",
@@ -338,7 +338,7 @@
   },
   {
    "model": "fly",
-   "total_pnl": -34.38,
+   "total_pnl": -32.77,
    "win_rate": 0.3181818181818182,
    "positions": 35
   },
@@ -356,9 +356,9 @@
   },
   {
    "model": "claude",
-   "total_pnl": -101.2,
-   "win_rate": 0.1,
-   "positions": 64
+   "total_pnl": -97.4,
+   "win_rate": 0.09803921568627451,
+   "positions": 65
   },
   {
    "model": "momentum",
