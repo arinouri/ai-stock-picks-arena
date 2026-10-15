@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-14.json
 received (UTC): 2026-10-15 01:05:03.635207
-status: partial
+status: superseded
 problems: ["catalyst MRNA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {

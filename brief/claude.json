@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-14T21:05:11.879685-04:00",
+ "generated_at": "2026-10-14T21:08:49.935951-04:00",
  "tonight": {
   "run_date": "2026-10-14",
   "session": "2026-10-15",
@@ -781,9 +781,9 @@
   "path": "inbox/claude/2026-10-14.json",
   "status": "partial",
   "errors": [
-   "catalyst MRNA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
+   "review: position 226 is not one of your open positions"
   ],
-  "received_at": "2026-10-15T01:05:03.635207Z"
+  "received_at": "2026-10-15T01:08:46.883751Z"
  },
  "example_submission": {
   "model": "claude",
