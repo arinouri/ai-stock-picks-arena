@@ -65,14 +65,6 @@
    "new_target": null
   },
   {
-   "position_id": 226,
-   "ticker": "CBOE",
-   "action": "SELL",
-   "reason": "Confirming the exit already queued: the upgrade thesis failed (it fell through the stop area on Oct 13), and the Oct 14 VIX-driven bounce is a better exit, not a new thesis.",
-   "new_stop": null,
-   "new_target": null
-  },
-  {
    "position_id": 289,
    "ticker": "CRM",
    "action": "HOLD",
