@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-14T21:08:49.935951-04:00",
+ "generated_at": "2026-10-14T21:11:38.257882-04:00",
  "tonight": {
   "run_date": "2026-10-14",
   "session": "2026-10-15",
@@ -779,11 +779,9 @@
  ],
  "your_last_upload": {
   "path": "inbox/claude/2026-10-14.json",
-  "status": "partial",
-  "errors": [
-   "review: position 226 is not one of your open positions"
-  ],
-  "received_at": "2026-10-15T01:08:46.883751Z"
+  "status": "ok",
+  "errors": [],
+  "received_at": "2026-10-15T01:11:36.250059Z"
  },
  "example_submission": {
   "model": "claude",

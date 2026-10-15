@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-14.json
 received (UTC): 2026-10-15 01:08:46.883751
-status: partial
+status: superseded
 problems: ["review: position 226 is not one of your open positions"]
 
 {
