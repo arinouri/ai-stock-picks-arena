@@ -233,22 +233,6 @@
    ]
   },
   {
-   "ticker": "MRNA",
-   "thesis": "Phase 3 INTerpath-001 (intismeran, an individualized cancer vaccine, with Keytruda in adjuvant melanoma) is a late-breaker in an ESMO Presidential Symposium on Oct 24, the first full Phase 3 data for an mRNA cancer therapy (Moderna PR Sep 21; Merck PR Oct 13). The stock has risen from $197 (Oct 8) to $226.30 and closed at its high on a risk-off day, a classic run-up into a marquee readout.",
-   "catalyst_time": "Run-up into ESMO presentation 2026-10-24 10:30 ET",
-   "entry_zone_low": 220.0,
-   "entry_zone_high": 230.0,
-   "target_price": 245.0,
-   "stop_price": 214.0,
-   "horizon_days": 5,
-   "confidence": "low",
-   "main_risk": "It's already up ~15% in a week, so profit-taking before the event or a leak of the abstract could reverse it, and the volatility is high.",
-   "sources": [
-    "https://www.biospace.com/press-releases/moderna-announces-late-breaking-data-to-be-presented-at-esmo-congress-2026",
-    "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/"
-   ]
-  },
-  {
    "ticker": "AMD",
    "thesis": "AMD's MI-series GPUs are built on TSMC N3/N2, and AMD has said compute demand is outrunning supply. A strong TSMC print and Q4 guide at 2am ET Oct 15 should support a multi-day rebound after the 4% semis drop on Oct 14 left AMD at $570.82.",
    "catalyst_time": "2026-10-15 02:00 ET (TSMC results) and the following sessions",
@@ -278,6 +262,22 @@
    "sources": [
     "https://www.marketscholars.com/market-outlook-october-14-2026/",
     "https://www.hudson-labs.com/research/tsmc-q3-2026-earnings-preview-tsm-revenue-and-margins"
+   ]
+  },
+  {
+   "ticker": "RTX",
+   "thesis": "RTX reports Q3 on Oct 20 (company release Sep 29), inside a 4-session hold. It rose 0.6% to $186.47 on Oct 14 while the S&P fell 1.1%, and defense drew fresh Street support that day (Vertical Research upgraded Lockheed to Buy), on top of RTX's recent up-to-$6.3B SM-3 Block IB award and Barclays' Overweight/$223 initiation. Relative strength plus a scheduled print favors a pre-earnings run-up.",
+   "catalyst_time": "Run-up into Q3 results 2026-10-20 before the open",
+   "entry_zone_low": 184.5,
+   "entry_zone_high": 189.0,
+   "target_price": 196.0,
+   "stop_price": 180.3,
+   "horizon_days": 4,
+   "confidence": "low",
+   "main_risk": "Holding through the Oct 20 print adds gap risk: a margin or engine-aftermarket miss could gap it through the stop. Defense could also lag if money rotates back into tech.",
+   "sources": [
+    "https://www.rtx.com/news/news-center/2026/09/29/rtx-to-release-third-quarter-earnings-results-on-october-20-2026",
+    "https://dailytradealert.com/2026/10/14/analyst-upgrades-and-downgrades-for-wednesday-10-14/"
    ]
   }
  ],
