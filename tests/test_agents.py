@@ -227,3 +227,34 @@ class MirrorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PlaybookTests(unittest.TestCase):
+    def test_playbook_and_updates(self):
+        import tempfile
+        from pathlib import Path
+
+        from arena import playbook
+
+        db = connect("sqlite://")()
+        t = LearnerTests()
+        t.db = db
+        for m, r in (("grok", 0.05), ("claude", -0.04)):
+            t.add_closed(m, "catalyst", r, 3, d(2026, 9, 21))
+        sub = Submission(model_key="grok", path="x", sha="s", run_date=d(2026, 9, 20), ref_date=d(2026, 9, 18),
+                         target_date=d(2026, 9, 21), status="ok", raw="", lessons=["Earnings gaps fade by noon"])
+        db.add(sub)
+        db.commit()
+        positions = db.query(Position).all()
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "updates").mkdir()
+            (Path(tmp) / "updates" / "ALL.md").write_text("Watch oil.")
+            (Path(tmp) / "updates" / "grok.md").write_text("Only for Grok.")
+            (Path(tmp) / "updates" / "README.md").write_text("ignore me")
+            pb = playbook.build(positions, db.query(Submission).all(), root=Path(tmp), key="claude")
+        self.assertEqual(pb["closed_trades_total"], 6)
+        self.assertGreater(pb["by_model"]["grok"]["avg_return"], pb["by_model"]["claude"]["avg_return"])
+        self.assertFalse(pb["by_model"]["grok"]["reliable"])  # 3 trades is noise
+        self.assertEqual(pb["peer_lessons"][0]["lessons"], ["Earnings gaps fade by noon"])
+        self.assertEqual([u["text"] for u in pb["operator_updates"]], ["Watch oil."])  # not grok's, not the README
+        self.assertIn("Recent winners", playbook.to_markdown(pb))

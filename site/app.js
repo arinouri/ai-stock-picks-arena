@@ -226,6 +226,26 @@ function evo() {
   return `<section id="evo"><h2>Fruit Fly EVO learning lab</h2><p class="sub">EVO is separate from the random control. It independently ranks liquid stocks using price momentum, SPY-relative strength, volatility, volume and drawdown available at decision time. Completed trades provide clipped, risk-adjusted rewards—not emotions.</p><div class="learning-grid"><article class="card"><div class="learning-kpis"><div><span>Model</span><b>${esc(E.version)}</b></div><div><span>Observations</span><b>${E.observations}</b></div><div><span>Cumulative reward</span><b class="${cls(E.cumulative_reward)}">${pct(E.cumulative_reward)}</b></div></div><p class="mut">Reward: ${esc(E.reward)}. Data version: ${esc(E.data_version)}.</p>${bars}</article><article class="card"><h3>Recent reward signals</h3>${E.recent?.length ? E.recent.slice(0, 10).map((e) => `<div class="reward-row"><span><b>${esc(e.ticker)}</b><small>${dateFmt(e.date)} · ${esc(BOOKS[e.bucket] || e.bucket)}</small></span><b class="${cls(e.reward)}">${pct(e.reward)}</b></div>`).join("") : '<p class="mut">No EVO trade has closed yet. The prior remains deliberately uncertain; increased cumulative reward alone will not be treated as proof of skill.</p>'}</article></div></section>`;
 }
 
+function playbook() {
+  const P = D.playbook;
+  if (!P) return "";
+  const rowsFor = (title, obj, labelFn) => Object.entries(obj || {}).filter(([, v]) => v.n).map(([k, v]) =>
+    `<tr><td class="l">${esc(title)}: ${esc(labelFn ? labelFn(k) : k)}</td><td>${v.n}</td><td class="${cls(v.avg_return)}">${pct(v.avg_return)}</td><td>${v.win_rate == null ? "-" : Math.round(v.win_rate * 100) + "%"}</td><td>${v.reliable ? "Yes" : '<span class="mut">Too few</span>'}</td></tr>`).join("");
+  const ex = (e) => `<div class="pick"><div class="top"><span class="tk">${esc(e.ticker)}</span><span class="pill">${esc(name(e.model))}</span><span class="pill">${esc(e.confidence)} confidence</span><span class="lv ${cls(e.return)}"><b>${pct(e.return)}</b></span></div><p>${esc(e.thesis)}</p></div>`;
+  return `<section id="playbook"><h2>Shared playbook: how the AIs learn from each other</h2>
+    <p class="sub">Every night each AI reads this before it picks: what its rivals learned, which picks worked or failed and why, and what the evidence says so far. It is rebuilt after every scoring run and saved in the repo as <code>playbook/PLAYBOOK.md</code>. With ${P.closed_trades_total} closed AI trades so far, anything marked "Too few" is a hunch, not a finding.</p>
+    <div class="tablewrap"><table><thead><tr><th class="l">Group</th><th>Trades</th><th>Avg return</th><th>Win rate</th><th>Enough data?</th></tr></thead><tbody>
+      ${rowsFor("AI", P.by_model, name)}${rowsFor("Book", P.by_book, (k) => BOOKS[k] || k)}${rowsFor("Confidence", P.by_confidence)}${rowsFor("Stop", P.by_stop_width)}
+      ${rowsFor("Baseline", P.baselines, name) || ""}</tbody></table></div>
+    <div class="ideas" style="margin-top:12px">
+      <div class="card"><h3>Recent winners</h3>${(P.recent_winners || []).map(ex).join("") || '<p class="mut">None yet.</p>'}</div>
+      <div class="card"><h3>Recent losers</h3>${(P.recent_losers || []).map(ex).join("") || '<p class="mut">None yet.</p>'}</div>
+    </div>
+    <div class="ideas" style="margin-top:12px">${(P.peer_lessons || []).slice(0, 6).map((l) => `<div class="card" style="border-top:4px solid ${color(l.model)}"><h3>${esc(name(l.model))} <span class="mut" style="font-weight:400">told the others · ${dateFmt(l.night)}</span></h3><ul>${l.lessons.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}</div>
+    ${(P.operator_updates || []).length ? `<p class="note"><b>Standing orders from the owner right now:</b> ${P.operator_updates.map((u) => esc(u.file)).join(", ")} (drop a file in the repo's <code>updates/</code> folder to change what every AI does tomorrow).</p>` : ""}
+  </section>`;
+}
+
 function ideas() {
   if (!D.ideas?.length) return "";
   return `<section id="ideas"><h2>What the AIs say they learned</h2><p class="sub">Each night the AIs write down lessons from their results. This is the idea board.</p>
@@ -292,7 +312,7 @@ function evaluation() {
 // ---------------------------------------------------------------- render + events
 function render() {
   const y = window.scrollY;
-  $("#view").innerHTML = [hero(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), ideas(), research(), how()].join("");
+  $("#view").innerHTML = [hero(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), playbook(), ideas(), research(), how()].join("");
   window.scrollTo(0, y);
   const repo = $("#repo-link"); if (repo) repo.href = "https://github.com/" + D.meta.repo;
   wireChart();

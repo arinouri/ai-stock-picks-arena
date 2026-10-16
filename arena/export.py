@@ -18,6 +18,7 @@ from .engine import ACTIVE, ET, last_closed_session, now_et
 from .evaluation import evaluate
 from .market_calendar import next_trading_day, session_plan, should_run_picks_tonight
 from .portfolio import simulate_all
+from . import playbook as playbook_mod
 from .stats import Day, Trade, board, session_summary
 
 EXAMPLE_SUBMISSION = {
@@ -202,6 +203,7 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
         "benchmark": [{"date": _d(b.date), "close": b.close} for b in bench_rows[-260:]],
         "contestants": contestant_status(subs, keys, now),
         "learner": _learner_state(db),
+        "playbook": playbook_mod.build(positions, subs, root=config.ROOT),
         "fly_evo": _evo_state(db),
         "portfolios": portfolios,
         "health": _health(positions, subs, bench_rows, now),
@@ -217,8 +219,13 @@ def export_site(db: Session, site_dir: Optional[Path] = None, now: Optional[dt.d
                           for p in sorted(positions, key=lambda p: p.id, reverse=True) if p.model_key == k]})
         if k not in config.AI_MODELS:
             continue
-        brief = briefing(k, models[k], positions, last_review, mine, boards, days, last_session, next_night, bench_last)
+        brief = briefing(k, models[k], positions, last_review, mine, boards, days, last_session, next_night, bench_last,
+                         all_subs=subs)
         _write(data / "brief" / f"{k}.json", brief)
+        if brief_dir is not None and k == config.AI_MODELS[0]:
+            pdir = brief_dir.parent / "playbook"
+            pdir.mkdir(parents=True, exist_ok=True)
+            (pdir / "PLAYBOOK.md").write_text(playbook_mod.to_markdown(brief["shared_playbook"]), encoding="utf-8")
         if brief_dir is not None:  # also committed to the repo so git-based bots can read it after a pull
             brief_dir.mkdir(parents=True, exist_ok=True)
             (brief_dir / f"{k}.json").write_text(json.dumps(brief, indent=1, default=str), encoding="utf-8")
@@ -326,7 +333,8 @@ def _health(positions, subs, benchmarks, now) -> dict:
     }
 
 
-def briefing(key, model, positions, last_review, subs, boards, days, last_session, next_night, bench_last) -> dict:
+def briefing(key, model, positions, last_review, subs, boards, days, last_session, next_night, bench_last,
+             all_subs=None) -> dict:
     mine_open = [p for p in positions if p.model_key == key and p.status == "open"]
     comp_open = sum(1 for p in mine_open if p.bucket == "compounder")
     last_sub = subs[-1] if subs else None
@@ -371,6 +379,7 @@ def briefing(key, model, positions, last_review, subs, boards, days, last_sessio
         "scoreboard": [{"model": r["model"], "total_pnl": r["total_pnl"], "win_rate": r["win_rate"],
                         "positions": r["positions"]} for r in boards["all"]["all"]],
         "your_recent_lessons": recent_lessons[:6],
+        "shared_playbook": playbook_mod.build(positions, all_subs if all_subs is not None else subs, root=config.ROOT, key=key),
         "your_last_upload": None if last_sub is None else {
             "path": last_sub.path, "status": last_sub.status, "errors": last_sub.errors or [],
             "received_at": last_sub.received_at.isoformat() + "Z"},
