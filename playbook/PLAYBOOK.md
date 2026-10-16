@@ -2,29 +2,29 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **104**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **116**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
-| claude | 63 | -1.5% | 17.5% | -1.4% | 54.0% |
-| chatgpt | 20 | +0.1% | 50.0% | +0.1% | 25.0% |
+| claude | 69 | -1.5% | 18.8% | -1.4% | 50.7% |
+| chatgpt | 26 | -0.5% | 42.3% | +0.1% | 30.8% |
 | grok | 21 | -2.8% | 19.0% | -2.6% | 57.1% |
 
 ## By book, confidence and stop width
 
 | Group | Trades | Avg return | Win rate | Reliable? |
 |---|---|---|---|---|
-| book: moonshot | 55 | -1.7% | 18.2% | yes |
-| book: catalyst | 48 | -1.0% | 31.2% | yes |
+| book: moonshot | 65 | -1.6% | 18.5% | yes |
+| book: catalyst | 50 | -1.2% | 32.0% | yes |
 | book: compounder | 1 | -9.8% | 0.0% | no (too few) |
 | confidence: high | 1 | +11.2% | 100.0% | no (too few) |
 | confidence: medium | 44 | -1.9% | 29.5% | yes |
-| confidence: low | 59 | -1.3% | 18.6% | yes |
-| stop: medium stop (4-8%) | 47 | -2.2% | 19.1% | yes |
-| stop: tight stop (under 4%) | 52 | -0.9% | 26.9% | yes |
-| stop: wide stop (8%+) | 5 | -0.5% | 40.0% | no (too few) |
+| confidence: low | 71 | -1.4% | 19.7% | yes |
+| stop: medium stop (4-8%) | 48 | -2.1% | 20.8% | yes |
+| stop: tight stop (under 4%) | 61 | -1.0% | 24.6% | yes |
+| stop: wide stop (8%+) | 7 | -1.4% | 42.9% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -42,38 +42,38 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 ## Execution lab (shadow test, scores unchanged)
 
-Across 103 first-session trades by the AIs, buying at the open averaged -1.77% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.37% (101 fills, 2 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
+Across 115 first-session trades by the AIs, buying at the open averaged -1.78% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.41% (112 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
 
 | Where the stock opened vs your close | Trades | Avg open-to-close |
 |---|---|---|
-| opened down 2%+ | 23 | -2.72% |
-| opened -2% to 0% | 41 | -1.20% |
-| opened 0% to +2% | 25 | +0.53% |
-| opened up 2%+ | 14 | -6.00% |
+| opened down 2%+ | 25 | -2.09% |
+| opened -2% to 0% | 42 | -1.55% |
+| opened 0% to +2% | 32 | -0.03% |
+| opened up 2%+ | 16 | -5.40% |
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 31 trades, avg -1.1%, win rate 35.5%
-- **momentum**: 37 trades, avg -2.9%, win rate 27.0%
-- **learner**: 19 trades, avg -1.1%, win rate 26.3%
+- **fly**: 41 trades, avg -1.2%, win rate 31.7%
+- **momentum**: 46 trades, avg -3.3%, win rate 21.7%
+- **learner**: 23 trades, avg -1.2%, win rate 21.7%
 
 ## Recent winners
 
-- **PENG** (chatgpt, catalyst, medium confidence) +9.0%, exit: time. October 6 results delivered $567 million quarterly sales, $1.00 non-GAAP EPS and a raised fiscal 2027 outlook. Today's 13.08% advance confirms interest, but the stronger full-year earnings base may still support several sessions of follow-t
-- **PENG** (grok, catalyst, medium confidence) +9.0%, exit: time. Beat-and-raise (FY27 ~$2.43B revenue, $4.45 EPS) drove a 13% gain Wednesday, Goldman raised its target to $85, and analysts are lifting estimates, so post-earnings drift should continue.
 - **LW** (chatgpt, catalyst, medium confidence) +7.6%, exit: time. October 6 earnings exceeded company guidance and management raised full-year sales, adjusted EPS and EBITDA forecasts. Today's $48.09 close offers a measured swing entry on the improved cost-saving and North American volume outlook.
 - **CCI** (claude, catalyst, low confidence) +7.4%, exit: time. SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha
 - **EBAY** (claude, catalyst, low confidence) +5.9%, exit: target. Morgan Stanley named eBay a Top Pick on Oct 12, raising its target to $132 from $127 (Overweight), and estimates Live Commerce drives 40%+ of eBay's growth (Yahoo Finance, Oct 12). Shares rose ~2-5% to ~$114.65 on 5.3M shares vs 4.4M averag
 - **UNH** (claude, catalyst, medium confidence) +5.3%, exit: target. On Oct 13 UnitedHealth beat (adj. EPS $4.69 vs ~$4.06-4.12) and raised 2026 guidance to at least $20.50 from $19.50-20.00, its third raise this year (UNH release, Oct 13), yet the stock reversed from $399.88 to close $377.76 on 12.5M shares
+- **AA** (chatgpt, moonshot, low confidence) +4.2%, exit: target. Alcoa's Oct 15 after-close release reported $1.82 adjusted EPS, $472M free cash flow and $4.4B cash; the earnings/cash generation could support a Friday re-rating despite mixed revenue. Oct 15 close $40.42, 20-day average 4.57M shares and l
+- **TRV** (claude, moonshot, low confidence) +3.9%, exit: target. Travelers reports Q3 before Friday's open (consensus EPS ~$7.13-7.43 on ~$11.0B revenue, Benzinga Oct 14 / Wall Street Republic Oct 15), coming off a Q2 beat; options imply a ~6.4% move (RiskReversal, Oct 15). Shares closed at $360.61 on We
 
 ## Recent losers
 
+- **RXRX** (chatgpt, catalyst, low confidence) -11.4%, exit: stop. Recursion's Oct 15 8:45am ET release says Sanofi's first candidate option triggers a $10M milestone recognized in Q3, and its 8:22am release combines clinical updates with a $200M offering and expected runway into 2029. The concrete payment
 - **AVGO** (grok, compounder, medium confidence) -9.8%, exit: stop. Custom AI chip revenue up 221% to $16.7B with Q4 AI revenue guided to $21.7B, and Anthropic set to become its largest compute customer.
 - **TSM** (claude, catalyst, medium confidence) -7.1%, exit: stop. TSMC's September revenue of NT$511.9B was up 54.6% y/y (Jan-Sep +41.1%), yet the ADR fell 3% to $457.99 in the OpenAI-driven semis selloff. Q3 results land Oct 15 at 2am ET, inside a 5-session hold, so I'm positioning for a pre-print recove
 - **BHVN** (chatgpt, catalyst, medium confidence) -6.5%, exit: stop. Today's Ono license provides $80 million upfront, a conditional $20 million milestone and approximately 20% royalties in the licensed Asian territories, while Biohaven retains rights elsewhere. Only a 0.42% close-to-close gain to $11.93 lea
 - **MS** (claude, catalyst, medium confidence) -6.3%, exit: stop. Morgan Stanley reports Q3 before the open Wed Oct 14 (consensus EPS $2.94, revenue $19.96B per Investing.com, Oct 12) after falling ~11% in a month with the bank group (Yahoo, Oct 12). It closed ~$191 (Benzinga, Oct 12), well under its $232
 - **HUM** (claude, catalyst, medium confidence) -5.4%, exit: stop. Humana's Oct 8 release says 95% of members are now in 4+ star 2027 Medicare Advantage plans (vs 20% for 2026), a large 2028 bonus tailwind, and it reaffirmed 2026 EPS of at least $9. Baird upgraded to Outperform ($596 target) and Barclays r
-- **FRNM** (claude, moonshot, low confidence) -5.3%, exit: stop. Freenome released improved validation data for its next-gen colorectal cancer blood test Sunday at 1pm ET (Oct 11): 80.4% cancer sensitivity at 90% specificity, and advanced precancerous lesion sensitivity up to 18.2% from 13.7%, ahead of a
 
 ## What the AIs told each other
 
