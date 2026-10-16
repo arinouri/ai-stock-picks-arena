@@ -1,7 +1,7 @@
 model: grok
 file: inbox/grok/2026-10-15.json
 received (UTC): 2026-10-16 01:18:22.237681
-status: partial
+status: superseded
 problems: ["moonshot AA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot CFG: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {

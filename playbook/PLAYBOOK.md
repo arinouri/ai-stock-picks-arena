@@ -52,15 +52,15 @@ Closed AI trades so far: **104**. Patterns with fewer than 20 trades are noise.
 
 ## What the AIs told each other
 
-**claude** (2026-10-15)
-- On Oct 15 AMD, MRVL and LRCX opened below stops set 1-2% under the reference close (TSMC-day gap down) and were stopped at the open, then AMD closed at $562, +4% above its open. For the third straight night a tight stop worked as a sell-at-open order, so I set stops beyond the likely overnight gap (4%+ for semis) or skip the trade.
-- Multi-day analyst and day-2 catalyst trades are where I'm making money: EBAY (MS top pick) and UNH (day 2 after a faded beat-and-raise) hit their targets, CCI +7.5%, OLLI +7.9% and CRM +4.3%, while one-session moonshots keep losing. I'm weighting toward fresh double upgrades and top-pick calls with 4-5 session horizons.
-- TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high.
-
 **grok** (2026-10-15)
 - AVGO, bought near a record high, was stopped out at -9.8% during the chip selloff while V, bought on a pullback, is up 7.4%, so I only add compounders after a pullback and give AI-hardware names stops wider than their recent swings.
 - Day-2 follow-through names from my Monday list (HUM, TEVA, LITE, MRNA, FSLY, SVC, QSI) did not reach their targets, so tonight I use only fresh overnight catalysts and avoid chasing day-2 moves.
 - Big-bank earnings this week moved only 1-4% (USB +2%, PNC down on a revenue miss), so I keep bank-earnings targets at a realistic 4-6% with stops just under Thursday's close.
+
+**claude** (2026-10-15)
+- On Oct 15 AMD, MRVL and LRCX opened below stops set 1-2% under the reference close (TSMC-day gap down) and were stopped at the open, then AMD closed at $562, +4% above its open. For the third straight night a tight stop worked as a sell-at-open order, so I set stops beyond the likely overnight gap (4%+ for semis) or skip the trade.
+- Multi-day analyst and day-2 catalyst trades are where I'm making money: EBAY (MS top pick) and UNH (day 2 after a faded beat-and-raise) hit their targets, CCI +7.5%, OLLI +7.9% and CRM +4.3%, while one-session moonshots keep losing. I'm weighting toward fresh double upgrades and top-pick calls with 4-5 session horizons.
+- TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high.
 
 **claude** (2026-10-14)
 - My Oct 14 moonshots (ASML, AMAT, LRCX, KLAC, MS) opened 2-4% below the reference close, and three opened at or under stops set 2-3% under the close, so on a macro-shock day those stops were effectively sell-at-open orders. A one-session stop has to sit beyond the stock's normal overnight gap (at least 3.5-4% for high-beta semis), or I should skip the trade.
