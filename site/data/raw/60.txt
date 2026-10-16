@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-15.json
 received (UTC): 2026-10-16 01:23:40.469984
-status: partial
+status: superseded
 problems: ["moonshot NOW: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot CRWV: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
