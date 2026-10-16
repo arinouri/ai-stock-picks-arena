@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-15
+received (UTC): 2026-10-16 01:19:25.921393
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/104-trades",
+ "market_view": "Learned from 104 closed AI trades. Scored 16 picks for 2026-10-16; copying 5 it expects to beat the S&P 500.",
+ "observations": 104,
+ "chosen": [
+  {
+   "source_position_id": 443,
+   "ticker": "BAC",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00713,
+   "expected_edge": -0.00134,
+   "uncertainty": 0.01498
+  },
+  {
+   "source_position_id": 444,
+   "ticker": "SCHW",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00679,
+   "expected_edge": -0.00227,
+   "uncertainty": 0.01492
+  },
+  {
+   "source_position_id": 442,
+   "ticker": "WMT",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.00532,
+   "expected_edge": 0.00025,
+   "uncertainty": 0.01522
+  },
+  {
+   "source_position_id": 440,
+   "ticker": "CROX",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.00367,
+   "expected_edge": -0.01243,
+   "uncertainty": 0.01263
+  },
+  {
+   "source_position_id": 438,
+   "ticker": "TFC",
+   "from": "claude",
+   "bucket": "moonshot",
+   "sampled_edge": 0.00248,
+   "expected_edge": -0.01229,
+   "uncertainty": 0.01187
+  }
+ ],
+ "candidates": 16
+}
