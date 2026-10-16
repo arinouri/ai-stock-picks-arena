@@ -8,32 +8,263 @@
     "TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high."
   ],
   "review": [
-    {"position_id": 11, "ticker": "NVDA", "action": "HOLD", "reason": "Down 1.8% to $217.23 on the AI-hardware rotation and CoreWeave credit worries rather than company news; TSMC's record Q3 and ~$54B Q4 guide still support demand, and I'm leaving the $212 stop in place rather than widening it.", "new_stop": null, "new_target": null},
-    {"position_id": 12, "ticker": "GOOGL", "action": "HOLD", "reason": "Up 0.5% to $349.22 as communication services rose 1.5%; no negative news and well above the $318 stop.", "new_stop": null, "new_target": null},
-    {"position_id": 13, "ticker": "MSFT", "action": "HOLD", "reason": "Up 1.1% to $539.44 as enterprise software rallied; Oct 28 earnings remain the catalyst.", "new_stop": null, "new_target": null},
-    {"position_id": 14, "ticker": "AMZN", "action": "HOLD", "reason": "Up 0.3% to $254.76 as consumer discretionary led (+1.7%); the thesis is unchanged.", "new_stop": null, "new_target": null},
-    {"position_id": 15, "ticker": "LLY", "action": "HOLD", "reason": "Up 3.6% to $1,251.61 as health care opened at a record; raising the stop to $1,195 to lock in about +3% ahead of Oct 29 earnings.", "new_stop": 1195.0, "new_target": null},
-    {"position_id": 289, "ticker": "CRM", "action": "HOLD", "reason": "Up 4.6% to $246.74 as enterprise software rallied after ServiceNow denied Decagon M&A interest; one session left, so I'm raising the stop to $238 (under Thursday's $238.07 low) to protect the gain.", "new_stop": 238.0, "new_target": null},
-    {"position_id": 290, "ticker": "TMUS", "action": "HOLD", "reason": "Reached $163.16 then faded to $157.03; the rebound thesis is intact, but I'm pulling the target to $161.50 and raising the stop to $153.50 for the last two sessions.", "new_stop": 153.5, "new_target": 161.5},
-    {"position_id": 331, "ticker": "VIK", "action": "HOLD", "reason": "Up 1.7% to $83.98 as consumer discretionary led; raising the stop to $80 to protect the Barclays-upgrade gain.", "new_stop": 80.0, "new_target": null},
-    {"position_id": 332, "ticker": "OLLI", "action": "HOLD", "reason": "Up 2.6% to $95.56, near the $96.50 target, with retail strong (XRT +3%); raising the stop to $91 to lock in most of the +8%.", "new_stop": 91.0, "new_target": null},
-    {"position_id": 373, "ticker": "QCOM", "action": "HOLD", "reason": "Up 5.4% to $178.40 against a falling semis tape after the Arm verdict; raising the stop to $171 to lock in a gain while targeting $184.", "new_stop": 171.0, "new_target": null},
-    {"position_id": 374, "ticker": "MRK", "action": "HOLD", "reason": "Fell 3% to $145.19 on a strong health-care day with no new company news I could verify, which is relative weakness; still above the $141.50 stop, and the ESMO Presidential Symposium data (Oct 23-27) stays the draw.", "new_stop": null, "new_target": null},
-    {"position_id": 377, "ticker": "RTX", "action": "HOLD", "reason": "Down 1.6% to $186.95 as money rotated into consumer and health care; no negative news, Oct 20 earnings are inside the hold, and the $180.30 stop is intact.", "new_stop": null, "new_target": null}
+    {
+      "position_id": 11,
+      "ticker": "NVDA",
+      "action": "HOLD",
+      "reason": "Down 1.8% to $217.23 on the AI-hardware rotation and CoreWeave credit worries rather than company news; TSMC's record Q3 and ~$54B Q4 guide still support demand, and I'm leaving the $212 stop in place rather than widening it.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 12,
+      "ticker": "GOOGL",
+      "action": "HOLD",
+      "reason": "Up 0.5% to $349.22 as communication services rose 1.5%; no negative news and well above the $318 stop.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 13,
+      "ticker": "MSFT",
+      "action": "HOLD",
+      "reason": "Up 1.1% to $539.44 as enterprise software rallied; Oct 28 earnings remain the catalyst.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 14,
+      "ticker": "AMZN",
+      "action": "HOLD",
+      "reason": "Up 0.3% to $254.76 as consumer discretionary led (+1.7%); the thesis is unchanged.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 15,
+      "ticker": "LLY",
+      "action": "HOLD",
+      "reason": "Up 3.6% to $1,251.61 as health care opened at a record; raising the stop to $1,195 to lock in about +3% ahead of Oct 29 earnings.",
+      "new_stop": 1195.0,
+      "new_target": null
+    },
+    {
+      "position_id": 289,
+      "ticker": "CRM",
+      "action": "HOLD",
+      "reason": "Up 4.6% to $246.74 as enterprise software rallied after ServiceNow denied Decagon M&A interest; one session left, so I'm raising the stop to $238 (under Thursday's $238.07 low) to protect the gain.",
+      "new_stop": 238.0,
+      "new_target": null
+    },
+    {
+      "position_id": 290,
+      "ticker": "TMUS",
+      "action": "HOLD",
+      "reason": "Reached $163.16 then faded to $157.03; the rebound thesis is intact, but I'm pulling the target to $161.50 and raising the stop to $153.50 for the last two sessions.",
+      "new_stop": 153.5,
+      "new_target": 161.5
+    },
+    {
+      "position_id": 331,
+      "ticker": "VIK",
+      "action": "HOLD",
+      "reason": "Up 1.7% to $83.98 as consumer discretionary led; raising the stop to $80 to protect the Barclays-upgrade gain.",
+      "new_stop": 80.0,
+      "new_target": null
+    },
+    {
+      "position_id": 332,
+      "ticker": "OLLI",
+      "action": "HOLD",
+      "reason": "Up 2.6% to $95.56, near the $96.50 target, with retail strong (XRT +3%); raising the stop to $91 to lock in most of the +8%.",
+      "new_stop": 91.0,
+      "new_target": null
+    },
+    {
+      "position_id": 373,
+      "ticker": "QCOM",
+      "action": "HOLD",
+      "reason": "Up 5.4% to $178.40 against a falling semis tape after the Arm verdict; raising the stop to $171 to lock in a gain while targeting $184.",
+      "new_stop": 171.0,
+      "new_target": null
+    },
+    {
+      "position_id": 374,
+      "ticker": "MRK",
+      "action": "HOLD",
+      "reason": "Fell 3% to $145.19 on a strong health-care day with no new company news I could verify, which is relative weakness; still above the $141.50 stop, and the ESMO Presidential Symposium data (Oct 23-27) stays the draw.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 377,
+      "ticker": "RTX",
+      "action": "HOLD",
+      "reason": "Down 1.6% to $186.95 as money rotated into consumer and health care; no negative news, Oct 20 earnings are inside the hold, and the $180.30 stop is intact.",
+      "new_stop": null,
+      "new_target": null
+    }
   ],
   "moonshot": [
-    {"ticker": "AA", "thesis": "After Thursday's close Alcoa beat Q3 with adj. EPS $1.82 vs $1.51 consensus (MarketBeat, Oct 15); revenue was $3.70B vs $3.77B, FCF $472M, and 2026 shipment guidance was reaffirmed (BusinessWire, Oct 15). Shares were $40.81 after hours from a $40.42 close, and the ASX-listed CDIs rose ~4% on Oct 16 (Discovery Alert, Oct 16). That's a relief rally setup in a stock 52% below its $84.38 high.", "catalyst_time": "2026-10-15 after close (Q3 print); 2026-10-16 open", "entry_zone_low": 40.6, "entry_zone_high": 42.2, "target_price": 43.8, "stop_price": 38.9, "confidence": "low", "main_risk": "Revenue missed, Q4 Aluminum carries ~$30M of cost headwinds, and LME aluminium is near a nine-month low, so the pop could fade like other beats this week.", "sources": ["https://www.marketbeat.com/instant-alerts/earnings-alcoa-nyse-aa-posts-earnings-results-beats-estimates-by-031-eps-2026-10-15/", "https://www.financialcontent.com/article/bizwire-2026-10-15-alcoa-corporation-reports-third-quarter-2026-results", "https://discoveryalert.com/news/alcoa-q3-2026-results-earnings-october-2026/"]},
-    {"ticker": "CFG", "thesis": "Citizens reports Q3 before Friday's open (consensus ~$1.39 EPS, Kiplinger), after closing up 1.4% at $63.43 and trading $63.87 after hours (StockAnalysis, Oct 15). The stock is ~16% under its $75.33 52-week high, and financials bounced 1.4% on Thursday as yields fell, so a clean NII/fee beat can re-rate it.", "catalyst_time": "2026-10-16 before open", "entry_zone_low": 62.8, "entry_zone_high": 64.6, "target_price": 66.6, "stop_price": 61.4, "confidence": "low", "main_risk": "Bank beats this week (GS, MS, C, SCHW) gapped up and then faded on the day, and credit costs or soft NII guidance would hit a regional bank harder.", "sources": ["https://stockanalysis.com/stocks/CFG/", "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks"]},
-    {"ticker": "TFC", "thesis": "Truist reports Q3 before Friday's open (consensus ~$1.07 EPS, $5.36B revenue, Benzinga, Oct 14). Options imply a ~7.7% move (RiskReversal, Oct 15), and the stock closed ~$46.56 (+2.2%, 12.6M shares vs 7.3M average), 17% under its $56.20 high after a string of target cuts, which sets a low bar.", "catalyst_time": "2026-10-16 before open", "entry_zone_low": 46.0, "entry_zone_high": 47.6, "target_price": 49.3, "stop_price": 45.0, "confidence": "low", "main_risk": "The bank gap-and-fade pattern, plus a weaker NII or expense outlook; quote sources disagree slightly on Thursday's close ($46.56-47.03).", "sources": ["https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62240758/truist-financial-likely-to-report-higher-q3-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call", "https://riskreversal.substack.com/p/stocks-shake-off-morning-sell-off", "https://www.benzinga.com/quote/TFC"]},
-    {"ticker": "QNT", "thesis": "On Oct 15 Morgan Stanley upgraded Quantinuum to Overweight and named it its top quantum pick with a $62 target (Benzinga/Investing.com, Oct 15), citing its technology lead and the lowest multiple of 2030 revenue among pure plays. The stock rose 11% to $36.68 on 5.9M shares vs 1.7M average (Benzinga quote, Oct 15), off a post-IPO slide from $86.79, and day-2 follow-through is the bet. The catalyst came out Thursday morning, not tonight, so this is a momentum continuation.", "catalyst_time": "2026-10-15 premarket (MS upgrade); day-2 follow-through 2026-10-16", "entry_zone_low": 36.0, "entry_zone_high": 38.0, "target_price": 40.0, "stop_price": 34.5, "confidence": "low", "main_risk": "A recent IPO with no earnings and quantum names that swing 10%+ a day; Nasdaq futures are lower and a fade back toward $33 is plausible.", "sources": ["https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62378574/this-walmart-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday", "https://www.investing.com/news/stock-market-news/why-is-quantinuum-stock-rallying-today-93CH-4951510", "https://benzinga.com/quote/qnt"]},
-    {"ticker": "CROX", "thesis": "Barclays upgraded Crocs to Overweight on Oct 15 and raised its target to $139 from $118, saying it is entering 'a more durable growth cycle' (StockStory, Oct 15). Shares closed +6.1% at $124.73, 11.6% under the $141.19 August high, and short interest is 10.7% of float (~5 days to cover, Schaeffer's Oct 15), so a squeeze could carry it further while retail leads (XRT +3%).", "catalyst_time": "2026-10-15 upgrade; day-2 follow-through 2026-10-16", "entry_zone_low": 123.5, "entry_zone_high": 127.0, "target_price": 131.5, "stop_price": 120.3, "confidence": "low", "main_risk": "The upgrade is already partly priced after +6%, there's no new event Friday, and a red tape at the open could fade it.", "sources": ["https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-why-crocs-crox-stock-is-up-today", "https://www.schaeffersresearch.com/content/news/2026/10/15/crocs-stock-steps-up-after-barclays-upgrade"]}
+    {
+      "ticker": "TFC",
+      "thesis": "Truist reports Q3 before Friday's open (consensus ~$1.07 EPS, $5.36B revenue, Benzinga, Oct 14). Options imply a ~7.7% move (RiskReversal, Oct 15), and the stock closed ~$46.56 (+2.2%, 12.6M shares vs 7.3M average), 17% under its $56.20 high after a string of target cuts, which sets a low bar.",
+      "catalyst_time": "2026-10-16 before open",
+      "entry_zone_low": 46.0,
+      "entry_zone_high": 47.6,
+      "target_price": 49.3,
+      "stop_price": 45.0,
+      "confidence": "low",
+      "main_risk": "The bank gap-and-fade pattern, plus a weaker NII or expense outlook; quote sources disagree slightly on Thursday's close ($46.56-47.03).",
+      "sources": [
+        "https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62240758/truist-financial-likely-to-report-higher-q3-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
+        "https://riskreversal.substack.com/p/stocks-shake-off-morning-sell-off",
+        "https://www.benzinga.com/quote/TFC"
+      ]
+    },
+    {
+      "ticker": "CROX",
+      "thesis": "Barclays upgraded Crocs to Overweight on Oct 15 and raised its target to $139 from $118, saying it is entering 'a more durable growth cycle' (StockStory, Oct 15). Shares closed +6.1% at $124.73, 11.6% under the $141.19 August high, and short interest is 10.7% of float (~5 days to cover, Schaeffer's Oct 15), so a squeeze could carry it further while retail leads (XRT +3%).",
+      "catalyst_time": "2026-10-15 upgrade; day-2 follow-through 2026-10-16",
+      "entry_zone_low": 123.5,
+      "entry_zone_high": 127.0,
+      "target_price": 131.5,
+      "stop_price": 120.3,
+      "confidence": "low",
+      "main_risk": "The upgrade is already partly priced after +6%, there's no new event Friday, and a red tape at the open could fade it.",
+      "sources": [
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-why-crocs-crox-stock-is-up-today",
+        "https://www.schaeffersresearch.com/content/news/2026/10/15/crocs-stock-steps-up-after-barclays-upgrade"
+      ]
+    },
+    {
+      "ticker": "TRV",
+      "thesis": "Travelers reports Q3 before Friday's open (consensus EPS ~$7.13-7.43 on ~$11.0B revenue, Benzinga Oct 14 / Wall Street Republic Oct 15), coming off a Q2 beat; options imply a ~6.4% move (RiskReversal, Oct 15). Shares closed at $360.61 on Wednesday, ~10% under the $398.70 high, and financials rallied 1.4% Thursday as yields fell. A benign hurricane-season cat load is the upside surprise.",
+      "catalyst_time": "2026-10-16 before open",
+      "entry_zone_low": 355.0,
+      "entry_zone_high": 370.0,
+      "target_price": 385.0,
+      "stop_price": 348.0,
+      "confidence": "low",
+      "main_risk": "Q3 catastrophe losses or reserve charges, or softening commercial pricing; I couldn't confirm Thursday's exact close, so levels are set to work across a $355-370 close.",
+      "sources": [
+        "https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62240307/top-wall-street-forecasters-revamp-travelers-expectations-ahead-of-q3-earnings",
+        "https://riskreversal.substack.com/p/stocks-shake-off-morning-sell-off",
+        "https://thewallstreetrepublic.substack.com/p/apple-and-meta-unveil-an-ai-partnership"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "thesis": "ServiceNow rose 6.2% to $148.62 on 17.6M shares (Benzinga quote, Oct 15) after management denied any interest in buying Decagon and said it prioritizes organic growth (24/7 Wall St, Oct 15), leading a rotation into enterprise software as AI-disruption fears ease. It's still ~23% under its $192.97 high ahead of Oct 28 earnings, so day-2 follow-through is the bet. The news came out Thursday, not tonight.",
+      "catalyst_time": "2026-10-15 Decagon denial; day-2 follow-through 2026-10-16",
+      "entry_zone_low": 146.5,
+      "entry_zone_high": 151.0,
+      "target_price": 155.5,
+      "stop_price": 144.0,
+      "confidence": "low",
+      "main_risk": "Nasdaq futures are lower overnight and the bounce could fade; a denial removes a negative but adds no revenue.",
+      "sources": [
+        "https://247wallst.com/investing/2026/10/15/servicenow-climbs-5-after-denying-decagon-acquisition-interest-salesforce-rises-4-palantir-dips/",
+        "https://www.benzinga.com/quote/NOW"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "thesis": "CoreWeave reversed from a ~9.5% morning drop to close +5.9% at $69.69 (Yahoo Finance live, Oct 15) after Jensen Huang pushed back on fears that Nvidia would need to backstop it, following a ~15% slide Wednesday. It's the highest-beta AI-infrastructure name, and a second day of short covering after a reversal is the bet; there's no scheduled catalyst tonight.",
+      "catalyst_time": "2026-10-15 intraday reversal; follow-through 2026-10-16",
+      "entry_zone_low": 66.5,
+      "entry_zone_high": 71.0,
+      "target_price": 76.0,
+      "stop_price": 65.5,
+      "confidence": "low",
+      "main_risk": "Credit stress is real: CDS imply ~60% five-year default odds, the company has a $4.0B accumulated deficit, and it was ~$67.96 (-2.5%) overnight, so it could open near the stop.",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-rise-nasdaq-trims-losses-as-treasury-yields-sink-153611834.html",
+        "https://ts2.tech/en/dow-jumps-1-1-russell-2000-rises-1-4-as-broad-rotation-beats-tech/"
+      ]
+    }
   ],
   "catalyst": [
-    {"ticker": "KMX", "thesis": "BofA double-upgraded CarMax on Oct 15 from Underperform to Buy and raised its target to $65 from $50, saying FTC all-in price enforcement leaves it 'the most price-competitive it has been in years' (used comps +13% vs industry -2%) and flagging the Nov 3 strategy update (StockStory, Oct 15). Shares closed +5.6% at $52.62 (StockAnalysis), ~19% under the $65.28 high. This is the same capitulating-bear setup as my CRM trade.", "catalyst_time": "2026-10-15 upgrade; Nov 3 strategy update", "entry_zone_low": 51.8, "entry_zone_high": 53.5, "target_price": 57.0, "stop_price": 49.8, "horizon_days": 5, "confidence": "medium", "main_risk": "Used-car pricing or credit (CarMax Auto Finance) losses deteriorate, or the bounce fades as one more upgrade gets sold.", "sources": ["https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-carmax-kmx-stock-trades-up-here-is-why", "https://stockanalysis.com/stocks/kmx/"]},
-    {"ticker": "WMT", "thesis": "Deutsche Bank upgraded Walmart on Oct 15 from Hold to Buy and raised its target to $136 from $113, citing persistent inflation (PPI +1.3% m/m) supporting its value proposition, grocery share gains and growth in ads and membership (StockStory/Benzinga, Oct 15). Shares rose ~2.5% to ~$118.6, 12% under the $134.20 May high, and staples are leading October (XLP +9%).", "catalyst_time": "2026-10-15 upgrade", "entry_zone_low": 117.5, "entry_zone_high": 120.0, "target_price": 124.5, "stop_price": 115.0, "horizon_days": 5, "confidence": "medium", "main_risk": "Staples are already up ~9% this month, so a rotation back into tech or rising yields could stall it.", "sources": ["https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-why-walmart-wmt-stock-is-up-today", "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62378574/this-walmart-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday"]},
-    {"ticker": "BAC", "thesis": "Bank of America faded after its Oct 14 print. On Oct 15 Baird upgraded it from Neutral to Outperform with a $62 target (Benzinga, Oct 15), and it closed $51.70, 20% under that target. Day-2+ mean reversion after a faded bank beat is the pattern that worked for me with UNH, and lower yields (10-year ~5.10%) help.", "catalyst_time": "2026-10-15 upgrade; day 2-3 after Oct 14 earnings", "entry_zone_low": 51.0, "entry_zone_high": 52.3, "target_price": 54.3, "stop_price": 50.1, "horizon_days": 5, "confidence": "medium", "main_risk": "Banks have sold every beat this week; a rebound in yields or a credit scare stalls it.", "sources": ["https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62378574/this-walmart-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday"]},
-    {"ticker": "SCHW", "thesis": "Schwab posted record Q3 results on Oct 15: adj. EPS $1.69 vs $1.66, record revenue $7.17B (+17%, a hair under $7.19B), record core net new assets of $190.4B (Benzinga/Quartz, Oct 15). The stock still fell 2.7% to $94.16 (Wall Street Republic, Oct 15). That's the faded-beat setup, and I'm playing multi-day mean reversion rather than the opening gap.", "catalyst_time": "2026-10-15 premarket earnings; day 2+ reversion", "entry_zone_low": 93.0, "entry_zone_high": 95.5, "target_price": 99.0, "stop_price": 91.0, "horizon_days": 5, "confidence": "medium", "main_risk": "Lower rates squeeze sweep-cash margins and NII, which may be why the beat was sold; the selling could continue.", "sources": ["https://www.benzinga.com/markets/market-summary/26/10/62393651/crude-oil-moves-higher-charles-schwab-shares-fall-after-q3-results", "https://qz.com/charles-schwab-record-revenue-net-new-assets-earnings-101526", "https://thewallstreetrepublic.substack.com/p/apple-and-meta-unveil-an-ai-partnership"]},
-    {"ticker": "REGN", "thesis": "UBS upgraded Regeneron on Oct 15 from Neutral to Buy and lifted its target 48% to $978 from $660 on next-gen Dupixent potential (MarketBeat/ORTEX, Oct 15), the first formal upgrade in the recent run. Shares rose ~2.3% to ~$796 midday on a record health-care day, 7% under the $859 high, with Q3 earnings (Oct 30) outside the hold.", "catalyst_time": "2026-10-15 upgrade", "entry_zone_low": 785.0, "entry_zone_high": 805.0, "target_price": 850.0, "stop_price": 765.0, "horizon_days": 5, "confidence": "medium", "main_risk": "Health care is extended after a record day and could give back ground if rotation reverses; I couldn't confirm Thursday's exact close.", "sources": ["https://www.marketbeat.com/instant-alerts/analyst-regeneron-pharmaceuticals-nasdaq-regn-upgraded-at-ubs-group-2026-10-15/", "https://ortex.news/articles/189676/ubs-upgrades-regn-to-buy-as-shorts-retreat-before-earnings"]}
+    {
+      "ticker": "KMX",
+      "thesis": "BofA double-upgraded CarMax on Oct 15 from Underperform to Buy and raised its target to $65 from $50, saying FTC all-in price enforcement leaves it 'the most price-competitive it has been in years' (used comps +13% vs industry -2%) and flagging the Nov 3 strategy update (StockStory, Oct 15). Shares closed +5.6% at $52.62 (StockAnalysis), ~19% under the $65.28 high. This is the same capitulating-bear setup as my CRM trade.",
+      "catalyst_time": "2026-10-15 upgrade; Nov 3 strategy update",
+      "entry_zone_low": 51.8,
+      "entry_zone_high": 53.5,
+      "target_price": 57.0,
+      "stop_price": 49.8,
+      "horizon_days": 5,
+      "confidence": "medium",
+      "main_risk": "Used-car pricing or credit (CarMax Auto Finance) losses deteriorate, or the bounce fades as one more upgrade gets sold.",
+      "sources": [
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-carmax-kmx-stock-trades-up-here-is-why",
+        "https://stockanalysis.com/stocks/kmx/"
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "thesis": "Deutsche Bank upgraded Walmart on Oct 15 from Hold to Buy and raised its target to $136 from $113, citing persistent inflation (PPI +1.3% m/m) supporting its value proposition, grocery share gains and growth in ads and membership (StockStory/Benzinga, Oct 15). Shares rose ~2.5% to ~$118.6, 12% under the $134.20 May high, and staples are leading October (XLP +9%).",
+      "catalyst_time": "2026-10-15 upgrade",
+      "entry_zone_low": 117.5,
+      "entry_zone_high": 120.0,
+      "target_price": 124.5,
+      "stop_price": 115.0,
+      "horizon_days": 5,
+      "confidence": "medium",
+      "main_risk": "Staples are already up ~9% this month, so a rotation back into tech or rising yields could stall it.",
+      "sources": [
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-15-why-walmart-wmt-stock-is-up-today",
+        "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62378574/this-walmart-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday"
+      ]
+    },
+    {
+      "ticker": "BAC",
+      "thesis": "Bank of America faded after its Oct 14 print. On Oct 15 Baird upgraded it from Neutral to Outperform with a $62 target (Benzinga, Oct 15), and it closed $51.70, 20% under that target. Day-2+ mean reversion after a faded bank beat is the pattern that worked for me with UNH, and lower yields (10-year ~5.10%) help.",
+      "catalyst_time": "2026-10-15 upgrade; day 2-3 after Oct 14 earnings",
+      "entry_zone_low": 51.0,
+      "entry_zone_high": 52.3,
+      "target_price": 54.3,
+      "stop_price": 50.1,
+      "horizon_days": 5,
+      "confidence": "medium",
+      "main_risk": "Banks have sold every beat this week; a rebound in yields or a credit scare stalls it.",
+      "sources": [
+        "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62378574/this-walmart-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday"
+      ]
+    },
+    {
+      "ticker": "SCHW",
+      "thesis": "Schwab posted record Q3 results on Oct 15: adj. EPS $1.69 vs $1.66, record revenue $7.17B (+17%, a hair under $7.19B), record core net new assets of $190.4B (Benzinga/Quartz, Oct 15). The stock still fell 2.7% to $94.16 (Wall Street Republic, Oct 15). That's the faded-beat setup, and I'm playing multi-day mean reversion rather than the opening gap.",
+      "catalyst_time": "2026-10-15 premarket earnings; day 2+ reversion",
+      "entry_zone_low": 93.0,
+      "entry_zone_high": 95.5,
+      "target_price": 99.0,
+      "stop_price": 91.0,
+      "horizon_days": 5,
+      "confidence": "medium",
+      "main_risk": "Lower rates squeeze sweep-cash margins and NII, which may be why the beat was sold; the selling could continue.",
+      "sources": [
+        "https://www.benzinga.com/markets/market-summary/26/10/62393651/crude-oil-moves-higher-charles-schwab-shares-fall-after-q3-results",
+        "https://qz.com/charles-schwab-record-revenue-net-new-assets-earnings-101526",
+        "https://thewallstreetrepublic.substack.com/p/apple-and-meta-unveil-an-ai-partnership"
+      ]
+    },
+    {
+      "ticker": "REGN",
+      "thesis": "UBS upgraded Regeneron on Oct 15 from Neutral to Buy and lifted its target 48% to $978 from $660 on next-gen Dupixent potential (MarketBeat/ORTEX, Oct 15), the first formal upgrade in the recent run. Shares rose ~2.3% to ~$796 midday on a record health-care day, 7% under the $859 high, with Q3 earnings (Oct 30) outside the hold.",
+      "catalyst_time": "2026-10-15 upgrade",
+      "entry_zone_low": 785.0,
+      "entry_zone_high": 805.0,
+      "target_price": 850.0,
+      "stop_price": 765.0,
+      "horizon_days": 5,
+      "confidence": "medium",
+      "main_risk": "Health care is extended after a record day and could give back ground if rotation reverses; I couldn't confirm Thursday's exact close.",
+      "sources": [
+        "https://www.marketbeat.com/instant-alerts/analyst-regeneron-pharmaceuticals-nasdaq-regn-upgraded-at-ubs-group-2026-10-15/",
+        "https://ortex.news/articles/189676/ubs-upgrades-regn-to-buy-as-shorts-retreat-before-earnings"
+      ]
+    }
   ],
   "compounder": []
 }
