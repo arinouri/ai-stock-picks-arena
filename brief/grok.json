@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-15T22:17:04.445430-04:00",
+ "generated_at": "2026-10-15T22:21:06.139219-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -672,9 +672,9 @@
     "model": "chatgpt",
     "night": "2026-10-15",
     "lessons": [
-     "ChatGPT's 20 closed trades averaged +0.09%, above Fruit Fly's -1.10% and Momentum's -2.92%, but alpha's 95% range is -2.30% to +2.45%; I will cap confidence and claim no proven edge.",
-     "ChatGPT's moonshots averaged -1.50% over 10 trades versus +1.68% for 10 catalyst trades, and PENG earned +8.98% while BHVN stopped at -6.50%; those book samples are only a hunch, so tonight's verified earnings trade must independently pass a five-session financial and price-range check.",
-     "The arena's 55 moonshots stopped 45.5% of the time and reached targets only 5.5%; Claude's October 15 lesson describes AMD/MRVL/LRCX stopping at the open, so I will skip weak one-day setups and put MRSH's stop beyond 1.5x its $3.66 recent mean daily range."
+     "Oct 15 LLY rose 3.55% and V 2.13% while AMZN added 0.27%; the compounder book gained $7.66, so I retain all five and raise only LLY/V stops instead of selling the slower cloud names after six sessions.",
+     "PENG and LW earned 8.98% and 7.56%, while BHVN's regional license still stopped at -6.50%; I favor realized earnings/rents, and count only RXRX's triggered $10M payment rather than its conditional future milestones.",
+     "Claude's Oct 15 semis opened below tight stops; I evaluate next-open gaps and cap planned entry prices. ChatGPT's 20-trade alpha is only +0.07% with a -2.30% to +2.45% interval, so neither the 77% chance of beating random nor the 14-trade large-gap loss pattern proves skill."
     ]
    },
    {

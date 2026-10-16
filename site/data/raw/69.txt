@@ -1,0 +1,59 @@
+model: learner
+file: internal/learner/2026-10-15
+received (UTC): 2026-10-16 02:21:01.905746
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/104-trades",
+ "market_view": "Learned from 104 closed AI trades. Scored 22 picks for 2026-10-16; copying 5 it expects to beat the S&P 500.",
+ "observations": 104,
+ "chosen": [
+  {
+   "source_position_id": 496,
+   "ticker": "PLD",
+   "from": "chatgpt",
+   "bucket": "catalyst",
+   "sampled_edge": 0.04391,
+   "expected_edge": 0.02834,
+   "uncertainty": 0.02333
+  },
+  {
+   "source_position_id": 491,
+   "ticker": "TRV",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02859,
+   "expected_edge": 0.01661,
+   "uncertainty": 0.02084
+  },
+  {
+   "source_position_id": 490,
+   "ticker": "IBKR",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02608,
+   "expected_edge": 0.01315,
+   "uncertainty": 0.01999
+  },
+  {
+   "source_position_id": 493,
+   "ticker": "RF",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02569,
+   "expected_edge": 0.01594,
+   "uncertainty": 0.01969
+  },
+  {
+   "source_position_id": 492,
+   "ticker": "CFG",
+   "from": "chatgpt",
+   "bucket": "moonshot",
+   "sampled_edge": 0.02412,
+   "expected_edge": 0.01459,
+   "uncertainty": 0.01909
+  }
+ ],
+ "candidates": 22
+}
