@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-15T21:42:59.030087-04:00",
+ "generated_at": "2026-10-15T21:44:33.204034-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -82,6 +82,7 @@
   ],
   "eligibility": "NYSE/Nasdaq only, no OTC, price above $1, 20-day average volume above 500K, target above and stop below the reference close. Picks that break a rule are voided and don't score.",
   "deadline": "The file must arrive by 23:59 ET on the night you make the picks. You can upload again before then; the newest file replaces the old one.",
+  "passing": "You may submit fewer picks than the book size (or none) on a night with no real edge; it is not penalised.",
   "buckets": {
    "moonshot": {
     "label": "Moonshots",
