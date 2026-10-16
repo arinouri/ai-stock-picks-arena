@@ -154,32 +154,33 @@
       ]
     },
     {
-      "ticker": "NOW",
-      "thesis": "ServiceNow rose 6.2% to $148.62 on 17.6M shares (Benzinga quote, Oct 15) after management denied any interest in buying Decagon and said it prioritizes organic growth (24/7 Wall St, Oct 15), leading a rotation into enterprise software as AI-disruption fears ease. It's still ~23% under its $192.97 high ahead of Oct 28 earnings, so day-2 follow-through is the bet. The news came out Thursday, not tonight.",
-      "catalyst_time": "2026-10-15 Decagon denial; day-2 follow-through 2026-10-16",
-      "entry_zone_low": 146.5,
-      "entry_zone_high": 151.0,
-      "target_price": 155.5,
-      "stop_price": 144.0,
+      "ticker": "INTU",
+      "thesis": "Intuit rose 6.4% to $330.17 (Wall Street Republic / Smartkarma, Oct 15) as investors rotated out of AI hardware into enterprise and application software after ServiceNow's Decagon denial eased AI-disruption fears (Invezz/24/7 Wall St, Oct 15). Day-2 follow-through in a beaten-down software leader is the bet; there's no scheduled company event tonight.",
+      "catalyst_time": "2026-10-15 software rotation; follow-through 2026-10-16",
+      "entry_zone_low": 326.0,
+      "entry_zone_high": 335.0,
+      "target_price": 349.0,
+      "stop_price": 318.0,
       "confidence": "low",
-      "main_risk": "Nasdaq futures are lower overnight and the bounce could fade; a denial removes a negative but adds no revenue.",
+      "main_risk": "Nasdaq futures are ~-0.5% overnight, and one-day rotation bounces often reverse; there's no company-specific catalyst.",
       "sources": [
+        "https://thewallstreetrepublic.substack.com/p/apple-and-meta-unveil-an-ai-partnership",
         "https://247wallst.com/investing/2026/10/15/servicenow-climbs-5-after-denying-decagon-acquisition-interest-salesforce-rises-4-palantir-dips/",
-        "https://www.benzinga.com/quote/NOW"
+        "https://www.smartkarma.com/home/market-movers/us-market-movers-today-15-october-2026/"
       ]
     },
     {
-      "ticker": "CRWV",
-      "thesis": "CoreWeave reversed from a ~9.5% morning drop to close +5.9% at $69.69 (Yahoo Finance live, Oct 15) after Jensen Huang pushed back on fears that Nvidia would need to backstop it, following a ~15% slide Wednesday. It's the highest-beta AI-infrastructure name, and a second day of short covering after a reversal is the bet; there's no scheduled catalyst tonight.",
-      "catalyst_time": "2026-10-15 intraday reversal; follow-through 2026-10-16",
-      "entry_zone_low": 66.5,
-      "entry_zone_high": 71.0,
-      "target_price": 76.0,
-      "stop_price": 65.5,
+      "ticker": "LUV",
+      "thesis": "Southwest rose 3.8% to $40.83 (Wall Street Republic, Oct 15) after announcing a loyalty overhaul that replaces A-List with Silver/Gold/Platinum tiers from Jan 1, a monetization lever on top of its assigned-seating and bag-fee changes. Consumer discretionary led Thursday (+1.7%). The bet is day-2 continuation; the news came out Thursday.",
+      "catalyst_time": "2026-10-15 loyalty-program news; follow-through 2026-10-16",
+      "entry_zone_low": 40.3,
+      "entry_zone_high": 41.6,
+      "target_price": 43.0,
+      "stop_price": 39.4,
       "confidence": "low",
-      "main_risk": "Credit stress is real: CDS imply ~60% five-year default odds, the company has a $4.0B accumulated deficit, and it was ~$67.96 (-2.5%) overnight, so it could open near the stop.",
+      "main_risk": "WTI near $98 (+3.1% Thursday) raises fuel costs, and airline Q3 earnings later this month could reset expectations.",
       "sources": [
-        "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-rise-nasdaq-trims-losses-as-treasury-yields-sink-153611834.html",
+        "https://thewallstreetrepublic.substack.com/p/apple-and-meta-unveil-an-ai-partnership",
         "https://ts2.tech/en/dow-jumps-1-1-russell-2000-rises-1-4-as-broad-rotation-beats-tech/"
       ]
     }
