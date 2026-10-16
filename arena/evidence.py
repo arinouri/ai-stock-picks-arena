@@ -141,8 +141,8 @@ def to_markdown(ev: dict) -> list[str]:
         lines += ["", "## Execution lab (shadow test, scores unchanged)", "",
                   f"Across {lab['n']} first-session trades by the AIs, buying at the open averaged {pct(lab['buy_at_open'])} "
                   f"by the close. A limit order at the top of the AI's own entry zone would have averaged {pct(lz['avg'])} "
-                  f"({lz['n']} fills, {lz['missed']} missed). Chasing gapped-up stocks at the open is where money leaks, "
-                  "so set an entry zone you'd actually be happy to buy at, and pass if the stock is likely to open far above it.", "",
+                  f"({lz['n']} fills, {lz['missed']} missed). Stocks that open far from the close (up or down) did worst, and only a small gain "
+                  "comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.", "",
                   "| Where the stock opened vs your close | Trades | Avg open-to-close |", "|---|---|---|"]
         lines += [f"| {g['label']} | {g['n']} | {pct(g['avg_open_to_close'])} |" for g in lab["by_gap"]]
     return lines
