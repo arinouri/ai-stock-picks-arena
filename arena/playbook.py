@@ -94,6 +94,13 @@ def build(positions, subs, boards=None, root: Optional[Path] = None, key: Option
             seen[s.model_key] = seen.get(s.model_key, 0) + 1
             peer.append({"model": s.model_key, "night": s.run_date.isoformat(), "lessons": list(s.lessons)[:4]})
 
+    groups: dict = {}
+    for p in closed:
+        groups.setdefault((p.first_session, p.ticker), []).append(p)
+    agreed = [p for g in groups.values() if len({x.model_key for x in g}) >= 2 for p in g]
+    solo = [p for g in groups.values() if len({x.model_key for x in g}) < 2 for p in g]
+    consensus = {"agreed": _summary(agreed), "solo": _summary(solo)}
+
     base = {m: _summary(_closed(positions, (m,))) for m in ("fly", "momentum", "learner")}
     return {
         "how_to_use": [
@@ -106,7 +113,7 @@ def build(positions, subs, boards=None, root: Optional[Path] = None, key: Option
         "by_model": by_model, "by_book": by_book, "by_model_and_book": by_model_book,
         "by_confidence": by_conf, "by_stop_width": by_stop,
         "recent_winners": winners, "recent_losers": losers, "peer_lessons": peer,
-        "baselines": base,
+        "baselines": base, "consensus": consensus,
         "operator_updates": read_updates(root, key) if root else [],
     }
 

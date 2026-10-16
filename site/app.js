@@ -76,6 +76,34 @@ function contestants() {
   </section>`;
 }
 
+function spark(points, c, w = 150, h = 38) {
+  if (!points || points.length < 2) return `<svg class="spark" viewBox="0 0 ${w} ${h}" aria-hidden="true"><line x1="0" x2="${w}" y1="${h / 2}" y2="${h / 2}" stroke="var(--line)" stroke-dasharray="3 3"/></svg>`;
+  const lo = Math.min(...points), hi = Math.max(...points), sp = hi - lo || 1;
+  const pts = points.map((v, i) => `${((i / (points.length - 1)) * (w - 4) + 2).toFixed(1)},${(h - 4 - ((v - lo) / sp) * (h - 8)).toFixed(1)}`).join(" ");
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round" points="${pts}"/></svg>`;
+}
+
+function scoreboard() {
+  const P = Object.values(D.portfolios || {}).filter((p) => p.equity?.length);
+  if (!P.length) return "";
+  const start = P[0].initial_capital || 10000;
+  const spyEnd = P[0].benchmark?.length ? P[0].benchmark[P[0].benchmark.length - 1].equity : null;
+  const rows = P.map((p) => ({ p, v: p.equity[p.equity.length - 1].equity })).sort((a, b) => b.v - a.v);
+  const kind = (k) => (D.meta.models.find((m) => m.key === k)?.kind === "ai" ? "AI" : "Benchmark");
+  const money = (n) => "$" + n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  const max = Math.max(...rows.map((r) => r.v), spyEnd || 0), min = Math.min(...rows.map((r) => r.v), spyEnd || start, start);
+  const floor = min - (max - min) * 0.18, pos = (v) => (((v - floor) / (max - floor || 1)) * 100).toFixed(1);
+  return `<section id="scoreboard"><div class="section-heading"><div><p class="eyebrow">THE SCOREBOARD</p><h2>Who has the most money?</h2></div></div>
+    <p class="sub">Everyone started with <b>${money(start)}</b> of pretend cash. This is each account's value right now, counting open trades and trading costs. The line marks the starting ${money(start)}${spyEnd ? " and the dashed marker is what simply holding the S&amp;P 500 would be worth" : ""}.</p>
+    <div class="sb">${rows.map((r, i) => { const diff = r.v - start, beat = spyEnd != null && r.v > spyEnd;
+      return `<div class="sb-row" style="--c:${color(r.p.model)}"><span class="sb-rank">${i + 1}</span>
+        <div class="sb-who"><b><span class="dot"></span>${esc(name(r.p.model))}</b><span class="mut">${kind(r.p.model)} · ${r.p.metrics.open_positions} open · ${r.p.metrics.completed_trades} done</span></div>
+        <div class="sb-bar"><span class="sb-start" style="left:${pos(start)}%"></span>${spyEnd ? `<span class="sb-spy" style="left:${pos(spyEnd)}%"></span>` : ""}<span class="sb-fill" style="width:${pos(r.v)}%"></span></div>
+        ${spark(r.p.equity.map((e) => e.equity), color(r.p.model))}
+        <div class="sb-val"><b>${money(r.v)}</b><span class="${cls(diff)}">${diff >= 0 ? "+" : "-"}${money(Math.abs(diff))} · ${pct(diff / start)}</span>${spyEnd != null ? `<span class="pill ${beat ? "in" : "missed"}">${beat ? "Beating" : "Behind"} S&amp;P</span>` : ""}</div></div>`; }).join("")}</div>
+    <p class="note"><b>Honest read:</b> with only a few weeks of trades, rank changes are mostly luck. The question this scoreboard answers over time is whether any AI stays above both the S&amp;P 500 and the random Fruit Fly.</p></section>`;
+}
+
 function portfolioOverview() {
   const all = Object.values(D.portfolios || {});
   if (!all.length) return "";
@@ -235,7 +263,7 @@ function playbook() {
   return `<section id="playbook"><h2>Shared playbook: how the AIs learn from each other</h2>
     <p class="sub">Every night each AI reads this before it picks: what its rivals learned, which picks worked or failed and why, and what the evidence says so far. It is rebuilt after every scoring run and saved in the repo as <code>playbook/PLAYBOOK.md</code>. With ${P.closed_trades_total} closed AI trades so far, anything marked "Too few" is a hunch, not a finding.</p>
     <div class="tablewrap"><table><thead><tr><th class="l">Group</th><th>Trades</th><th>Avg return</th><th>Win rate</th><th>Enough data?</th></tr></thead><tbody>
-      ${rowsFor("AI", P.by_model, name)}${rowsFor("Book", P.by_book, (k) => BOOKS[k] || k)}${rowsFor("Confidence", P.by_confidence)}${rowsFor("Stop", P.by_stop_width)}
+      ${rowsFor("AI", P.by_model, name)}${rowsFor("Book", P.by_book, (k) => BOOKS[k] || k)}${rowsFor("Confidence", P.by_confidence)}${rowsFor("Stop", P.by_stop_width)}${rowsFor("Agreement", P.consensus, (k) => (k === "agreed" ? "2+ AIs picked the same stock" : "only one AI picked it"))}
       ${rowsFor("Baseline", P.baselines, name) || ""}</tbody></table></div>
     <div class="ideas" style="margin-top:12px">
       <div class="card"><h3>Recent winners</h3>${(P.recent_winners || []).map(ex).join("") || '<p class="mut">None yet.</p>'}</div>
@@ -312,7 +340,7 @@ function evaluation() {
 // ---------------------------------------------------------------- render + events
 function render() {
   const y = window.scrollY;
-  $("#view").innerHTML = [hero(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), playbook(), ideas(), research(), how()].join("");
+  $("#view").innerHTML = [hero(), scoreboard(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), playbook(), ideas(), research(), how()].join("");
   window.scrollTo(0, y);
   const repo = $("#repo-link"); if (repo) repo.href = "https://github.com/" + D.meta.repo;
   wireChart();
