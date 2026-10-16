@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-15T21:37:54.739647-04:00",
+ "generated_at": "2026-10-15T21:42:59.030087-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -1165,6 +1165,26 @@
     "stop_rate": 0.474,
     "target_rate": 0.053,
     "reliable": false
+   }
+  },
+  "consensus": {
+   "agreed": {
+    "n": 29,
+    "avg_return": -0.0159,
+    "win_rate": 0.31,
+    "avg_vs_spy": -0.0153,
+    "stop_rate": 0.414,
+    "target_rate": 0.034,
+    "reliable": true
+   },
+   "solo": {
+    "n": 75,
+    "avg_return": -0.0142,
+    "win_rate": 0.213,
+    "avg_vs_spy": -0.0126,
+    "stop_rate": 0.52,
+    "target_rate": 0.067,
+    "reliable": true
    }
   },
   "operator_updates": [
