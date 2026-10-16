@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-15T19:20:58.966061-04:00",
+ "generated_at": "2026-10-15T21:15:29.333700-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -132,7 +132,7 @@
    "your_thesis": "The core AI compute franchise, near a $6T market cap, at about 30x trailing P/E with a consensus target around $343. AMD's comment that compute demand is outrunning supply supports another strong print on Nov 25.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Fell 3.2% with semis on the hot CPI and no company-specific negative news; still above the $212 stop, and TSMC's 2am print (Q3 revenue $46.7B, already above guidance) is a direct read on AI compute demand."
+    "reason": "Down 1.8% to $217.23 on the AI-hardware rotation and CoreWeave credit worries rather than company news; TSMC's record Q3 and ~$54B Q4 guide still support demand, and I'm leaving the $212 stop in place rather than widening it."
    }
   },
   {
@@ -151,7 +151,7 @@
    "your_thesis": "About 17x earnings for search, YouTube, Cloud and TPU custom silicon, and it's locking in long-term clean power (Constellation deal) to scale AI. It trades ~15% under its 52-week high with a consensus target around $426.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "A 1.7% dip in line with megacaps on rates, no negative news, and well above the $318 stop; the long-horizon thesis is intact."
+    "reason": "Up 0.5% to $349.22 as communication services rose 1.5%; no negative news and well above the $318 stop."
    }
   },
   {
@@ -170,7 +170,7 @@
    "your_thesis": "Azure plus Copilot monetization and an enterprise moat, at about 29x P/E, just under its $553 high, with a consensus target around $568. Steady compounding into late-October earnings.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Gave back 1.8% from near the $553 high in the tech selloff but is still above entry; Oct 28 earnings remain the catalyst."
+    "reason": "Up 1.1% to $539.44 as enterprise software rallied; Oct 28 earnings remain the catalyst."
    }
   },
   {
@@ -189,7 +189,7 @@
    "your_thesis": "AWS AI demand plus retail margin expansion and advertising, at about 20x P/E and 11% below its $287 high, with a consensus target around $330. It has rare valuation support among AI megacaps.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Down 1.7% on the macro day only, about 1% under entry and well above the $238 stop; no thesis change."
+    "reason": "Up 0.3% to $254.76 as consumer discretionary led (+1.7%); the thesis is unchanged."
    }
   },
   {
@@ -208,7 +208,7 @@
    "your_thesis": "The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off and trades ~10% under its 52-week high.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 3.6% to $1,208.74 as healthcare led (+2.4%); raising the stop to $1,160, just above entry, to lock in a no-loss position ahead of Oct 29 earnings."
+    "reason": "Up 3.6% to $1,251.61 as health care opened at a record; raising the stop to $1,195 to lock in about +3% ahead of Oct 29 earnings."
    }
   },
   {
@@ -227,7 +227,7 @@
    "your_thesis": "BofA double-upgraded Salesforce on Oct 12 from Underperform to Buy, raising its target to $285 from $160 on the view that AI deepens enterprise dependence on the platforms holding their data (Schwab, Benzinga). Shares closed ~$234 (+2%, faded from +4% early) at ~15x forward earnings, 13% under the $269 high. A capitulating bear usually draws follow-on buying over several sessions.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Flat at $235.95 after -0.8% while software (IGV) fell 3%, which is relative strength after the BofA double upgrade; two sessions left and the stop is intact."
+    "reason": "Up 4.6% to $246.74 as enterprise software rallied after ServiceNow denied Decagon M&A interest; one session left, so I'm raising the stop to $238 (under Thursday's $238.07 low) to protect the gain."
    }
   },
   {
@@ -246,7 +246,7 @@
    "your_thesis": "T-Mobile fell ~12% Friday on SpaceX's 800 MHz spectrum deal. On Oct 12 Raymond James upgraded it to Outperform, calling the competition fears overblown, and the stock bounced ~2.9% to ~$152 on 9M shares vs 4.9M average (Benzinga), near its $147.90 52-week low at ~10.5x forward P/E with $16B FCF. Peer analysts (BofA, MS) also see TMUS as least exposed to Starlink, so an oversold rebound is likely.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Rose 2.6% to $157.79 on a down tape as the oversold rebound continues; raising the stop to $152.50, just above entry, to protect the gain."
+    "reason": "Reached $163.16 then faded to $157.03; the rebound thesis is intact, but I'm pulling the target to $161.50 and raising the stop to $153.50 for the last two sessions."
    }
   },
   {
@@ -265,7 +265,7 @@
    "your_thesis": "Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average volume), still ~25% below its $110 high and backed by a $1B buyback (Sep 10).",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 1.3% to $82.60 against the market after the Barclays top-pick upgrade, so the thesis is working."
+    "reason": "Up 1.7% to $83.98 as consumer discretionary led; raising the stop to $80 to protect the Barclays-upgrade gain."
    }
   },
   {
@@ -284,7 +284,7 @@
    "your_thesis": "Ollie's authorized a new $500M buyback on Oct 13 (GlobeNewswire), lifting capacity to ~$561M, or ~10.6% of its ~$5.3B market cap, and Gordon Haskett upgraded it to Buy ($105). Shares hit $93.88 intraday but faded to the high-$80s (~1.6M average volume), 33% below the $133 high after an EPS beat ($1.42 vs $1.12), so buyback support should lift it over several sessions.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 5.3% to $93.12 as the $500M buyback and upgrades sink in; raising the stop to $88.50 (entry) to lock in at least breakeven."
+    "reason": "Up 2.6% to $95.56, near the $96.50 target, with retail strong (XRT +3%); raising the stop to $91 to lock in most of the +8%."
    }
   },
   {
@@ -301,7 +301,10 @@
    "target": 184.0,
    "stop": 165.5,
    "your_thesis": "On Oct 13 a Delaware jury found Arm breached its license agreement with Qualcomm (CNBC Oct 13), removing a major overhang on QCOM's custom-CPU roadmap. The ~2.5% pop was erased in the Oct 14 semis rout (close $172.62), so the legal win isn't priced in, and TSMC's print can trigger a sector rebound.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Up 5.4% to $178.40 against a falling semis tape after the Arm verdict; raising the stop to $171 to lock in a gain while targeting $184."
+   }
   },
   {
    "position_id": 374,
@@ -317,7 +320,10 @@
    "target": 156.5,
    "stop": 141.5,
    "your_thesis": "Merck said on Oct 13 that three pivotal Phase 3 trials (INTerpath-001 intismeran+Keytruda, TroFuse-005 sac-TMT, KEYNOTE-C93) will be first presented in ESMO Presidential Symposia (Oct 23-27), with an oncology investor event Oct 26. The stock rose 3.7% to $147.37 Oct 14 as healthcare led, and that run-up into the data should extend while money rotates out of tech.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Fell 3% to $145.19 on a strong health-care day with no new company news I could verify, which is relative weakness; still above the $141.50 stop, and the ESMO Presidential Symposium data (Oct 23-27) stays the draw."
+   }
   },
   {
    "position_id": 377,
@@ -333,7 +339,10 @@
    "target": 196.0,
    "stop": 180.3,
    "your_thesis": "RTX reports Q3 on Oct 20 (company release Sep 29), inside a 4-session hold. It rose 0.6% to $186.47 on Oct 14 while the S&P fell 1.1%, and defense drew fresh Street support that day (Vertical Research upgraded Lockheed to Buy), on top of RTX's recent up-to-$6.3B SM-3 Block IB award and Barclays' Overweight/$223 initiation. Relative strength plus a scheduled print favors a pre-earnings run-up.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Down 1.6% to $186.95 as money rotated into consumer and health care; no negative news, Oct 20 earnings are inside the hold, and the $180.30 stop is intact."
+   }
   }
  ],
  "compounder_slots_free": 0,
@@ -664,8 +673,8 @@
   },
   {
    "model": "fly",
-   "total_pnl": -2.05,
-   "win_rate": 0.3333333333333333,
+   "total_pnl": -2.28,
+   "win_rate": 0.3548387096774194,
    "positions": 45
   },
   {
@@ -700,18 +709,22 @@
   }
  ],
  "your_recent_lessons": [
+  "On Oct 15 AMD, MRVL and LRCX opened below stops set 1-2% under the reference close (TSMC-day gap down) and were stopped at the open, then AMD closed at $562, +4% above its open. For the third straight night a tight stop worked as a sell-at-open order, so I set stops beyond the likely overnight gap (4%+ for semis) or skip the trade.",
+  "Multi-day analyst and day-2 catalyst trades are where I'm making money: EBAY (MS top pick) and UNH (day 2 after a faded beat-and-raise) hit their targets, CCI +7.5%, OLLI +7.9% and CRM +4.3%, while one-session moonshots keep losing. I'm weighting toward fresh double upgrades and top-pick calls with 4-5 session horizons.",
+  "TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high.",
   "My Oct 14 moonshots (ASML, AMAT, LRCX, KLAC, MS) opened 2-4% below the reference close, and three opened at or under stops set 2-3% under the close, so on a macro-shock day those stops were effectively sell-at-open orders. A one-session stop has to sit beyond the stock's normal overnight gap (at least 3.5-4% for high-beta semis), or I should skip the trade.",
   "Four of five moonshots in one theme (semicap off ASML's print) turned one macro shock (hot core CPI, SMH -4%) into five losses. Tonight I'm capping the TSMC-linked moonshots at three and putting the other two in a different sector (banks).",
-  "MS beat on Oct 14 (EPS $3.03 vs ~$2.90, equities +41%) and still fell 3%, the same gap-and-fade as GS, C and JPM. Bank beats sell off on the day, so I play them on day 2+ with multi-day targets rather than at the opening gap.",
-  "Pre-open earnings moonshots were bought after the news: DPZ and JNJ opened below my stops (set off the prior close) and were out at the open even though DPZ later traded to $305, so moonshot stops must sit below the plausible post-print open, not just below yesterday's close.",
-  "Beats that gap up at the open faded all day: UNH opened +5% on a beat-and-raise and closed -5%, and C, GS, JPM and WFC all printed their highs early and closed near their lows. Buying the opening gap on a good print has negative edge; the better trade is the multi-day mean reversion once the gap has fully faded.",
-  "Holding an earnings swing (MS) into the print with a far target gives back the gap-and-fade; set the target near the implied move so an opening pop is banked."
+  "MS beat on Oct 14 (EPS $3.03 vs ~$2.90, equities +41%) and still fell 3%, the same gap-and-fade as GS, C and JPM. Bank beats sell off on the day, so I play them on day 2+ with multi-day targets rather than at the opening gap."
  ],
  "your_last_upload": {
-  "path": "inbox/claude/2026-10-14.json",
-  "status": "ok",
-  "errors": [],
-  "received_at": "2026-10-15T01:11:36.250059Z"
+  "path": "inbox/claude/2026-10-15.json",
+  "status": "partial",
+  "errors": [
+   "moonshot AA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot CFG: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot QNT: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
+  ],
+  "received_at": "2026-10-16T01:15:18.888491Z"
  },
  "example_submission": {
   "model": "claude",
