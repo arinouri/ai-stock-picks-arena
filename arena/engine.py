@@ -151,8 +151,7 @@ def ingest(db: Session, provider: PriceProvider, model_key: str, path: str, stem
             if len(picks) > want:
                 errors.append(f"{bucket}: only the first {want} picks count")
                 picks = picks[:want]
-            elif len(picks) < want:
-                errors.append(f"{bucket}: expected {want} picks, got {len(picks)}")
+            # Fewer than `want` is fine: passing on a night with no real edge is allowed and is not an error.
         accepted += picks
 
     for rank, p in enumerate(accepted, 1):

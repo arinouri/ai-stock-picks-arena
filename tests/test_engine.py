@@ -99,7 +99,7 @@ class IngestTests(EngineBase):
     def test_resubmission_replaces_earlier_file(self):
         self.ingest(sub(moon=[pick("A")]))
         second = self.ingest(sub(moon=[pick("B"), pick("C")]), when=at(MON, 21))
-        self.assertEqual(second.status, "partial")  # fewer than 5 moonshots
+        self.assertEqual(second.status, "ok")  # fewer than 5 moonshots is allowed: passing is not an error
         self.assertEqual(self.db.query(Submission).filter_by(status="superseded").count(), 1)
         self.assertEqual(sorted(p.ticker for p in self.db.query(Position)), ["B", "C"])
 

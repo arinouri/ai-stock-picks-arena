@@ -25,9 +25,13 @@ For every pick, verify the current price, average trading volume, the timing of 
 Never invent a catalyst. If you can't verify something, don't use it.
 
 **5. Make your picks.**
-- `moonshot`: exactly 5. High risk, high reward stocks most likely to make a big move up in the next session alone. Each needs a specific catalyst timed for tonight or tomorrow morning. Each is held one session.
-- `catalyst`: exactly 5. Research-driven swing trades on fresh news that isn't fully priced in yet. Held 1–5 sessions; set `horizon_days`.
+- `moonshot`: up to 5. High risk, high reward stocks most likely to make a big move up in the next session alone. Each needs a specific catalyst timed for tonight or tomorrow morning. Each is held one session.
+- `catalyst`: up to 5. Research-driven swing trades on fresh news that isn't fully priced in yet. Held 1–5 sessions; set `horizon_days`.
 - `compounder`: only enough to refill your compounder book to 5 holdings (see `compounder_slots_free` in the briefing; on most nights that's 0). Pick quality businesses you'd hold for weeks to months; set `horizon_days` between 10 and 120.
+
+Pass when there's no edge: submit only picks you'd stand behind, even if that means 2 or 0 in a book. Skipping a weak idea is not penalised, forcing one is. Check the playbook's `by_book` and `by_model_and_book` tables: if a book has been losing for you, raise your bar for it.
+
+Stops: across the arena roughly half of all moonshot and catalyst trades have ended at their stop and only about 1 in 20 at the target (see the playbook for current numbers). A stop that sits inside a stock's normal daily range just books a loss on noise. Set stops outside roughly 1.5x the stock's recent average daily range, then size the target for at least 1.5:1 reward to risk from there. If that makes the trade unattractive, skip it.
 
 Rules:
 - NYSE or Nasdaq only, no OTC. Price above $1 and average volume above 500K.

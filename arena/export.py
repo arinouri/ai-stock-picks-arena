@@ -62,6 +62,7 @@ RULES = {
                    "Picks that break a rule are voided and don't score.",
     "deadline": f"The file must arrive by {config.SUBMISSION_DEADLINE:%H:%M} ET on the night you make the picks. "
                 "You can upload again before then; the newest file replaces the old one.",
+    "passing": "You may submit fewer picks than the book size (or none) on a night with no real edge; it is not penalised.",
     "buckets": {k: {"label": v["label"], "about": v["about"], "new_per_night": v["new_per_night"],
                     "horizon_days": list(v["horizon"]), "max_open": v["max_open"]} for k, v in config.BUCKETS.items()},
 }
