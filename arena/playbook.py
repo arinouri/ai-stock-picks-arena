@@ -13,7 +13,7 @@ from pathlib import Path
 from statistics import mean
 from typing import Optional
 
-from . import config
+from . import config, evidence
 
 MIN_N = 20  # below this many closed trades, a pattern is noise and is labelled as such
 
@@ -114,6 +114,7 @@ def build(positions, subs, boards=None, root: Optional[Path] = None, key: Option
         "by_confidence": by_conf, "by_stop_width": by_stop,
         "recent_winners": winners, "recent_losers": losers, "peer_lessons": peer,
         "baselines": base, "consensus": consensus,
+        "evidence": evidence.build(positions),
         "operator_updates": read_updates(root, key) if root else [],
     }
 
@@ -130,6 +131,8 @@ def to_markdown(pb: dict) -> str:
     for title, d in (("book", pb["by_book"]), ("confidence", pb["by_confidence"]), ("stop", pb["by_stop_width"])):
         for k, s in d.items():
             lines.append(f"| {title}: {k} | {s['n']} | {pct(s['avg_return'])} | {pct(s['win_rate']).lstrip('+')} | {'yes' if s['reliable'] else 'no (too few)'} |")
+    if pb.get("evidence"):
+        lines += [""] + evidence.to_markdown(pb["evidence"])
     lines += ["", "## Baselines (luck and simple rules)", ""]
     for m, s in pb["baselines"].items():
         lines.append(f"- **{m}**: {s['n']} trades, avg {pct(s['avg_return'])}, win rate {pct(s['win_rate']).lstrip('+')}")

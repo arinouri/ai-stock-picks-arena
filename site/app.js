@@ -254,6 +254,19 @@ function evo() {
   return `<section id="evo"><h2>Fruit Fly EVO learning lab</h2><p class="sub">EVO is separate from the random control. It independently ranks liquid stocks using price momentum, SPY-relative strength, volatility, volume and drawdown available at decision time. Completed trades provide clipped, risk-adjusted rewards—not emotions.</p><div class="learning-grid"><article class="card"><div class="learning-kpis"><div><span>Model</span><b>${esc(E.version)}</b></div><div><span>Observations</span><b>${E.observations}</b></div><div><span>Cumulative reward</span><b class="${cls(E.cumulative_reward)}">${pct(E.cumulative_reward)}</b></div></div><p class="mut">Reward: ${esc(E.reward)}. Data version: ${esc(E.data_version)}.</p>${bars}</article><article class="card"><h3>Recent reward signals</h3>${E.recent?.length ? E.recent.slice(0, 10).map((e) => `<div class="reward-row"><span><b>${esc(e.ticker)}</b><small>${dateFmt(e.date)} · ${esc(BOOKS[e.bucket] || e.bucket)}</small></span><b class="${cls(e.reward)}">${pct(e.reward)}</b></div>`).join("") : '<p class="mut">No EVO trade has closed yet. The prior remains deliberately uncertain; increased cumulative reward alone will not be treated as proof of skill.</p>'}</article></div></section>`;
 }
 
+function evidence() {
+  const E = D.playbook?.evidence;
+  if (!E) return "";
+  const rows = Object.entries(E.by_model).filter(([, s]) => s.n).map(([k, s]) => `<tr><td class="l"><b style="color:${color(k)}">${esc(name(k))}</b></td><td>${s.n}</td><td class="${cls(s.avg_alpha)}">${s.avg_alpha == null ? "-" : pct(s.avg_alpha, 2)}</td><td>${s.ci_low == null ? "-" : pct(s.ci_low, 1) + " to " + pct(s.ci_high, 1)}</td><td>${s.p_beats_fly == null ? "-" : Math.round(s.p_beats_fly * 100) + "%"}</td><td class="l">${esc(s.verdict)}</td></tr>`).join("");
+  const L = E.lab || {};
+  const lab = L.n ? `<div class="card" style="margin-top:12px"><h3>Execution lab: where the money leaks</h3>
+      <p class="mut">Across ${L.n} first-session AI trades, buying at the open averaged <b class="${cls(L.buy_at_open)}">${pct(L.buy_at_open, 2)}</b> by the close. A limit order at the top of each AI's own entry zone would have averaged <b class="${cls(L.limit_at_zone.avg)}">${pct(L.limit_at_zone.avg, 2)}</b> (${L.limit_at_zone.n} fills, ${L.limit_at_zone.missed} missed). This is a shadow test: the official score still buys at the open.</p>
+      <div class="tablewrap"><table><thead><tr><th class="l">Where the stock opened vs the pick-time close</th><th>Trades</th><th>Open to close</th></tr></thead><tbody>${L.by_gap.map((g) => `<tr><td class="l">${esc(g.label)}</td><td>${g.n}</td><td class="${cls(g.avg_open_to_close)}">${g.avg_open_to_close == null ? "-" : pct(g.avg_open_to_close, 2)}</td></tr>`).join("")}</tbody></table></div></div>` : "";
+  return `<section id="evidence"><h2>The skeptic: is anyone actually good?</h2>
+    <p class="sub">Beating the market a few times proves little. This panel measures each contestant against the S&amp;P 500 and shows the range luck alone could explain. If the range includes 0%, we can't tell skill from luck. Detecting a real +1% edge needs roughly ${Math.max(...Object.values(E.by_model).map((s) => s.trades_needed || 0)).toLocaleString()} trades per contestant.</p>
+    <div class="tablewrap"><table><thead><tr><th class="l">Contestant</th><th>Trades</th><th>Avg vs S&amp;P</th><th>95% range</th><th>Beats random</th><th class="l">Verdict</th></tr></thead><tbody>${rows}</tbody></table></div>${lab}</section>`;
+}
+
 function playbook() {
   const P = D.playbook;
   if (!P) return "";
@@ -340,7 +353,7 @@ function evaluation() {
 // ---------------------------------------------------------------- render + events
 function render() {
   const y = window.scrollY;
-  $("#view").innerHTML = [hero(), scoreboard(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), playbook(), ideas(), research(), how()].join("");
+  $("#view").innerHTML = [hero(), scoreboard(), health(), portfolioOverview(), chart(), leaderboard(), contestants(), picks(), status(), learner(), evo(), evaluation(), positions(), evidence(), playbook(), ideas(), research(), how()].join("");
   window.scrollTo(0, y);
   const repo = $("#repo-link"); if (repo) repo.href = "https://github.com/" + D.meta.repo;
   wireChart();

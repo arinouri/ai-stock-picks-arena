@@ -258,3 +258,21 @@ class PlaybookTests(unittest.TestCase):
         self.assertEqual(pb["peer_lessons"][0]["lessons"], ["Earnings gaps fade by noon"])
         self.assertEqual([u["text"] for u in pb["operator_updates"]], ["Watch oil."])  # not grok's, not the README
         self.assertIn("Recent winners", playbook.to_markdown(pb))
+
+
+class EvidenceTests(unittest.TestCase):
+    def test_evidence_verdicts_and_lab(self):
+        from arena import evidence
+
+        db = connect("sqlite://")()
+        t = LearnerTests()
+        t.db = db
+        for i in range(25):
+            t.add_closed("fly", "moonshot", -0.01 + (i % 5) * 0.002, 1, d(2026, 9, 21))
+            t.add_closed("claude", "moonshot", -0.02 + (i % 5) * 0.004, 1, d(2026, 9, 21))
+        ev = evidence.build(db.query(Position).all())
+        self.assertEqual(ev["by_model"]["claude"]["n"], 25)
+        self.assertIn(ev["by_model"]["claude"]["verdict"], ("Can't tell from luck yet", "Losing to the market", "Beating the market (so far)"))
+        self.assertEqual(ev["by_model"]["chatgpt"]["verdict"], "Too early to tell")
+        self.assertEqual(ev["lab"]["n"], 0)  # no first-session bars in this fixture
+        self.assertTrue(evidence.to_markdown(ev))
