@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-15T21:15:29.339876-04:00",
+ "generated_at": "2026-10-15T21:18:24.529447-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -132,7 +132,7 @@
    "your_thesis": "Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "A 2.6% dip after a record high with no change to the AI-demand story; TSMC's results Thursday are the next read-through."
+    "reason": "TSMC's Oct 15 results beat its own revenue guide ($46.72B) and guided Q4 to $52.3-54.3B, which supports AI demand even though chip stocks are in a rotation selloff; keeping the 212 stop as the line where the thesis is wrong."
    }
   },
   {
@@ -151,7 +151,7 @@
    "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 0.9% and Azure thesis intact into Oct 28 earnings."
+    "reason": "Up 1.7% and benefiting from the rotation into software, with the Azure thesis intact into Oct 28 earnings."
    }
   },
   {
@@ -170,7 +170,7 @@
    "your_thesis": "Google Cloud revenue up 82% with a $514B backlog, TPU sales upside (Wells Fargo target $417), and Q3 results Oct 28.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Flat since entry with the Cloud backlog thesis intact into Oct 28 results."
+    "reason": "Roughly flat since entry with no change to the Cloud backlog thesis into Oct 28 results."
    }
   },
   {
@@ -189,11 +189,11 @@
    "your_thesis": "Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 3.6% on steady momentum into late-October earnings; raising the stop to 360 to cut downside."
+    "reason": "Up 7.4% on steady momentum into late-October earnings; raising the stop to 380 to lock in a gain."
    }
   }
  ],
- "compounder_slots_free": 1,
+ "compounder_slots_free": 0,
  "last_session": {
   "date": "2026-10-15",
   "your_pnl": -0.99,
@@ -310,18 +310,21 @@
   }
  ],
  "your_recent_lessons": [
+  "AVGO, bought near a record high, was stopped out at -9.8% during the chip selloff while V, bought on a pullback, is up 7.4%, so I only add compounders after a pullback and give AI-hardware names stops wider than their recent swings.",
+  "Day-2 follow-through names from my Monday list (HUM, TEVA, LITE, MRNA, FSLY, SVC, QSI) did not reach their targets, so tonight I use only fresh overnight catalysts and avoid chasing day-2 moves.",
+  "Big-bank earnings this week moved only 1-4% (USB +2%, PNC down on a revenue miss), so I keep bank-earnings targets at a realistic 4-6% with stops just under Thursday's close.",
   "Real beat-and-raise drift kept working (PENG added another 6.6% on its third session), while a staples beat (PEP) drifted only ~1% before the time exit, so save multi-day drift trades for growth names that raised guidance.",
   "Compounders bought right after record highs (NVDA, AVGO) slipped 2-3% within two sessions while V, bought off a pullback, gained 3.6%, so add compounders on pullbacks instead of at fresh highs.",
-  "Day-2 follow-through on Friday news has given mild moves in my parallel watchlist, so on day-2 names keep one-session targets near a realistic +5-8% and stops just under the reference close.",
-  "Small-cap after-hours gaps often fade by mid-morning (NEOG opened well below its AH price and hit the stop in minutes), so on gap names set the target near the likely opening print and keep stops just under the reference close.",
-  "Pre-earnings run-up trades failed (APLD fell 6% the day it reported); the move comes after the print, so play the reaction session instead of the run-up.",
-  "Small-cap index adds are pre-traded (FRSH faded into its inclusion), but bigger index adds with day-of buying (MRNA into the Nasdaq-100) and real beat-and-raise reports (PENG +13%) followed through."
+  "Day-2 follow-through on Friday news has given mild moves in my parallel watchlist, so on day-2 names keep one-session targets near a realistic +5-8% and stops just under the reference close."
  ],
  "your_last_upload": {
-  "path": "inbox/grok/2026-10-11.json",
-  "status": "ok",
-  "errors": [],
-  "received_at": "2026-10-12T01:26:30.465545Z"
+  "path": "inbox/grok/2026-10-15.json",
+  "status": "partial",
+  "errors": [
+   "moonshot AA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
+   "moonshot CFG: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
+  ],
+  "received_at": "2026-10-16T01:18:22.237681Z"
  },
  "example_submission": {
   "model": "grok",

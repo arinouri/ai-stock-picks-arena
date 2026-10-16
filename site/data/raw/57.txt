@@ -1,0 +1,229 @@
+model: grok
+file: inbox/grok/2026-10-15.json
+received (UTC): 2026-10-16 01:18:22.237681
+status: partial
+problems: ["moonshot AA: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "moonshot CFG: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
+
+{
+ "model": "grok",
+ "model_version": "Grok Bot",
+ "market_view": "Thursday closed S&P +0.33%, Dow +1.08%, Nasdaq +0.08% as money rotated out of chips (SMH's eighth straight down day) into financials, software and staples; Nasdaq futures are slightly lower tonight. Friday has bank and insurer earnings before the open, 8:30 AM import prices and monthly options expiry, so I expect modest, stock-specific moves.",
+ "lessons": [
+  "AVGO, bought near a record high, was stopped out at -9.8% during the chip selloff while V, bought on a pullback, is up 7.4%, so I only add compounders after a pullback and give AI-hardware names stops wider than their recent swings.",
+  "Day-2 follow-through names from my Monday list (HUM, TEVA, LITE, MRNA, FSLY, SVC, QSI) did not reach their targets, so tonight I use only fresh overnight catalysts and avoid chasing day-2 moves.",
+  "Big-bank earnings this week moved only 1-4% (USB +2%, PNC down on a revenue miss), so I keep bank-earnings targets at a realistic 4-6% with stops just under Thursday's close."
+ ],
+ "review": [
+  {
+   "position_id": 56,
+   "ticker": "NVDA",
+   "action": "HOLD",
+   "reason": "TSMC's Oct 15 results beat its own revenue guide ($46.72B) and guided Q4 to $52.3-54.3B, which supports AI demand even though chip stocks are in a rotation selloff; keeping the 212 stop as the line where the thesis is wrong.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 57,
+   "ticker": "MSFT",
+   "action": "HOLD",
+   "reason": "Up 1.7% and benefiting from the rotation into software, with the Azure thesis intact into Oct 28 earnings.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 58,
+   "ticker": "GOOGL",
+   "action": "HOLD",
+   "reason": "Roughly flat since entry with no change to the Cloud backlog thesis into Oct 28 results.",
+   "new_stop": null,
+   "new_target": null
+  },
+  {
+   "position_id": 60,
+   "ticker": "V",
+   "action": "HOLD",
+   "reason": "Up 7.4% on steady momentum into late-October earnings; raising the stop to 380 to lock in a gain.",
+   "new_stop": 380.0,
+   "new_target": null
+  }
+ ],
+ "moonshot": [
+  {
+   "ticker": "AA",
+   "thesis": "Alcoa reported Q3 after Thursday's close (press release and 8-K, Oct 15): adjusted EPS $1.82 vs ~$1.47 expected (LSEG via CNBC, Oct 15), $472M free cash flow and $4.4B cash; shares traded ~$41 after hours (+1.5-2%) on heavy volume.",
+   "catalyst_time": "2026-10-15 after close (first session 2026-10-16)",
+   "entry_zone_low": 40.6,
+   "entry_zone_high": 41.6,
+   "target_price": 43.2,
+   "stop_price": 39.4,
+   "confidence": "low",
+   "main_risk": "Revenue of $3.70B missed ~$3.79B and fell 7% sequentially with adjusted EBITDA down $112M, so a mixed print could fade at the open; invalidated if it opens below Thursday's 40.43 close.",
+   "sources": [
+    "https://news.alcoa.com/press-releases/press-release-details/2026/Alcoa-Corporation-Reports-Third-Quarter-2026-Results/default.aspx",
+    "https://www.cnbc.com/2026/10/15/stocks-making-the-biggest-moves-after-hours-ibkr-jbht-aa.html",
+    "https://www.stocktitan.net/sec-filings/AA/8-k-alcoa-corp-reports-material-event-b6de8dc59a57.html"
+   ]
+  },
+  {
+   "ticker": "TFC",
+   "thesis": "Truist reports Q3 before Friday's open (calendars checked Oct 15: consensus ~$1.12-1.17 EPS on ~$5.35-5.4B revenue); options price roughly a 4-6% move versus a typical ~2.6%, and it traded 47.24 after hours (+1.4%) on real volume.",
+   "catalyst_time": "2026-10-16 before open",
+   "entry_zone_low": 46.8,
+   "entry_zone_high": 47.8,
+   "target_price": 49.2,
+   "stop_price": 45.6,
+   "confidence": "low",
+   "main_risk": "Results are unknown; peer bank reactions this week were small and it already rose 2.2% Thursday. Invalidated by an EPS or net-interest-income miss.",
+   "sources": [
+    "https://www.marketbeat.com/earnings/tomorrow/",
+    "https://varamir.com/earnings",
+    "https://www.digrin.com/stocks/earnings_calendar/2026-10-16"
+   ]
+  },
+  {
+   "ticker": "CFG",
+   "thesis": "Citizens Financial reports Q3 before Friday's open (calendars checked Oct 15: consensus ~$1.38-1.40 EPS vs $1.05 a year ago, ~$2.34-2.4B revenue); it sits well below its 3-month high (75.33), leaving room for a relief move on a beat.",
+   "catalyst_time": "2026-10-16 before open",
+   "entry_zone_low": 63.5,
+   "entry_zone_high": 65.0,
+   "target_price": 67.5,
+   "stop_price": 61.8,
+   "confidence": "low",
+   "main_risk": "Regional-bank reactions have been muted and a soft guide could extend its slide; invalidated by a miss or weaker net-interest-income outlook.",
+   "sources": [
+    "https://www.marketbeat.com/earnings/tomorrow/",
+    "https://vestfy.com/earnings",
+    "https://www.digrin.com/stocks/earnings_calendar/2026-10-16"
+   ]
+  },
+  {
+   "ticker": "MTB",
+   "thesis": "M&T Bank reports Q3 before Friday's open (calendars checked Oct 15: consensus ~$4.93-5.01 EPS on ~$2.53-2.56B revenue; options price ~3.5% vs a typical ~2.3%); it traded ~220.80 after hours and sits well below its 3-month high of 255.95.",
+   "catalyst_time": "2026-10-16 before open",
+   "entry_zone_low": 219.0,
+   "entry_zone_high": 225.0,
+   "target_price": 228.5,
+   "stop_price": 213.0,
+   "confidence": "low",
+   "main_risk": "A slow mover (ATR ~1.7%), so the target needs a clear beat; invalidated by an EPS miss or higher credit costs.",
+   "sources": [
+    "https://www.marketbeat.com/earnings/tomorrow/",
+    "https://varamir.com/earnings"
+   ]
+  },
+  {
+   "ticker": "IRD",
+   "thesis": "FDA decision on phentolamine 0.75% eye drops for presbyopia (MR-141, licensed to Viatris) is due Saturday Oct 17 (pdufa.bio, data as of Oct 14; sNDA acceptance Feb 25, 2026); the trade is a one-session run-up into the decision after a slide from 5.55 to ~4.",
+   "catalyst_time": "2026-10-16 (run-up into FDA PDUFA date 2026-10-17)",
+   "entry_zone_low": 4.0,
+   "entry_zone_high": 4.25,
+   "target_price": 4.6,
+   "stop_price": 3.78,
+   "confidence": "low",
+   "main_risk": "Pre-event run-ups have often failed and Opus's milestone and royalty economics are not disclosed; invalidated if it breaks below the 20-day low (~3.98) early.",
+   "sources": [
+    "https://www.pdufa.bio/pdufa/IRD-phentolamine-ophthalmic",
+    "https://ir.opusgtx.com/press-releases/detail/519/opus-genetics-announces-fda-acceptance-of-supplemental-new-drug-application-for-phentolamine-ophthalmic-solution-0-75-for-the-treatment-of-presbyopia",
+    "https://investor.viatris.com/news-releases/news-release-details/fda-accepts-viatris-supplemental-new-drug-application-mr-141"
+   ]
+  }
+ ],
+ "catalyst": [
+  {
+   "ticker": "TRV",
+   "thesis": "Travelers reports Q3 Friday morning with a 9:00 AM ET call (confirmed via Business Wire per SignalStack, Oct 15; consensus ~$7.0-7.5 EPS on ~$11.4-11.5B revenue); Marsh's beat lifted insurers Oct 15 (KIE +1%), and lighter-than-feared catastrophe losses could drive a multi-day move toward its 3-month high (398.70).",
+   "catalyst_time": "2026-10-16 before open",
+   "entry_zone_low": 384.0,
+   "entry_zone_high": 392.0,
+   "target_price": 398.5,
+   "stop_price": 375.0,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "Already near its 20-day high after a 1.6% gain Thursday; invalidated by catastrophe losses or a combined ratio worse than expected.",
+   "sources": [
+    "https://www.signalstack.news/earnings/tomorrow/",
+    "https://www.marketbeat.com/earnings/tomorrow/",
+    "https://www.cnbc.com/2026/10/15/stocks-making-the-biggest-moves-midday-crwv-crm-rklb-kmb.html"
+   ]
+  },
+  {
+   "ticker": "RF",
+   "thesis": "Regions reports Q3 before Friday's open (calendars checked Oct 15: consensus ~$0.66-0.68 EPS on ~$2.0B revenue); it sits ~16% below its 3-month high (32.47), so a clean beat can drift for a few sessions with financials leading Thursday.",
+   "catalyst_time": "2026-10-16 before open",
+   "entry_zone_low": 27.2,
+   "entry_zone_high": 27.9,
+   "target_price": 28.7,
+   "stop_price": 26.6,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "Low volatility (ATR ~1.9%) and the result is unknown; invalidated by an EPS miss or softer net-interest-income guidance.",
+   "sources": [
+    "https://www.marketbeat.com/earnings/tomorrow/",
+    "https://varamir.com/earnings"
+   ]
+  },
+  {
+   "ticker": "AEM",
+   "thesis": "Gold rebounded ~1.3% to ~$4,157 on Oct 15 as the dollar and Treasury yields fell (CNBC, Oct 15), and Agnico Eagle jumped 6% on heavy volume; it is still well below its 20-day high (204.62), leaving room if gold holds.",
+   "catalyst_time": "2026-10-15 gold rebound (swing 2026-10-16 to 2026-10-20)",
+   "entry_zone_low": 184.0,
+   "entry_zone_high": 189.0,
+   "target_price": 200.0,
+   "stop_price": 180.0,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "No company news, so it is a pure gold-price bet; invalidated if gold falls back below ~$4,100 on hotter inflation data and rising yields.",
+   "sources": [
+    "https://www.cnbc.com/2026/10/15/gold-rebounds-from-one-week-low-as-dollar-slips.html",
+    "https://bestcanadianstocks.ca/news/agnico-eagle-stock-up-why-aem-jumped/"
+   ]
+  },
+  {
+   "ticker": "KGC",
+   "thesis": "Kinross rose 7.2% Oct 15 on the same gold rebound (CNBC, Oct 15) after its revised 2026-27 production and cost outlook; it is well below its 20-day high (28.89), giving a gold-beta swing if yields keep easing.",
+   "catalyst_time": "2026-10-15 gold rebound (swing 2026-10-16 to 2026-10-20)",
+   "entry_zone_low": 23.3,
+   "entry_zone_high": 24.0,
+   "target_price": 25.4,
+   "stop_price": 22.9,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "Metals reverse fast and day-2 moves have faded for me; invalidated if gold drops back below ~$4,100.",
+   "sources": [
+    "https://www.cnbc.com/2026/10/15/gold-rebounds-from-one-week-low-as-dollar-slips.html",
+    "https://www.canadianminingreport.com/blog/gold-rebounds-by-nearly-40-as-treasury-yields-retreat-5-canadian-gold-stocks-to-watch"
+   ]
+  },
+  {
+   "ticker": "INTU",
+   "thesis": "Intuit agreed on Oct 15 to acquire AI-native revenue platform Sequence to expand its mid-market Enterprise Suite (Intuit IR, Oct 15) and rose 6.4% as money rotated into software (IGV +1%, CNBC Oct 15); it remains ~11% under its 3-month high of 372.98.",
+   "catalyst_time": "2026-10-15 announcement (swing 2026-10-16 to 2026-10-20)",
+   "entry_zone_low": 326.0,
+   "entry_zone_high": 334.0,
+   "target_price": 350.0,
+   "stop_price": 318.0,
+   "horizon_days": 3,
+   "confidence": "low",
+   "main_risk": "Deal terms are undisclosed and day-2 follow-through has been weak for me; invalidated if the software rotation reverses and it loses Thursday's breakout.",
+   "sources": [
+    "https://investors.intuit.com/news-events/press-releases/detail/1327/intuit-to-acquire-ai-native-revenue-management-platform-sequence",
+    "https://www.cnbc.com/2026/10/15/stocks-making-the-biggest-moves-midday-crwv-crm-rklb-kmb.html"
+   ]
+  }
+ ],
+ "compounder": [
+  {
+   "ticker": "TSM",
+   "thesis": "TSMC's Q3 (reported Oct 15) beat its own guide with $46.72B revenue (+41% y/y in USD), 66.4% gross margin, and Q4 guidance of $52.3-54.3B; the ADR still fell 1.8% in the chip rotation and is ~13% below its 20-day high, so it is a pullback entry.",
+   "target_price": 490.0,
+   "stop_price": 385.0,
+   "horizon_days": 60,
+   "confidence": "medium",
+   "main_risk": "The AI-hardware selloff (debt-funded capex worries) could deepen; invalidated by a guidance cut or a break below the 20-day low area (~407) that keeps falling.",
+   "sources": [
+    "https://pr.tsmc.com/english/news/3346",
+    "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+   ]
+  }
+ ]
+}
