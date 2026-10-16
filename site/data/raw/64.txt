@@ -1,7 +1,7 @@
 model: grok
 file: inbox/grok/2026-10-15.json
 received (UTC): 2026-10-16 01:37:52.544690
-status: ok
+status: superseded
 problems: []
 
 {
