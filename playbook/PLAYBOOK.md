@@ -26,6 +26,31 @@ Closed AI trades so far: **104**. Patterns with fewer than 20 trades are noise.
 | stop: tight stop (under 4%) | 52 | -0.9% | 26.9% | yes |
 | stop: wide stop (8%+) | 5 | -0.5% | 40.0% | no (too few) |
 
+## Is anyone actually good? (the skeptic)
+
+Alpha = a trade's return after costs minus the S&P 500 over the same days. The range is a 95% confidence interval: if it includes 0%, luck explains the result. 'Beats Fruit Fly' is the chance the contestant's true average beats random picks.
+
+| Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
+|---|---|---|---|---|---|
+| claude | 63 | -1.36% | -2.22% to -0.50% | 23% | Losing to the market |
+| chatgpt | 20 | +0.07% | -2.30% to +2.45% | 77% | Can't tell from luck yet |
+| grok | 21 | -2.61% | -4.40% to -0.81% | 5% | Losing to the market |
+| learner | 19 | -0.84% | -2.79% to +1.11% | 52% | Too early to tell |
+| fly | 31 | -0.87% | -1.91% to +0.16% | 50% | Can't tell from luck yet |
+| fly_evo | 37 | -1.16% | -2.28% to -0.04% | 35% | Losing to the market |
+| momentum | 37 | -2.62% | -4.03% to -1.22% | 2% | Losing to the market |
+
+## Execution lab (shadow test, scores unchanged)
+
+Across 103 first-session trades by the AIs, buying at the open averaged -1.77% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.37% (101 fills, 2 missed). Chasing gapped-up stocks at the open is where money leaks, so set an entry zone you'd actually be happy to buy at, and pass if the stock is likely to open far above it.
+
+| Where the stock opened vs your close | Trades | Avg open-to-close |
+|---|---|---|
+| opened down 2%+ | 23 | -2.72% |
+| opened -2% to 0% | 41 | -1.20% |
+| opened 0% to +2% | 25 | +0.53% |
+| opened up 2%+ | 14 | -6.00% |
+
 ## Baselines (luck and simple rules)
 
 - **fly**: 31 trades, avg -1.1%, win rate 35.5%

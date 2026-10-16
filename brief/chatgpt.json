@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-15T21:44:33.217497-04:00",
+ "generated_at": "2026-10-15T21:54:12.104653-04:00",
  "tonight": {
   "run_date": "2026-10-15",
   "session": "2026-10-16",
@@ -806,6 +806,114 @@
     "target_rate": 0.067,
     "reliable": true
    }
+  },
+  "evidence": {
+   "by_model": {
+    "claude": {
+     "n": 63,
+     "avg_alpha": -0.0136,
+     "ci_low": -0.0222,
+     "ci_high": -0.005,
+     "t": -3.1,
+     "p_beats_fly": 0.228,
+     "trades_needed": 48,
+     "verdict": "Losing to the market"
+    },
+    "chatgpt": {
+     "n": 20,
+     "avg_alpha": 0.0007,
+     "ci_low": -0.023,
+     "ci_high": 0.0245,
+     "t": 0.06,
+     "p_beats_fly": 0.77,
+     "trades_needed": 117,
+     "verdict": "Can't tell from luck yet"
+    },
+    "grok": {
+     "n": 21,
+     "avg_alpha": -0.0261,
+     "ci_low": -0.044,
+     "ci_high": -0.0081,
+     "t": -2.84,
+     "p_beats_fly": 0.048,
+     "trades_needed": 70,
+     "verdict": "Losing to the market"
+    },
+    "learner": {
+     "n": 19,
+     "avg_alpha": -0.0084,
+     "ci_low": -0.0279,
+     "ci_high": 0.0111,
+     "t": -0.84,
+     "p_beats_fly": 0.516,
+     "trades_needed": 75,
+     "verdict": "Too early to tell"
+    },
+    "fly": {
+     "n": 31,
+     "avg_alpha": -0.0087,
+     "ci_low": -0.0191,
+     "ci_high": 0.0016,
+     "t": -1.65,
+     "p_beats_fly": 0.498,
+     "trades_needed": 34,
+     "verdict": "Can't tell from luck yet"
+    },
+    "fly_evo": {
+     "n": 37,
+     "avg_alpha": -0.0116,
+     "ci_low": -0.0228,
+     "ci_high": -0.0004,
+     "t": -2.02,
+     "p_beats_fly": 0.35,
+     "trades_needed": 48,
+     "verdict": "Losing to the market"
+    },
+    "momentum": {
+     "n": 37,
+     "avg_alpha": -0.0262,
+     "ci_low": -0.0403,
+     "ci_high": -0.0122,
+     "t": -3.66,
+     "p_beats_fly": 0.017,
+     "trades_needed": 76,
+     "verdict": "Losing to the market"
+    }
+   },
+   "lab": {
+    "n": 103,
+    "buy_at_open": -0.0177,
+    "limit_at_zone": {
+     "n": 101,
+     "missed": 2,
+     "avg": -0.0137
+    },
+    "by_gap": [
+     {
+      "label": "opened down 2%+",
+      "n": 23,
+      "avg_open_to_close": -0.0272
+     },
+     {
+      "label": "opened -2% to 0%",
+      "n": 41,
+      "avg_open_to_close": -0.012
+     },
+     {
+      "label": "opened 0% to +2%",
+      "n": 25,
+      "avg_open_to_close": 0.0053
+     },
+     {
+      "label": "opened up 2%+",
+      "n": 14,
+      "avg_open_to_close": -0.06
+     }
+    ],
+    "note": "First session only, after costs, no stops or targets. Shadow test: the official score still buys at the open."
+   },
+   "edge_target": 0.01,
+   "explain": "Alpha = a trade's return after costs minus the S&P 500 over the same days. The range is a 95% confidence interval: if it includes 0%, luck explains the result. 'Beats Fruit Fly' is the chance the contestant's true average beats random picks."
   },
   "operator_updates": [
    {
