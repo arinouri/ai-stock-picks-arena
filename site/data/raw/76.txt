@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-19
+received (UTC): 2026-10-19 23:40:21.396791
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 43 completed EVO trades. Ranked 122 liquid stocks using only data through 2026-10-19.",
+ "observations": 43,
+ "exploration_seed": 202610200043,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "RBLX",
+   "sampled_score": -0.000144,
+   "expected_reward": -0.037315,
+   "uncertainty": 0.051668
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DASH",
+   "sampled_score": -0.002072,
+   "expected_reward": -0.032203,
+   "uncertainty": 0.043477
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "sampled_score": -0.004608,
+   "expected_reward": -0.017181,
+   "uncertainty": 0.03883
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HIMS",
+   "sampled_score": -0.009619,
+   "expected_reward": -0.025732,
+   "uncertainty": 0.043774
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "BA",
+   "sampled_score": -0.014111,
+   "expected_reward": -0.016687,
+   "uncertainty": 0.033028
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RCL",
+   "sampled_score": -0.018551,
+   "expected_reward": -0.022339,
+   "uncertainty": 0.036181
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NKE",
+   "sampled_score": -0.020098,
+   "expected_reward": -0.021668,
+   "uncertainty": 0.035326
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DKNG",
+   "sampled_score": -0.020474,
+   "expected_reward": -0.011897,
+   "uncertainty": 0.032409
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UBER",
+   "sampled_score": -0.021531,
+   "expected_reward": -0.022426,
+   "uncertainty": 0.034852
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HUM",
+   "sampled_score": -0.022306,
+   "expected_reward": -0.025512,
+   "uncertainty": 0.034767
+  }
+ ]
+}

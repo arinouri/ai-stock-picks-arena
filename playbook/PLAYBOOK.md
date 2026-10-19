@@ -2,13 +2,13 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **116**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **118**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
-| claude | 69 | -1.5% | 18.8% | -1.4% | 50.7% |
+| claude | 71 | -1.4% | 19.7% | -1.3% | 50.7% |
 | chatgpt | 26 | -0.5% | 42.3% | +0.1% | 30.8% |
 | grok | 21 | -2.8% | 19.0% | -2.6% | 57.1% |
 
@@ -17,13 +17,13 @@ Closed AI trades so far: **116**. Patterns with fewer than 20 trades are noise.
 | Group | Trades | Avg return | Win rate | Reliable? |
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
-| book: catalyst | 50 | -1.2% | 32.0% | yes |
+| book: catalyst | 52 | -1.1% | 32.7% | yes |
 | book: compounder | 1 | -9.8% | 0.0% | no (too few) |
 | confidence: high | 1 | +11.2% | 100.0% | no (too few) |
-| confidence: medium | 44 | -1.9% | 29.5% | yes |
-| confidence: low | 71 | -1.4% | 19.7% | yes |
-| stop: medium stop (4-8%) | 48 | -2.1% | 20.8% | yes |
-| stop: tight stop (under 4%) | 61 | -1.0% | 24.6% | yes |
+| confidence: medium | 45 | -2.0% | 28.9% | yes |
+| confidence: low | 72 | -1.3% | 20.8% | yes |
+| stop: medium stop (4-8%) | 49 | -2.0% | 22.4% | yes |
+| stop: tight stop (under 4%) | 62 | -1.0% | 24.2% | yes |
 | stop: wide stop (8%+) | 7 | -1.4% | 42.9% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
@@ -32,29 +32,29 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 63 | -1.36% | -2.22% to -0.50% | 23% | Losing to the market |
-| chatgpt | 20 | +0.07% | -2.30% to +2.45% | 77% | Can't tell from luck yet |
-| grok | 21 | -2.61% | -4.40% to -0.81% | 5% | Losing to the market |
-| learner | 19 | -0.84% | -2.79% to +1.11% | 52% | Too early to tell |
-| fly | 31 | -0.87% | -1.91% to +0.16% | 50% | Can't tell from luck yet |
-| fly_evo | 37 | -1.16% | -2.28% to -0.04% | 35% | Losing to the market |
-| momentum | 37 | -2.62% | -4.03% to -1.22% | 2% | Losing to the market |
+| claude | 65 | -1.30% | -2.15% to -0.45% | 12% | Losing to the market |
+| chatgpt | 20 | +0.07% | -2.30% to +2.45% | 71% | Can't tell from luck yet |
+| grok | 21 | -2.61% | -4.40% to -0.81% | 2% | Losing to the market |
+| learner | 19 | -0.84% | -2.79% to +1.11% | 38% | Too early to tell |
+| fly | 41 | -0.57% | -1.40% to +0.26% | 51% | Can't tell from luck yet |
+| fly_evo | 43 | -0.82% | -1.83% to +0.20% | 33% | Can't tell from luck yet |
+| momentum | 45 | -2.10% | -3.32% to -0.87% | 2% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
-Across 115 first-session trades by the AIs, buying at the open averaged -1.78% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.41% (112 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
+Across 117 first-session trades by the AIs, buying at the open averaged -1.76% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.39% (114 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
 
 | Where the stock opened vs your close | Trades | Avg open-to-close |
 |---|---|---|
 | opened down 2%+ | 25 | -2.09% |
-| opened -2% to 0% | 42 | -1.55% |
-| opened 0% to +2% | 32 | -0.03% |
+| opened -2% to 0% | 43 | -1.56% |
+| opened 0% to +2% | 33 | -0.00% |
 | opened up 2%+ | 16 | -5.40% |
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 41 trades, avg -1.2%, win rate 31.7%
-- **momentum**: 46 trades, avg -3.3%, win rate 21.7%
+- **fly**: 51 trades, avg -0.9%, win rate 39.2%
+- **momentum**: 54 trades, avg -2.7%, win rate 24.1%
 - **learner**: 23 trades, avg -1.2%, win rate 21.7%
 
 ## Recent winners
