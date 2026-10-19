@@ -1,0 +1,52 @@
+model: fly
+file: internal/fly/2026-10-18
+received (UTC): 2026-10-19 00:52:52.053750
+status: ok
+problems: []
+
+{
+ "version": "uniform-random",
+ "market_view": "Picked at random. If an AI can't beat this, its research isn't adding anything.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "VRTX"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CVS"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CCL"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "TSLA"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AFRM"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "META"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SNOW"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DAL"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DVN"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DDOG"
+  }
+ ]
+}

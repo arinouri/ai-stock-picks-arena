@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-18
+received (UTC): 2026-10-19 00:52:52.053750
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 37 completed EVO trades. Ranked 129 liquid stocks using only data through 2026-10-16.",
+ "observations": 37,
+ "exploration_seed": 202610190037,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "NKE",
+   "sampled_score": 0.015828,
+   "expected_reward": -0.076511,
+   "uncertainty": 0.049232
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ROKU",
+   "sampled_score": 0.015595,
+   "expected_reward": -0.073192,
+   "uncertainty": 0.050773
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RCL",
+   "sampled_score": 0.013569,
+   "expected_reward": -0.067938,
+   "uncertainty": 0.045933
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AXP",
+   "sampled_score": 0.013342,
+   "expected_reward": -0.07793,
+   "uncertainty": 0.050382
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "BRK.B",
+   "sampled_score": 0.012752,
+   "expected_reward": -0.064525,
+   "uncertainty": 0.045181
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "FDX",
+   "sampled_score": 0.012748,
+   "expected_reward": -0.073645,
+   "uncertainty": 0.048999
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COST",
+   "sampled_score": 0.012526,
+   "expected_reward": -0.058224,
+   "uncertainty": 0.039623
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PYPL",
+   "sampled_score": 0.012313,
+   "expected_reward": -0.066881,
+   "uncertainty": 0.041735
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PFE",
+   "sampled_score": 0.011905,
+   "expected_reward": -0.063686,
+   "uncertainty": 0.041551
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DUK",
+   "sampled_score": 0.011143,
+   "expected_reward": -0.067514,
+   "uncertainty": 0.044511
+  }
+ ]
+}

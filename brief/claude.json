@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-17T12:36:14.305624-04:00",
+ "generated_at": "2026-10-18T20:53:13.233110-04:00",
  "tonight": {
   "run_date": "2026-10-18",
   "session": "2026-10-19",
@@ -133,7 +133,7 @@
    "your_thesis": "The core AI compute franchise, near a $6T market cap, at about 30x trailing P/E with a consensus target around $343. AMD's comment that compute demand is outrunning supply supports another strong print on Nov 25.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Down 1.8% to $217.23 on the AI-hardware rotation and CoreWeave credit worries rather than company news; TSMC's record Q3 and ~$54B Q4 guide still support demand, and I'm leaving the $212 stop in place rather than widening it."
+    "reason": "Down 1.4% to $214.13 in the eighth straight SOX decline on CoreWeave credit stress. Nvidia's CoreWeave exposure is a $2B equity stake and a conditional $6.3B capacity agreement, not a debt guarantee, and TSMC's $52-54B Q4 guide still supports demand. I'm keeping the $212 stop as set rather than widening it."
    }
   },
   {
@@ -152,7 +152,7 @@
    "your_thesis": "About 17x earnings for search, YouTube, Cloud and TPU custom silicon, and it's locking in long-term clean power (Constellation deal) to scale AI. It trades ~15% under its 52-week high with a consensus target around $426.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 0.5% to $349.22 as communication services rose 1.5%; no negative news and well above the $318 stop."
+    "reason": "Fell 2.5% to $340.59, right at its ~$341 200-day average, with communication services leading Friday's decline, but there's no company-specific negative news and it's well above the $318 stop."
    }
   },
   {
@@ -171,7 +171,7 @@
    "your_thesis": "Azure plus Copilot monetization and an enterprise moat, at about 29x P/E, just under its $553 high, with a consensus target around $568. Steady compounding into late-October earnings.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 1.1% to $539.44 as enterprise software rallied; Oct 28 earnings remain the catalyst."
+    "reason": "Flat versus entry at $529.05 after a 1.9% drop in the software selloff; the late-October earnings report is still the catalyst, and Friday's NiSource energy deal is a small positive."
    }
   },
   {
@@ -190,7 +190,7 @@
    "your_thesis": "AWS AI demand plus retail margin expansion and advertising, at about 20x P/E and 11% below its $287 high, with a consensus target around $330. It has rare valuation support among AI megacaps.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 0.3% to $254.76 as consumer discretionary led (+1.7%); the thesis is unchanged."
+    "reason": "Down 1.9% to $250 with megacap tech but well above the $238 stop; the valuation-support thesis is unchanged and nothing company-specific broke."
    }
   },
   {
@@ -209,7 +209,7 @@
    "your_thesis": "The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off and trades ~10% under its 52-week high.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 3.6% to $1,251.61 as health care opened at a record; raising the stop to $1,195 to lock in about +3% ahead of Oct 29 earnings."
+    "reason": "Up 8.4% at $1,257 and still rising (+0.4% Friday) as healthcare leads the rotation; the $1,195 stop already locks in a gain, and I'm leaving room to reach $1,290."
    }
   },
   {
@@ -228,7 +228,7 @@
    "your_thesis": "T-Mobile fell ~12% Friday on SpaceX's 800 MHz spectrum deal. On Oct 12 Raymond James upgraded it to Outperform, calling the competition fears overblown, and the stock bounced ~2.9% to ~$152 on 9M shares vs 4.9M average (Benzinga), near its $147.90 52-week low at ~10.5x forward P/E with $16B FCF. Peer analysts (BofA, MS) also see TMUS as least exposed to Starlink, so an oversold rebound is likely.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Reached $163.16 then faded to $157.03; the rebound thesis is intact, but I'm pulling the target to $161.50 and raising the stop to $153.50 for the last two sessions."
+    "reason": "Up 1.3% Friday to $159.10 (+4.4%) as defensives led; this is its last session, so I'm raising the stop to $155.50 to lock in most of the gain while leaving the $161.50 target in reach."
    }
   },
   {
@@ -247,7 +247,7 @@
    "your_thesis": "Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average volume), still ~25% below its $110 high and backed by a $1B buyback (Sep 10).",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 1.7% to $83.98 as consumer discretionary led; raising the stop to $80 to protect the Barclays-upgrade gain."
+    "reason": "Up 2.1% at $83.42 after the Barclays top-pick upgrade; it's holding above the $80 stop with two sessions left, though higher oil is a fuel-cost headwind to watch."
    }
   },
   {
@@ -266,7 +266,7 @@
    "your_thesis": "Ollie's authorized a new $500M buyback on Oct 13 (GlobeNewswire), lifting capacity to ~$561M, or ~10.6% of its ~$5.3B market cap, and Gordon Haskett upgraded it to Buy ($105). Shares hit $93.88 intraday but faded to the high-$80s (~1.6M average volume), 33% below the $133 high after an EPS beat ($1.42 vs $1.12), so buyback support should lift it over several sessions.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 2.6% to $95.56, near the $96.50 target, with retail strong (XRT +3%); raising the stop to $91 to lock in most of the +8%."
+    "reason": "Up 5.2% at $93.18 despite a 2.5% dip Friday; the $500M buyback thesis is intact, and the $91 stop already protects a gain."
    }
   },
   {
@@ -285,7 +285,7 @@
    "your_thesis": "On Oct 13 a Delaware jury found Arm breached its license agreement with Qualcomm (CNBC Oct 13), removing a major overhang on QCOM's custom-CPU roadmap. The ~2.5% pop was erased in the Oct 14 semis rout (close $172.62), so the legal win isn't priced in, and TSMC's print can trigger a sector rebound.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Up 5.4% to $178.40 against a falling semis tape after the Arm verdict; raising the stop to $171 to lock in a gain while targeting $184."
+    "reason": "Down 3.5% Friday to $172.11 in the semis rout, so the sector-rebound half of the thesis hasn't worked, but the Arm verdict is unchanged; with Nasdaq futures up I'll let the $171 stop decide rather than sell into the low."
    }
   },
   {
@@ -304,7 +304,7 @@
    "your_thesis": "Merck said on Oct 13 that three pivotal Phase 3 trials (INTerpath-001 intismeran+Keytruda, TroFuse-005 sac-TMT, KEYNOTE-C93) will be first presented in ESMO Presidential Symposia (Oct 23-27), with an oncology investor event Oct 26. The stock rose 3.7% to $147.37 Oct 14 as healthcare led, and that run-up into the data should extend while money rotates out of tech.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Fell 3% to $145.19 on a strong health-care day with no new company news I could verify, which is relative weakness; still above the $141.50 stop, and the ESMO Presidential Symposium data (Oct 23-27) stays the draw."
+    "reason": "At $145.95 it's still above the $141.50 stop, and the three Phase 3 ESMO presentations (Oct 23-27, including the intismeran+Keytruda INTerpath-001 data) are confirmed, so the run-up thesis is intact."
    }
   },
   {
@@ -323,7 +323,7 @@
    "your_thesis": "RTX reports Q3 on Oct 20 (company release Sep 29), inside a 4-session hold. It rose 0.6% to $186.47 on Oct 14 while the S&P fell 1.1%, and defense drew fresh Street support that day (Vertical Research upgraded Lockheed to Buy), on top of RTX's recent up-to-$6.3B SM-3 Block IB award and Barclays' Overweight/$223 initiation. Relative strength plus a scheduled print favors a pre-earnings run-up.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Down 1.6% to $186.95 as money rotated into consumer and health care; no negative news, Oct 20 earnings are inside the hold, and the $180.30 stop is intact."
+    "reason": "Up 3.7% Friday to $193.92 (+1.9%) on defense and relative strength, with Q3 due before Tuesday's open (implied move ~5.4%). I'm raising the stop to $184 so a poor print can't turn a gain into the original 5% loss."
    }
   },
   {
@@ -340,7 +340,10 @@
    "target": 57.0,
    "stop": 49.8,
    "your_thesis": "BofA double-upgraded CarMax on Oct 15 from Underperform to Buy and raised its target to $65 from $50, saying FTC all-in price enforcement leaves it 'the most price-competitive it has been in years' (used comps +13% vs industry -2%) and flagging the Nov 3 strategy update (StockStory, Oct 15). Shares closed +5.6% at $52.62 (StockAnalysis), ~19% under the $65.28 high. This is the same capitulating-bear setup as my CRM trade.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Flat at $53.33 after BofA's double upgrade; it's holding the gain while small caps fell 1.7%, and the Nov 3 strategy update remains the anchor."
+   }
   },
   {
    "position_id": 472,
@@ -356,7 +359,10 @@
    "target": 124.5,
    "stop": 115.0,
    "your_thesis": "Deutsche Bank upgraded Walmart on Oct 15 from Hold to Buy and raised its target to $136 from $113, citing persistent inflation (PPI +1.3% m/m) supporting its value proposition, grocery share gains and growth in ads and membership (StockStory/Benzinga, Oct 15). Shares rose ~2.5% to ~$118.6, 12% under the $134.20 May high, and staples are leading October (XLP +9%).",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Up 0.6% to $118.81 as staples led the week (+5%); the Deutsche Bank upgrade thesis is working slowly."
+   }
   },
   {
    "position_id": 473,
@@ -372,7 +378,10 @@
    "target": 54.3,
    "stop": 50.1,
    "your_thesis": "Bank of America faded after its Oct 14 print. On Oct 15 Baird upgraded it from Neutral to Outperform with a $62 target (Benzinga, Oct 15), and it closed $51.70, 20% under that target. Day-2+ mean reversion after a faded bank beat is the pattern that worked for me with UNH, and lower yields (10-year ~5.10%) help.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Down 1.8% to $51.23, but regional prints (RF beat, MTB beat on EPS) show no credit scare and the 10-year eased to ~5.1%; the $50.10 stop still sits outside normal noise."
+   }
   },
   {
    "position_id": 474,
@@ -388,7 +397,10 @@
    "target": 99.0,
    "stop": 91.0,
    "your_thesis": "Schwab posted record Q3 results on Oct 15: adj. EPS $1.69 vs $1.66, record revenue $7.17B (+17%, a hair under $7.19B), record core net new assets of $190.4B (Benzinga/Quartz, Oct 15). The stock still fell 2.7% to $94.16 (Wall Street Republic, Oct 15). That's the faded-beat setup, and I'm playing multi-day mean reversion rather than the opening gap.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Down 1.7% to $91.96 as brokers weakened after IBKR's small EPS miss; the record net-new-assets thesis hasn't changed, and I'll let the $91 stop decide rather than exit at the open."
+   }
   },
   {
    "position_id": 475,
@@ -404,7 +416,10 @@
    "target": 850.0,
    "stop": 765.0,
    "your_thesis": "UBS upgraded Regeneron on Oct 15 from Neutral to Buy and lifted its target 48% to $978 from $660 on next-gen Dupixent potential (MarketBeat/ORTEX, Oct 15), the first formal upgrade in the recent run. Shares rose ~2.3% to ~$796 midday on a record health-care day, 7% under the $859 high, with Q3 earnings (Oct 30) outside the hold.",
-   "your_last_call": null
+   "your_last_call": {
+    "action": "HOLD",
+    "reason": "Down 1.5% to $790.74 but above the $765 stop; healthcare is still leading the rotation (+3.5% on the week), and the UBS upgrade thesis is intact with earnings outside the hold."
+   }
   }
  ],
  "compounder_slots_free": 0,
@@ -745,12 +760,12 @@
   }
  ],
  "your_recent_lessons": [
+  "Over 40 closed moonshots my win rate is 15% at -1.21% average (reliable), and overall I average -1.45% per trade against -1.23% for the Fruit Fly. My alpha range (-2.2% to -0.5%) excludes zero on the losing side, so I'm beating Momentum (-3.27%) but not random picks. Friday's one winner, TRV (+3.85%, target), was a scheduled pre-open print, and TFC, CROX, INTU and LUV all timed out red. From now o",
+  "CRM traded up to $251.41 on Friday, about +6.5% from my $236 entry, then reversed 3.5% and stopped out at only +0.65%. I'm taking that as evidence to lock gains once a swing is up 4%+ and the exit is near: tonight I'm raising stops on TMUS (+4.4%, last session) and RTX (+1.9%, reports Tuesday before the open). I'm leaving the wide OLLI and LLY stops alone because those trends are intact.",
+  "Grok's Oct 15 lesson was to pass when a 1.5x-ATR stop and a 1.5:1 target aren't realistic, and ChatGPT's catalyst book (+0.49% average, n=11, a hunch) favors realized earnings over speculation. I already hold 10 catalyst trades and 4 AI-megacap compounders, which moved together on Friday (-$22.59 for me, NVDA/GOOGL/MSFT/AMZN -1.4% to -2.5%). Adding names in the eighth day of a semis rout would onl",
   "On Oct 15 AMD, MRVL and LRCX opened below stops set 1-2% under the reference close (TSMC-day gap down) and were stopped at the open, then AMD closed at $562, +4% above its open. For the third straight night a tight stop worked as a sell-at-open order, so I set stops beyond the likely overnight gap (4%+ for semis) or skip the trade.",
   "Multi-day analyst and day-2 catalyst trades are where I'm making money: EBAY (MS top pick) and UNH (day 2 after a faded beat-and-raise) hit their targets, CCI +7.5%, OLLI +7.9% and CRM +4.3%, while one-session moonshots keep losing. I'm weighting toward fresh double upgrades and top-pick calls with 4-5 session horizons.",
-  "TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high.",
-  "My Oct 14 moonshots (ASML, AMAT, LRCX, KLAC, MS) opened 2-4% below the reference close, and three opened at or under stops set 2-3% under the close, so on a macro-shock day those stops were effectively sell-at-open orders. A one-session stop has to sit beyond the stock's normal overnight gap (at least 3.5-4% for high-beta semis), or I should skip the trade.",
-  "Four of five moonshots in one theme (semicap off ASML's print) turned one macro shock (hot core CPI, SMH -4%) into five losses. Tonight I'm capping the TSMC-linked moonshots at three and putting the other two in a different sector (banks).",
-  "MS beat on Oct 14 (EPS $3.03 vs ~$2.90, equities +41%) and still fell 3%, the same gap-and-fade as GS, C and JPM. Bank beats sell off on the day, so I play them on day 2+ with multi-day targets rather than at the opening gap."
+  "TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high."
  ],
  "shared_playbook": {
   "how_to_use": [
@@ -1103,6 +1118,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "claude",
+    "night": "2026-10-18",
+    "lessons": [
+     "Over 40 closed moonshots my win rate is 15% at -1.21% average (reliable), and overall I average -1.45% per trade against -1.23% for the Fruit Fly. My alpha range (-2.2% to -0.5%) excludes zero on the losing side, so I'm beating Momentum (-3.27%) but not random picks. Friday's one winner, TRV (+3.85%, target), was a scheduled pre-open print, and TFC, CROX, INTU and LUV all timed out red. From now o",
+     "CRM traded up to $251.41 on Friday, about +6.5% from my $236 entry, then reversed 3.5% and stopped out at only +0.65%. I'm taking that as evidence to lock gains once a swing is up 4%+ and the exit is near: tonight I'm raising stops on TMUS (+4.4%, last session) and RTX (+1.9%, reports Tuesday before the open). I'm leaving the wide OLLI and LLY stops alone because those trends are intact.",
+     "Grok's Oct 15 lesson was to pass when a 1.5x-ATR stop and a 1.5:1 target aren't realistic, and ChatGPT's catalyst book (+0.49% average, n=11, a hunch) favors realized earnings over speculation. I already hold 10 catalyst trades and 4 AI-megacap compounders, which moved together on Friday (-$22.59 for me, NVDA/GOOGL/MSFT/AMZN -1.4% to -2.5%). Adding names in the eighth day of a semis rout would onl"
+    ]
+   },
+   {
     "model": "chatgpt",
     "night": "2026-10-15",
     "lessons": [
@@ -1136,15 +1160,6 @@
      "My Oct 14 moonshots (ASML, AMAT, LRCX, KLAC, MS) opened 2-4% below the reference close, and three opened at or under stops set 2-3% under the close, so on a macro-shock day those stops were effectively sell-at-open orders. A one-session stop has to sit beyond the stock's normal overnight gap (at least 3.5-4% for high-beta semis), or I should skip the trade.",
      "Four of five moonshots in one theme (semicap off ASML's print) turned one macro shock (hot core CPI, SMH -4%) into five losses. Tonight I'm capping the TSMC-linked moonshots at three and putting the other two in a different sector (banks).",
      "MS beat on Oct 14 (EPS $3.03 vs ~$2.90, equities +41%) and still fell 3%, the same gap-and-fade as GS, C and JPM. Bank beats sell off on the day, so I play them on day 2+ with multi-day targets rather than at the opening gap."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-10-13",
-    "lessons": [
-     "Pre-open earnings moonshots were bought after the news: DPZ and JNJ opened below my stops (set off the prior close) and were out at the open even though DPZ later traded to $305, so moonshot stops must sit below the plausible post-print open, not just below yesterday's close.",
-     "Beats that gap up at the open faded all day: UNH opened +5% on a beat-and-raise and closed -5%, and C, GS, JPM and WFC all printed their highs early and closed near their lows. Buying the opening gap on a good print has negative edge; the better trade is the multi-day mean reversion once the gap has fully faded.",
-     "Holding an earnings swing (MS) into the print with a far target gives back the gap-and-fade; set the target near the implied move so an opening pop is banked."
     ]
    },
    {
@@ -1349,10 +1364,10 @@
   ]
  },
  "your_last_upload": {
-  "path": "inbox/claude/2026-10-15.json",
+  "path": "inbox/claude/2026-10-18.json",
   "status": "ok",
   "errors": [],
-  "received_at": "2026-10-16T01:27:28.199682Z"
+  "received_at": "2026-10-19T00:52:52.053750Z"
  },
  "example_submission": {
   "model": "claude",

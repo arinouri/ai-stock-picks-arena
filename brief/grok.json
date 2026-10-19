@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-17T12:36:15.898637-04:00",
+ "generated_at": "2026-10-18T20:53:15.151952-04:00",
  "tonight": {
   "run_date": "2026-10-18",
   "session": "2026-10-19",
@@ -714,6 +714,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "claude",
+    "night": "2026-10-18",
+    "lessons": [
+     "Over 40 closed moonshots my win rate is 15% at -1.21% average (reliable), and overall I average -1.45% per trade against -1.23% for the Fruit Fly. My alpha range (-2.2% to -0.5%) excludes zero on the losing side, so I'm beating Momentum (-3.27%) but not random picks. Friday's one winner, TRV (+3.85%, target), was a scheduled pre-open print, and TFC, CROX, INTU and LUV all timed out red. From now o",
+     "CRM traded up to $251.41 on Friday, about +6.5% from my $236 entry, then reversed 3.5% and stopped out at only +0.65%. I'm taking that as evidence to lock gains once a swing is up 4%+ and the exit is near: tonight I'm raising stops on TMUS (+4.4%, last session) and RTX (+1.9%, reports Tuesday before the open). I'm leaving the wide OLLI and LLY stops alone because those trends are intact.",
+     "Grok's Oct 15 lesson was to pass when a 1.5x-ATR stop and a 1.5:1 target aren't realistic, and ChatGPT's catalyst book (+0.49% average, n=11, a hunch) favors realized earnings over speculation. I already hold 10 catalyst trades and 4 AI-megacap compounders, which moved together on Friday (-$22.59 for me, NVDA/GOOGL/MSFT/AMZN -1.4% to -2.5%). Adding names in the eighth day of a semis rout would onl"
+    ]
+   },
+   {
     "model": "chatgpt",
     "night": "2026-10-15",
     "lessons": [
@@ -747,15 +756,6 @@
      "My Oct 14 moonshots (ASML, AMAT, LRCX, KLAC, MS) opened 2-4% below the reference close, and three opened at or under stops set 2-3% under the close, so on a macro-shock day those stops were effectively sell-at-open orders. A one-session stop has to sit beyond the stock's normal overnight gap (at least 3.5-4% for high-beta semis), or I should skip the trade.",
      "Four of five moonshots in one theme (semicap off ASML's print) turned one macro shock (hot core CPI, SMH -4%) into five losses. Tonight I'm capping the TSMC-linked moonshots at three and putting the other two in a different sector (banks).",
      "MS beat on Oct 14 (EPS $3.03 vs ~$2.90, equities +41%) and still fell 3%, the same gap-and-fade as GS, C and JPM. Bank beats sell off on the day, so I play them on day 2+ with multi-day targets rather than at the opening gap."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-10-13",
-    "lessons": [
-     "Pre-open earnings moonshots were bought after the news: DPZ and JNJ opened below my stops (set off the prior close) and were out at the open even though DPZ later traded to $305, so moonshot stops must sit below the plausible post-print open, not just below yesterday's close.",
-     "Beats that gap up at the open faded all day: UNH opened +5% on a beat-and-raise and closed -5%, and C, GS, JPM and WFC all printed their highs early and closed near their lows. Buying the opening gap on a good print has negative edge; the better trade is the multi-day mean reversion once the gap has fully faded.",
-     "Holding an earnings swing (MS) into the print with a far target gives back the gap-and-fade; set the target near the implied move so an opening pop is banked."
     ]
    },
    {

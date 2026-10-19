@@ -1,0 +1,37 @@
+model: claude
+file: inbox/claude/2026-10-18.json
+received (UTC): 2026-10-19 00:52:52.053750
+status: ok
+problems: []
+
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Going into Monday the S&P 500 (7,659, -1.9% on the week) and Nasdaq (-4.5%) had their worst weeks since June: the SOX is on eight straight down days on AI-financing worries (CoreWeave -25% on the week, its bonds under 80 cents), the 10-year is at ~5.1%, WTI is near $100 on Hormuz risk, and CNN Fear & Greed is at 18. Sunday-night futures are modestly higher (Nasdaq-100 +0.4%, S&P +0.2%) as dip buyers step in. With Fed blackout, GE/RTX/NFLX on Tuesday and META/TSLA on Wednesday, I'm adding no new risk tonight and managing the 15 positions I already hold.",
+  "lessons": [
+    "Over 40 closed moonshots my win rate is 15% at -1.21% average (reliable), and overall I average -1.45% per trade against -1.23% for the Fruit Fly. My alpha range (-2.2% to -0.5%) excludes zero on the losing side, so I'm beating Momentum (-3.27%) but not random picks. Friday's one winner, TRV (+3.85%, target), was a scheduled pre-open print, and TFC, CROX, INTU and LUV all timed out red. From now on a moonshot needs a confirmed print or event before the open that isn't already pre-announced. Tonight nothing qualifies: CLF pre-guided $575M EBITDA, and FITB is a bank print, a group whose beats have sold off all week. So I'm submitting zero moonshots.",
+    "CRM traded up to $251.41 on Friday, about +6.5% from my $236 entry, then reversed 3.5% and stopped out at only +0.65%. I'm taking that as evidence to lock gains once a swing is up 4%+ and the exit is near: tonight I'm raising stops on TMUS (+4.4%, last session) and RTX (+1.9%, reports Tuesday before the open). I'm leaving the wide OLLI and LLY stops alone because those trends are intact.",
+    "Grok's Oct 15 lesson was to pass when a 1.5x-ATR stop and a 1.5:1 target aren't realistic, and ChatGPT's catalyst book (+0.49% average, n=11, a hunch) favors realized earnings over speculation. I already hold 10 catalyst trades and 4 AI-megacap compounders, which moved together on Friday (-$22.59 for me, NVDA/GOOGL/MSFT/AMZN -1.4% to -2.5%). Adding names in the eighth day of a semis rout would only stack more of the same beta, so I'm passing on new catalyst and moonshot picks tonight rather than forcing them."
+  ],
+  "review": [
+    {"position_id": 11, "ticker": "NVDA", "action": "HOLD", "reason": "Down 1.4% to $214.13 in the eighth straight SOX decline on CoreWeave credit stress. Nvidia's CoreWeave exposure is a $2B equity stake and a conditional $6.3B capacity agreement, not a debt guarantee, and TSMC's $52-54B Q4 guide still supports demand. I'm keeping the $212 stop as set rather than widening it.", "new_stop": null, "new_target": null},
+    {"position_id": 12, "ticker": "GOOGL", "action": "HOLD", "reason": "Fell 2.5% to $340.59, right at its ~$341 200-day average, with communication services leading Friday's decline, but there's no company-specific negative news and it's well above the $318 stop.", "new_stop": null, "new_target": null},
+    {"position_id": 13, "ticker": "MSFT", "action": "HOLD", "reason": "Flat versus entry at $529.05 after a 1.9% drop in the software selloff; the late-October earnings report is still the catalyst, and Friday's NiSource energy deal is a small positive.", "new_stop": null, "new_target": null},
+    {"position_id": 14, "ticker": "AMZN", "action": "HOLD", "reason": "Down 1.9% to $250 with megacap tech but well above the $238 stop; the valuation-support thesis is unchanged and nothing company-specific broke.", "new_stop": null, "new_target": null},
+    {"position_id": 15, "ticker": "LLY", "action": "HOLD", "reason": "Up 8.4% at $1,257 and still rising (+0.4% Friday) as healthcare leads the rotation; the $1,195 stop already locks in a gain, and I'm leaving room to reach $1,290.", "new_stop": null, "new_target": null},
+    {"position_id": 290, "ticker": "TMUS", "action": "HOLD", "reason": "Up 1.3% Friday to $159.10 (+4.4%) as defensives led; this is its last session, so I'm raising the stop to $155.50 to lock in most of the gain while leaving the $161.50 target in reach.", "new_stop": 155.5, "new_target": null},
+    {"position_id": 331, "ticker": "VIK", "action": "HOLD", "reason": "Up 2.1% at $83.42 after the Barclays top-pick upgrade; it's holding above the $80 stop with two sessions left, though higher oil is a fuel-cost headwind to watch.", "new_stop": null, "new_target": null},
+    {"position_id": 332, "ticker": "OLLI", "action": "HOLD", "reason": "Up 5.2% at $93.18 despite a 2.5% dip Friday; the $500M buyback thesis is intact, and the $91 stop already protects a gain.", "new_stop": null, "new_target": null},
+    {"position_id": 373, "ticker": "QCOM", "action": "HOLD", "reason": "Down 3.5% Friday to $172.11 in the semis rout, so the sector-rebound half of the thesis hasn't worked, but the Arm verdict is unchanged; with Nasdaq futures up I'll let the $171 stop decide rather than sell into the low.", "new_stop": null, "new_target": null},
+    {"position_id": 374, "ticker": "MRK", "action": "HOLD", "reason": "At $145.95 it's still above the $141.50 stop, and the three Phase 3 ESMO presentations (Oct 23-27, including the intismeran+Keytruda INTerpath-001 data) are confirmed, so the run-up thesis is intact.", "new_stop": null, "new_target": null},
+    {"position_id": 377, "ticker": "RTX", "action": "HOLD", "reason": "Up 3.7% Friday to $193.92 (+1.9%) on defense and relative strength, with Q3 due before Tuesday's open (implied move ~5.4%). I'm raising the stop to $184 so a poor print can't turn a gain into the original 5% loss.", "new_stop": 184.0, "new_target": null},
+    {"position_id": 471, "ticker": "KMX", "action": "HOLD", "reason": "Flat at $53.33 after BofA's double upgrade; it's holding the gain while small caps fell 1.7%, and the Nov 3 strategy update remains the anchor.", "new_stop": null, "new_target": null},
+    {"position_id": 472, "ticker": "WMT", "action": "HOLD", "reason": "Up 0.6% to $118.81 as staples led the week (+5%); the Deutsche Bank upgrade thesis is working slowly.", "new_stop": null, "new_target": null},
+    {"position_id": 473, "ticker": "BAC", "action": "HOLD", "reason": "Down 1.8% to $51.23, but regional prints (RF beat, MTB beat on EPS) show no credit scare and the 10-year eased to ~5.1%; the $50.10 stop still sits outside normal noise.", "new_stop": null, "new_target": null},
+    {"position_id": 474, "ticker": "SCHW", "action": "HOLD", "reason": "Down 1.7% to $91.96 as brokers weakened after IBKR's small EPS miss; the record net-new-assets thesis hasn't changed, and I'll let the $91 stop decide rather than exit at the open.", "new_stop": null, "new_target": null},
+    {"position_id": 475, "ticker": "REGN", "action": "HOLD", "reason": "Down 1.5% to $790.74 but above the $765 stop; healthcare is still leading the rotation (+3.5% on the week), and the UBS upgrade thesis is intact with earnings outside the hold.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
