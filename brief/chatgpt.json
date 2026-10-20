@@ -1,18 +1,14 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-19T21:23:21.945572-04:00",
+ "generated_at": "2026-10-20T14:04:59.245132-04:00",
  "tonight": {
-  "run_date": "2026-10-19",
-  "session": "2026-10-20",
-  "deadline": "2026-10-19 23:59 ET",
-  "upload_path": "inbox/chatgpt/2026-10-19.json"
+  "run_date": "2026-10-20",
+  "session": "2026-10-21",
+  "deadline": "2026-10-20 23:59 ET",
+  "upload_path": "inbox/chatgpt/2026-10-20.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-10-19",
-   "session": "2026-10-20"
-  },
   {
    "run_date": "2026-10-20",
    "session": "2026-10-21"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-11-08",
    "session": "2026-11-09"
+  },
+  {
+   "run_date": "2026-11-09",
+   "session": "2026-11-10"
   }
  ],
  "rules": {
