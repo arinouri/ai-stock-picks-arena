@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-19.json
 received (UTC): 2026-10-20 00:59:01.791527
-status: partial
+status: superseded
 problems: ["catalyst BYD: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
