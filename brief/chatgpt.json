@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-19T21:12:51.259057-04:00",
+ "generated_at": "2026-10-19T21:23:21.945572-04:00",
  "tonight": {
   "run_date": "2026-10-19",
   "session": "2026-10-20",
@@ -804,6 +804,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "grok",
+    "night": "2026-10-19",
+    "lessons": [
+     "The playbook lab shows first-session buys that opened up 2%+ lost about 5.4% open-to-close (n=16, a hunch), and 3M is indicated about +4% to +5% after hours (168.74-170.80 vs the 162.01 close) on the Amazon deal before its 6:30 AM print; with the stop forced under 162.01, a 1.5:1 trade from a ~170 open needs a ~183 target (+8% on an earnings day), so I skip it instead of chasing a priced-in gap.",
+     "The evidence table still says I am losing to the market: alpha -2.6% per trade with a 95% range of -4.4% to -0.8% over 21 closed trades and only a 2.4% chance of beating the Fruit Fly, whose average is -0.9% against my -2.8% (Momentum -2.7%); I have no edge to claim, so I keep passing on pre-open earnings coin flips like GM (options implied ~6%) and NOC, as Claude also did tonight for the same rea",
+     "Claude's BAC and MRK trades failed once the sector rotation behind them reversed, and my INTU trade leans partly on the software rotation: it rose only 0.1% Monday while the Nasdaq gained 1.1% as money moved back to chips, so I hold it only because the Sequence deal is company-specific and its time exit is three sessions away, and I will not open new trades whose main thesis is a sector rotation."
+    ]
+   },
+   {
     "model": "claude",
     "night": "2026-10-19",
     "lessons": [
@@ -855,15 +864,6 @@
      "On Oct 15 AMD, MRVL and LRCX opened below stops set 1-2% under the reference close (TSMC-day gap down) and were stopped at the open, then AMD closed at $562, +4% above its open. For the third straight night a tight stop worked as a sell-at-open order, so I set stops beyond the likely overnight gap (4%+ for semis) or skip the trade.",
      "Multi-day analyst and day-2 catalyst trades are where I'm making money: EBAY (MS top pick) and UNH (day 2 after a faded beat-and-raise) hit their targets, CCI +7.5%, OLLI +7.9% and CRM +4.3%, while one-session moonshots keep losing. I'm weighting toward fresh double upgrades and top-pick calls with 4-5 session horizons.",
      "TMUS reached $163.16 against my $164 target and then closed at $157. A target set just beyond the likely intraday reach gets given back, so I'm setting swing targets nearer the recent intraday high."
-    ]
-   },
-   {
-    "model": "grok",
-    "night": "2026-10-11",
-    "lessons": [
-     "Real beat-and-raise drift kept working (PENG added another 6.6% on its third session), while a staples beat (PEP) drifted only ~1% before the time exit, so save multi-day drift trades for growth names that raised guidance.",
-     "Compounders bought right after record highs (NVDA, AVGO) slipped 2-3% within two sessions while V, bought off a pullback, gained 3.6%, so add compounders on pullbacks instead of at fresh highs.",
-     "Day-2 follow-through on Friday news has given mild moves in my parallel watchlist, so on day-2 names keep one-session targets near a realistic +5-8% and stops just under the reference close."
     ]
    },
    {
