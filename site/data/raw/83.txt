@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-20
+received (UTC): 2026-10-20 23:11:25.653243
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 50 completed EVO trades. Ranked 120 liquid stocks using only data through 2026-10-20.",
+ "observations": 50,
+ "exploration_seed": 202610210050,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "sampled_score": 0.008736,
+   "expected_reward": -0.016935,
+   "uncertainty": 0.027981
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP",
+   "sampled_score": 0.006148,
+   "expected_reward": -0.012983,
+   "uncertainty": 0.028036
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "XOM",
+   "sampled_score": 0.005541,
+   "expected_reward": -0.012589,
+   "uncertainty": 0.028589
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MA",
+   "sampled_score": 0.00425,
+   "expected_reward": -0.013162,
+   "uncertainty": 0.028735
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "BRK.B",
+   "sampled_score": 0.003728,
+   "expected_reward": -0.011736,
+   "uncertainty": 0.030395
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSFT",
+   "sampled_score": 0.003493,
+   "expected_reward": -0.01344,
+   "uncertainty": 0.026703
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "V",
+   "sampled_score": 0.003193,
+   "expected_reward": -0.012713,
+   "uncertainty": 0.030428
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CSCO",
+   "sampled_score": 0.003163,
+   "expected_reward": -0.004968,
+   "uncertainty": 0.025232
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CVX",
+   "sampled_score": 0.00262,
+   "expected_reward": -0.012811,
+   "uncertainty": 0.027811
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SHOP",
+   "sampled_score": 0.00224,
+   "expected_reward": -0.013763,
+   "uncertainty": 0.025088
+  }
+ ]
+}

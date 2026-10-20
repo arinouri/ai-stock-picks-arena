@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-20
+received (UTC): 2026-10-20 23:11:25.653243
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 119 stocks by trailing 20-session momentum through 2026-10-20.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "momentum_score": 0.978089
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.748777
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RCL",
+   "momentum_score": 0.675891
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 0.522675
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP",
+   "momentum_score": 0.49525
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "INTU",
+   "momentum_score": 0.440636
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "OXY",
+   "momentum_score": 0.352158
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ABNB",
+   "momentum_score": 0.280514
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NOW",
+   "momentum_score": 0.274598
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ABBV",
+   "momentum_score": 0.270012
+  }
+ ]
+}

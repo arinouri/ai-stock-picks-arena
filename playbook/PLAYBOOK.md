@@ -2,13 +2,13 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **118**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **124**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
-| claude | 71 | -1.4% | 19.7% | -1.3% | 50.7% |
+| claude | 77 | -1.0% | 24.7% | -0.8% | 46.8% |
 | chatgpt | 26 | -0.5% | 42.3% | +0.1% | 30.8% |
 | grok | 21 | -2.8% | 19.0% | -2.6% | 57.1% |
 
@@ -17,14 +17,14 @@ Closed AI trades so far: **118**. Patterns with fewer than 20 trades are noise.
 | Group | Trades | Avg return | Win rate | Reliable? |
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
-| book: catalyst | 52 | -1.1% | 32.7% | yes |
-| book: compounder | 1 | -9.8% | 0.0% | no (too few) |
+| book: catalyst | 57 | -0.8% | 36.8% | yes |
+| book: compounder | 2 | +0.7% | 50.0% | no (too few) |
 | confidence: high | 1 | +11.2% | 100.0% | no (too few) |
-| confidence: medium | 45 | -2.0% | 28.9% | yes |
-| confidence: low | 72 | -1.3% | 20.8% | yes |
-| stop: medium stop (4-8%) | 49 | -2.0% | 22.4% | yes |
-| stop: tight stop (under 4%) | 62 | -1.0% | 24.2% | yes |
-| stop: wide stop (8%+) | 7 | -1.4% | 42.9% | no (too few) |
+| confidence: medium | 48 | -1.6% | 31.2% | yes |
+| confidence: low | 75 | -1.1% | 24.0% | yes |
+| stop: medium stop (4-8%) | 52 | -1.6% | 26.9% | yes |
+| stop: tight stop (under 4%) | 64 | -1.0% | 25.0% | yes |
+| stop: wide stop (8%+) | 8 | +0.2% | 50.0% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -32,39 +32,39 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 65 | -1.30% | -2.15% to -0.45% | 12% | Losing to the market |
-| chatgpt | 20 | +0.07% | -2.30% to +2.45% | 71% | Can't tell from luck yet |
-| grok | 21 | -2.61% | -4.40% to -0.81% | 2% | Losing to the market |
-| learner | 19 | -0.84% | -2.79% to +1.11% | 38% | Too early to tell |
-| fly | 41 | -0.57% | -1.40% to +0.26% | 51% | Can't tell from luck yet |
-| fly_evo | 43 | -0.82% | -1.83% to +0.20% | 33% | Can't tell from luck yet |
-| momentum | 45 | -2.10% | -3.32% to -0.87% | 2% | Losing to the market |
+| claude | 71 | -0.80% | -1.73% to +0.13% | 24% | Can't tell from luck yet |
+| chatgpt | 20 | +0.07% | -2.30% to +2.45% | 64% | Can't tell from luck yet |
+| grok | 21 | -2.61% | -4.40% to -0.81% | 1% | Losing to the market |
+| learner | 19 | -0.84% | -2.79% to +1.11% | 32% | Too early to tell |
+| fly | 50 | -0.36% | -1.07% to +0.35% | 49% | Can't tell from luck yet |
+| fly_evo | 50 | -0.62% | -1.53% to +0.29% | 32% | Can't tell from luck yet |
+| momentum | 52 | -1.65% | -2.78% to -0.52% | 2% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
-Across 117 first-session trades by the AIs, buying at the open averaged -1.76% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.39% (114 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
+Across 122 first-session trades by the AIs, buying at the open averaged -1.63% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.27% (119 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
 
 | Where the stock opened vs your close | Trades | Avg open-to-close |
 |---|---|---|
 | opened down 2%+ | 25 | -2.09% |
-| opened -2% to 0% | 43 | -1.56% |
-| opened 0% to +2% | 33 | -0.00% |
+| opened -2% to 0% | 45 | -1.35% |
+| opened 0% to +2% | 36 | +0.04% |
 | opened up 2%+ | 16 | -5.40% |
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 51 trades, avg -0.9%, win rate 39.2%
-- **momentum**: 54 trades, avg -2.7%, win rate 24.1%
+- **fly**: 60 trades, avg -0.7%, win rate 41.7%
+- **momentum**: 61 trades, avg -2.3%, win rate 27.9%
 - **learner**: 23 trades, avg -1.2%, win rate 21.7%
 
 ## Recent winners
 
-- **LW** (chatgpt, catalyst, medium confidence) +7.6%, exit: time. October 6 earnings exceeded company guidance and management raised full-year sales, adjusted EPS and EBITDA forecasts. Today's $48.09 close offers a measured swing entry on the improved cost-saving and North American volume outlook.
+- **LLY** (claude, compounder, medium confidence) +11.2%, exit: target. The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off
 - **CCI** (claude, catalyst, low confidence) +7.4%, exit: time. SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha
+- **VIK** (claude, catalyst, low confidence) +6.8%, exit: time. Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average vo
 - **EBAY** (claude, catalyst, low confidence) +5.9%, exit: target. Morgan Stanley named eBay a Top Pick on Oct 12, raising its target to $132 from $127 (Overweight), and estimates Live Commerce drives 40%+ of eBay's growth (Yahoo Finance, Oct 12). Shares rose ~2-5% to ~$114.65 on 5.3M shares vs 4.4M averag
 - **UNH** (claude, catalyst, medium confidence) +5.3%, exit: target. On Oct 13 UnitedHealth beat (adj. EPS $4.69 vs ~$4.06-4.12) and raised 2026 guidance to at least $20.50 from $19.50-20.00, its third raise this year (UNH release, Oct 13), yet the stock reversed from $399.88 to close $377.76 on 12.5M shares
-- **AA** (chatgpt, moonshot, low confidence) +4.2%, exit: target. Alcoa's Oct 15 after-close release reported $1.82 adjusted EPS, $472M free cash flow and $4.4B cash; the earnings/cash generation could support a Friday re-rating despite mixed revenue. Oct 15 close $40.42, 20-day average 4.57M shares and l
-- **TRV** (claude, moonshot, low confidence) +3.9%, exit: target. Travelers reports Q3 before Friday's open (consensus EPS ~$7.13-7.43 on ~$11.0B revenue, Benzinga Oct 14 / Wall Street Republic Oct 15), coming off a Q2 beat; options imply a ~6.4% move (RiskReversal, Oct 15). Shares closed at $360.61 on We
+- **OLLI** (claude, catalyst, low confidence) +4.6%, exit: time. Ollie's authorized a new $500M buyback on Oct 13 (GlobeNewswire), lifting capacity to ~$561M, or ~10.6% of its ~$5.3B market cap, and Gordon Haskett upgraded it to Buy ($105). Shares hit $93.88 intraday but faded to the high-$80s (~1.6M ave
 
 ## Recent losers
 

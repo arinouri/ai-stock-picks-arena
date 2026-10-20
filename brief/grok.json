@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-20T14:05:00.060309-04:00",
+ "generated_at": "2026-10-20T19:12:01.402840-04:00",
  "tonight": {
   "run_date": "2026-10-20",
   "session": "2026-10-21",
@@ -123,11 +123,11 @@
    "ticker": "NVDA",
    "entry_date": "2026-10-07",
    "entry_price": 234.93,
-   "last_price": 217.09,
-   "return_so_far": -0.0779,
-   "sessions_held": 8,
+   "last_price": 216.47,
+   "return_so_far": -0.0806,
+   "sessions_held": 9,
    "horizon_days": 60,
-   "sessions_left": 52,
+   "sessions_left": 51,
    "target": 275.0,
    "stop": 207.0,
    "your_thesis": "Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion.",
@@ -142,11 +142,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 533.52,
-   "return_so_far": 0.0058,
-   "sessions_held": 8,
+   "last_price": 531.87,
+   "return_so_far": 0.0027,
+   "sessions_held": 9,
    "horizon_days": 60,
-   "sessions_left": 52,
+   "sessions_left": 51,
    "target": 600.0,
    "stop": 485.0,
    "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
@@ -161,11 +161,11 @@
    "ticker": "GOOGL",
    "entry_date": "2026-10-07",
    "entry_price": 353.65,
-   "last_price": 344.18,
-   "return_so_far": -0.0288,
-   "sessions_held": 8,
+   "last_price": 340.275,
+   "return_so_far": -0.0398,
+   "sessions_held": 9,
    "horizon_days": 60,
-   "sessions_left": 52,
+   "sessions_left": 51,
    "target": 405.0,
    "stop": 318.0,
    "your_thesis": "Google Cloud revenue up 82% with a $514B backlog, TPU sales upside (Wells Fargo target $417), and Q3 results Oct 28.",
@@ -180,11 +180,11 @@
    "ticker": "V",
    "entry_date": "2026-10-07",
    "entry_price": 371.4,
-   "last_price": 402.92,
-   "return_so_far": 0.0829,
-   "sessions_held": 8,
+   "last_price": 406.57,
+   "return_so_far": 0.0927,
+   "sessions_held": 9,
    "horizon_days": 60,
-   "sessions_left": 52,
+   "sessions_left": 51,
    "target": 415.0,
    "stop": 388.0,
    "your_thesis": "Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27.",
@@ -199,11 +199,11 @@
    "ticker": "INTU",
    "entry_date": "2026-10-15",
    "entry_price": 332.34,
-   "last_price": 325.62,
-   "return_so_far": -0.0222,
-   "sessions_held": 2,
+   "last_price": 335.29,
+   "return_so_far": 0.0069,
+   "sessions_held": 3,
    "horizon_days": 5,
-   "sessions_left": 3,
+   "sessions_left": 2,
    "target": 345.0,
    "stop": 312.0,
    "your_thesis": "Intuit agreed on Oct 15 to buy AI-native revenue platform Sequence to extend Intuit Enterprise Suite into mid-market ERP (Intuit IR/Business Wire, Oct 15), and the stock rose ~6% to 330.17 as money rotated into software (CNBC, Oct 15). It is still ~11% under its 3-month high near 373, leaving room for a multi-session recovery if the rotation holds.",
@@ -218,11 +218,11 @@
    "ticker": "TSM",
    "entry_date": "2026-10-15",
    "entry_price": 421.22,
-   "last_price": 420.22,
-   "return_so_far": -0.0044,
-   "sessions_held": 2,
+   "last_price": 425.08,
+   "return_so_far": 0.0072,
+   "sessions_held": 3,
    "horizon_days": 60,
-   "sessions_left": 58,
+   "sessions_left": 57,
    "target": 490.0,
    "stop": 385.0,
    "your_thesis": "TSMC's Q3 (press release, Oct 15) beat its own guide with $46.72B revenue (+41% y/y in USD) and a 66.4% gross margin, and it guided Q4 to $52.3-54.3B on the 2nm ramp. The ADR still fell in the AI-hardware rotation to 422.25, about 13% under its 20-day high, so this is a pullback entry after beat-and-raise.",
@@ -234,19 +234,19 @@
  ],
  "compounder_slots_free": 0,
  "last_session": {
-  "date": "2026-10-19",
-  "your_pnl": 5.15,
+  "date": "2026-10-20",
+  "your_pnl": 3.37,
   "positions": [
    {
     "position_id": 56,
     "ticker": "NVDA",
     "bucket": "compounder",
     "entry_price": 234.93,
-    "close": 217.08999633789062,
-    "high": 219.6199951171875,
-    "low": 214.6999969482422,
-    "session_move": 0.0138,
-    "total_return": -0.0779,
+    "close": 216.47000122070312,
+    "high": 218.4600067138672,
+    "low": 212.77000427246094,
+    "session_move": -0.0029,
+    "total_return": -0.0806,
     "event": "held",
     "your_thesis": "Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion."
    },
@@ -255,11 +255,11 @@
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 533.52001953125,
-    "high": 535.5684204101562,
-    "low": 528.4796752929688,
-    "session_move": 0.0084,
-    "total_return": 0.0058,
+    "close": 531.8699951171875,
+    "high": 534.2100219726562,
+    "low": 525.8599853515625,
+    "session_move": -0.0031,
+    "total_return": 0.0027,
     "event": "held",
     "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst."
    },
@@ -268,11 +268,11 @@
     "ticker": "GOOGL",
     "bucket": "compounder",
     "entry_price": 353.65,
-    "close": 344.17999267578125,
-    "high": 346.5799865722656,
-    "low": 341.8500061035156,
-    "session_move": 0.0105,
-    "total_return": -0.0288,
+    "close": 340.2749938964844,
+    "high": 344.7699890136719,
+    "low": 338.3599853515625,
+    "session_move": -0.0113,
+    "total_return": -0.0398,
     "event": "held",
     "your_thesis": "Google Cloud revenue up 82% with a $514B backlog, TPU sales upside (Wells Fargo target $417), and Q3 results Oct 28."
    },
@@ -281,11 +281,11 @@
     "ticker": "V",
     "bucket": "compounder",
     "entry_price": 371.4,
-    "close": 402.9200134277344,
-    "high": 403.7919921875,
-    "low": 398.010009765625,
-    "session_move": 0.0008,
-    "total_return": 0.0829,
+    "close": 406.57000732421875,
+    "high": 408.5849914550781,
+    "low": 403.54010009765625,
+    "session_move": 0.0091,
+    "total_return": 0.0927,
     "event": "held",
     "your_thesis": "Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27."
    },
@@ -294,11 +294,11 @@
     "ticker": "INTU",
     "bucket": "catalyst",
     "entry_price": 332.34,
-    "close": 325.6199951171875,
-    "high": 327.17999267578125,
-    "low": 317.92999267578125,
-    "session_move": 0.0014,
-    "total_return": -0.0222,
+    "close": 335.2900085449219,
+    "high": 341.760009765625,
+    "low": 331.33380126953125,
+    "session_move": 0.0297,
+    "total_return": 0.0069,
     "event": "held",
     "your_thesis": "Intuit agreed on Oct 15 to buy AI-native revenue platform Sequence to extend Intuit Enterprise Suite into mid-market ERP (Intuit IR/Business Wire, Oct 15), and the stock rose ~6% to 330.17 as money rotated into software (CNBC, Oct 15). It is still ~11% under its 3-month high near 373, leaving room for a multi-session recovery if the rotation holds."
    },
@@ -307,11 +307,11 @@
     "ticker": "TSM",
     "bucket": "compounder",
     "entry_price": 421.22,
-    "close": 420.2200012207031,
-    "high": 427.159912109375,
-    "low": 415.5000915527344,
-    "session_move": 0.0184,
-    "total_return": -0.0044,
+    "close": 425.0799865722656,
+    "high": 428.2138977050781,
+    "low": 416.1199951171875,
+    "session_move": 0.0116,
+    "total_return": 0.0072,
     "event": "held",
     "your_thesis": "TSMC's Q3 (press release, Oct 15) beat its own guide with $46.72B revenue (+41% y/y in USD) and a 66.4% gross margin, and it guided Q4 to $52.3-54.3B on the 2nm ramp. The ADR still fell in the AI-hardware rotation to 422.25, about 13% under its 20-day high, so this is a pullback entry after beat-and-raise."
    }
@@ -320,45 +320,45 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -11.18,
+   "total_pnl": -2.32,
    "win_rate": 0.4230769230769231,
    "positions": 35
   },
   {
+   "model": "fly",
+   "total_pnl": -14.01,
+   "win_rate": 0.4166666666666667,
+   "positions": 75
+  },
+  {
    "model": "learner",
-   "total_pnl": -32.07,
+   "total_pnl": -29.43,
    "win_rate": 0.21739130434782608,
    "positions": 24
   },
   {
-   "model": "fly",
-   "total_pnl": -38.4,
-   "win_rate": 0.39215686274509803,
-   "positions": 65
-  },
-  {
    "model": "grok",
-   "total_pnl": -63.28,
+   "total_pnl": -59.91,
    "win_rate": 0.19047619047619047,
    "positions": 27
   },
   {
    "model": "fly_evo",
-   "total_pnl": -94.14,
-   "win_rate": 0.2641509433962264,
-   "positions": 65
+   "total_pnl": -72.13,
+   "win_rate": 0.2833333333333333,
+   "positions": 74
   },
   {
    "model": "claude",
-   "total_pnl": -103.16,
-   "win_rate": 0.19718309859154928,
+   "total_pnl": -88.19,
+   "win_rate": 0.24675324675324675,
    "positions": 85
   },
   {
    "model": "momentum",
-   "total_pnl": -160.33,
-   "win_rate": 0.24074074074074073,
-   "positions": 67
+   "total_pnl": -129.88,
+   "win_rate": 0.2786885245901639,
+   "positions": 77
   }
  ],
  "your_recent_lessons": [
@@ -376,15 +376,15 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 118,
+  "closed_trades_total": 124,
   "by_model": {
    "claude": {
-    "n": 71,
-    "avg_return": -0.0141,
-    "win_rate": 0.197,
-    "avg_vs_spy": -0.013,
-    "stop_rate": 0.507,
-    "target_rate": 0.07,
+    "n": 77,
+    "avg_return": -0.0098,
+    "win_rate": 0.247,
+    "avg_vs_spy": -0.008,
+    "stop_rate": 0.468,
+    "target_rate": 0.091,
     "reliable": true
    },
    "chatgpt": {
@@ -417,21 +417,21 @@
     "reliable": true
    },
    "catalyst": {
-    "n": 52,
-    "avg_return": -0.0114,
-    "win_rate": 0.327,
-    "avg_vs_spy": -0.0068,
-    "stop_rate": 0.538,
-    "target_rate": 0.058,
+    "n": 57,
+    "avg_return": -0.008,
+    "win_rate": 0.368,
+    "avg_vs_spy": -0.0034,
+    "stop_rate": 0.491,
+    "target_rate": 0.07,
     "reliable": true
    },
    "compounder": {
-    "n": 1,
-    "avg_return": -0.0984,
-    "win_rate": 0.0,
-    "avg_vs_spy": -0.0944,
-    "stop_rate": 1.0,
-    "target_rate": 0.0,
+    "n": 2,
+    "avg_return": 0.0071,
+    "win_rate": 0.5,
+    "avg_vs_spy": 0.0155,
+    "stop_rate": 0.5,
+    "target_rate": 0.5,
     "reliable": false
    }
   },
@@ -447,21 +447,21 @@
      "reliable": true
     },
     "catalyst": {
-     "n": 31,
-     "avg_return": -0.0168,
-     "win_rate": 0.258,
-     "avg_vs_spy": -0.0136,
-     "stop_rate": 0.613,
-     "target_rate": 0.065,
+     "n": 36,
+     "avg_return": -0.0106,
+     "win_rate": 0.333,
+     "avg_vs_spy": -0.0074,
+     "stop_rate": 0.528,
+     "target_rate": 0.083,
      "reliable": true
     },
     "compounder": {
-     "n": 0,
-     "avg_return": null,
-     "win_rate": null,
-     "avg_vs_spy": null,
-     "stop_rate": null,
-     "target_rate": null,
+     "n": 1,
+     "avg_return": 0.1125,
+     "win_rate": 1.0,
+     "avg_vs_spy": 0.1254,
+     "stop_rate": 0.0,
+     "target_rate": 1.0,
      "reliable": false
     }
    },
@@ -535,64 +535,64 @@
     "reliable": false
    },
    "medium": {
-    "n": 45,
-    "avg_return": -0.0196,
-    "win_rate": 0.289,
-    "avg_vs_spy": -0.0174,
-    "stop_rate": 0.422,
-    "target_rate": 0.044,
+    "n": 48,
+    "avg_return": -0.0161,
+    "win_rate": 0.312,
+    "avg_vs_spy": -0.0138,
+    "stop_rate": 0.396,
+    "target_rate": 0.062,
     "reliable": true
    },
    "low": {
-    "n": 72,
-    "avg_return": -0.0132,
-    "win_rate": 0.208,
-    "avg_vs_spy": -0.0118,
-    "stop_rate": 0.514,
-    "target_rate": 0.069,
+    "n": 75,
+    "avg_return": -0.0107,
+    "win_rate": 0.24,
+    "avg_vs_spy": -0.0088,
+    "stop_rate": 0.493,
+    "target_rate": 0.08,
     "reliable": true
    }
   },
   "by_stop_width": {
    "medium stop (4-8%)": {
-    "n": 49,
-    "avg_return": -0.0202,
-    "win_rate": 0.224,
-    "avg_vs_spy": -0.0189,
-    "stop_rate": 0.551,
-    "target_rate": 0.061,
+    "n": 52,
+    "avg_return": -0.0162,
+    "win_rate": 0.269,
+    "avg_vs_spy": -0.0147,
+    "stop_rate": 0.519,
+    "target_rate": 0.058,
     "reliable": true
    },
    "tight stop (under 4%)": {
-    "n": 62,
-    "avg_return": -0.0101,
-    "win_rate": 0.242,
-    "avg_vs_spy": -0.0084,
-    "stop_rate": 0.419,
-    "target_rate": 0.048,
+    "n": 64,
+    "avg_return": -0.01,
+    "win_rate": 0.25,
+    "avg_vs_spy": -0.0083,
+    "stop_rate": 0.406,
+    "target_rate": 0.062,
     "reliable": true
    },
    "wide stop (8%+)": {
-    "n": 7,
-    "avg_return": -0.0141,
-    "win_rate": 0.429,
-    "avg_vs_spy": -0.004,
-    "stop_rate": 0.429,
-    "target_rate": 0.286,
+    "n": 8,
+    "avg_return": 0.0018,
+    "win_rate": 0.5,
+    "avg_vs_spy": 0.0176,
+    "stop_rate": 0.375,
+    "target_rate": 0.375,
     "reliable": false
    }
   },
   "recent_winners": [
    {
-    "model": "chatgpt",
-    "ticker": "LW",
-    "book": "catalyst",
-    "return": 0.0756,
-    "exit": "time",
+    "model": "claude",
+    "ticker": "LLY",
+    "book": "compounder",
+    "return": 0.1125,
+    "exit": "target",
     "confidence": "medium",
-    "thesis": "October 6 earnings exceeded company guidance and management raised full-year sales, adjusted EPS and EBITDA forecasts. Today's $48.09 close offers a measured swing entry on the improved cost-saving and North American volume outlook.",
-    "main_risk": "Input and freight inflation or continued international weakness can erode the raised guidance; the post-report rally may stall.",
-    "date": "2026-10-13"
+    "thesis": "The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off",
+    "main_risk": "GLP-1 pricing pressure or Medicare negotiation headlines; sector-wide healthcare de-rating.",
+    "date": "2026-10-20"
    },
    {
     "model": "claude",
@@ -604,6 +604,17 @@
     "thesis": "SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha",
     "main_risk": "The tower-tenant link is inferred, not stated by SpaceX. If the gap fades the stop sits below the prior close, and weaker carriers (T, VZ, TMUS down 7%) are tow",
     "date": "2026-10-15"
+   },
+   {
+    "model": "claude",
+    "ticker": "VIK",
+    "book": "catalyst",
+    "return": 0.068,
+    "exit": "time",
+    "confidence": "low",
+    "thesis": "Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average vo",
+    "main_risk": "Per my CBOE lesson, upgrades alone often fade; BofA cut its target to $105 the same day, and European river levels could keep pressuring bookings.",
+    "date": "2026-10-20"
    },
    {
     "model": "claude",
@@ -628,26 +639,15 @@
     "date": "2026-10-15"
    },
    {
-    "model": "chatgpt",
-    "ticker": "AA",
-    "book": "moonshot",
-    "return": 0.0424,
-    "exit": "target",
-    "confidence": "low",
-    "thesis": "Alcoa's Oct 15 after-close release reported $1.82 adjusted EPS, $472M free cash flow and $4.4B cash; the earnings/cash generation could support a Friday re-rating despite mixed revenue. Oct 15 close $40.42, 20-day average 4.57M shares and l",
-    "main_risk": "Invalidation: failure to hold $39.50 after the earnings release; revenue disappointment, sequentially lower adjusted EBITDA and acquisition financing can outwei",
-    "date": "2026-10-16"
-   },
-   {
     "model": "claude",
-    "ticker": "TRV",
-    "book": "moonshot",
-    "return": 0.0385,
-    "exit": "target",
+    "ticker": "OLLI",
+    "book": "catalyst",
+    "return": 0.0459,
+    "exit": "time",
     "confidence": "low",
-    "thesis": "Travelers reports Q3 before Friday's open (consensus EPS ~$7.13-7.43 on ~$11.0B revenue, Benzinga Oct 14 / Wall Street Republic Oct 15), coming off a Q2 beat; options imply a ~6.4% move (RiskReversal, Oct 15). Shares closed at $360.61 on We",
-    "main_risk": "Q3 catastrophe losses or reserve charges, or softening commercial pricing; I couldn't confirm Thursday's exact close, so levels are set to work across a $355-37",
-    "date": "2026-10-16"
+    "thesis": "Ollie's authorized a new $500M buyback on Oct 13 (GlobeNewswire), lifting capacity to ~$561M, or ~10.6% of its ~$5.3B market cap, and Gordon Haskett upgraded it to Buy ($105). Shares hit $93.88 intraday but faded to the high-$80s (~1.6M ave",
+    "main_risk": "The intraday fade from $93.88 shows supply; I could not verify the exact Oct 13 close (last confirmed print $88.77 at 11am), and consumer-discretionary pressure",
+    "date": "2026-10-20"
    }
   ],
   "recent_losers": [
@@ -802,20 +802,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 51,
-    "avg_return": -0.0092,
-    "win_rate": 0.392,
-    "avg_vs_spy": -0.0057,
-    "stop_rate": 0.235,
+    "n": 60,
+    "avg_return": -0.0068,
+    "win_rate": 0.417,
+    "avg_vs_spy": -0.0036,
+    "stop_rate": 0.2,
     "target_rate": 0.0,
     "reliable": true
    },
    "momentum": {
-    "n": 54,
-    "avg_return": -0.0274,
-    "win_rate": 0.241,
-    "avg_vs_spy": -0.021,
-    "stop_rate": 0.519,
+    "n": 61,
+    "avg_return": -0.0226,
+    "win_rate": 0.279,
+    "avg_vs_spy": -0.0165,
+    "stop_rate": 0.459,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -840,26 +840,26 @@
     "reliable": true
    },
    "solo": {
-    "n": 87,
-    "avg_return": -0.0149,
-    "win_rate": 0.218,
-    "avg_vs_spy": -0.0121,
-    "stop_rate": 0.494,
-    "target_rate": 0.069,
+    "n": 93,
+    "avg_return": -0.0112,
+    "win_rate": 0.258,
+    "avg_vs_spy": -0.0079,
+    "stop_rate": 0.462,
+    "target_rate": 0.086,
     "reliable": true
    }
   },
   "evidence": {
    "by_model": {
     "claude": {
-     "n": 65,
-     "avg_alpha": -0.013,
-     "ci_low": -0.0215,
-     "ci_high": -0.0045,
-     "t": -2.99,
-     "p_beats_fly": 0.118,
-     "trades_needed": 48,
-     "verdict": "Losing to the market"
+     "n": 71,
+     "avg_alpha": -0.008,
+     "ci_low": -0.0173,
+     "ci_high": 0.0013,
+     "t": -1.68,
+     "p_beats_fly": 0.241,
+     "trades_needed": 63,
+     "verdict": "Can't tell from luck yet"
     },
     "chatgpt": {
      "n": 20,
@@ -867,7 +867,7 @@
      "ci_low": -0.023,
      "ci_high": 0.0245,
      "t": 0.06,
-     "p_beats_fly": 0.714,
+     "p_beats_fly": 0.635,
      "trades_needed": 117,
      "verdict": "Can't tell from luck yet"
     },
@@ -877,7 +877,7 @@
      "ci_low": -0.044,
      "ci_high": -0.0081,
      "t": -2.84,
-     "p_beats_fly": 0.024,
+     "p_beats_fly": 0.01,
      "trades_needed": 70,
      "verdict": "Losing to the market"
     },
@@ -887,48 +887,48 @@
      "ci_low": -0.0279,
      "ci_high": 0.0111,
      "t": -0.84,
-     "p_beats_fly": 0.384,
+     "p_beats_fly": 0.32,
      "trades_needed": 75,
      "verdict": "Too early to tell"
     },
     "fly": {
-     "n": 41,
-     "avg_alpha": -0.0057,
-     "ci_low": -0.014,
-     "ci_high": 0.0026,
-     "t": -1.34,
-     "p_beats_fly": 0.512,
-     "trades_needed": 29,
+     "n": 50,
+     "avg_alpha": -0.0036,
+     "ci_low": -0.0107,
+     "ci_high": 0.0035,
+     "t": -0.99,
+     "p_beats_fly": 0.491,
+     "trades_needed": 26,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 43,
-     "avg_alpha": -0.0082,
-     "ci_low": -0.0183,
-     "ci_high": 0.002,
-     "t": -1.58,
-     "p_beats_fly": 0.333,
-     "trades_needed": 45,
+     "n": 50,
+     "avg_alpha": -0.0062,
+     "ci_low": -0.0153,
+     "ci_high": 0.0029,
+     "t": -1.34,
+     "p_beats_fly": 0.324,
+     "trades_needed": 42,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 45,
-     "avg_alpha": -0.021,
-     "ci_low": -0.0332,
-     "ci_high": -0.0087,
-     "t": -3.35,
-     "p_beats_fly": 0.02,
-     "trades_needed": 70,
+     "n": 52,
+     "avg_alpha": -0.0165,
+     "ci_low": -0.0278,
+     "ci_high": -0.0052,
+     "t": -2.86,
+     "p_beats_fly": 0.024,
+     "trades_needed": 69,
      "verdict": "Losing to the market"
     }
    },
    "lab": {
-    "n": 117,
-    "buy_at_open": -0.0176,
+    "n": 122,
+    "buy_at_open": -0.0163,
     "limit_at_zone": {
-     "n": 114,
+     "n": 119,
      "missed": 3,
-     "avg": -0.0139
+     "avg": -0.0127
     },
     "by_gap": [
      {
@@ -938,13 +938,13 @@
      },
      {
       "label": "opened -2% to 0%",
-      "n": 43,
-      "avg_open_to_close": -0.0156
+      "n": 45,
+      "avg_open_to_close": -0.0135
      },
      {
       "label": "opened 0% to +2%",
-      "n": 33,
-      "avg_open_to_close": -0.0
+      "n": 36,
+      "avg_open_to_close": 0.0004
      },
      {
       "label": "opened up 2%+",
