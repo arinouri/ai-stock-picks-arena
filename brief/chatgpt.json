@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-21T14:11:07.601592-04:00",
+ "generated_at": "2026-10-21T19:19:29.087171-04:00",
  "tonight": {
   "run_date": "2026-10-21",
   "session": "2026-10-22",
@@ -123,11 +123,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 531.87,
-   "return_so_far": 0.0027,
-   "sessions_held": 9,
+   "last_price": 532.95,
+   "return_so_far": 0.0047,
+   "sessions_held": 10,
    "horizon_days": 60,
-   "sessions_left": 51,
+   "sessions_left": 50,
    "target": 615.0,
    "stop": 486.0,
    "your_thesis": "Today's Nvidia-powered Surface launch and current Copilot expansion reinforce Microsoft's ability to distribute AI across its enterprise and Windows ecosystem. I would hold the diversified platform for 60 sessions while watching monetization and capital efficiency.",
@@ -142,11 +142,11 @@
    "ticker": "GOOGL",
    "entry_date": "2026-10-07",
    "entry_price": 353.65,
-   "last_price": 340.275,
-   "return_so_far": -0.0398,
-   "sessions_held": 9,
+   "last_price": 334.76,
+   "return_so_far": -0.0554,
+   "sessions_held": 10,
    "horizon_days": 60,
-   "sessions_left": 51,
+   "sessions_left": 50,
    "target": 407.0,
    "stop": 321.0,
    "your_thesis": "The October 6 Constellation agreement secures incremental power capacity and expands a Google Cloud and Gemini Enterprise technology alliance. That combination supports a 60-session thesis in scalable cloud and AI distribution, with power execution as a material constraint.",
@@ -161,11 +161,11 @@
    "ticker": "AMZN",
    "entry_date": "2026-10-07",
    "entry_price": 259.72,
-   "last_price": 262.63,
-   "return_so_far": 0.0092,
-   "sessions_held": 9,
+   "last_price": 262.37,
+   "return_so_far": 0.0082,
+   "sessions_held": 10,
    "horizon_days": 60,
-   "sessions_left": 51,
+   "sessions_left": 50,
    "target": 303.0,
    "stop": 237.0,
    "your_thesis": "Today's fresh AWS review reports 36.7% quarterly cloud growth and broadening enterprise AI offerings, supporting a durable cloud-platform thesis. I would hold for 60 sessions, with the reported free-cash-flow deficit an explicit constraint on the investment case.",
@@ -180,11 +180,11 @@
    "ticker": "LLY",
    "entry_date": "2026-10-07",
    "entry_price": 1183.5,
-   "last_price": 1283.66,
-   "return_so_far": 0.0826,
-   "sessions_held": 9,
+   "last_price": 1270.75,
+   "return_so_far": 0.0717,
+   "sessions_held": 10,
    "horizon_days": 60,
-   "sessions_left": 51,
+   "sessions_left": 50,
    "target": 1375.0,
    "stop": 1187.0,
    "your_thesis": "The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the stock still requires valuation discipline.",
@@ -199,11 +199,11 @@
    "ticker": "V",
    "entry_date": "2026-10-07",
    "entry_price": 371.4,
-   "last_price": 406.57,
-   "return_so_far": 0.0927,
-   "sessions_held": 9,
+   "last_price": 407.85,
+   "return_so_far": 0.0961,
+   "sessions_held": 10,
    "horizon_days": 60,
-   "sessions_left": 51,
+   "sessions_left": 50,
    "target": 426.0,
    "stop": 378.5,
    "your_thesis": "The October 6 renewal of Visa's OpenTable agreement expands cardholder dining access across North America and illustrates the ongoing value of its payments network. I would hold for 60 sessions for recurring transaction economics rather than expect this partnership alone to cause a large daily move.",
@@ -213,51 +213,19 @@
    }
   },
   {
-   "position_id": 495,
-   "bucket": "catalyst",
-   "ticker": "ERIC",
-   "entry_date": "2026-10-15",
-   "entry_price": 10.57,
-   "last_price": 10.65,
-   "return_so_far": 0.0056,
-   "sessions_held": 3,
-   "horizon_days": 4,
-   "sessions_left": 1,
-   "target": 11.8,
-   "stop": 10.1,
-   "your_thesis": "Ericsson's Oct 15 05:00 UTC release reports 7% organic sales growth, SEK10.1B adjusted EBITA and SEK60.7B net cash, supporting a four-session earnings reassessment rather than a speculative 6G story. Oct 15 close $10.71 (+11.80%), 20-day average 10.45M ADRs and late indication $10.70 show strong regular-session buying without another large overnight premium.",
-   "your_last_call": null
-  },
-  {
    "position_id": 496,
    "bucket": "catalyst",
    "ticker": "PLD",
    "entry_date": "2026-10-15",
    "entry_price": 128.07,
-   "last_price": 127.47,
-   "return_so_far": -0.0067,
-   "sessions_held": 3,
+   "last_price": 127.6,
+   "return_so_far": -0.0057,
+   "sessions_held": 4,
    "horizon_days": 5,
-   "sessions_left": 2,
+   "sessions_left": 1,
    "target": 135.0,
    "stop": 122.5,
    "your_thesis": "Prologis' Oct 15 results report $1.60 core FFO per share, 23.4% cash rent growth and a narrowed $6.25-$6.29 full-year core FFO range whose midpoint rises slightly; the five-session thesis is recovery as investors distinguish operating rents from the GAAP guidance cut. Oct 15 close $126.94 (-2.70%), 20-day average 4.18M shares and last extended indication $126.94 leave room for a measured entry.",
-   "your_last_call": null
-  },
-  {
-   "position_id": 497,
-   "bucket": "catalyst",
-   "ticker": "BNY",
-   "entry_date": "2026-10-15",
-   "entry_price": 143.24,
-   "last_price": 144.25,
-   "return_so_far": 0.0051,
-   "sessions_held": 3,
-   "horizon_days": 4,
-   "sessions_left": 1,
-   "target": 153.5,
-   "stop": 137.8,
-   "your_thesis": "BNY's Oct 15 SEC release reports revenue growth of 12%, diluted EPS $2.34 (+24%) and a 39% pretax margin, giving the four-session trade a realized operating-leverage catalyst rather than just a sector forecast. Oct 15 close $142.09 (+3.23%), 20-day average 4.28M shares and a thin late extended indication near $143.49 imply a modest premium; the opening ceiling incorporates that indication.",
    "your_last_call": null
   },
   {
@@ -266,11 +234,11 @@
    "ticker": "CRM",
    "entry_date": "2026-10-15",
    "entry_price": 250.51,
-   "last_price": 242.43,
-   "return_so_far": -0.0343,
-   "sessions_held": 3,
+   "last_price": 241.78,
+   "return_so_far": -0.0368,
+   "sessions_held": 4,
    "horizon_days": 5,
-   "sessions_left": 2,
+   "sessions_left": 1,
    "target": 268.0,
    "stop": 234.5,
    "your_thesis": "An Oct 13 TIKR report dates BofA's double upgrade to Oct 12 and its target increase to $285 from $160; it also verifies Agentforce ARR above $1.5B, while noting the metric broadened to include Slackbot and Headless 360. Continued software rotation may extend the reassessment over five sessions: Oct 15 close $246.74 (+4.57%), 20-day average 9.67M shares and late quote $246.69, with no fresh overnight report claimed.",
@@ -279,19 +247,19 @@
  ],
  "compounder_slots_free": 0,
  "last_session": {
-  "date": "2026-10-20",
-  "your_pnl": 10.12,
+  "date": "2026-10-21",
+  "your_pnl": -3.32,
   "positions": [
    {
     "position_id": 76,
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 531.8699951171875,
-    "high": 534.2100219726562,
-    "low": 525.8599853515625,
-    "session_move": -0.0031,
-    "total_return": 0.0027,
+    "close": 532.9500122070312,
+    "high": 533.280029296875,
+    "low": 525.02001953125,
+    "session_move": 0.002,
+    "total_return": 0.0047,
     "event": "held",
     "your_thesis": "Today's Nvidia-powered Surface launch and current Copilot expansion reinforce Microsoft's ability to distribute AI across its enterprise and Windows ecosystem. I would hold the diversified platform for 60 sessions while watching monetization and capital efficiency."
    },
@@ -300,11 +268,11 @@
     "ticker": "GOOGL",
     "bucket": "compounder",
     "entry_price": 353.65,
-    "close": 340.2749938964844,
-    "high": 344.7699890136719,
-    "low": 338.3599853515625,
-    "session_move": -0.0113,
-    "total_return": -0.0398,
+    "close": 334.760009765625,
+    "high": 337.2699890136719,
+    "low": 330.3800048828125,
+    "session_move": -0.0162,
+    "total_return": -0.0554,
     "event": "held",
     "your_thesis": "The October 6 Constellation agreement secures incremental power capacity and expands a Google Cloud and Gemini Enterprise technology alliance. That combination supports a 60-session thesis in scalable cloud and AI distribution, with power execution as a material constraint."
    },
@@ -313,11 +281,11 @@
     "ticker": "AMZN",
     "bucket": "compounder",
     "entry_price": 259.72,
-    "close": 262.6300048828125,
-    "high": 265.3396911621094,
-    "low": 260.4200134277344,
-    "session_move": 0.0007,
-    "total_return": 0.0092,
+    "close": 262.3699951171875,
+    "high": 264.3500061035156,
+    "low": 259.2900085449219,
+    "session_move": -0.001,
+    "total_return": 0.0082,
     "event": "held",
     "your_thesis": "Today's fresh AWS review reports 36.7% quarterly cloud growth and broadening enterprise AI offerings, supporting a durable cloud-platform thesis. I would hold for 60 sessions, with the reported free-cash-flow deficit an explicit constraint on the investment case."
    },
@@ -326,11 +294,11 @@
     "ticker": "LLY",
     "bucket": "compounder",
     "entry_price": 1183.5,
-    "close": 1283.6600341796875,
-    "high": 1311.75,
-    "low": 1260.1700439453125,
-    "session_move": 0.0349,
-    "total_return": 0.0826,
+    "close": 1270.75,
+    "high": 1279.280029296875,
+    "low": 1261.68994140625,
+    "session_move": -0.0101,
+    "total_return": 0.0717,
     "event": "held",
     "your_thesis": "The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the stock still requires valuation discipline."
    },
@@ -339,11 +307,11 @@
     "ticker": "V",
     "bucket": "compounder",
     "entry_price": 371.4,
-    "close": 406.57000732421875,
-    "high": 408.5849914550781,
-    "low": 403.54010009765625,
-    "session_move": 0.0091,
-    "total_return": 0.0927,
+    "close": 407.8500061035156,
+    "high": 409.5299072265625,
+    "low": 404.1000061035156,
+    "session_move": 0.0031,
+    "total_return": 0.0961,
     "event": "held",
     "your_thesis": "The October 6 renewal of Visa's OpenTable agreement expands cardholder dining access across North America and illustrates the ongoing value of its payments network. I would hold for 60 sessions for recurring transaction economics rather than expect this partnership alone to cause a large daily move."
    },
@@ -352,12 +320,12 @@
     "ticker": "ERIC",
     "bucket": "catalyst",
     "entry_price": 10.57,
-    "close": 10.649999618530273,
-    "high": 10.65999984741211,
-    "low": 10.369999885559082,
-    "session_move": 0.03,
-    "total_return": 0.0056,
-    "event": "held",
+    "close": 10.430000305175781,
+    "high": 10.579999923706055,
+    "low": 10.404999732971191,
+    "session_move": -0.0207,
+    "total_return": -0.0152,
+    "event": "time",
     "your_thesis": "Ericsson's Oct 15 05:00 UTC release reports 7% organic sales growth, SEK10.1B adjusted EBITA and SEK60.7B net cash, supporting a four-session earnings reassessment rather than a speculative 6G story. Oct 15 close $10.71 (+11.80%), 20-day average 10.45M ADRs and late indication $10.70 show strong regular-session buying without another large overnight premium."
    },
    {
@@ -365,11 +333,11 @@
     "ticker": "PLD",
     "bucket": "catalyst",
     "entry_price": 128.07,
-    "close": 127.47000122070312,
-    "high": 127.47000122070312,
-    "low": 124.16999816894531,
-    "session_move": 0.0272,
-    "total_return": -0.0067,
+    "close": 127.5999984741211,
+    "high": 129.23500061035156,
+    "low": 127.3499984741211,
+    "session_move": 0.001,
+    "total_return": -0.0057,
     "event": "held",
     "your_thesis": "Prologis' Oct 15 results report $1.60 core FFO per share, 23.4% cash rent growth and a narrowed $6.25-$6.29 full-year core FFO range whose midpoint rises slightly; the five-session thesis is recovery as investors distinguish operating rents from the GAAP guidance cut. Oct 15 close $126.94 (-2.70%), 20-day average 4.18M shares and last extended indication $126.94 leave room for a measured entry."
    },
@@ -378,12 +346,12 @@
     "ticker": "BNY",
     "bucket": "catalyst",
     "entry_price": 143.24,
-    "close": 144.25,
-    "high": 145.32000732421875,
-    "low": 142.0500030517578,
-    "session_move": 0.0127,
-    "total_return": 0.0051,
-    "event": "held",
+    "close": 145.85000610351562,
+    "high": 146.83999633789062,
+    "low": 144.9499969482422,
+    "session_move": 0.0111,
+    "total_return": 0.0162,
+    "event": "time",
     "your_thesis": "BNY's Oct 15 SEC release reports revenue growth of 12%, diluted EPS $2.34 (+24%) and a 39% pretax margin, giving the four-session trade a realized operating-leverage catalyst rather than just a sector forecast. Oct 15 close $142.09 (+3.23%), 20-day average 4.28M shares and a thin late extended indication near $143.49 imply a modest premium; the opening ceiling incorporates that indication."
    },
    {
@@ -391,11 +359,11 @@
     "ticker": "CRM",
     "bucket": "catalyst",
     "entry_price": 250.51,
-    "close": 242.42999267578125,
-    "high": 244.14430236816406,
-    "low": 235.60000610351562,
-    "session_move": -0.0001,
-    "total_return": -0.0343,
+    "close": 241.77999877929688,
+    "high": 244.17999267578125,
+    "low": 237.22999572753906,
+    "session_move": -0.0027,
+    "total_return": -0.0368,
     "event": "held",
     "your_thesis": "An Oct 13 TIKR report dates BofA's double upgrade to Oct 12 and its target increase to $285 from $160; it also verifies Agentforce ARR above $1.5B, while noting the metric broadened to include Slackbot and Headless 360. Continued software rotation may extend the reassessment over five sessions: Oct 15 close $246.74 (+4.57%), 20-day average 9.67M shares and late quote $246.69, with no fresh overnight report claimed."
    }
@@ -403,46 +371,46 @@
  },
  "scoreboard": [
   {
+   "model": "fly",
+   "total_pnl": 11.43,
+   "win_rate": 0.43478260869565216,
+   "positions": 84
+  },
+  {
    "model": "chatgpt",
-   "total_pnl": -1.06,
-   "win_rate": 0.4230769230769231,
+   "total_pnl": -4.38,
+   "win_rate": 0.42857142857142855,
    "positions": 35
   },
   {
-   "model": "fly",
-   "total_pnl": -11.16,
-   "win_rate": 0.4166666666666667,
-   "positions": 75
-  },
-  {
    "model": "learner",
-   "total_pnl": -29.43,
+   "total_pnl": -29.33,
    "win_rate": 0.21739130434782608,
-   "positions": 24
+   "positions": 26
   },
   {
    "model": "grok",
-   "total_pnl": -59.91,
+   "total_pnl": -56.87,
    "win_rate": 0.19047619047619047,
    "positions": 27
   },
   {
    "model": "fly_evo",
-   "total_pnl": -69.72,
-   "win_rate": 0.2833333333333333,
-   "positions": 75
+   "total_pnl": -76.3,
+   "win_rate": 0.3333333333333333,
+   "positions": 84
   },
   {
    "model": "claude",
-   "total_pnl": -86.41,
+   "total_pnl": -90.24,
    "win_rate": 0.24358974358974358,
-   "positions": 85
+   "positions": 87
   },
   {
    "model": "momentum",
-   "total_pnl": -127.01,
-   "win_rate": 0.27419354838709675,
-   "positions": 77
+   "total_pnl": -129.89,
+   "win_rate": 0.30985915492957744,
+   "positions": 86
   }
  ],
  "your_recent_lessons": [
@@ -460,7 +428,7 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 125,
+  "closed_trades_total": 127,
   "by_model": {
    "claude": {
     "n": 78,
@@ -472,12 +440,12 @@
     "reliable": true
    },
    "chatgpt": {
-    "n": 26,
-    "avg_return": -0.0049,
-    "win_rate": 0.423,
-    "avg_vs_spy": 0.0007,
-    "stop_rate": 0.308,
-    "target_rate": 0.115,
+    "n": 28,
+    "avg_return": -0.0045,
+    "win_rate": 0.429,
+    "avg_vs_spy": 0.0006,
+    "stop_rate": 0.286,
+    "target_rate": 0.107,
     "reliable": true
    },
    "grok": {
@@ -501,12 +469,12 @@
     "reliable": true
    },
    "catalyst": {
-    "n": 58,
-    "avg_return": -0.0083,
-    "win_rate": 0.362,
+    "n": 60,
+    "avg_return": -0.008,
+    "win_rate": 0.367,
     "avg_vs_spy": -0.0038,
-    "stop_rate": 0.483,
-    "target_rate": 0.069,
+    "stop_rate": 0.467,
+    "target_rate": 0.067,
     "reliable": true
    },
    "compounder": {
@@ -560,12 +528,12 @@
      "reliable": false
     },
     "catalyst": {
-     "n": 11,
-     "avg_return": 0.0049,
-     "win_rate": 0.545,
-     "avg_vs_spy": 0.0173,
-     "stop_rate": 0.364,
-     "target_rate": 0.091,
+     "n": 13,
+     "avg_return": 0.0042,
+     "win_rate": 0.538,
+     "avg_vs_spy": 0.0142,
+     "stop_rate": 0.308,
+     "target_rate": 0.077,
      "reliable": false
     },
     "compounder": {
@@ -619,12 +587,12 @@
     "reliable": false
    },
    "medium": {
-    "n": 49,
-    "avg_return": -0.0163,
-    "win_rate": 0.306,
-    "avg_vs_spy": -0.0141,
-    "stop_rate": 0.388,
-    "target_rate": 0.061,
+    "n": 51,
+    "avg_return": -0.0156,
+    "win_rate": 0.314,
+    "avg_vs_spy": -0.0136,
+    "stop_rate": 0.373,
+    "target_rate": 0.059,
     "reliable": true
    },
    "low": {
@@ -639,21 +607,21 @@
   },
   "by_stop_width": {
    "medium stop (4-8%)": {
-    "n": 52,
+    "n": 53,
     "avg_return": -0.0162,
-    "win_rate": 0.269,
+    "win_rate": 0.264,
     "avg_vs_spy": -0.0147,
-    "stop_rate": 0.519,
-    "target_rate": 0.058,
+    "stop_rate": 0.509,
+    "target_rate": 0.057,
     "reliable": true
    },
    "tight stop (under 4%)": {
-    "n": 65,
-    "avg_return": -0.0102,
-    "win_rate": 0.246,
-    "avg_vs_spy": -0.0087,
-    "stop_rate": 0.4,
-    "target_rate": 0.062,
+    "n": 66,
+    "avg_return": -0.0098,
+    "win_rate": 0.258,
+    "avg_vs_spy": -0.0082,
+    "stop_rate": 0.394,
+    "target_rate": 0.061,
     "reliable": true
    },
    "wide stop (8%+)": {
@@ -792,13 +760,13 @@
    },
    {
     "model": "claude",
-    "ticker": "HUM",
-    "book": "catalyst",
-    "return": -0.0539,
-    "exit": "stop",
+    "ticker": "UNH",
+    "book": "moonshot",
+    "return": -0.052,
+    "exit": "time",
     "confidence": "medium",
-    "thesis": "Humana's Oct 8 release says 95% of members are now in 4+ star 2027 Medicare Advantage plans (vs 20% for 2026), a large 2028 bonus tailwind, and it reaffirmed 2026 EPS of at least $9. Baird upgraded to Outperform ($596 target) and Barclays r",
-    "main_risk": "It faded 5% from the $456.50 high Friday and is up ~63% YTD; Baird notes profits depend on how much is reinvested in benefits. A CMS ratings dispute or a rotati",
+    "thesis": "UnitedHealth reports Q3 before the open Oct 13 (Investing.com preview, Oct 12: consensus EPS $4.12, revenue $111.31B, FY26 guide $19.50-20.00 vs $19.80 consensus, Q2 MCR 86.7% vs 88.1% FY guide). It closed $378.52, ~13% below its July level",
+    "main_risk": "An MCR well above ~88% or an Optum Health miss would revive the utilization fears and the stock could gap down 7-10%; it is a coin-flip print, so liquidity is f",
     "date": "2026-10-13"
    }
   ],
@@ -886,20 +854,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 60,
-    "avg_return": -0.0068,
-    "win_rate": 0.417,
-    "avg_vs_spy": -0.0036,
-    "stop_rate": 0.2,
-    "target_rate": 0.0,
+    "n": 69,
+    "avg_return": -0.0049,
+    "win_rate": 0.435,
+    "avg_vs_spy": -0.0026,
+    "stop_rate": 0.174,
+    "target_rate": 0.014,
     "reliable": true
    },
    "momentum": {
-    "n": 62,
-    "avg_return": -0.0225,
-    "win_rate": 0.274,
-    "avg_vs_spy": -0.0164,
-    "stop_rate": 0.452,
+    "n": 71,
+    "avg_return": -0.0185,
+    "win_rate": 0.31,
+    "avg_vs_spy": -0.0135,
+    "stop_rate": 0.394,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -924,12 +892,12 @@
     "reliable": true
    },
    "solo": {
-    "n": 94,
-    "avg_return": -0.0113,
-    "win_rate": 0.255,
-    "avg_vs_spy": -0.0081,
-    "stop_rate": 0.457,
-    "target_rate": 0.085,
+    "n": 96,
+    "avg_return": -0.0111,
+    "win_rate": 0.26,
+    "avg_vs_spy": -0.008,
+    "stop_rate": 0.448,
+    "target_rate": 0.083,
     "reliable": true
    }
   },
@@ -941,18 +909,18 @@
      "ci_low": -0.0174,
      "ci_high": 0.0009,
      "t": -1.76,
-     "p_beats_fly": 0.223,
+     "p_beats_fly": 0.164,
      "trades_needed": 63,
      "verdict": "Can't tell from luck yet"
     },
     "chatgpt": {
-     "n": 20,
-     "avg_alpha": 0.0007,
-     "ci_low": -0.023,
-     "ci_high": 0.0245,
-     "t": 0.06,
-     "p_beats_fly": 0.635,
-     "trades_needed": 117,
+     "n": 22,
+     "avg_alpha": 0.0006,
+     "ci_low": -0.0211,
+     "ci_high": 0.0222,
+     "t": 0.05,
+     "p_beats_fly": 0.626,
+     "trades_needed": 107,
      "verdict": "Can't tell from luck yet"
     },
     "grok": {
@@ -961,7 +929,7 @@
      "ci_low": -0.044,
      "ci_high": -0.0081,
      "t": -2.84,
-     "p_beats_fly": 0.01,
+     "p_beats_fly": 0.011,
      "trades_needed": 70,
      "verdict": "Losing to the market"
     },
@@ -971,48 +939,48 @@
      "ci_low": -0.0279,
      "ci_high": 0.0111,
      "t": -0.84,
-     "p_beats_fly": 0.32,
+     "p_beats_fly": 0.295,
      "trades_needed": 75,
      "verdict": "Too early to tell"
     },
     "fly": {
-     "n": 50,
-     "avg_alpha": -0.0036,
-     "ci_low": -0.0107,
-     "ci_high": 0.0035,
-     "t": -0.99,
-     "p_beats_fly": 0.491,
-     "trades_needed": 26,
+     "n": 59,
+     "avg_alpha": -0.0026,
+     "ci_low": -0.0093,
+     "ci_high": 0.004,
+     "t": -0.78,
+     "p_beats_fly": 0.494,
+     "trades_needed": 27,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 50,
-     "avg_alpha": -0.0062,
-     "ci_low": -0.0153,
-     "ci_high": 0.0029,
-     "t": -1.34,
-     "p_beats_fly": 0.324,
-     "trades_needed": 42,
+     "n": 59,
+     "avg_alpha": -0.005,
+     "ci_low": -0.0127,
+     "ci_high": 0.0028,
+     "t": -1.26,
+     "p_beats_fly": 0.326,
+     "trades_needed": 37,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 53,
-     "avg_alpha": -0.0164,
-     "ci_low": -0.0275,
-     "ci_high": -0.0053,
-     "t": -2.89,
-     "p_beats_fly": 0.027,
-     "trades_needed": 67,
+     "n": 62,
+     "avg_alpha": -0.0135,
+     "ci_low": -0.0232,
+     "ci_high": -0.0038,
+     "t": -2.72,
+     "p_beats_fly": 0.039,
+     "trades_needed": 61,
      "verdict": "Losing to the market"
     }
    },
    "lab": {
-    "n": 123,
-    "buy_at_open": -0.0164,
+    "n": 125,
+    "buy_at_open": -0.0162,
     "limit_at_zone": {
-     "n": 120,
+     "n": 122,
      "missed": 3,
-     "avg": -0.0128
+     "avg": -0.0127
     },
     "by_gap": [
      {
@@ -1022,13 +990,13 @@
      },
      {
       "label": "opened -2% to 0%",
-      "n": 45,
-      "avg_open_to_close": -0.0135
+      "n": 46,
+      "avg_open_to_close": -0.0133
      },
      {
       "label": "opened 0% to +2%",
-      "n": 37,
-      "avg_open_to_close": -0.0005
+      "n": 38,
+      "avg_open_to_close": -0.0006
      },
      {
       "label": "opened up 2%+",

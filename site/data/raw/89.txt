@@ -1,0 +1,52 @@
+model: fly
+file: internal/fly/2026-10-21
+received (UTC): 2026-10-21 23:18:46.818830
+status: ok
+problems: []
+
+{
+ "version": "uniform-random",
+ "market_view": "Picked at random. If an AI can't beat this, its research isn't adding anything.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "SMCI"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DAL"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CRM"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MSTR"
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMZN"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "META"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AXP"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "C"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HAL"
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GE"
+  }
+ ]
+}

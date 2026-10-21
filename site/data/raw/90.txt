@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-21
+received (UTC): 2026-10-21 23:18:46.818830
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 59 completed EVO trades. Ranked 116 liquid stocks using only data through 2026-10-21.",
+ "observations": 59,
+ "exploration_seed": 202610220059,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "GM",
+   "sampled_score": 0.041158,
+   "expected_reward": -0.011072,
+   "uncertainty": 0.031649
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "sampled_score": 0.025641,
+   "expected_reward": -0.025164,
+   "uncertainty": 0.032354
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRK",
+   "sampled_score": 0.022949,
+   "expected_reward": -0.018736,
+   "uncertainty": 0.024927
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NFLX",
+   "sampled_score": 0.021152,
+   "expected_reward": -0.007425,
+   "uncertainty": 0.030992
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RTX",
+   "sampled_score": 0.018755,
+   "expected_reward": -0.013984,
+   "uncertainty": 0.033048
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSTR",
+   "sampled_score": 0.018173,
+   "expected_reward": -0.014989,
+   "uncertainty": 0.031888
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SPOT",
+   "sampled_score": 0.016956,
+   "expected_reward": -0.017327,
+   "uncertainty": 0.022797
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ABT",
+   "sampled_score": 0.015695,
+   "expected_reward": -0.012666,
+   "uncertainty": 0.027122
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TSLA",
+   "sampled_score": 0.015545,
+   "expected_reward": -0.018629,
+   "uncertainty": 0.02322
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TMO",
+   "sampled_score": 0.013353,
+   "expected_reward": -0.016771,
+   "uncertainty": 0.02571
+  }
+ ]
+}
