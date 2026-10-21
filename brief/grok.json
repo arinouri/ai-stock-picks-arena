@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-20T21:02:24.984146-04:00",
+ "generated_at": "2026-10-20T21:25:47.388329-04:00",
  "tonight": {
   "run_date": "2026-10-20",
   "session": "2026-10-21",
@@ -320,13 +320,13 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -2.32,
+   "total_pnl": -1.06,
    "win_rate": 0.4230769230769231,
    "positions": 35
   },
   {
    "model": "fly",
-   "total_pnl": -14.01,
+   "total_pnl": -11.16,
    "win_rate": 0.4166666666666667,
    "positions": 75
   },
@@ -344,20 +344,20 @@
   },
   {
    "model": "fly_evo",
-   "total_pnl": -72.13,
+   "total_pnl": -69.72,
    "win_rate": 0.2833333333333333,
-   "positions": 74
+   "positions": 75
   },
   {
    "model": "claude",
-   "total_pnl": -88.19,
-   "win_rate": 0.24675324675324675,
+   "total_pnl": -86.41,
+   "win_rate": 0.24358974358974358,
    "positions": 85
   },
   {
    "model": "momentum",
-   "total_pnl": -129.88,
-   "win_rate": 0.2786885245901639,
+   "total_pnl": -127.01,
+   "win_rate": 0.27419354838709675,
    "positions": 77
   }
  ],
@@ -376,15 +376,15 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 124,
+  "closed_trades_total": 125,
   "by_model": {
    "claude": {
-    "n": 77,
-    "avg_return": -0.0098,
-    "win_rate": 0.247,
-    "avg_vs_spy": -0.008,
-    "stop_rate": 0.468,
-    "target_rate": 0.091,
+    "n": 78,
+    "avg_return": -0.0099,
+    "win_rate": 0.244,
+    "avg_vs_spy": -0.0083,
+    "stop_rate": 0.462,
+    "target_rate": 0.09,
     "reliable": true
    },
    "chatgpt": {
@@ -417,12 +417,12 @@
     "reliable": true
    },
    "catalyst": {
-    "n": 57,
-    "avg_return": -0.008,
-    "win_rate": 0.368,
-    "avg_vs_spy": -0.0034,
-    "stop_rate": 0.491,
-    "target_rate": 0.07,
+    "n": 58,
+    "avg_return": -0.0083,
+    "win_rate": 0.362,
+    "avg_vs_spy": -0.0038,
+    "stop_rate": 0.483,
+    "target_rate": 0.069,
     "reliable": true
    },
    "compounder": {
@@ -447,12 +447,12 @@
      "reliable": true
     },
     "catalyst": {
-     "n": 36,
-     "avg_return": -0.0106,
-     "win_rate": 0.333,
-     "avg_vs_spy": -0.0074,
-     "stop_rate": 0.528,
-     "target_rate": 0.083,
+     "n": 37,
+     "avg_return": -0.011,
+     "win_rate": 0.324,
+     "avg_vs_spy": -0.008,
+     "stop_rate": 0.514,
+     "target_rate": 0.081,
      "reliable": true
     },
     "compounder": {
@@ -535,12 +535,12 @@
     "reliable": false
    },
    "medium": {
-    "n": 48,
-    "avg_return": -0.0161,
-    "win_rate": 0.312,
-    "avg_vs_spy": -0.0138,
-    "stop_rate": 0.396,
-    "target_rate": 0.062,
+    "n": 49,
+    "avg_return": -0.0163,
+    "win_rate": 0.306,
+    "avg_vs_spy": -0.0141,
+    "stop_rate": 0.388,
+    "target_rate": 0.061,
     "reliable": true
    },
    "low": {
@@ -564,11 +564,11 @@
     "reliable": true
    },
    "tight stop (under 4%)": {
-    "n": 64,
-    "avg_return": -0.01,
-    "win_rate": 0.25,
-    "avg_vs_spy": -0.0083,
-    "stop_rate": 0.406,
+    "n": 65,
+    "avg_return": -0.0102,
+    "win_rate": 0.246,
+    "avg_vs_spy": -0.0087,
+    "stop_rate": 0.4,
     "target_rate": 0.062,
     "reliable": true
    },
@@ -811,11 +811,11 @@
     "reliable": true
    },
    "momentum": {
-    "n": 61,
-    "avg_return": -0.0226,
-    "win_rate": 0.279,
-    "avg_vs_spy": -0.0165,
-    "stop_rate": 0.459,
+    "n": 62,
+    "avg_return": -0.0225,
+    "win_rate": 0.274,
+    "avg_vs_spy": -0.0164,
+    "stop_rate": 0.452,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -840,24 +840,24 @@
     "reliable": true
    },
    "solo": {
-    "n": 93,
-    "avg_return": -0.0112,
-    "win_rate": 0.258,
-    "avg_vs_spy": -0.0079,
-    "stop_rate": 0.462,
-    "target_rate": 0.086,
+    "n": 94,
+    "avg_return": -0.0113,
+    "win_rate": 0.255,
+    "avg_vs_spy": -0.0081,
+    "stop_rate": 0.457,
+    "target_rate": 0.085,
     "reliable": true
    }
   },
   "evidence": {
    "by_model": {
     "claude": {
-     "n": 71,
-     "avg_alpha": -0.008,
-     "ci_low": -0.0173,
-     "ci_high": 0.0013,
-     "t": -1.68,
-     "p_beats_fly": 0.241,
+     "n": 72,
+     "avg_alpha": -0.0083,
+     "ci_low": -0.0174,
+     "ci_high": 0.0009,
+     "t": -1.76,
+     "p_beats_fly": 0.223,
      "trades_needed": 63,
      "verdict": "Can't tell from luck yet"
     },
@@ -912,23 +912,23 @@
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 52,
-     "avg_alpha": -0.0165,
-     "ci_low": -0.0278,
-     "ci_high": -0.0052,
-     "t": -2.86,
-     "p_beats_fly": 0.024,
-     "trades_needed": 69,
+     "n": 53,
+     "avg_alpha": -0.0164,
+     "ci_low": -0.0275,
+     "ci_high": -0.0053,
+     "t": -2.89,
+     "p_beats_fly": 0.027,
+     "trades_needed": 67,
      "verdict": "Losing to the market"
     }
    },
    "lab": {
-    "n": 122,
-    "buy_at_open": -0.0163,
+    "n": 123,
+    "buy_at_open": -0.0164,
     "limit_at_zone": {
-     "n": 119,
+     "n": 120,
      "missed": 3,
-     "avg": -0.0127
+     "avg": -0.0128
     },
     "by_gap": [
      {
@@ -943,8 +943,8 @@
      },
      {
       "label": "opened 0% to +2%",
-      "n": 36,
-      "avg_open_to_close": 0.0004
+      "n": 37,
+      "avg_open_to_close": -0.0005
      },
      {
       "label": "opened up 2%+",

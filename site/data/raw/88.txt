@@ -1,0 +1,32 @@
+model: learner
+file: internal/learner/2026-10-20
+received (UTC): 2026-10-21 01:25:39.766499
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/125-trades",
+ "market_view": "Learned from 125 closed AI trades. Scored 2 picks for 2026-10-21; copying 2 it expects to beat the S&P 500.",
+ "observations": 125,
+ "chosen": [
+  {
+   "source_position_id": 594,
+   "ticker": "GM",
+   "from": "claude",
+   "bucket": "catalyst",
+   "sampled_edge": 0.0189,
+   "expected_edge": 0.01087,
+   "uncertainty": 0.01455
+  },
+  {
+   "source_position_id": 595,
+   "ticker": "BLK",
+   "from": "claude",
+   "bucket": "compounder",
+   "sampled_edge": 0.01645,
+   "expected_edge": 0.01899,
+   "uncertainty": 0.04365
+  }
+ ],
+ "candidates": 2
+}

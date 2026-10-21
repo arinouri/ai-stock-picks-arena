@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-20.json
 received (UTC): 2026-10-21 01:02:12.773059
-status: partial
+status: superseded
 problems: ["catalyst GM: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided", "compounder BLK: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
