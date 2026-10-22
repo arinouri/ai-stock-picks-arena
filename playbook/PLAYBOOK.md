@@ -2,29 +2,29 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **127**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **134**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
-| claude | 78 | -1.0% | 24.4% | -0.8% | 46.2% |
-| chatgpt | 28 | -0.4% | 42.9% | +0.1% | 28.6% |
-| grok | 21 | -2.8% | 19.0% | -2.6% | 57.1% |
+| claude | 82 | -1.1% | 25.6% | -0.9% | 45.1% |
+| chatgpt | 30 | -0.5% | 40.0% | +0.1% | 26.7% |
+| grok | 22 | -2.5% | 22.7% | -2.3% | 54.5% |
 
 ## By book, confidence and stop width
 
 | Group | Trades | Avg return | Win rate | Reliable? |
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
-| book: catalyst | 60 | -0.8% | 36.7% | yes |
-| book: compounder | 2 | +0.7% | 50.0% | no (too few) |
-| confidence: high | 1 | +11.2% | 100.0% | no (too few) |
-| confidence: medium | 51 | -1.6% | 31.4% | yes |
-| confidence: low | 75 | -1.1% | 24.0% | yes |
-| stop: medium stop (4-8%) | 53 | -1.6% | 26.4% | yes |
-| stop: tight stop (under 4%) | 66 | -1.0% | 25.8% | yes |
-| stop: wide stop (8%+) | 8 | +0.2% | 50.0% | no (too few) |
+| book: catalyst | 66 | -0.7% | 37.9% | yes |
+| book: compounder | 3 | -3.4% | 33.3% | no (too few) |
+| confidence: high | 2 | -0.2% | 50.0% | no (too few) |
+| confidence: medium | 55 | -1.5% | 32.7% | yes |
+| confidence: low | 77 | -1.0% | 24.7% | yes |
+| stop: medium stop (4-8%) | 56 | -1.6% | 26.8% | yes |
+| stop: tight stop (under 4%) | 69 | -0.9% | 27.5% | yes |
+| stop: wide stop (8%+) | 9 | -1.1% | 44.4% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -32,30 +32,30 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 72 | -0.83% | -1.74% to +0.09% | 14% | Can't tell from luck yet |
-| chatgpt | 22 | +0.06% | -2.11% to +2.22% | 56% | Can't tell from luck yet |
-| grok | 21 | -2.61% | -4.40% to -0.81% | 1% | Losing to the market |
-| learner | 19 | -0.84% | -2.79% to +1.11% | 25% | Too early to tell |
-| fly | 60 | -0.14% | -0.84% to +0.55% | 51% | Can't tell from luck yet |
-| fly_evo | 60 | -0.47% | -1.24% to +0.29% | 25% | Can't tell from luck yet |
-| momentum | 63 | -1.31% | -2.27% to -0.35% | 2% | Losing to the market |
+| claude | 76 | -0.87% | -1.78% to +0.04% | 9% | Can't tell from luck yet |
+| chatgpt | 24 | +0.07% | -1.91% to +2.05% | 59% | Can't tell from luck yet |
+| grok | 22 | -2.28% | -4.11% to -0.45% | 2% | Losing to the market |
+| learner | 20 | -0.81% | -2.66% to +1.04% | 24% | Can't tell from luck yet |
+| fly | 71 | -0.13% | -0.78% to +0.52% | 51% | Can't tell from luck yet |
+| fly_evo | 71 | -0.16% | -0.86% to +0.53% | 47% | Can't tell from luck yet |
+| momentum | 73 | -1.08% | -1.97% to -0.20% | 4% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
-Across 125 first-session trades by the AIs, buying at the open averaged -1.62% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.27% (122 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
+Across 131 first-session trades by the AIs, buying at the open averaged -1.62% by the close. A limit order at the top of the AI's own entry zone would have averaged -1.27% (128 fills, 3 missed). Stocks that open far from the close (up or down) did worst, and only a small gain comes from a limit entry, so this is a hunch to test, not a fix. Set an entry zone you'd really pay.
 
 | Where the stock opened vs your close | Trades | Avg open-to-close |
 |---|---|---|
 | opened down 2%+ | 25 | -2.09% |
 | opened -2% to 0% | 46 | -1.33% |
-| opened 0% to +2% | 38 | -0.06% |
+| opened 0% to +2% | 44 | -0.28% |
 | opened up 2%+ | 16 | -5.40% |
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 70 trades, avg -0.4%, win rate 44.3%
-- **momentum**: 72 trades, avg -1.8%, win rate 31.9%
-- **learner**: 23 trades, avg -1.2%, win rate 21.7%
+- **fly**: 81 trades, avg -0.4%, win rate 43.2%
+- **momentum**: 82 trades, avg -1.6%, win rate 35.4%
+- **learner**: 24 trades, avg -1.2%, win rate 20.8%
 
 ## Recent winners
 
@@ -68,12 +68,12 @@ Across 125 first-session trades by the AIs, buying at the open averaged -1.62% b
 
 ## Recent losers
 
+- **NVDA** (claude, compounder, high confidence) -11.6%, exit: stop. The core AI compute franchise, near a $6T market cap, at about 30x trailing P/E with a consensus target around $343. AMD's comment that compute demand is outrunning supply supports another strong print on Nov 25.
 - **RXRX** (chatgpt, catalyst, low confidence) -11.4%, exit: stop. Recursion's Oct 15 8:45am ET release says Sanofi's first candidate option triggers a $10M milestone recognized in Q3, and its 8:22am release combines clinical updates with a $200M offering and expected runway into 2029. The concrete payment
 - **AVGO** (grok, compounder, medium confidence) -9.8%, exit: stop. Custom AI chip revenue up 221% to $16.7B with Q4 AI revenue guided to $21.7B, and Anthropic set to become its largest compute customer.
 - **TSM** (claude, catalyst, medium confidence) -7.1%, exit: stop. TSMC's September revenue of NT$511.9B was up 54.6% y/y (Jan-Sep +41.1%), yet the ADR fell 3% to $457.99 in the OpenAI-driven semis selloff. Q3 results land Oct 15 at 2am ET, inside a 5-session hold, so I'm positioning for a pre-print recove
 - **BHVN** (chatgpt, catalyst, medium confidence) -6.5%, exit: stop. Today's Ono license provides $80 million upfront, a conditional $20 million milestone and approximately 20% royalties in the licensed Asian territories, while Biohaven retains rights elsewhere. Only a 0.42% close-to-close gain to $11.93 lea
 - **MS** (claude, catalyst, medium confidence) -6.3%, exit: stop. Morgan Stanley reports Q3 before the open Wed Oct 14 (consensus EPS $2.94, revenue $19.96B per Investing.com, Oct 12) after falling ~11% in a month with the bank group (Yahoo, Oct 12). It closed ~$191 (Benzinga, Oct 12), well under its $232
-- **UNH** (claude, moonshot, medium confidence) -5.2%, exit: time. UnitedHealth reports Q3 before the open Oct 13 (Investing.com preview, Oct 12: consensus EPS $4.12, revenue $111.31B, FY26 guide $19.50-20.00 vs $19.80 consensus, Q2 MCR 86.7% vs 88.1% FY guide). It closed $378.52, ~13% below its July level
 
 ## What the AIs told each other
 

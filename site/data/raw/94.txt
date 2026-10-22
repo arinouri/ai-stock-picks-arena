@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-22
+received (UTC): 2026-10-22 23:22:46.767383
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 71 completed EVO trades. Ranked 121 liquid stocks using only data through 2026-10-22.",
+ "observations": 71,
+ "exploration_seed": 202610230071,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "ROKU",
+   "sampled_score": 0.060199,
+   "expected_reward": -0.000422,
+   "uncertainty": 0.035146
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LRCX",
+   "sampled_score": 0.052119,
+   "expected_reward": 0.026238,
+   "uncertainty": 0.048985
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NFLX",
+   "sampled_score": 0.051748,
+   "expected_reward": 0.00225,
+   "uncertainty": 0.028843
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "TXN",
+   "sampled_score": 0.051342,
+   "expected_reward": 0.002672,
+   "uncertainty": 0.030919
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "GE",
+   "sampled_score": 0.051201,
+   "expected_reward": 0.00649,
+   "uncertainty": 0.026587
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "KLAC",
+   "sampled_score": 0.049399,
+   "expected_reward": 0.021557,
+   "uncertainty": 0.041514
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GM",
+   "sampled_score": 0.048281,
+   "expected_reward": 0.001705,
+   "uncertainty": 0.02702
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "META",
+   "sampled_score": 0.041515,
+   "expected_reward": 0.009952,
+   "uncertainty": 0.025446
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RTX",
+   "sampled_score": 0.040683,
+   "expected_reward": -0.00186,
+   "uncertainty": 0.027118
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ADI",
+   "sampled_score": 0.04029,
+   "expected_reward": 0.002072,
+   "uncertainty": 0.020794
+  }
+ ]
+}

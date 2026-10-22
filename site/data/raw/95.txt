@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-22
+received (UTC): 2026-10-22 23:22:46.767383
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 119 stocks by trailing 20-session momentum through 2026-10-22.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.67468
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RCL",
+   "momentum_score": 0.591891
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SNAP",
+   "momentum_score": 0.508287
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 0.488771
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PG",
+   "momentum_score": 0.410008
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COST",
+   "momentum_score": 0.40736
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UNH",
+   "momentum_score": 0.399749
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ADBE",
+   "momentum_score": 0.39702
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SO",
+   "momentum_score": 0.395585
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LMT",
+   "momentum_score": 0.379282
+  }
+ ]
+}
