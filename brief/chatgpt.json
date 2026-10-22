@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-21T19:43:26.243275-04:00",
+ "generated_at": "2026-10-21T20:50:53.079457-04:00",
  "tonight": {
   "run_date": "2026-10-21",
   "session": "2026-10-22",
@@ -773,6 +773,15 @@
   "peer_lessons": [
    {
     "model": "claude",
+    "night": "2026-10-21",
+    "lessons": [
+     "I'm still not beating the Fruit Fly: over 72 scored trades my alpha is -0.83% per trade (95% range -1.74% to +0.09%, 'can't tell from luck yet') and my average is -0.99% vs -0.49% for random picks; I only beat Momentum (-1.85%). My moonshot book is the worst part (n=40, 15% win rate, -1.21%, reliable), so for a third night I submit zero moonshots rather than guess on tomorrow's pre-open prints (HO",
+     "The beat-then-reversal setup is a hunch, not an edge: UNH worked once (+5.35%), but GM, bought after its -7.5% beat-and-raise reversal, is -1.0% after one session, and today Lithia fell ~10% despite EPS of $10.34 vs $9.79 because same-store revenue fell 1.4% and F&I revenue 8% (Lithia 8-K, Oct 21). That dragged KMX -4.3% to $51.49, only 1.1% above its stop, so I'm selling KMX at the open instead o",
+     "My catalyst winners (VIK +6.8%, EBAY +5.95%, OLLI +4.6%) came from real rating changes, top-pick calls or buybacks where the stock moved only 2-5% on the news; today's 'upgrade' headlines for WDC, HOOD and MRNA were only price-target raises with ratings unchanged, and the after-hours movers fall in the gap buckets the lab says lose (up 2%+: -5.4%, n=16; down 2%+: -2.1%, n=25, both hunches). With n"
+    ]
+   },
+   {
+    "model": "claude",
     "night": "2026-10-20",
     "lessons": [
      "I'm still not beating the Fruit Fly: over 71 closed trades my alpha is -0.8% per trade (95% range -1.73% to +0.13%, 'can't tell from luck yet'), and my average return is -0.98% vs -0.68% for random picks; I only beat Momentum (-2.26%). My moonshot book is still the weakest (n=40, 15% win rate, -1.21%), so for the second night I submit zero moonshots rather than guess on pre-open coin flips like T,",
@@ -805,15 +814,6 @@
      "Over 21 closed trades I average -2.8% with an alpha range of -4.4% to -0.8% and only a 4.8% chance of beating the Fruit Fly (playbook evidence), so I am still not beating the random baseline (-1.2%) and only edging Momentum (-3.3%); I have no proven edge, so I keep passing when no catalyst is confirmed before the open, which tonight means zero new moonshots and catalyst plays.",
      "The playbook's stop-width table shows medium stops (4-8%, n=48) averaged -2.1% against -1.0% for tight stops (n=61), so wider stops alone have not fixed losses and entry selection is the real problem; my Oct 15 adds (INTU, TSM) both fell about 2% in their first session into a falling tech tape, so I won't buy into an unresolved sector rout without a company-specific catalyst.",
      "Claude's CRM ran to about +6.5% and then closed only +0.65%, and TMUS touched $163.16 against a $164 target before fading to $157, so far-away swing targets get given back; I am cutting INTU's target from 360 to 345 (near its recent intraday highs) and raising V's stop to 388 to lock in part of its +8% gain before its Oct 27 earnings."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-10-18",
-    "lessons": [
-     "Over 40 closed moonshots my win rate is 15% at -1.21% average (reliable), and overall I average -1.45% per trade against -1.23% for the Fruit Fly. My alpha range (-2.2% to -0.5%) excludes zero on the losing side, so I'm beating Momentum (-3.27%) but not random picks. Friday's one winner, TRV (+3.85%, target), was a scheduled pre-open print, and TFC, CROX, INTU and LUV all timed out red. From now o",
-     "CRM traded up to $251.41 on Friday, about +6.5% from my $236 entry, then reversed 3.5% and stopped out at only +0.65%. I'm taking that as evidence to lock gains once a swing is up 4%+ and the exit is near: tonight I'm raising stops on TMUS (+4.4%, last session) and RTX (+1.9%, reports Tuesday before the open). I'm leaving the wide OLLI and LLY stops alone because those trends are intact.",
-     "Grok's Oct 15 lesson was to pass when a 1.5x-ATR stop and a 1.5:1 target aren't realistic, and ChatGPT's catalyst book (+0.49% average, n=11, a hunch) favors realized earnings over speculation. I already hold 10 catalyst trades and 4 AI-megacap compounders, which moved together on Friday (-$22.59 for me, NVDA/GOOGL/MSFT/AMZN -1.4% to -2.5%). Adding names in the eighth day of a semis rout would onl"
     ]
    },
    {
