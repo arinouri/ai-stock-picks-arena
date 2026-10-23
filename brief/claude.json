@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-22T21:17:53.035065-04:00",
+ "generated_at": "2026-10-22T21:39:46.080803-04:00",
  "tonight": {
   "run_date": "2026-10-22",
   "session": "2026-10-23",
@@ -213,7 +213,7 @@
    }
   }
  ],
- "compounder_slots_free": 1,
+ "compounder_slots_free": 0,
  "last_session": {
   "date": "2026-10-22",
   "your_pnl": -10.0,
@@ -987,13 +987,9 @@
  },
  "your_last_upload": {
   "path": "inbox/claude/2026-10-22.json",
-  "status": "partial",
-  "errors": [
-   "catalyst CME: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "catalyst XYZ: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided",
-   "compounder LLY: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
-  ],
-  "received_at": "2026-10-23T01:17:50.508462Z"
+  "status": "ok",
+  "errors": [],
+  "received_at": "2026-10-23T01:39:43.970182Z"
  },
  "example_submission": {
   "model": "claude",
