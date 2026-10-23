@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-23T13:56:36.274840-04:00",
+ "generated_at": "2026-10-23T19:08:53.852967-04:00",
  "tonight": {
   "run_date": "2026-10-25",
   "session": "2026-10-26",
@@ -123,13 +123,13 @@
    "ticker": "GOOGL",
    "entry_date": "2026-10-06",
    "entry_price": 347.68,
-   "last_price": 324.22,
-   "return_so_far": -0.0695,
-   "sessions_held": 12,
+   "last_price": 320.21,
+   "return_so_far": -0.081,
+   "sessions_held": 13,
    "horizon_days": 75,
-   "sessions_left": 63,
+   "sessions_left": 62,
    "target": 400.0,
-   "stop": 318.0,
+   "stop": 308.0,
    "your_thesis": "About 17x earnings for search, YouTube, Cloud and TPU custom silicon, and it's locking in long-term clean power (Constellation deal) to scale AI. It trades ~15% under its 52-week high with a consensus target around $426.",
    "your_last_call": {
     "action": "HOLD",
@@ -142,11 +142,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-06",
    "entry_price": 529.3,
-   "last_price": 521.08,
-   "return_so_far": -0.0175,
-   "sessions_held": 12,
+   "last_price": 524.51,
+   "return_so_far": -0.011,
+   "sessions_held": 13,
    "horizon_days": 60,
-   "sessions_left": 48,
+   "sessions_left": 47,
    "target": 575.0,
    "stop": 495.0,
    "your_thesis": "Azure plus Copilot monetization and an enterprise moat, at about 29x P/E, just under its $553 high, with a consensus target around $568. Steady compounding into late-October earnings.",
@@ -161,11 +161,11 @@
    "ticker": "AMZN",
    "entry_date": "2026-10-06",
    "entry_price": 256.29,
-   "last_price": 250.38,
-   "return_so_far": -0.0251,
-   "sessions_held": 12,
+   "last_price": 248.0,
+   "return_so_far": -0.0343,
+   "sessions_held": 13,
    "horizon_days": 75,
-   "sessions_left": 63,
+   "sessions_left": 62,
    "target": 290.0,
    "stop": 238.0,
    "your_thesis": "AWS AI demand plus retail margin expansion and advertising, at about 20x P/E and 11% below its $287 high, with a consensus target around $330. It has rare valuation support among AI megacaps.",
@@ -199,11 +199,11 @@
    "ticker": "BLK",
    "entry_date": "2026-10-20",
    "entry_price": 1136.26,
-   "last_price": 1137.29,
-   "return_so_far": -0.0011,
-   "sessions_held": 2,
+   "last_price": 1118.25,
+   "return_so_far": -0.0179,
+   "sessions_held": 3,
    "horizon_days": 60,
-   "sessions_left": 58,
+   "sessions_left": 57,
    "target": 1275.0,
    "stop": 1030.0,
    "your_thesis": "TD Cowen upgraded BlackRock to Buy on Oct 20 ($1,405 target from $1,212), calling Q3 an inflection point: adj. EPS $15.93 vs ~$14.25, revenue +19% to $7.75B, $205B net inflows and $15.5T AUM (Investing.com, Oct 20). It closed $1,127.58 on Oct 20 after fading from a $1,150.21 high, ~5% under its $1,187 52-week high at ~19.6x forward earnings (MarketBeat, Oct 20), and it diversifies my AI-megacap-heavy compounder book.",
@@ -211,36 +211,71 @@
     "action": "HOLD",
     "reason": "Slipped 1.1% to $1,137 after touching $1,160 while financials gained; no negative news, the TD Cowen upgrade thesis is intact and the wide $1,030 stop stays."
    }
+  },
+  {
+   "position_id": 658,
+   "bucket": "catalyst",
+   "ticker": "CME",
+   "entry_date": "2026-10-22",
+   "entry_price": 303.925,
+   "last_price": 305.71,
+   "return_so_far": 0.0039,
+   "sessions_held": 1,
+   "horizon_days": 5,
+   "sessions_left": 4,
+   "target": 321.0,
+   "stop": 296.0,
+   "your_thesis": "JPMorgan upgraded CME Group from Underweight to Overweight on Oct 22 and raised its target to $367 from $250, citing a 'constructive' rate environment (markets now price a Fed hike) plus energy and equity volatility that should lift futures volume (TipRanks/TheFly, Oct 22). This follows a record Q3 on Oct 21 (EPS $3.02 vs $2.99, revenue $1.74B, +10.6%; MarketBeat, Oct 22); shares rose 3.45% to $305.98 (range $299.25-$307.27, ~2.3M shares, flat after hours), ~7% under the $329.16 high at ~23.6x forward earnings, and Thursday's VIX jump, oil spike and 19 bp yield move are exactly the volume driv",
+   "your_last_call": null
+  },
+  {
+   "position_id": 659,
+   "bucket": "catalyst",
+   "ticker": "XYZ",
+   "entry_date": "2026-10-22",
+   "entry_price": 77.67,
+   "last_price": 76.46,
+   "return_so_far": -0.0176,
+   "sessions_held": 1,
+   "horizon_days": 5,
+   "sessions_left": 4,
+   "target": 85.0,
+   "stop": 75.0,
+   "your_thesis": "BMO upgraded Block from Market Perform to Outperform on Oct 22 ($101 target), saying positioning and rerating worries have eased, Q2 was the 'cleanest Square quarter in nearly two years' with GPV and gross profit accelerating together, and six-week Cash App Borrow loans could add $180-400M of gross profit in 2027 (Investing.com, Oct 22). Shares rose 1.0% to $78.99 on a day the Nasdaq fell 2.6% (range $77.94-$79.85, ~3.7M shares), under the $86.92 high, and Q3 earnings (Nov 3) fall after the 5-session hold, so this is a relative-strength rerating trade, not an earnings bet.",
+   "your_last_call": null
+  },
+  {
+   "position_id": 660,
+   "bucket": "compounder",
+   "ticker": "LLY",
+   "entry_date": "2026-10-22",
+   "entry_price": 1304.15,
+   "last_price": 1273.46,
+   "return_so_far": -0.0255,
+   "sessions_held": 1,
+   "horizon_days": 60,
+   "sessions_left": 59,
+   "target": 1460.0,
+   "stop": 1190.0,
+   "your_thesis": "The GLP-1 leader closed at a record $1,306.69 (+2.8%, high $1,321.21; after hours $1,308) on Oct 22 as health care led the defensive rotation, after Q2 EPS of $8.38 vs $6.40 and revenue of $22.97B (+47.7%, volume +60%); Goldman ($1,413) and BofA ($1,397) raised targets ahead of Q3 on Oct 29 before the open (consensus EPS ~$5.63, revenue ~$22.56B; MarketBeat, Oct 22). At ~33.8x forward earnings it diversifies a compounder book that has been one correlated AI-capex bet.",
+   "your_last_call": null
   }
  ],
  "compounder_slots_free": 0,
  "last_session": {
-  "date": "2026-10-22",
-  "your_pnl": -10.0,
+  "date": "2026-10-23",
+  "your_pnl": -7.03,
   "positions": [
-   {
-    "position_id": 11,
-    "ticker": "NVDA",
-    "bucket": "compounder",
-    "entry_price": 239.24,
-    "close": 212.2100067138672,
-    "high": 218.8800048828125,
-    "low": 211.25999450683594,
-    "session_move": -0.0449,
-    "total_return": -0.1159,
-    "event": "stop",
-    "your_thesis": "The core AI compute franchise, near a $6T market cap, at about 30x trailing P/E with a consensus target around $343. AMD's comment that compute demand is outrunning supply supports another strong print on Nov 25."
-   },
    {
     "position_id": 12,
     "ticker": "GOOGL",
     "bucket": "compounder",
     "entry_price": 347.68,
-    "close": 324.2200012207031,
-    "high": 331.42999267578125,
-    "low": 322.0,
-    "session_move": -0.0315,
-    "total_return": -0.0695,
+    "close": 320.2099914550781,
+    "high": 324.53070068359375,
+    "low": 320.1805114746094,
+    "session_move": -0.0124,
+    "total_return": -0.081,
     "event": "held",
     "your_thesis": "About 17x earnings for search, YouTube, Cloud and TPU custom silicon, and it's locking in long-term clean power (Constellation deal) to scale AI. It trades ~15% under its 52-week high with a consensus target around $426."
    },
@@ -249,11 +284,11 @@
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.3,
-    "close": 521.0800170898438,
-    "high": 533.5960083007812,
-    "low": 520.2999877929688,
-    "session_move": -0.0223,
-    "total_return": -0.0175,
+    "close": 524.510009765625,
+    "high": 525.77001953125,
+    "low": 515.7000122070312,
+    "session_move": 0.0066,
+    "total_return": -0.011,
     "event": "held",
     "your_thesis": "Azure plus Copilot monetization and an enterprise moat, at about 29x P/E, just under its $553 high, with a consensus target around $568. Steady compounding into late-October earnings."
    },
@@ -262,123 +297,110 @@
     "ticker": "AMZN",
     "bucket": "compounder",
     "entry_price": 256.29,
-    "close": 250.3800048828125,
-    "high": 258.3599853515625,
-    "low": 248.00010681152344,
-    "session_move": -0.0457,
-    "total_return": -0.0251,
+    "close": 248.0,
+    "high": 250.00999450683594,
+    "low": 246.45159912109375,
+    "session_move": -0.0095,
+    "total_return": -0.0343,
     "event": "held",
     "your_thesis": "AWS AI demand plus retail margin expansion and advertising, at about 20x P/E and 11% below its $287 high, with a consensus target around $330. It has rare valuation support among AI megacaps."
-   },
-   {
-    "position_id": 471,
-    "ticker": "KMX",
-    "bucket": "catalyst",
-    "entry_price": 53.31,
-    "close": 52.959999084472656,
-    "high": 52.97999954223633,
-    "low": 50.7599983215332,
-    "session_move": -0.0074,
-    "total_return": -0.0433,
-    "event": "model_sell",
-    "your_thesis": "BofA double-upgraded CarMax on Oct 15 from Underperform to Buy and raised its target to $65 from $50, saying FTC all-in price enforcement leaves it 'the most price-competitive it has been in years' (used comps +13% vs industry -2%) and flagging the Nov 3 strategy update (StockStory, Oct 15). Shares closed +5.6% at $52.62 (StockAnalysis), ~19% under the $65.28 high. This is the same capitulating-bear setup as my CRM trade."
-   },
-   {
-    "position_id": 472,
-    "ticker": "WMT",
-    "bucket": "catalyst",
-    "entry_price": 118.145,
-    "close": 121.12000274658203,
-    "high": 121.18000030517578,
-    "low": 117.83000183105469,
-    "session_move": 0.0282,
-    "total_return": 0.0232,
-    "event": "time",
-    "your_thesis": "Deutsche Bank upgraded Walmart on Oct 15 from Hold to Buy and raised its target to $136 from $113, citing persistent inflation (PPI +1.3% m/m) supporting its value proposition, grocery share gains and growth in ads and membership (StockStory/Benzinga, Oct 15). Shares rose ~2.5% to ~$118.6, 12% under the $134.20 May high, and staples are leading October (XLP +9%)."
-   },
-   {
-    "position_id": 475,
-    "ticker": "REGN",
-    "bucket": "catalyst",
-    "entry_price": 803.01,
-    "close": 819.0900268554688,
-    "high": 825.52001953125,
-    "low": 800.0,
-    "session_move": 0.0167,
-    "total_return": 0.018,
-    "event": "time",
-    "your_thesis": "UBS upgraded Regeneron on Oct 15 from Neutral to Buy and lifted its target 48% to $978 from $660 on next-gen Dupixent potential (MarketBeat/ORTEX, Oct 15), the first formal upgrade in the recent run. Shares rose ~2.3% to ~$796 midday on a record health-care day, 7% under the $859 high, with Q3 earnings (Oct 30) outside the hold."
-   },
-   {
-    "position_id": 594,
-    "ticker": "GM",
-    "bucket": "catalyst",
-    "entry_price": 76.71,
-    "close": 77.20999908447266,
-    "high": 78.125,
-    "low": 75.4000015258789,
-    "session_move": 0.0145,
-    "total_return": 0.0045,
-    "event": "held",
-    "your_thesis": "GM beat Q3 on Oct 20 before the open (adj. EPS $3.70 vs $3.63; revenue ~$50.0B vs $48.8B; North America margin 8.7%), raised 2026 auto free-cash-flow guidance to $11.5-12.5B from $9.5-11.5B, authorized a $20B buyback (over a quarter of its ~$73B value at ~5.8x the $13.25 EPS midpoint) and lifted the dividend 20%, yet fell 7.48% to $76.56, its worst day in 15 months, on ~$2B commodity/DRAM cost inflation and a narrowed EPS range (Invezz/24/7 Wall St, Oct 20). BNP Paribas reiterated Outperform ($112) and said it would buy the weakness (TheStreet, Oct 20, 4:17 PM); like UNH's reversal after its O"
    },
    {
     "position_id": 595,
     "ticker": "BLK",
     "bucket": "compounder",
     "entry_price": 1136.26,
-    "close": 1137.2900390625,
-    "high": 1159.989990234375,
-    "low": 1134.3800048828125,
-    "session_move": -0.0107,
-    "total_return": -0.0011,
+    "close": 1118.25,
+    "high": 1132.0074462890625,
+    "low": 1105.469970703125,
+    "session_move": -0.0167,
+    "total_return": -0.0179,
     "event": "held",
     "your_thesis": "TD Cowen upgraded BlackRock to Buy on Oct 20 ($1,405 target from $1,212), calling Q3 an inflection point: adj. EPS $15.93 vs ~$14.25, revenue +19% to $7.75B, $205B net inflows and $15.5T AUM (Investing.com, Oct 20). It closed $1,127.58 on Oct 20 after fading from a $1,150.21 high, ~5% under its $1,187 52-week high at ~19.6x forward earnings (MarketBeat, Oct 20), and it diversifies my AI-megacap-heavy compounder book."
+   },
+   {
+    "position_id": 658,
+    "ticker": "CME",
+    "bucket": "catalyst",
+    "entry_price": 303.925,
+    "close": 305.7099914550781,
+    "high": 307.7799987792969,
+    "low": 303.92498779296875,
+    "session_move": 0.0059,
+    "total_return": 0.0039,
+    "event": "held",
+    "your_thesis": "JPMorgan upgraded CME Group from Underweight to Overweight on Oct 22 and raised its target to $367 from $250, citing a 'constructive' rate environment (markets now price a Fed hike) plus energy and equity volatility that should lift futures volume (TipRanks/TheFly, Oct 22). This follows a record Q3 on Oct 21 (EPS $3.02 vs $2.99, revenue $1.74B, +10.6%; MarketBeat, Oct 22); shares rose 3.45% to $305.98 (range $299.25-$307.27, ~2.3M shares, flat after hours), ~7% under the $329.16 high at ~23.6x forward earnings, and Thursday's VIX jump, oil spike and 19 bp yield move are exactly the volume driv"
+   },
+   {
+    "position_id": 659,
+    "ticker": "XYZ",
+    "bucket": "catalyst",
+    "entry_price": 77.67,
+    "close": 76.45999908447266,
+    "high": 78.08999633789062,
+    "low": 75.91179656982422,
+    "session_move": -0.0156,
+    "total_return": -0.0176,
+    "event": "held",
+    "your_thesis": "BMO upgraded Block from Market Perform to Outperform on Oct 22 ($101 target), saying positioning and rerating worries have eased, Q2 was the 'cleanest Square quarter in nearly two years' with GPV and gross profit accelerating together, and six-week Cash App Borrow loans could add $180-400M of gross profit in 2027 (Investing.com, Oct 22). Shares rose 1.0% to $78.99 on a day the Nasdaq fell 2.6% (range $77.94-$79.85, ~3.7M shares), under the $86.92 high, and Q3 earnings (Nov 3) fall after the 5-session hold, so this is a relative-strength rerating trade, not an earnings bet."
+   },
+   {
+    "position_id": 660,
+    "ticker": "LLY",
+    "bucket": "compounder",
+    "entry_price": 1304.15,
+    "close": 1273.4599609375,
+    "high": 1307.919921875,
+    "low": 1257.6199951171875,
+    "session_move": -0.0235,
+    "total_return": -0.0255,
+    "event": "held",
+    "your_thesis": "The GLP-1 leader closed at a record $1,306.69 (+2.8%, high $1,321.21; after hours $1,308) on Oct 22 as health care led the defensive rotation, after Q2 EPS of $8.38 vs $6.40 and revenue of $22.97B (+47.7%, volume +60%); Goldman ($1,413) and BofA ($1,397) raised targets ahead of Q3 on Oct 29 before the open (consensus EPS ~$5.63, revenue ~$22.56B; MarketBeat, Oct 22). At ~33.8x forward earnings it diversifies a compounder book that has been one correlated AI-capex bet."
    }
   ]
  },
  "scoreboard": [
   {
    "model": "fly",
-   "total_pnl": 12.86,
-   "win_rate": 0.43209876543209874,
-   "positions": 95
+   "total_pnl": 4.66,
+   "win_rate": 0.42857142857142855,
+   "positions": 105
   },
   {
    "model": "chatgpt",
-   "total_pnl": -6.78,
-   "win_rate": 0.4,
+   "total_pnl": -12.53,
+   "win_rate": 0.3870967741935484,
    "positions": 35
   },
   {
    "model": "learner",
-   "total_pnl": -29.72,
+   "total_pnl": -32.76,
    "win_rate": 0.20833333333333334,
-   "positions": 26
+   "positions": 28
   },
   {
    "model": "grok",
-   "total_pnl": -66.31,
+   "total_pnl": -67.59,
    "win_rate": 0.22727272727272727,
    "positions": 27
   },
   {
    "model": "fly_evo",
-   "total_pnl": -73.94,
-   "win_rate": 0.4024390243902439,
-   "positions": 94
+   "total_pnl": -81.8,
+   "win_rate": 0.3956043956043956,
+   "positions": 103
   },
   {
    "model": "claude",
-   "total_pnl": -100.24,
+   "total_pnl": -107.28,
    "win_rate": 0.25609756097560976,
-   "positions": 87
+   "positions": 90
   },
   {
    "model": "momentum",
-   "total_pnl": -116.1,
-   "win_rate": 0.3493975903614458,
-   "positions": 97
+   "total_pnl": -131.73,
+   "win_rate": 0.3695652173913043,
+   "positions": 106
   }
  ],
  "your_recent_lessons": [
@@ -396,7 +418,7 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 134,
+  "closed_trades_total": 135,
   "by_model": {
    "claude": {
     "n": 82,
@@ -408,12 +430,12 @@
     "reliable": true
    },
    "chatgpt": {
-    "n": 30,
-    "avg_return": -0.0048,
-    "win_rate": 0.4,
-    "avg_vs_spy": 0.0007,
-    "stop_rate": 0.267,
-    "target_rate": 0.1,
+    "n": 31,
+    "avg_return": -0.0077,
+    "win_rate": 0.387,
+    "avg_vs_spy": -0.0024,
+    "stop_rate": 0.29,
+    "target_rate": 0.097,
     "reliable": true
    },
    "grok": {
@@ -446,12 +468,12 @@
     "reliable": true
    },
    "compounder": {
-    "n": 3,
-    "avg_return": -0.0339,
-    "win_rate": 0.333,
-    "avg_vs_spy": -0.0218,
-    "stop_rate": 0.667,
-    "target_rate": 0.333,
+    "n": 4,
+    "avg_return": -0.0491,
+    "win_rate": 0.25,
+    "avg_vs_spy": -0.0352,
+    "stop_rate": 0.75,
+    "target_rate": 0.25,
     "reliable": false
    }
   },
@@ -505,12 +527,12 @@
      "reliable": false
     },
     "compounder": {
-     "n": 0,
-     "avg_return": null,
-     "win_rate": null,
-     "avg_vs_spy": null,
-     "stop_rate": null,
-     "target_rate": null,
+     "n": 1,
+     "avg_return": -0.0947,
+     "win_rate": 0.0,
+     "avg_vs_spy": -0.0755,
+     "stop_rate": 1.0,
+     "target_rate": 0.0,
      "reliable": false
     }
    },
@@ -555,12 +577,12 @@
     "reliable": false
    },
    "medium": {
-    "n": 55,
-    "avg_return": -0.0146,
-    "win_rate": 0.327,
-    "avg_vs_spy": -0.0119,
-    "stop_rate": 0.345,
-    "target_rate": 0.055,
+    "n": 56,
+    "avg_return": -0.016,
+    "win_rate": 0.321,
+    "avg_vs_spy": -0.0131,
+    "stop_rate": 0.357,
+    "target_rate": 0.054,
     "reliable": true
    },
    "low": {
@@ -593,12 +615,12 @@
     "reliable": true
    },
    "wide stop (8%+)": {
-    "n": 9,
-    "avg_return": -0.0113,
-    "win_rate": 0.444,
-    "avg_vs_spy": 0.0013,
-    "stop_rate": 0.444,
-    "target_rate": 0.333,
+    "n": 10,
+    "avg_return": -0.0196,
+    "win_rate": 0.4,
+    "avg_vs_spy": -0.0083,
+    "stop_rate": 0.5,
+    "target_rate": 0.3,
     "reliable": false
    }
   },
@@ -705,15 +727,15 @@
     "date": "2026-10-15"
    },
    {
-    "model": "claude",
-    "ticker": "TSM",
-    "book": "catalyst",
-    "return": -0.0714,
+    "model": "chatgpt",
+    "ticker": "GOOGL",
+    "book": "compounder",
+    "return": -0.0947,
     "exit": "stop",
     "confidence": "medium",
-    "thesis": "TSMC's September revenue of NT$511.9B was up 54.6% y/y (Jan-Sep +41.1%), yet the ADR fell 3% to $457.99 in the OpenAI-driven semis selloff. Q3 results land Oct 15 at 2am ET, inside a 5-session hold, so I'm positioning for a pre-print recove",
-    "main_risk": "The AI-capex scare deepens and drags all semis; geopolitical or tariff headlines.",
-    "date": "2026-10-14"
+    "thesis": "The October 6 Constellation agreement secures incremental power capacity and expands a Google Cloud and Gemini Enterprise technology alliance. That combination supports a 60-session thesis in scalable cloud and AI distribution, with power e",
+    "main_risk": "Power comes online over years, while AI spending, competition and regulatory pressure can limit shareholder returns.",
+    "date": "2026-10-23"
    },
    {
     "model": "chatgpt",
@@ -822,20 +844,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 81,
-    "avg_return": -0.0038,
-    "win_rate": 0.432,
-    "avg_vs_spy": -0.0013,
-    "stop_rate": 0.21,
-    "target_rate": 0.012,
+    "n": 91,
+    "avg_return": -0.0023,
+    "win_rate": 0.429,
+    "avg_vs_spy": 0.0009,
+    "stop_rate": 0.187,
+    "target_rate": 0.022,
     "reliable": true
    },
    "momentum": {
-    "n": 83,
-    "avg_return": -0.0156,
-    "win_rate": 0.349,
-    "avg_vs_spy": -0.0108,
-    "stop_rate": 0.373,
+    "n": 92,
+    "avg_return": -0.0136,
+    "win_rate": 0.37,
+    "avg_vs_spy": -0.0083,
+    "stop_rate": 0.337,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -860,12 +882,12 @@
     "reliable": true
    },
    "solo": {
-    "n": 101,
-    "avg_return": -0.0116,
-    "win_rate": 0.267,
-    "avg_vs_spy": -0.0081,
-    "stop_rate": 0.436,
-    "target_rate": 0.079,
+    "n": 102,
+    "avg_return": -0.0124,
+    "win_rate": 0.265,
+    "avg_vs_spy": -0.0089,
+    "stop_rate": 0.441,
+    "target_rate": 0.078,
     "reliable": true
    }
   },
@@ -877,18 +899,18 @@
      "ci_low": -0.0178,
      "ci_high": 0.0004,
      "t": -1.87,
-     "p_beats_fly": 0.087,
+     "p_beats_fly": 0.051,
      "trades_needed": 65,
      "verdict": "Can't tell from luck yet"
     },
     "chatgpt": {
-     "n": 24,
-     "avg_alpha": 0.0007,
-     "ci_low": -0.0191,
-     "ci_high": 0.0205,
-     "t": 0.07,
-     "p_beats_fly": 0.586,
-     "trades_needed": 97,
+     "n": 25,
+     "avg_alpha": -0.0024,
+     "ci_low": -0.0223,
+     "ci_high": 0.0176,
+     "t": -0.23,
+     "p_beats_fly": 0.384,
+     "trades_needed": 103,
      "verdict": "Can't tell from luck yet"
     },
     "grok": {
@@ -897,7 +919,7 @@
      "ci_low": -0.0411,
      "ci_high": -0.0045,
      "t": -2.44,
-     "p_beats_fly": 0.018,
+     "p_beats_fly": 0.009,
      "trades_needed": 76,
      "verdict": "Losing to the market"
     },
@@ -907,38 +929,38 @@
      "ci_low": -0.0266,
      "ci_high": 0.0104,
      "t": -0.86,
-     "p_beats_fly": 0.244,
+     "p_beats_fly": 0.173,
      "trades_needed": 71,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 71,
-     "avg_alpha": -0.0013,
-     "ci_low": -0.0078,
-     "ci_high": 0.0052,
-     "t": -0.39,
-     "p_beats_fly": 0.509,
-     "trades_needed": 31,
+     "n": 81,
+     "avg_alpha": 0.0009,
+     "ci_low": -0.0058,
+     "ci_high": 0.0076,
+     "t": 0.26,
+     "p_beats_fly": 0.492,
+     "trades_needed": 38,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 72,
-     "avg_alpha": -0.0016,
-     "ci_low": -0.0085,
-     "ci_high": 0.0052,
-     "t": -0.46,
-     "p_beats_fly": 0.463,
-     "trades_needed": 35,
+     "n": 81,
+     "avg_alpha": -0.0014,
+     "ci_low": -0.0076,
+     "ci_high": 0.0048,
+     "t": -0.45,
+     "p_beats_fly": 0.304,
+     "trades_needed": 32,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 74,
-     "avg_alpha": -0.0108,
-     "ci_low": -0.0195,
-     "ci_high": -0.0021,
-     "t": -2.44,
-     "p_beats_fly": 0.04,
-     "trades_needed": 58,
+     "n": 83,
+     "avg_alpha": -0.0083,
+     "ci_low": -0.0164,
+     "ci_high": -0.0001,
+     "t": -1.98,
+     "p_beats_fly": 0.042,
+     "trades_needed": 57,
      "verdict": "Losing to the market"
     }
    },
