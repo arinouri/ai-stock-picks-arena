@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-22T19:40:31.519270-04:00",
+ "generated_at": "2026-10-22T21:01:28.247962-04:00",
  "tonight": {
   "run_date": "2026-10-22",
   "session": "2026-10-23",
@@ -702,6 +702,15 @@
   "peer_lessons": [
    {
     "model": "claude",
+    "night": "2026-10-22",
+    "lessons": [
+     "I'm still not beating the Fruit Fly: over 76 scored trades my alpha is -0.87% per trade (95% range -1.78% to +0.04%, 8.7% chance of beating random) and my average is -1.09% vs -0.38% for the Fruit Fly; I only beat Momentum (-1.58%). My moonshot book is the reliable weak spot (n=40, 15% win rate, -1.21%), so for a fourth night I submit zero moonshots instead of guessing on pre-open prints like AXP ",
+     "My worst recent loss was the one I rated 'high': NVDA stopped at -11.6% and GOOGL is -7% as the SOX fell 6.7% in one day, because four of my five compounders were the same AI-capex bet (the 'high' confidence bucket is only n=2, a hunch). So I'm refilling the free slot with Eli Lilly, which rose 2.8% to a record on the same day, not another AI name, and I'm widening GOOGL's stop to ~1.5x its recent",
+     "My catalyst winners (VIK +6.8%, EBAY +5.95%, OLLI +4.6%) came from real rating changes where the stock moved only 2-5% on the news, and the lab says big gaps lose (opened up 2%+: -5.4%, n=16; down 2%+: -2.1%, n=25, both hunches). Tonight's two catalyst picks fit that pattern and are flat after hours: CME (JPMorgan Underweight to Overweight, +3.45%) and Block (BMO to Outperform, +1.0% on a -2.6% Na"
+    ]
+   },
+   {
+    "model": "claude",
     "night": "2026-10-21",
     "lessons": [
      "I'm still not beating the Fruit Fly: over 72 scored trades my alpha is -0.83% per trade (95% range -1.74% to +0.09%, 'can't tell from luck yet') and my average is -0.99% vs -0.49% for random picks; I only beat Momentum (-1.85%). My moonshot book is the worst part (n=40, 15% win rate, -1.21%, reliable), so for a third night I submit zero moonshots rather than guess on tomorrow's pre-open prints (HO",
@@ -725,15 +734,6 @@
      "The playbook lab shows first-session buys that opened up 2%+ lost about 5.4% open-to-close (n=16, a hunch), and 3M is indicated about +4% to +5% after hours (168.74-170.80 vs the 162.01 close) on the Amazon deal before its 6:30 AM print; with the stop forced under 162.01, a 1.5:1 trade from a ~170 open needs a ~183 target (+8% on an earnings day), so I skip it instead of chasing a priced-in gap.",
      "The evidence table still says I am losing to the market: alpha -2.6% per trade with a 95% range of -4.4% to -0.8% over 21 closed trades and only a 2.4% chance of beating the Fruit Fly, whose average is -0.9% against my -2.8% (Momentum -2.7%); I have no edge to claim, so I keep passing on pre-open earnings coin flips like GM (options implied ~6%) and NOC, as Claude also did tonight for the same rea",
      "Claude's BAC and MRK trades failed once the sector rotation behind them reversed, and my INTU trade leans partly on the software rotation: it rose only 0.1% Monday while the Nasdaq gained 1.1% as money moved back to chips, so I hold it only because the Sequence deal is company-specific and its time exit is three sessions away, and I will not open new trades whose main thesis is a sector rotation."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-10-19",
-    "lessons": [
-     "I'm not beating the Fruit Fly: over 71 closed trades I average -1.41% (alpha 95% range -2.15% to -0.45%, verdict 'losing to the market') vs -0.92% for random picks; I only beat Momentum (-2.74%). My moonshot book is the worst part (n=40, 15% win rate, -1.21%), so tonight I submit zero moonshots instead of guessing on coin-flip pre-open prints (GM implied ~6%, NOC ~4.8%).",
-     "The lab's gap table says first-session buys that opened up 2%+ lost -5.4% open-to-close (n=16, a hunch) and those that opened down 2%+ lost -2.1% (n=25), against roughly 0% for 0-2% gaps. So I'm skipping tonight's after-hours movers (Bitdeer +5.6%, STLD -5.4%, CCK -5.1%) and would only take a name that is flat after hours, like Boyd Gaming ($70.98 vs the $70.99 close), which the price feed couldn'",
-     "My catalyst stop rate is 61% (n=31) vs ChatGPT's 36% (n=11, a hunch), and my two trades that relied on a sector rotation are failing now that it has reversed: BAC -3.4% (financials worst sector Monday, JPM -1.8%, yields up) and MRK -4.1% (health care -0.6%, ESMO data lands after my exit). I'm selling both at the open instead of letting stops sitting inside normal daily noise decide, and any new sw"
     ]
    },
    {
