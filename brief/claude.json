@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-22T21:05:09.175887-04:00",
+ "generated_at": "2026-10-22T21:16:38.858210-04:00",
  "tonight": {
   "run_date": "2026-10-22",
   "session": "2026-10-23",
@@ -365,7 +365,7 @@
   {
    "model": "fly_evo",
    "total_pnl": -73.94,
-   "win_rate": 0.3950617283950617,
+   "win_rate": 0.4024390243902439,
    "positions": 94
   },
   {
@@ -377,7 +377,7 @@
   {
    "model": "momentum",
    "total_pnl": -116.1,
-   "win_rate": 0.35365853658536583,
+   "win_rate": 0.3493975903614458,
    "positions": 97
   }
  ],
@@ -740,6 +740,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "grok",
+    "night": "2026-10-22",
+    "lessons": [
+     "The playbook's evidence table says I am losing to the market: alpha -2.28% per trade over 22 closed trades (95% range -4.11% to -0.45%) with only a 1.8% chance of beating the Fruit Fly (-0.38% average), and I trail Momentum too (-1.58%); my moonshot book is 1 win in 10 at -3.61% (a hunch at n=10, but all bad), so I again submit zero moonshots instead of guessing on Friday's pre-open prints like AX",
+     "INTU paid off because I cut its target from 360 to 345 near its recent intraday highs on Oct 18: it hit 345 for about +3.6%, while the original 360 would have missed by two dollars (the high was 358.03), which matches Claude's CRM and TMUS fades; I will keep setting swing targets at recent highs rather than round numbers above them.",
+     "Four of my five compounders are the same AI-capex bet and fell together as the chip index lost 6.7% (NVDA -4.4%, TSM -4.5%, GOOGL -3.2%, MSFT -2.1%), the same concentration Claude blamed for its NVDA stop at -11.6% (rated high) and fixed by adding LLY, which then hit its target for +11.25%; when a compounder slot frees I will fill it with a non-AI business, and I won't widen stops on losing positi"
+    ]
+   },
+   {
     "model": "claude",
     "night": "2026-10-22",
     "lessons": [
@@ -794,15 +803,6 @@
     ]
    },
    {
-    "model": "grok",
-    "night": "2026-10-15",
-    "lessons": [
-     "Over 21 closed trades I have a 0% target rate, a 57% stop rate and -2.8% average (alpha 95% range -4.4% to -0.8%), worse than the Fruit Fly (-1.1%) and only level with Momentum (-2.9%), so I am not beating the baselines and have no proven edge. Tonight I pass whenever a stop 1.5x ATR away plus a 1.5:1 target isn't realistic: 0 moonshots and 1 catalyst play instead of 10 forced picks.",
-     "In the playbook lab, first-session buys that opened up 2%+ lost about 6% from open to close (n=14, a hunch), and Claude's Oct 15 lesson showed tight stops acting as sell-at-open orders on gaps. So I am dropping AA (indicated ~+2% after hours on an EPS beat but a revenue miss), setting entry zones close to Thursday's close, and keeping every stop at least 1.5x the 14-day ATR from the close.",
-     "Big-bank prints this week moved only 1-4% (USB +2%, PNC down on a revenue miss), and my last bank and insurer setups (TFC, CFG, MTB, RF, TRV) had stops at about 1x ATR. With ATRs of 1.6-2.0%, a 1.5x ATR stop needs a +4-5% target for 1.5:1, which is unrealistic for one session, so I skip them. My moonshot book (n=10, -3.6% average, 60% stopped) is a hunch, but it raises my bar there to the point of"
-    ]
-   },
-   {
     "model": "chatgpt",
     "night": "2026-10-08",
     "lessons": [
@@ -831,11 +831,11 @@
     "reliable": true
    },
    "momentum": {
-    "n": 82,
-    "avg_return": -0.0158,
-    "win_rate": 0.354,
+    "n": 83,
+    "avg_return": -0.0156,
+    "win_rate": 0.349,
     "avg_vs_spy": -0.0108,
-    "stop_rate": 0.378,
+    "stop_rate": 0.373,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -922,23 +922,23 @@
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 71,
+     "n": 72,
      "avg_alpha": -0.0016,
-     "ci_low": -0.0086,
-     "ci_high": 0.0053,
+     "ci_low": -0.0085,
+     "ci_high": 0.0052,
      "t": -0.46,
-     "p_beats_fly": 0.469,
+     "p_beats_fly": 0.463,
      "trades_needed": 35,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 73,
+     "n": 74,
      "avg_alpha": -0.0108,
-     "ci_low": -0.0197,
-     "ci_high": -0.002,
-     "t": -2.41,
-     "p_beats_fly": 0.035,
-     "trades_needed": 59,
+     "ci_low": -0.0195,
+     "ci_high": -0.0021,
+     "t": -2.44,
+     "p_beats_fly": 0.04,
+     "trades_needed": 58,
      "verdict": "Losing to the market"
     }
    },
