@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-22T21:16:41.655793-04:00",
+ "generated_at": "2026-10-22T21:17:55.881332-04:00",
  "tonight": {
   "run_date": "2026-10-22",
   "session": "2026-10-23",
@@ -701,21 +701,21 @@
   ],
   "peer_lessons": [
    {
-    "model": "grok",
-    "night": "2026-10-22",
-    "lessons": [
-     "The playbook's evidence table says I am losing to the market: alpha -2.28% per trade over 22 closed trades (95% range -4.11% to -0.45%) with only a 1.8% chance of beating the Fruit Fly (-0.38% average), and I trail Momentum too (-1.58%); my moonshot book is 1 win in 10 at -3.61% (a hunch at n=10, but all bad), so I again submit zero moonshots instead of guessing on Friday's pre-open prints like AX",
-     "INTU paid off because I cut its target from 360 to 345 near its recent intraday highs on Oct 18: it hit 345 for about +3.6%, while the original 360 would have missed by two dollars (the high was 358.03), which matches Claude's CRM and TMUS fades; I will keep setting swing targets at recent highs rather than round numbers above them.",
-     "Four of my five compounders are the same AI-capex bet and fell together as the chip index lost 6.7% (NVDA -4.4%, TSM -4.5%, GOOGL -3.2%, MSFT -2.1%), the same concentration Claude blamed for its NVDA stop at -11.6% (rated high) and fixed by adding LLY, which then hit its target for +11.25%; when a compounder slot frees I will fill it with a non-AI business, and I won't widen stops on losing positi"
-    ]
-   },
-   {
     "model": "claude",
     "night": "2026-10-22",
     "lessons": [
      "I'm still not beating the Fruit Fly: over 76 scored trades my alpha is -0.87% per trade (95% range -1.78% to +0.04%, 8.7% chance of beating random) and my average is -1.09% vs -0.38% for the Fruit Fly; I only beat Momentum (-1.58%). My moonshot book is the reliable weak spot (n=40, 15% win rate, -1.21%), so for a fourth night I submit zero moonshots instead of guessing on pre-open prints like AXP ",
      "My worst recent loss was the one I rated 'high': NVDA stopped at -11.6% and GOOGL is -7% as the SOX fell 6.7% in one day, because four of my five compounders were the same AI-capex bet (the 'high' confidence bucket is only n=2, a hunch). So I'm refilling the free slot with Eli Lilly, which rose 2.8% to a record on the same day, not another AI name, and I'm widening GOOGL's stop to ~1.5x its recent",
      "My catalyst winners (VIK +6.8%, EBAY +5.95%, OLLI +4.6%) came from real rating changes where the stock moved only 2-5% on the news, and the lab says big gaps lose (opened up 2%+: -5.4%, n=16; down 2%+: -2.1%, n=25, both hunches). Tonight's two catalyst picks fit that pattern and are flat after hours: CME (JPMorgan Underweight to Overweight, +3.45%) and Block (BMO to Outperform, +1.0% on a -2.6% Na"
+    ]
+   },
+   {
+    "model": "grok",
+    "night": "2026-10-22",
+    "lessons": [
+     "The playbook's evidence table says I am losing to the market: alpha -2.28% per trade over 22 closed trades (95% range -4.11% to -0.45%) with only a 1.8% chance of beating the Fruit Fly (-0.38% average), and I trail Momentum too (-1.58%); my moonshot book is 1 win in 10 at -3.61% (a hunch at n=10, but all bad), so I again submit zero moonshots instead of guessing on Friday's pre-open prints like AX",
+     "INTU paid off because I cut its target from 360 to 345 near its recent intraday highs on Oct 18: it hit 345 for about +3.6%, while the original 360 would have missed by two dollars (the high was 358.03), which matches Claude's CRM and TMUS fades; I will keep setting swing targets at recent highs rather than round numbers above them.",
+     "Four of my five compounders are the same AI-capex bet and fell together as the chip index lost 6.7% (NVDA -4.4%, TSM -4.5%, GOOGL -3.2%, MSFT -2.1%), the same concentration Claude blamed for its NVDA stop at -11.6% (rated high) and fixed by adding LLY, which then hit its target for +11.25%; when a compounder slot frees I will fill it with a non-AI business, and I won't widen stops on losing positi"
     ]
    },
    {
