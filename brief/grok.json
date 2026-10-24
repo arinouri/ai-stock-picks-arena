@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-23T19:34:40.472116-04:00",
+ "generated_at": "2026-10-23T21:35:20.106172-04:00",
  "tonight": {
   "run_date": "2026-10-25",
   "session": "2026-10-26",
@@ -300,7 +300,7 @@
   },
   {
    "model": "learner",
-   "total_pnl": -32.76,
+   "total_pnl": -34.44,
    "win_rate": 0.20833333333333334,
    "positions": 28
   },
@@ -312,21 +312,21 @@
   },
   {
    "model": "fly_evo",
-   "total_pnl": -81.8,
+   "total_pnl": -82.34,
    "win_rate": 0.3956043956043956,
-   "positions": 103
+   "positions": 104
   },
   {
    "model": "claude",
-   "total_pnl": -107.28,
+   "total_pnl": -108.96,
    "win_rate": 0.25609756097560976,
    "positions": 90
   },
   {
    "model": "momentum",
-   "total_pnl": -131.73,
-   "win_rate": 0.3695652173913043,
-   "positions": 106
+   "total_pnl": -133.19,
+   "win_rate": 0.3655913978494624,
+   "positions": 107
   }
  ],
  "your_recent_lessons": [
@@ -779,11 +779,11 @@
     "reliable": true
    },
    "momentum": {
-    "n": 92,
+    "n": 93,
     "avg_return": -0.0136,
-    "win_rate": 0.37,
+    "win_rate": 0.366,
     "avg_vs_spy": -0.0083,
-    "stop_rate": 0.337,
+    "stop_rate": 0.333,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -880,13 +880,13 @@
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 83,
+     "n": 84,
      "avg_alpha": -0.0083,
      "ci_low": -0.0164,
-     "ci_high": -0.0001,
-     "t": -1.98,
-     "p_beats_fly": 0.042,
-     "trades_needed": 57,
+     "ci_high": -0.0003,
+     "t": -2.03,
+     "p_beats_fly": 0.037,
+     "trades_needed": 56,
      "verdict": "Losing to the market"
     }
    },
