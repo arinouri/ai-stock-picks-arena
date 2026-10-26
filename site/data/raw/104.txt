@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-25
+received (UTC): 2026-10-26 00:50:32.286346
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 81 completed EVO trades. Ranked 124 liquid stocks using only data through 2026-10-23.",
+ "observations": 81,
+ "exploration_seed": 202610260081,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "sampled_score": 0.120586,
+   "expected_reward": 0.03152,
+   "uncertainty": 0.059683
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.114687,
+   "expected_reward": 0.030992,
+   "uncertainty": 0.055596
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SMCI",
+   "sampled_score": 0.110186,
+   "expected_reward": 0.027114,
+   "uncertainty": 0.052512
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "INTC",
+   "sampled_score": 0.106245,
+   "expected_reward": 0.028652,
+   "uncertainty": 0.048907
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ARM",
+   "sampled_score": 0.100236,
+   "expected_reward": 0.029091,
+   "uncertainty": 0.047487
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LRCX",
+   "sampled_score": 0.091576,
+   "expected_reward": 0.026774,
+   "uncertainty": 0.046426
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMAT",
+   "sampled_score": 0.09059,
+   "expected_reward": 0.02616,
+   "uncertainty": 0.046366
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LCID",
+   "sampled_score": 0.088332,
+   "expected_reward": 0.019321,
+   "uncertainty": 0.048407
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RIVN",
+   "sampled_score": 0.085083,
+   "expected_reward": 0.023254,
+   "uncertainty": 0.041355
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DELL",
+   "sampled_score": 0.081577,
+   "expected_reward": 0.021634,
+   "uncertainty": 0.040009
+  }
+ ]
+}

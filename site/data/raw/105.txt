@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-25
+received (UTC): 2026-10-26 00:50:32.286346
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 123 stocks by trailing 20-session momentum through 2026-10-23.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "momentum_score": 0.965035
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "INTU",
+   "momentum_score": 0.735342
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 0.557399
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP",
+   "momentum_score": 0.55381
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.542857
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NOW",
+   "momentum_score": 0.516296
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SNAP",
+   "momentum_score": 0.509225
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SPOT",
+   "momentum_score": 0.436521
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CVX",
+   "momentum_score": 0.42201
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RCL",
+   "momentum_score": 0.417553
+  }
+ ]
+}
