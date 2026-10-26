@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-26
+received (UTC): 2026-10-26 23:52:47.904842
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 89 completed EVO trades. Ranked 121 liquid stocks using only data through 2026-10-26.",
+ "observations": 89,
+ "exploration_seed": 202610270089,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.023938,
+   "expected_reward": 0.001629,
+   "uncertainty": 0.030218
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "sampled_score": 0.023502,
+   "expected_reward": -0.000714,
+   "uncertainty": 0.032782
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SMCI",
+   "sampled_score": 0.02204,
+   "expected_reward": -0.00074,
+   "uncertainty": 0.028274
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NET",
+   "sampled_score": 0.02135,
+   "expected_reward": -0.00579,
+   "uncertainty": 0.02475
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CRWD",
+   "sampled_score": 0.01942,
+   "expected_reward": -0.008611,
+   "uncertainty": 0.026754
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PANW",
+   "sampled_score": 0.017467,
+   "expected_reward": -0.007818,
+   "uncertainty": 0.023861
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSTR",
+   "sampled_score": 0.016286,
+   "expected_reward": -0.003568,
+   "uncertainty": 0.020197
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ARM",
+   "sampled_score": 0.014608,
+   "expected_reward": -0.000279,
+   "uncertainty": 0.023436
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UAL",
+   "sampled_score": 0.014172,
+   "expected_reward": -0.002901,
+   "uncertainty": 0.017698
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "INTC",
+   "sampled_score": 0.013906,
+   "expected_reward": 0.000525,
+   "uncertainty": 0.021699
+  }
+ ]
+}

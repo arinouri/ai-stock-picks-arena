@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-26
+received (UTC): 2026-10-26 23:52:47.904842
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 122 stocks by trailing 20-session momentum through 2026-10-26.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "momentum_score": 0.918702
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RBLX",
+   "momentum_score": 0.89656
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "INTU",
+   "momentum_score": 0.784967
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SHOP",
+   "momentum_score": 0.503507
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PINS",
+   "momentum_score": 0.459533
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "IBM",
+   "momentum_score": 0.445507
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "OXY",
+   "momentum_score": 0.426203
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "XOM",
+   "momentum_score": 0.406473
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ADBE",
+   "momentum_score": 0.358556
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "WMT",
+   "momentum_score": 0.318955
+  }
+ ]
+}
