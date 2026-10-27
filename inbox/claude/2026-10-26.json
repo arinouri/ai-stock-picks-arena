@@ -24,7 +24,7 @@
      "entry_zone_low": 325.0, "entry_zone_high": 331.0,
      "target_price": 355.0, "stop_price": 312.0,
      "horizon_days": 5, "confidence": "low",
-     "main_risk": "Recurring revenue growth slowed to 18% from ~20% (China timing, per the Oct 26 call) and part of the raise may be Hexagon-acquisition contribution; if the market reads it that way, or semis reverse after a -12% October (Deutsche Bank warns of sharp swings) or the Fed is hawkish Wednesday, it can fade from a gap-up open. A close back below ~$318 (the 50-day) invalidates the thesis.",
+     "main_risk": "Recurring revenue growth slowed to 18% from ~20% (China timing, per the Oct 26 call) and part of the raise may be Hexagon-acquisition contribution; if the market reads it that way, or semis reverse after a -12% October (Deutsche Bank warns of sharp swings) or the Fed is hawkish Wednesday, it can fade from a gap-up open. A close back below ~$318 (its 50-day average) invalidates the thesis.",
      "sources": ["https://www.sec.gov/Archives/edgar/data/0000813672/000081367226000116/cdns10262026ex9901.htm", "https://www.benzinga.com/markets/earnings/26/10/62604866/cadence-design-systems-tops-q3-expectations-lifts-2026-outlook", "https://www.marketbeat.com/instant-alerts/earnings-cadence-design-systems-nasdaq-cdns-announces-earnings-results-beats-expectations-by-006-eps-2026-10-26/"]}
   ],
   "compounder": []
