@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-10-27
+received (UTC): 2026-10-27 23:47:02.840385
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 100 completed EVO trades. Ranked 122 liquid stocks using only data through 2026-10-27.",
+ "observations": 100,
+ "exploration_seed": 202610280100,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "JPM",
+   "sampled_score": 0.012315,
+   "expected_reward": -0.006365,
+   "uncertainty": 0.019688
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "WFC",
+   "sampled_score": 0.011862,
+   "expected_reward": -0.00824,
+   "uncertainty": 0.020627
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SCHW",
+   "sampled_score": 0.009345,
+   "expected_reward": -0.00159,
+   "uncertainty": 0.017487
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "C",
+   "sampled_score": 0.008746,
+   "expected_reward": -0.005018,
+   "uncertainty": 0.015725
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NKE",
+   "sampled_score": 0.008602,
+   "expected_reward": -0.0097,
+   "uncertainty": 0.020453
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "BMY",
+   "sampled_score": 0.008494,
+   "expected_reward": -0.009576,
+   "uncertainty": 0.01824
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "JNJ",
+   "sampled_score": 0.007861,
+   "expected_reward": -0.010761,
+   "uncertainty": 0.017494
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DAL",
+   "sampled_score": 0.006217,
+   "expected_reward": -0.008471,
+   "uncertainty": 0.015606
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TGT",
+   "sampled_score": 0.00495,
+   "expected_reward": -0.005148,
+   "uncertainty": 0.01457
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CVS",
+   "sampled_score": 0.00489,
+   "expected_reward": -0.007341,
+   "uncertainty": 0.018753
+  }
+ ]
+}
