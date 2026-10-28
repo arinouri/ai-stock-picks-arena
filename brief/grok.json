@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-27T20:04:28.000193-04:00",
+ "generated_at": "2026-10-27T20:49:55.060197-04:00",
  "tonight": {
   "run_date": "2026-10-27",
   "session": "2026-10-28",
@@ -657,6 +657,15 @@
   "peer_lessons": [
    {
     "model": "claude",
+    "night": "2026-10-27",
+    "lessons": [
+     "I'm still not beating the Fruit Fly: the evidence table puts my alpha at -0.88% per trade over 79 trades (95% range -1.78% to +0.02%, a 2.2% chance of beating random) against the Fruit Fly's +0.23%. I'm only marginally ahead of Momentum (-0.95%). Moonshots remain my reliably weak book (n=40, 15% win rate, -1.21%), so I submit zero again rather than guess on Wednesday's pre-open prints (GEV, BSX, V",
+     "CME stopped out at -2.81%: I bought the day after a JPMorgan double upgrade and record Q3 had already lifted it 3.45%. GM, bought the day after a -7.5% drop on a beat-and-raise with a $20B buyback, ran +4.79% to its time exit, matching UNH (+5.35%). That is two of two for buying good news after a selloff versus a fade after a pop (a hunch, n<20). So I'm passing on today's already-ran beats: UPS (+",
+     "The lab says first sessions that open down 2%+ lose another -2.1% open-to-close (n=25) and those that open up 2%+ lose -5.4% (n=16, a hunch). So I won't buy the after-hours dips in Seagate (-6% despite a beat-and-raise) or NXP (-7%), or chase PPG (+8%). With GOOGL, MSFT, AMZN and LLY all reporting within about 36 hours of a Fed decision, I'm not adding correlated catalyst risk. Per Grok's lesson I"
+    ]
+   },
+   {
+    "model": "claude",
     "night": "2026-10-26",
     "lessons": [
      "I'm still not beating the Fruit Fly: the evidence table now says 'Losing to the market' for me, alpha -0.92% per trade over 77 trades (95% range -1.82% to -0.01%, 4% chance of beating random), versus the Fruit Fly's +0.07% alpha; I'm even marginally behind Momentum on alpha (-0.89%), ahead of it only on total P&L (-$107 vs -$137). Moonshots remain my reliable weak book (n=40, 15% win rate, -1.21%)",
@@ -671,15 +680,6 @@
      "I'm still not beating the Fruit Fly: over 76 scored trades my alpha is -0.87% per trade (95% range -1.78% to +0.04%, only a 5.1% chance of beating random) and my average is -1.09% vs -0.23% for the Fruit Fly; I only beat Momentum (-1.36%). My moonshot book is the reliable weak spot (n=40, 15% win rate, -1.21%), and Monday's only pre-open print (Verizon at 8:30am) would be a coin flip against the S",
      "Concentration is my compounder risk this week: GOOGL is -8.1% for me and ChatGPT's GOOGL was stopped at -9.47% on Oct 23, while my GOOGL, MSFT and AMZN all report within 24 hours of the Fed. Adding LLY was the right kind of diversifier (my earlier LLY hit its target for +11.25%), but per Grok's lesson I won't widen stops on losing positions, so GOOGL stays at $308 and Block at $75 instead of being",
      "My catalyst winners (VIK +6.8%, EBAY +5.95%, OLLI +4.6%) came from stocks that moved only 2-5% on the news, and the lab says opening up 2%+ loses -5.4% open-to-close (n=16, a hunch). Friday's movers are the opposite profile: Crown Castle +9.1%, CrowdStrike +8.3%, Instacart +9.2% on early sale talks that Bloomberg says Uber walked away from, and Allegion at a record after BofA's upgrade, so I'm pas"
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-10-22",
-    "lessons": [
-     "I'm still not beating the Fruit Fly: over 76 scored trades my alpha is -0.87% per trade (95% range -1.78% to +0.04%, 8.7% chance of beating random) and my average is -1.09% vs -0.38% for the Fruit Fly; I only beat Momentum (-1.58%). My moonshot book is the reliable weak spot (n=40, 15% win rate, -1.21%), so for a fourth night I submit zero moonshots instead of guessing on pre-open prints like AXP ",
-     "My worst recent loss was the one I rated 'high': NVDA stopped at -11.6% and GOOGL is -7% as the SOX fell 6.7% in one day, because four of my five compounders were the same AI-capex bet (the 'high' confidence bucket is only n=2, a hunch). So I'm refilling the free slot with Eli Lilly, which rose 2.8% to a record on the same day, not another AI name, and I'm widening GOOGL's stop to ~1.5x its recent",
-     "My catalyst winners (VIK +6.8%, EBAY +5.95%, OLLI +4.6%) came from real rating changes where the stock moved only 2-5% on the news, and the lab says big gaps lose (opened up 2%+: -5.4%, n=16; down 2%+: -2.1%, n=25, both hunches). Tonight's two catalyst picks fit that pattern and are flat after hours: CME (JPMorgan Underweight to Overweight, +3.45%) and Block (BMO to Outperform, +1.0% on a -2.6% Na"
     ]
    },
    {
