@@ -1,18 +1,14 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-28T15:00:13.338267-04:00",
+ "generated_at": "2026-10-29T15:08:08.929100-04:00",
  "tonight": {
-  "run_date": "2026-10-28",
-  "session": "2026-10-29",
-  "deadline": "2026-10-28 23:59 ET",
-  "upload_path": "inbox/chatgpt/2026-10-28.json"
+  "run_date": "2026-10-29",
+  "session": "2026-10-30",
+  "deadline": "2026-10-29 23:59 ET",
+  "upload_path": "inbox/chatgpt/2026-10-29.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-10-28",
-   "session": "2026-10-29"
-  },
   {
    "run_date": "2026-10-29",
    "session": "2026-10-30"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-11-17",
    "session": "2026-11-18"
+  },
+  {
+   "run_date": "2026-11-18",
+   "session": "2026-11-19"
   }
  ],
  "rules": {
@@ -123,11 +123,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 531.33,
-   "return_so_far": 0.0017,
-   "sessions_held": 14,
+   "last_price": 531.01,
+   "return_so_far": 0.0011,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 615.0,
    "stop": 486.0,
    "your_thesis": "Today's Nvidia-powered Surface launch and current Copilot expansion reinforce Microsoft's ability to distribute AI across its enterprise and Windows ecosystem. I would hold the diversified platform for 60 sessions while watching monetization and capital efficiency.",
@@ -142,11 +142,11 @@
    "ticker": "AMZN",
    "entry_date": "2026-10-07",
    "entry_price": 259.72,
-   "last_price": 253.1,
-   "return_so_far": -0.0275,
-   "sessions_held": 14,
+   "last_price": 254.6,
+   "return_so_far": -0.0217,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 303.0,
    "stop": 237.0,
    "your_thesis": "Today's fresh AWS review reports 36.7% quarterly cloud growth and broadening enterprise AI offerings, supporting a durable cloud-platform thesis. I would hold for 60 sessions, with the reported free-cash-flow deficit an explicit constraint on the investment case.",
@@ -161,11 +161,11 @@
    "ticker": "LLY",
    "entry_date": "2026-10-07",
    "entry_price": 1183.5,
-   "last_price": 1281.91,
-   "return_so_far": 0.0812,
-   "sessions_held": 14,
+   "last_price": 1288.3,
+   "return_so_far": 0.0866,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 1375.0,
    "stop": 1187.0,
    "your_thesis": "The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the stock still requires valuation discipline.",
@@ -180,11 +180,11 @@
    "ticker": "V",
    "entry_date": "2026-10-07",
    "entry_price": 371.4,
-   "last_price": 401.86,
-   "return_so_far": 0.08,
-   "sessions_held": 14,
+   "last_price": 400.6,
+   "return_so_far": 0.0766,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 426.0,
    "stop": 378.5,
    "your_thesis": "The October 6 renewal of Visa's OpenTable agreement expands cardholder dining access across North America and illustrates the ongoing value of its payments network. I would hold for 60 sessions for recurring transaction economics rather than expect this partnership alone to cause a large daily move.",
@@ -196,19 +196,19 @@
  ],
  "compounder_slots_free": 1,
  "last_session": {
-  "date": "2026-10-27",
-  "your_pnl": 0.92,
+  "date": "2026-10-28",
+  "your_pnl": 0.72,
   "positions": [
    {
     "position_id": 76,
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 531.3300170898438,
-    "high": 534.7000122070312,
-    "low": 528.3309936523438,
-    "session_move": -0.0024,
-    "total_return": 0.0017,
+    "close": 531.010009765625,
+    "high": 535.0,
+    "low": 526.1400146484375,
+    "session_move": -0.0006,
+    "total_return": 0.0011,
     "event": "held",
     "your_thesis": "Today's Nvidia-powered Surface launch and current Copilot expansion reinforce Microsoft's ability to distribute AI across its enterprise and Windows ecosystem. I would hold the diversified platform for 60 sessions while watching monetization and capital efficiency."
    },
@@ -217,11 +217,11 @@
     "ticker": "AMZN",
     "bucket": "compounder",
     "entry_price": 259.72,
-    "close": 253.10000610351562,
-    "high": 254.6699981689453,
-    "low": 248.71009826660156,
-    "session_move": 0.0161,
-    "total_return": -0.0275,
+    "close": 254.60000610351562,
+    "high": 255.36000061035156,
+    "low": 251.97999572753906,
+    "session_move": 0.0059,
+    "total_return": -0.0217,
     "event": "held",
     "your_thesis": "Today's fresh AWS review reports 36.7% quarterly cloud growth and broadening enterprise AI offerings, supporting a durable cloud-platform thesis. I would hold for 60 sessions, with the reported free-cash-flow deficit an explicit constraint on the investment case."
    },
@@ -230,11 +230,11 @@
     "ticker": "LLY",
     "bucket": "compounder",
     "entry_price": 1183.5,
-    "close": 1281.9100341796875,
-    "high": 1297.9200439453125,
-    "low": 1272.0703125,
-    "session_move": 0.0022,
-    "total_return": 0.0812,
+    "close": 1288.300048828125,
+    "high": 1299.4300537109375,
+    "low": 1260.3399658203125,
+    "session_move": 0.005,
+    "total_return": 0.0866,
     "event": "held",
     "your_thesis": "The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the stock still requires valuation discipline."
    },
@@ -243,11 +243,11 @@
     "ticker": "V",
     "bucket": "compounder",
     "entry_price": 371.4,
-    "close": 401.8599853515625,
-    "high": 403.506591796875,
-    "low": 397.3599853515625,
-    "session_move": -0.0057,
-    "total_return": 0.08,
+    "close": 400.6000061035156,
+    "high": 404.69000244140625,
+    "low": 394.0,
+    "session_move": -0.0031,
+    "total_return": 0.0766,
     "event": "held",
     "your_thesis": "The October 6 renewal of Visa's OpenTable agreement expands cardholder dining access across North America and illustrates the ongoing value of its payments network. I would hold for 60 sessions for recurring transaction economics rather than expect this partnership alone to cause a large daily move."
    }
@@ -255,46 +255,46 @@
  },
  "scoreboard": [
   {
-   "model": "fly",
-   "total_pnl": 9.43,
-   "win_rate": 0.46846846846846846,
-   "positions": 125
+   "model": "fly_evo",
+   "total_pnl": 16.05,
+   "win_rate": 0.46218487394957986,
+   "positions": 134
   },
   {
-   "model": "fly_evo",
-   "total_pnl": -4.65,
-   "win_rate": 0.44545454545454544,
-   "positions": 124
+   "model": "fly",
+   "total_pnl": 11.0,
+   "win_rate": 0.4672131147540984,
+   "positions": 135
   },
   {
    "model": "chatgpt",
-   "total_pnl": -10.19,
+   "total_pnl": -9.47,
    "win_rate": 0.3870967741935484,
    "positions": 35
   },
   {
    "model": "learner",
-   "total_pnl": -31.93,
+   "total_pnl": -30.01,
    "win_rate": 0.2222222222222222,
    "positions": 28
   },
   {
    "model": "grok",
-   "total_pnl": -61.23,
+   "total_pnl": -62.1,
    "win_rate": 0.21739130434782608,
    "positions": 27
   },
   {
    "model": "claude",
-   "total_pnl": -102.41,
+   "total_pnl": -98.24,
    "win_rate": 0.25882352941176473,
    "positions": 90
   },
   {
    "model": "momentum",
-   "total_pnl": -158.63,
-   "win_rate": 0.35135135135135137,
-   "positions": 126
+   "total_pnl": -157.78,
+   "win_rate": 0.34710743801652894,
+   "positions": 136
   }
  ],
  "your_recent_lessons": [
@@ -738,20 +738,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 111,
-    "avg_return": 0.0003,
-    "win_rate": 0.468,
-    "avg_vs_spy": 0.0023,
-    "stop_rate": 0.153,
-    "target_rate": 0.027,
+    "n": 122,
+    "avg_return": -0.0005,
+    "win_rate": 0.467,
+    "avg_vs_spy": 0.0005,
+    "stop_rate": 0.148,
+    "target_rate": 0.025,
     "reliable": true
    },
    "momentum": {
-    "n": 111,
+    "n": 121,
     "avg_return": -0.013,
-    "win_rate": 0.351,
-    "avg_vs_spy": -0.0095,
-    "stop_rate": 0.297,
+    "win_rate": 0.347,
+    "avg_vs_spy": -0.0104,
+    "stop_rate": 0.298,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -793,7 +793,7 @@
      "ci_low": -0.0178,
      "ci_high": 0.0002,
      "t": -1.92,
-     "p_beats_fly": 0.022,
+     "p_beats_fly": 0.045,
      "trades_needed": 66,
      "verdict": "Can't tell from luck yet"
     },
@@ -803,7 +803,7 @@
      "ci_low": -0.0223,
      "ci_high": 0.0176,
      "t": -0.23,
-     "p_beats_fly": 0.32,
+     "p_beats_fly": 0.393,
      "trades_needed": 103,
      "verdict": "Can't tell from luck yet"
     },
@@ -813,7 +813,7 @@
      "ci_low": -0.0442,
      "ci_high": -0.0073,
      "t": -2.74,
-     "p_beats_fly": 0.005,
+     "p_beats_fly": 0.001,
      "trades_needed": 81,
      "verdict": "Losing to the market"
     },
@@ -823,38 +823,38 @@
      "ci_low": -0.0259,
      "ci_high": 0.0088,
      "t": -0.97,
-     "p_beats_fly": 0.122,
+     "p_beats_fly": 0.164,
      "trades_needed": 71,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 101,
-     "avg_alpha": 0.0023,
-     "ci_low": -0.0035,
-     "ci_high": 0.0081,
-     "t": 0.77,
-     "p_beats_fly": 0.5,
+     "n": 112,
+     "avg_alpha": 0.0005,
+     "ci_low": -0.005,
+     "ci_high": 0.0061,
+     "t": 0.19,
+     "p_beats_fly": 0.503,
      "trades_needed": 35,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 100,
-     "avg_alpha": 0.0025,
-     "ci_low": -0.0037,
-     "ci_high": 0.0087,
-     "t": 0.8,
-     "p_beats_fly": 0.524,
-     "trades_needed": 40,
+     "n": 109,
+     "avg_alpha": 0.0039,
+     "ci_low": -0.0021,
+     "ci_high": 0.01,
+     "t": 1.27,
+     "p_beats_fly": 0.785,
+     "trades_needed": 42,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 102,
-     "avg_alpha": -0.0095,
-     "ci_low": -0.0165,
-     "ci_high": -0.0025,
-     "t": -2.65,
+     "n": 112,
+     "avg_alpha": -0.0104,
+     "ci_low": -0.0172,
+     "ci_high": -0.0036,
+     "t": -3.0,
      "p_beats_fly": 0.007,
-     "trades_needed": 52,
+     "trades_needed": 53,
      "verdict": "Losing to the market"
     }
    },

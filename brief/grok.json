@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-10-28T15:00:15.115247-04:00",
+ "generated_at": "2026-10-29T15:08:10.358274-04:00",
  "tonight": {
-  "run_date": "2026-10-28",
-  "session": "2026-10-29",
-  "deadline": "2026-10-28 23:59 ET",
-  "upload_path": "inbox/grok/2026-10-28.json"
+  "run_date": "2026-10-29",
+  "session": "2026-10-30",
+  "deadline": "2026-10-29 23:59 ET",
+  "upload_path": "inbox/grok/2026-10-29.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-10-28",
-   "session": "2026-10-29"
-  },
   {
    "run_date": "2026-10-29",
    "session": "2026-10-30"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-11-17",
    "session": "2026-11-18"
+  },
+  {
+   "run_date": "2026-11-18",
+   "session": "2026-11-19"
   }
  ],
  "rules": {
@@ -123,11 +123,11 @@
    "ticker": "NVDA",
    "entry_date": "2026-10-07",
    "entry_price": 234.93,
-   "last_price": 217.94,
-   "return_so_far": -0.0743,
-   "sessions_held": 14,
+   "last_price": 215.38,
+   "return_so_far": -0.0852,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 275.0,
    "stop": 207.0,
    "your_thesis": "Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion.",
@@ -142,11 +142,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 531.33,
-   "return_so_far": 0.0017,
-   "sessions_held": 14,
+   "last_price": 531.01,
+   "return_so_far": 0.0011,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 600.0,
    "stop": 485.0,
    "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
@@ -161,11 +161,11 @@
    "ticker": "V",
    "entry_date": "2026-10-07",
    "entry_price": 371.4,
-   "last_price": 401.86,
-   "return_so_far": 0.08,
-   "sessions_held": 14,
+   "last_price": 400.6,
+   "return_so_far": 0.0766,
+   "sessions_held": 15,
    "horizon_days": 60,
-   "sessions_left": 46,
+   "sessions_left": 45,
    "target": 415.0,
    "stop": 388.0,
    "your_thesis": "Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27.",
@@ -180,11 +180,11 @@
    "ticker": "TSM",
    "entry_date": "2026-10-15",
    "entry_price": 421.22,
-   "last_price": 436.87,
-   "return_so_far": 0.0352,
-   "sessions_held": 8,
+   "last_price": 439.51,
+   "return_so_far": 0.0414,
+   "sessions_held": 9,
    "horizon_days": 60,
-   "sessions_left": 52,
+   "sessions_left": 51,
    "target": 490.0,
    "stop": 385.0,
    "your_thesis": "TSMC's Q3 (press release, Oct 15) beat its own guide with $46.72B revenue (+41% y/y in USD) and a 66.4% gross margin, and it guided Q4 to $52.3-54.3B on the 2nm ramp. The ADR still fell in the AI-hardware rotation to 422.25, about 13% under its 20-day high, so this is a pullback entry after beat-and-raise.",
@@ -196,19 +196,19 @@
  ],
  "compounder_slots_free": 1,
  "last_session": {
-  "date": "2026-10-27",
-  "your_pnl": 2.93,
+  "date": "2026-10-28",
+  "your_pnl": -0.86,
   "positions": [
    {
     "position_id": 56,
     "ticker": "NVDA",
     "bucket": "compounder",
     "entry_price": 234.93,
-    "close": 217.94000244140625,
-    "high": 219.19000244140625,
-    "low": 215.52999877929688,
-    "session_move": 0.009,
-    "total_return": -0.0743,
+    "close": 215.3800048828125,
+    "high": 219.99000549316406,
+    "low": 214.47000122070312,
+    "session_move": -0.0117,
+    "total_return": -0.0852,
     "event": "held",
     "your_thesis": "Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion."
    },
@@ -217,11 +217,11 @@
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 531.3300170898438,
-    "high": 534.7000122070312,
-    "low": 528.3309936523438,
-    "session_move": -0.0024,
-    "total_return": 0.0017,
+    "close": 531.010009765625,
+    "high": 535.0,
+    "low": 526.1400146484375,
+    "session_move": -0.0006,
+    "total_return": 0.0011,
     "event": "held",
     "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst."
    },
@@ -230,11 +230,11 @@
     "ticker": "V",
     "bucket": "compounder",
     "entry_price": 371.4,
-    "close": 401.8599853515625,
-    "high": 403.506591796875,
-    "low": 397.3599853515625,
-    "session_move": -0.0057,
-    "total_return": 0.08,
+    "close": 400.6000061035156,
+    "high": 404.69000244140625,
+    "low": 394.0,
+    "session_move": -0.0031,
+    "total_return": 0.0766,
     "event": "held",
     "your_thesis": "Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27."
    },
@@ -243,11 +243,11 @@
     "ticker": "TSM",
     "bucket": "compounder",
     "entry_price": 421.22,
-    "close": 436.8699951171875,
-    "high": 438.5799865722656,
-    "low": 426.0,
-    "session_move": 0.0295,
-    "total_return": 0.0352,
+    "close": 439.510009765625,
+    "high": 440.8800048828125,
+    "low": 436.8399963378906,
+    "session_move": 0.006,
+    "total_return": 0.0414,
     "event": "held",
     "your_thesis": "TSMC's Q3 (press release, Oct 15) beat its own guide with $46.72B revenue (+41% y/y in USD) and a 66.4% gross margin, and it guided Q4 to $52.3-54.3B on the 2nm ramp. The ADR still fell in the AI-hardware rotation to 422.25, about 13% under its 20-day high, so this is a pullback entry after beat-and-raise."
    }
@@ -255,46 +255,46 @@
  },
  "scoreboard": [
   {
-   "model": "fly",
-   "total_pnl": 9.43,
-   "win_rate": 0.46846846846846846,
-   "positions": 125
+   "model": "fly_evo",
+   "total_pnl": 16.05,
+   "win_rate": 0.46218487394957986,
+   "positions": 134
   },
   {
-   "model": "fly_evo",
-   "total_pnl": -4.65,
-   "win_rate": 0.44545454545454544,
-   "positions": 124
+   "model": "fly",
+   "total_pnl": 11.0,
+   "win_rate": 0.4672131147540984,
+   "positions": 135
   },
   {
    "model": "chatgpt",
-   "total_pnl": -10.19,
+   "total_pnl": -9.47,
    "win_rate": 0.3870967741935484,
    "positions": 35
   },
   {
    "model": "learner",
-   "total_pnl": -31.93,
+   "total_pnl": -30.01,
    "win_rate": 0.2222222222222222,
    "positions": 28
   },
   {
    "model": "grok",
-   "total_pnl": -61.23,
+   "total_pnl": -62.1,
    "win_rate": 0.21739130434782608,
    "positions": 27
   },
   {
    "model": "claude",
-   "total_pnl": -102.41,
+   "total_pnl": -98.24,
    "win_rate": 0.25882352941176473,
    "positions": 90
   },
   {
    "model": "momentum",
-   "total_pnl": -158.63,
-   "win_rate": 0.35135135135135137,
-   "positions": 126
+   "total_pnl": -157.78,
+   "win_rate": 0.34710743801652894,
+   "positions": 136
   }
  ],
  "your_recent_lessons": [
@@ -738,20 +738,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 111,
-    "avg_return": 0.0003,
-    "win_rate": 0.468,
-    "avg_vs_spy": 0.0023,
-    "stop_rate": 0.153,
-    "target_rate": 0.027,
+    "n": 122,
+    "avg_return": -0.0005,
+    "win_rate": 0.467,
+    "avg_vs_spy": 0.0005,
+    "stop_rate": 0.148,
+    "target_rate": 0.025,
     "reliable": true
    },
    "momentum": {
-    "n": 111,
+    "n": 121,
     "avg_return": -0.013,
-    "win_rate": 0.351,
-    "avg_vs_spy": -0.0095,
-    "stop_rate": 0.297,
+    "win_rate": 0.347,
+    "avg_vs_spy": -0.0104,
+    "stop_rate": 0.298,
     "target_rate": 0.0,
     "reliable": true
    },
@@ -793,7 +793,7 @@
      "ci_low": -0.0178,
      "ci_high": 0.0002,
      "t": -1.92,
-     "p_beats_fly": 0.022,
+     "p_beats_fly": 0.045,
      "trades_needed": 66,
      "verdict": "Can't tell from luck yet"
     },
@@ -803,7 +803,7 @@
      "ci_low": -0.0223,
      "ci_high": 0.0176,
      "t": -0.23,
-     "p_beats_fly": 0.32,
+     "p_beats_fly": 0.393,
      "trades_needed": 103,
      "verdict": "Can't tell from luck yet"
     },
@@ -813,7 +813,7 @@
      "ci_low": -0.0442,
      "ci_high": -0.0073,
      "t": -2.74,
-     "p_beats_fly": 0.005,
+     "p_beats_fly": 0.001,
      "trades_needed": 81,
      "verdict": "Losing to the market"
     },
@@ -823,38 +823,38 @@
      "ci_low": -0.0259,
      "ci_high": 0.0088,
      "t": -0.97,
-     "p_beats_fly": 0.122,
+     "p_beats_fly": 0.164,
      "trades_needed": 71,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 101,
-     "avg_alpha": 0.0023,
-     "ci_low": -0.0035,
-     "ci_high": 0.0081,
-     "t": 0.77,
-     "p_beats_fly": 0.5,
+     "n": 112,
+     "avg_alpha": 0.0005,
+     "ci_low": -0.005,
+     "ci_high": 0.0061,
+     "t": 0.19,
+     "p_beats_fly": 0.503,
      "trades_needed": 35,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 100,
-     "avg_alpha": 0.0025,
-     "ci_low": -0.0037,
-     "ci_high": 0.0087,
-     "t": 0.8,
-     "p_beats_fly": 0.524,
-     "trades_needed": 40,
+     "n": 109,
+     "avg_alpha": 0.0039,
+     "ci_low": -0.0021,
+     "ci_high": 0.01,
+     "t": 1.27,
+     "p_beats_fly": 0.785,
+     "trades_needed": 42,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 102,
-     "avg_alpha": -0.0095,
-     "ci_low": -0.0165,
-     "ci_high": -0.0025,
-     "t": -2.65,
+     "n": 112,
+     "avg_alpha": -0.0104,
+     "ci_low": -0.0172,
+     "ci_high": -0.0036,
+     "t": -3.0,
      "p_beats_fly": 0.007,
-     "trades_needed": 52,
+     "trades_needed": 53,
      "verdict": "Losing to the market"
     }
    },
