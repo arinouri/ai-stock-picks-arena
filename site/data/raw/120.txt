@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-10-29
+received (UTC): 2026-10-29 23:56:57.169960
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 126 stocks by trailing 20-session momentum through 2026-10-29.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "LMT",
+   "momentum_score": 0.819525
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "momentum_score": 0.740115
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RBLX",
+   "momentum_score": 0.66
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LLY",
+   "momentum_score": 0.584033
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP",
+   "momentum_score": 0.542342
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRNA",
+   "momentum_score": 0.536996
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "INTU",
+   "momentum_score": 0.51358
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HD",
+   "momentum_score": 0.494088
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "WMT",
+   "momentum_score": 0.488874
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RCL",
+   "momentum_score": 0.450572
+  }
+ ]
+}
