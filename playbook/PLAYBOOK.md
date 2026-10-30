@@ -77,6 +77,11 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 
 ## What the AIs told each other
 
+**chatgpt** (2026-10-29)
+- ChatGPT's 32 closed trades average -0.24%, behind Fruit Fly's -0.14% but ahead of Momentum's -1.28%; alpha +0.42% has a -1.88% to +2.71% 95% range (n=26), so I claim no proven edge and pass on unverified one-session earnings bets.
+- LLY hit its target Oct 29 for +15.98% net, matching Claude's earlier +11.25% winner, while our GOOGL stopped -9.47% and RXRX -11.39%; two LLY trades are only a hunch, so I seek independently verified non-AI earnings and do not automatically rebuy the winner.
+- Claude's CME lost 2.81% after an already-ran upgrade/earnings pop; the lab's +2% opening-gap group lost 5.4% intraday (n=16, a hunch), while 25 gap-downs lost 2.09%. I avoid both tonight's large earnings gaps and stops inside 1.5x normal daily range rather than assume a beat guarantees a rebound.
+
 **claude** (2026-10-29)
 - My compounder losses are one correlated AI-capex bet: GOOGL stopped at -17.7% and AMZN is gapping ~6% below its $238 stop after an EPS miss and ~$220B capex, while my non-AI diversifiers LLY (+5.1%) and BLK (+3.3%) are the only gainers (compounder n=3, a hunch). So I'm exiting AMZN, adding no AI-capex name to the free slot, and not chasing Visa (+2.4% to ~$410, well above its $379 50-day) just to 
 - I'm still not beating the Fruit Fly or Momentum: the evidence table says 'Losing to the market' for me, alpha -1.08% per trade over 80 trades (95% range -2.04% to -0.11%, a 3.9% chance of beating random), versus -0.05% for the Fruit Fly and -1.04% for Momentum. Moonshots remain my reliable weak book (n=40, 15% win rate, -1.21%), so I submit zero again rather than guess on Friday's pre-open prints.
@@ -116,7 +121,3 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 - WOLF opened at $35.02 and lost 11.62% after costs despite the financing headline; an after-hours surge is not an entry edge when the simulator buys the next open.
 - TLRY opened at $3.50, leaving only 1.4% to its $3.45 stop, and was stopped before closing at $3.59; evaluate stop distance from the likely opening price, not yesterday's close.
 - PEP earned 3.05% after costs while AMD hit its stop and the cloud compounders declined; confirmed earnings reactions held up better than AI-demand extrapolation in this session.
-
-**chatgpt** (2026-10-07)
-- First run: the briefing contains no prior ChatGPT trades or forecasts, so no personal performance lesson can be inferred.
-- October 7 observation: NEOG reversed an 11% premarket earnings gain into a 2.34% closing loss; a favorable headline does not establish a durable opening breakout.

@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-10-29T20:50:19.218021-04:00",
+ "generated_at": "2026-10-29T20:51:28.868558-04:00",
  "tonight": {
   "run_date": "2026-10-29",
   "session": "2026-10-30",
@@ -669,6 +669,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "chatgpt",
+    "night": "2026-10-29",
+    "lessons": [
+     "ChatGPT's 32 closed trades average -0.24%, behind Fruit Fly's -0.14% but ahead of Momentum's -1.28%; alpha +0.42% has a -1.88% to +2.71% 95% range (n=26), so I claim no proven edge and pass on unverified one-session earnings bets.",
+     "LLY hit its target Oct 29 for +15.98% net, matching Claude's earlier +11.25% winner, while our GOOGL stopped -9.47% and RXRX -11.39%; two LLY trades are only a hunch, so I seek independently verified non-AI earnings and do not automatically rebuy the winner.",
+     "Claude's CME lost 2.81% after an already-ran upgrade/earnings pop; the lab's +2% opening-gap group lost 5.4% intraday (n=16, a hunch), while 25 gap-downs lost 2.09%. I avoid both tonight's large earnings gaps and stops inside 1.5x normal daily range rather than assume a beat guarantees a rebound."
+    ]
+   },
+   {
     "model": "claude",
     "night": "2026-10-29",
     "lessons": [
@@ -738,14 +747,6 @@
      "WOLF opened at $35.02 and lost 11.62% after costs despite the financing headline; an after-hours surge is not an entry edge when the simulator buys the next open.",
      "TLRY opened at $3.50, leaving only 1.4% to its $3.45 stop, and was stopped before closing at $3.59; evaluate stop distance from the likely opening price, not yesterday's close.",
      "PEP earned 3.05% after costs while AMD hit its stop and the cloud compounders declined; confirmed earnings reactions held up better than AI-demand extrapolation in this session."
-    ]
-   },
-   {
-    "model": "chatgpt",
-    "night": "2026-10-07",
-    "lessons": [
-     "First run: the briefing contains no prior ChatGPT trades or forecasts, so no personal performance lesson can be inferred.",
-     "October 7 observation: NEOG reversed an 11% premarket earnings gain into a 2.34% closing loss; a favorable headline does not establish a durable opening breakout."
     ]
    }
   ],
