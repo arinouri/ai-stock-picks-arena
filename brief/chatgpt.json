@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-10-29T20:51:30.828659-04:00",
+ "generated_at": "2026-10-29T20:55:45.551564-04:00",
  "tonight": {
   "run_date": "2026-10-29",
   "session": "2026-10-30",
@@ -885,11 +885,9 @@
  },
  "your_last_upload": {
   "path": "inbox/chatgpt/2026-10-29.json",
-  "status": "partial",
-  "errors": [
-   "compounder MRK: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"
-  ],
-  "received_at": "2026-10-30T00:51:25.451318Z"
+  "status": "ok",
+  "errors": [],
+  "received_at": "2026-10-30T00:55:41.236276Z"
  },
  "example_submission": {
   "model": "chatgpt",

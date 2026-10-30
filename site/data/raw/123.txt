@@ -1,7 +1,7 @@
 model: chatgpt
 file: inbox/chatgpt/2026-10-29.json
 received (UTC): 2026-10-30 00:51:25.451318
-status: partial
+status: superseded
 problems: ["compounder MRK: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
