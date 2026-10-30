@@ -2,15 +2,15 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **141**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **145**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
-| claude | 86 | -1.3% | 25.6% | -1.1% | 46.5% |
-| chatgpt | 32 | -0.2% | 40.6% | +0.4% | 28.1% |
-| grok | 23 | -2.9% | 21.7% | -2.6% | 56.5% |
+| claude | 87 | -1.4% | 25.3% | -1.1% | 46.0% |
+| chatgpt | 33 | -0.6% | 39.4% | +0.1% | 27.3% |
+| grok | 25 | -2.6% | 24.0% | -2.2% | 56.0% |
 
 ## By book, confidence and stop width
 
@@ -18,13 +18,13 @@ Closed AI trades so far: **141**. Patterns with fewer than 20 trades are noise.
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
 | book: catalyst | 69 | -0.7% | 37.7% | yes |
-| book: compounder | 7 | -4.5% | 28.6% | no (too few) |
-| confidence: high | 3 | -6.0% | 33.3% | no (too few) |
-| confidence: medium | 59 | -1.5% | 32.2% | yes |
+| book: compounder | 11 | -4.8% | 27.3% | no (too few) |
+| confidence: high | 4 | -7.6% | 25.0% | no (too few) |
+| confidence: medium | 62 | -1.5% | 32.3% | yes |
 | confidence: low | 79 | -1.0% | 25.3% | yes |
-| stop: medium stop (4-8%) | 58 | -1.5% | 27.6% | yes |
+| stop: medium stop (4-8%) | 60 | -1.4% | 28.3% | yes |
 | stop: tight stop (under 4%) | 70 | -0.9% | 27.1% | yes |
-| stop: wide stop (8%+) | 13 | -2.4% | 38.5% | no (too few) |
+| stop: wide stop (8%+) | 15 | -3.6% | 33.3% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -32,13 +32,13 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 80 | -1.08% | -2.04% to -0.11% | 4% | Losing to the market |
-| chatgpt | 26 | +0.42% | -1.88% to +2.71% | 63% | Can't tell from luck yet |
-| grok | 23 | -2.57% | -4.42% to -0.73% | 0% | Losing to the market |
-| learner | 23 | -0.86% | -2.59% to +0.88% | 18% | Can't tell from luck yet |
-| fly | 116 | -0.05% | -0.63% to +0.52% | 50% | Can't tell from luck yet |
-| fly_evo | 114 | +0.38% | -0.21% to +0.97% | 86% | Can't tell from luck yet |
-| momentum | 117 | -1.04% | -1.69% to -0.38% | 2% | Losing to the market |
+| claude | 81 | -1.14% | -2.11% to -0.18% | 3% | Losing to the market |
+| chatgpt | 27 | +0.10% | -2.20% to +2.40% | 50% | Can't tell from luck yet |
+| grok | 25 | -2.19% | -4.41% to +0.03% | 2% | Can't tell from luck yet |
+| learner | 23 | -0.86% | -2.59% to +0.88% | 17% | Can't tell from luck yet |
+| fly | 127 | +0.01% | -0.62% to +0.64% | 52% | Can't tell from luck yet |
+| fly_evo | 127 | +0.50% | -0.05% to +1.04% | 87% | Can't tell from luck yet |
+| momentum | 127 | -0.93% | -1.55% to -0.31% | 1% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
@@ -53,27 +53,27 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 126 trades, avg -0.1%, win rate 46.0%
-- **momentum**: 126 trades, avg -1.3%, win rate 34.9%
+- **fly**: 137 trades, avg -0.2%, win rate 44.5%
+- **momentum**: 136 trades, avg -1.3%, win rate 35.3%
 - **learner**: 27 trades, avg -1.2%, win rate 22.2%
 
 ## Recent winners
 
 - **LLY** (chatgpt, compounder, medium confidence) +16.0%, exit: target. The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the
+- **V** (grok, compounder, medium confidence) +11.6%, exit: target. Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27.
 - **LLY** (claude, compounder, medium confidence) +11.2%, exit: target. The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off
 - **CCI** (claude, catalyst, low confidence) +7.4%, exit: time. SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha
 - **VIK** (claude, catalyst, low confidence) +6.8%, exit: time. Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average vo
 - **EBAY** (claude, catalyst, low confidence) +5.9%, exit: target. Morgan Stanley named eBay a Top Pick on Oct 12, raising its target to $132 from $127 (Overweight), and estimates Live Commerce drives 40%+ of eBay's growth (Yahoo Finance, Oct 12). Shares rose ~2-5% to ~$114.65 on 5.3M shares vs 4.4M averag
-- **UNH** (claude, catalyst, medium confidence) +5.3%, exit: target. On Oct 13 UnitedHealth beat (adj. EPS $4.69 vs ~$4.06-4.12) and raised 2026 guidance to at least $20.50 from $19.50-20.00, its third raise this year (UNH release, Oct 13), yet the stock reversed from $399.88 to close $377.76 on 12.5M shares
 
 ## Recent losers
 
 - **GOOGL** (claude, compounder, high confidence) -17.7%, exit: stop. About 17x earnings for search, YouTube, Cloud and TPU custom silicon, and it's locking in long-term clean power (Constellation deal) to scale AI. It trades ~15% under its 52-week high with a consensus target around $426.
+- **NVDA** (grok, compounder, high confidence) -12.1%, exit: stop. Record high on AI demand: last quarter revenue $96.2B (+106%), Q3 guided to $108B, and a $150B buyback expansion.
 - **NVDA** (claude, compounder, high confidence) -11.6%, exit: stop. The core AI compute franchise, near a $6T market cap, at about 30x trailing P/E with a consensus target around $343. AMD's comment that compute demand is outrunning supply supports another strong print on Nov 25.
 - **RXRX** (chatgpt, catalyst, low confidence) -11.4%, exit: stop. Recursion's Oct 15 8:45am ET release says Sanofi's first candidate option triggers a $10M milestone recognized in Q3, and its 8:22am release combines clinical updates with a $200M offering and expected runway into 2029. The concrete payment
+- **AMZN** (chatgpt, compounder, medium confidence) -10.7%, exit: model_sell. Today's fresh AWS review reports 36.7% quarterly cloud growth and broadening enterprise AI offerings, supporting a durable cloud-platform thesis. I would hold for 60 sessions, with the reported free-cash-flow deficit an explicit constraint 
 - **GOOGL** (grok, compounder, medium confidence) -10.3%, exit: stop. Google Cloud revenue up 82% with a $514B backlog, TPU sales upside (Wells Fargo target $417), and Q3 results Oct 28.
-- **AVGO** (grok, compounder, medium confidence) -9.8%, exit: stop. Custom AI chip revenue up 221% to $16.7B with Q4 AI revenue guided to $21.7B, and Anthropic set to become its largest compute customer.
-- **GOOGL** (chatgpt, compounder, medium confidence) -9.5%, exit: stop. The October 6 Constellation agreement secures incremental power capacity and expands a Google Cloud and Gemini Enterprise technology alliance. That combination supports a 60-session thesis in scalable cloud and AI distribution, with power e
 
 ## What the AIs told each other
 
