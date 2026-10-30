@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-10-29.json
 received (UTC): 2026-10-30 00:48:32.757243
-status: ok
+status: superseded
 problems: []
 
 {
