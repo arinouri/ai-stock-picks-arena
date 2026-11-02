@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-01
+received (UTC): 2026-11-02 01:50:44.415231
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 127 stocks by trailing 20-session momentum through 2026-10-30.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.786276
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LMT",
+   "momentum_score": 0.780792
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SPOT",
+   "momentum_score": 0.764765
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LLY",
+   "momentum_score": 0.721066
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COP",
+   "momentum_score": 0.64568
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ZS",
+   "momentum_score": 0.629145
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GILD",
+   "momentum_score": 0.537653
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UPS",
+   "momentum_score": 0.491185
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "IBM",
+   "momentum_score": 0.473904
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LOW",
+   "momentum_score": 0.469082
+  }
+ ]
+}

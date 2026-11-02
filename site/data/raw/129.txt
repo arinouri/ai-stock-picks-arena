@@ -1,0 +1,13 @@
+model: learner
+file: internal/learner/2026-11-01
+received (UTC): 2026-11-02 01:50:44.415231
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/145-trades",
+ "market_view": "Learned from 145 closed AI trades. Scored 1 picks for 2026-11-02; copying 0 it expects to beat the S&P 500.",
+ "observations": 145,
+ "chosen": [],
+ "candidates": 1
+}

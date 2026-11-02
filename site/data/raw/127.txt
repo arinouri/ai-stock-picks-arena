@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-01
+received (UTC): 2026-11-02 01:50:44.415231
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 127 completed EVO trades. Ranked 130 liquid stocks using only data through 2026-10-30.",
+ "observations": 127,
+ "exploration_seed": 202611020127,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "sampled_score": 0.038417,
+   "expected_reward": -0.012451,
+   "uncertainty": 0.03631
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.03323,
+   "expected_reward": 0.017587,
+   "uncertainty": 0.021195
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NOW",
+   "sampled_score": 0.032607,
+   "expected_reward": 0.016032,
+   "uncertainty": 0.043106
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRVL",
+   "sampled_score": 0.031968,
+   "expected_reward": 0.019352,
+   "uncertainty": 0.024675
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "VST",
+   "sampled_score": 0.030466,
+   "expected_reward": 0.005687,
+   "uncertainty": 0.021598
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DELL",
+   "sampled_score": 0.029881,
+   "expected_reward": 0.016011,
+   "uncertainty": 0.020318
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RKLB",
+   "sampled_score": 0.029419,
+   "expected_reward": 0.012924,
+   "uncertainty": 0.020386
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ARM",
+   "sampled_score": 0.029189,
+   "expected_reward": 0.019318,
+   "uncertainty": 0.020862
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SMCI",
+   "sampled_score": 0.029027,
+   "expected_reward": 0.01349,
+   "uncertainty": 0.019331
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RBLX",
+   "sampled_score": 0.028071,
+   "expected_reward": 0.011893,
+   "uncertainty": 0.030077
+  }
+ ]
+}
