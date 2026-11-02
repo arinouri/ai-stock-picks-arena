@@ -1,0 +1,20 @@
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "The AI-capex selloff deepened Friday: the S&P 500 fell 1.82% to 7,580, the Nasdaq fell 2.86% (7.8% off its Oct 6 high), chips fell 7.2% and VIX rose to 19.4, while energy (oil ~$104) and some health care held up (Reuters, Oct 30). Monday's pre-open prints (IDXX, CHKP) and Apple/Palantir after the close, Tuesday's midterms and AMD, and Friday's payrolls make this a week of binary events, so I'm adding only one defensive, non-AI compounder and no short-term trades.",
+  "lessons": [
+    "My non-AI compounders keep working while the AI-capex ones fail: LLY is +8.5% and BLK +0.8% versus GOOGL (-17.7%, stop) and AMZN (-9.5%, sold), and on Friday LLY rose 3.2% while the Nasdaq fell 2.86% (compounder n=4, a hunch). So I'm filling one free slot with AbbVie, which hit a record on a down-1.8% day, and still adding no AI-capex name.",
+    "I'm still losing to the market: the evidence table puts my alpha at -1.14% per trade over 81 trades (95% range -2.11% to -0.18%, a 2.8% chance of beating random) versus about 0% for the Fruit Fly and -0.93% for Momentum, and moonshots remain my weakest book (n=40, 15% win rate). So I submit zero moonshots again; Monday's only fresh catalysts are pre-open prints I can't see.",
+    "Per the instruction to keep stops outside 1.5x the daily range, I checked Okta's S&P 500 add (effective Nov 4, +2.1% after hours after a -6.1% day): its daily range has run 5-7%, so a sane stop is ~10% and a 1.5:1 target would need +15% in two sessions, which is unrealistic. The lab also shows first sessions that open up 2%+ losing -5.4% open-to-close (n=16, a hunch), so I pass instead of forcing it."
+  ],
+  "review": [
+    {"position_id": 13, "ticker": "MSFT", "action": "HOLD", "reason": "It fell 1.55% to $521.91 Friday with the Nasdaq (-2.86%) on sector-wide AI-capex worries, not company news; the 48% Azure beat thesis is intact and the $495 stop sits ~5% below, outside its normal range.", "new_stop": null, "new_target": null},
+    {"position_id": 595, "ticker": "BLK", "action": "HOLD", "reason": "It slipped 2.4% to $1,147.54 in Friday's broad selloff (Dow -1.09%) with no company news against the record-inflow thesis; it's still above entry and the $1,030 stop is ~10% away.", "new_stop": null, "new_target": null},
+    {"position_id": 660, "ticker": "LLY", "action": "HOLD", "reason": "It extended its post-Q3 rally by 3.2% to $1,417.54 (high $1,449.68) on a down day for the market after raising full-year revenue guidance to $91-92B; I'm raising the stop to $1,345 (~5% below the close, about 1.5x its recent daily range) to lock in a gain, and leaving the $1,460 target.", "new_stop": 1345, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": [
+    {"ticker": "ABBV", "thesis": "AbbVie beat and raised on Oct 30: Q3 revenue $17.40B (+10.3%), adj. EPS $3.82 vs ~$3.74 consensus, immunology +16.3% (Skyrizi $5.78B) and neuroscience +19.4%, 2026 EPS guidance raised to $13.95-13.99 and the dividend lifted 5.2% to $1.82 (AbbVie IR, Oct 30). It closed at a record $294.89 (+1.4%) while the S&P 500 fell 1.82% (TIKR, Oct 30), at roughly 18x 2027 EPS, with ~4.8M average daily volume, making it a non-AI, cash-generating diversifier for my book.", "catalyst_time": "2026-10-30 before open (Q3 report); held for weeks", "entry_zone_low": 288, "entry_zone_high": 297, "target_price": 335, "stop_price": 272, "horizon_days": 60, "confidence": "medium", "main_risk": "Invalidated by a close below ~$272 (below the mid-October lows), which would signal that the record breakout failed. Drug-pricing headlines around the midterms, the 2027 Medicare price on Vraylar, Rinvoq/Humira softness, or a health-care de-rating that would also hit LLY (correlated exposure).", "sources": ["https://news.abbvie.com/2026-10-30-AbbVie-Reports-Third-Quarter-2026-Financial-Results", "https://www.tikr.com/blog/abbvie-stock-hits-a-record-after-a-5-2-dividend-raise-why-its-276-payout-ratio-doesnt-tell-the-entire-story", "https://finance.yahoo.com/healthcare/articles/abbv-beats-q3-earnings-sales-150900251.html"]}
+  ]
+}
