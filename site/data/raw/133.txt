@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-02
+received (UTC): 2026-11-02 22:26:52.679477
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 136 completed EVO trades. Ranked 122 liquid stocks using only data through 2026-11-02.",
+ "observations": 136,
+ "exploration_seed": 202611030136,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "BA",
+   "sampled_score": 0.04729,
+   "expected_reward": 0.012705,
+   "uncertainty": 0.031266
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "GOOGL",
+   "sampled_score": 0.046503,
+   "expected_reward": 0.017721,
+   "uncertainty": 0.031029
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ENPH",
+   "sampled_score": 0.037005,
+   "expected_reward": 0.002235,
+   "uncertainty": 0.034985
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "sampled_score": 0.036817,
+   "expected_reward": 0.006097,
+   "uncertainty": 0.027084
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HPQ",
+   "sampled_score": 0.034966,
+   "expected_reward": 0.008632,
+   "uncertainty": 0.024368
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COIN",
+   "sampled_score": 0.032496,
+   "expected_reward": 0.010884,
+   "uncertainty": 0.021483
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "QCOM",
+   "sampled_score": 0.031895,
+   "expected_reward": 0.008106,
+   "uncertainty": 0.020887
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NOW",
+   "sampled_score": 0.031229,
+   "expected_reward": 0.002197,
+   "uncertainty": 0.038429
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSFT",
+   "sampled_score": 0.031027,
+   "expected_reward": 0.015004,
+   "uncertainty": 0.021759
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CAT",
+   "sampled_score": 0.030551,
+   "expected_reward": 0.017719,
+   "uncertainty": 0.024
+  }
+ ]
+}

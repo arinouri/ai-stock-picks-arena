@@ -2,14 +2,14 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **145**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **146**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
 | claude | 87 | -1.4% | 25.3% | -1.1% | 46.0% |
-| chatgpt | 33 | -0.6% | 39.4% | +0.1% | 27.3% |
+| chatgpt | 34 | -0.1% | 41.2% | +0.7% | 26.5% |
 | grok | 25 | -2.6% | 24.0% | -2.2% | 56.0% |
 
 ## By book, confidence and stop width
@@ -18,13 +18,13 @@ Closed AI trades so far: **145**. Patterns with fewer than 20 trades are noise.
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
 | book: catalyst | 69 | -0.7% | 37.7% | yes |
-| book: compounder | 11 | -4.8% | 27.3% | no (too few) |
+| book: compounder | 12 | -3.1% | 33.3% | no (too few) |
 | confidence: high | 4 | -7.6% | 25.0% | no (too few) |
-| confidence: medium | 62 | -1.5% | 32.3% | yes |
+| confidence: medium | 63 | -1.3% | 33.3% | yes |
 | confidence: low | 79 | -1.0% | 25.3% | yes |
 | stop: medium stop (4-8%) | 60 | -1.4% | 28.3% | yes |
 | stop: tight stop (under 4%) | 70 | -0.9% | 27.1% | yes |
-| stop: wide stop (8%+) | 15 | -3.6% | 33.3% | no (too few) |
+| stop: wide stop (8%+) | 16 | -2.5% | 37.5% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -32,13 +32,13 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 81 | -1.14% | -2.11% to -0.18% | 3% | Losing to the market |
-| chatgpt | 27 | +0.10% | -2.20% to +2.40% | 50% | Can't tell from luck yet |
-| grok | 25 | -2.19% | -4.41% to +0.03% | 2% | Can't tell from luck yet |
-| learner | 23 | -0.86% | -2.59% to +0.88% | 17% | Can't tell from luck yet |
-| fly | 127 | +0.01% | -0.62% to +0.64% | 52% | Can't tell from luck yet |
-| fly_evo | 127 | +0.50% | -0.05% to +1.04% | 87% | Can't tell from luck yet |
-| momentum | 127 | -0.93% | -1.55% to -0.31% | 1% | Losing to the market |
+| claude | 81 | -1.14% | -2.11% to -0.18% | 5% | Losing to the market |
+| chatgpt | 28 | +0.72% | -1.81% to +3.24% | 75% | Can't tell from luck yet |
+| grok | 25 | -2.19% | -4.41% to +0.03% | 6% | Can't tell from luck yet |
+| learner | 23 | -0.86% | -2.59% to +0.88% | 22% | Can't tell from luck yet |
+| fly | 135 | -0.15% | -0.77% to +0.46% | 51% | Can't tell from luck yet |
+| fly_evo | 136 | +0.33% | -0.22% to +0.88% | 88% | Can't tell from luck yet |
+| momentum | 134 | -0.95% | -1.57% to -0.33% | 4% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
@@ -53,18 +53,18 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 137 trades, avg -0.2%, win rate 44.5%
-- **momentum**: 136 trades, avg -1.3%, win rate 35.3%
+- **fly**: 145 trades, avg -0.4%, win rate 43.4%
+- **momentum**: 143 trades, avg -1.3%, win rate 36.4%
 - **learner**: 27 trades, avg -1.2%, win rate 22.2%
 
 ## Recent winners
 
 - **LLY** (chatgpt, compounder, medium confidence) +16.0%, exit: target. The FDA's October 2 first-line Jaypirca approval expands an established oncology franchise, and today's 2.70% gain demonstrates relative strength. The 60-session thesis is that continued pipeline commercialization supports growth, while the
+- **V** (chatgpt, compounder, medium confidence) +14.5%, exit: target. The October 6 renewal of Visa's OpenTable agreement expands cardholder dining access across North America and illustrates the ongoing value of its payments network. I would hold for 60 sessions for recurring transaction economics rather tha
 - **V** (grok, compounder, medium confidence) +11.6%, exit: target. Steady compounder: fiscal Q3 revenue +14% to $11.6B, stablecoin card volume up nearly 200%, and earnings around Oct 26-27.
 - **LLY** (claude, compounder, medium confidence) +11.2%, exit: target. The GLP-1 franchise leader (Zepbound/Mounjaro plus oral Foundayo, which showed a significant cardiovascular-risk reduction in Phase 3) with an expanding oncology label (Jaypirca first-line CLL approval). It held up while healthcare sold off
 - **CCI** (claude, catalyst, low confidence) +7.4%, exit: time. SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha
 - **VIK** (claude, catalyst, low confidence) +6.8%, exit: time. Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average vo
-- **EBAY** (claude, catalyst, low confidence) +5.9%, exit: target. Morgan Stanley named eBay a Top Pick on Oct 12, raising its target to $132 from $127 (Overweight), and estimates Live Commerce drives 40%+ of eBay's growth (Yahoo Finance, Oct 12). Shares rose ~2-5% to ~$114.65 on 5.3M shares vs 4.4M averag
 
 ## Recent losers
 

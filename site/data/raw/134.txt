@@ -1,0 +1,68 @@
+model: momentum
+file: internal/momentum/2026-11-02
+received (UTC): 2026-11-02 22:26:52.679477
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 119 stocks by trailing 20-session momentum through 2026-11-02.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.969579
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LMT",
+   "momentum_score": 0.808401
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LLY",
+   "momentum_score": 0.702997
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SPOT",
+   "momentum_score": 0.689307
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LULU",
+   "momentum_score": 0.473159
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMGN",
+   "momentum_score": 0.46506
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NKE",
+   "momentum_score": 0.45583
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "V",
+   "momentum_score": 0.452787
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COP",
+   "momentum_score": 0.430841
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MCD",
+   "momentum_score": 0.419671
+  },
+  {
+   "bucket": "compounder",
+   "ticker": "SO",
+   "momentum_score": 0.387397
+  }
+ ]
+}
