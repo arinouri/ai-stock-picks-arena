@@ -1,0 +1,23 @@
+model: learner
+file: internal/learner/2026-11-01
+received (UTC): 2026-11-02 03:16:42.402714
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/145-trades",
+ "market_view": "Learned from 145 closed AI trades. Scored 2 picks for 2026-11-02; copying 1 it expects to beat the S&P 500.",
+ "observations": 145,
+ "chosen": [
+  {
+   "source_position_id": 815,
+   "ticker": "ABBV",
+   "from": "chatgpt",
+   "bucket": "compounder",
+   "sampled_edge": 0.01756,
+   "expected_edge": 0.00567,
+   "uncertainty": 0.02353
+  }
+ ],
+ "candidates": 2
+}
