@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-11-02.json
 received (UTC): 2026-11-03 01:49:23.205591
-status: partial
+status: superseded
 problems: ["compounder VRTX: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
