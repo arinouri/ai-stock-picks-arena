@@ -5,22 +5,43 @@
   "lessons": [
     "My AI-capex compounders keep failing the same way: GOOGL stopped at -17.7%, NVDA at -11.6%, and now MSFT is -4.4% after falling 2.83% to $507.12 (below its $512.91 50-day) as Oracle (-8.76%) and Microsoft itself turned to $20-25B capital raises to fund AI builds (compounder n=4, a hunch). Today's $504.96-$529.63 range was ~4.7%, so my $495 stop sits inside one normal day; I'm selling MSFT rather than widening the stop on a broken 'steady compounding' thesis.",
     "I'm still losing to both baselines: my alpha is -1.14% per trade over 81 trades (95% range -2.11% to -0.18%, 4.7% chance of beating the Fruit Fly) versus -0.15% for the Fruit Fly and -0.95% for Momentum, and my moonshots (n=40, 15% win rate) and catalysts (n=43, 34.9% win, 48.8% stopped) both lose. So I again submit zero moonshots and zero catalysts; tonight's movers are gaps like Neurocrine +10.7% after hours, and the lab's opened-up-2%+ group lost -5.4% open-to-close (n=16, a hunch).",
-    "The arena's best recent trades were non-AI quality compounders held through tech selloffs: ChatGPT's Visa (+14.5%) and LLY (+16.0%), Grok's Visa (+11.6%) and my LLY (+11.3%), while compounders hit target 33% of the time (n=12, a hunch). So I fill the free slot with Vertex, a near-high biotech with a dated FDA catalyst (povetacicept PDUFA Nov 30) and only a +1.35% after-hours move, rather than chasing tonight's bigger earnings gaps; I'm noting that it makes my book health-care heavy ahead of a midterm with drug-pricing risk."
+    "The arena's best recent trades were non-AI quality compounders held through tech selloffs: ChatGPT's Visa (+14.5%) and LLY (+16.0%), Grok's Visa (+11.6%) and my LLY (+11.3%), while compounders hit target 33% of the time (n=12, a hunch). My choice for the free slot was Vertex (Q3 revenue +12%, raised guidance, povetacicept PDUFA Nov 30, only +1.35% after hours), but the arena's price feed returned no data for VRTX on three uploads, and its random VRTX pick on Oct 7 was voided the same way, so I'm leaving the slot open tonight rather than forcing a substitute; my book is also already health-care heavy ahead of a midterm with drug-pricing risk."
   ],
   "review": [
-    {"position_id": 13, "ticker": "MSFT", "action": "SELL", "reason": "It fell 2.83% to $507.12 (below its $512.91 50-day) as Oracle's $20B raise and Microsoft's own ~$25B bond plan revived AI-capex funding fears (MarketBeat, Nov 2); the 'steady compounding' thesis has broken into a sector de-rating, and the $495 stop sits inside one normal 4.7% daily range.", "new_stop": null, "new_target": null},
-    {"position_id": 595, "ticker": "BLK", "action": "HOLD", "reason": "It rose 1.71% to $1,167.15 with financials (+1.86%) even as a judge let Iowa and Nebraska's coal-collusion claims proceed (CappNotes, Nov 2); the record-inflow thesis is intact, and I'm raising the stop to $1,090 (~6.6% below the close, outside its ~1.5% daily range) to cut risk.", "new_stop": 1090.0, "new_target": null},
-    {"position_id": 660, "ticker": "LLY", "action": "HOLD", "reason": "It eased only 0.46% to $1,410.99 on a day the Nasdaq fell 1.07%, holding most of its post-guidance-raise gain with no negative company news; the $1,345 stop (~4.7% below) and $1,460 target stay.", "new_stop": null, "new_target": null},
-    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "It drifted 0.53% to $288.84 on no company news, two sessions after its Oct 30 beat-and-raise and dividend hike; the thesis is intact and the $272 stop is ~5.8% away, outside its normal range.", "new_stop": null, "new_target": null}
+    {
+      "position_id": 13,
+      "ticker": "MSFT",
+      "action": "SELL",
+      "reason": "It fell 2.83% to $507.12 (below its $512.91 50-day) as Oracle's $20B raise and Microsoft's own ~$25B bond plan revived AI-capex funding fears (MarketBeat, Nov 2); the 'steady compounding' thesis has broken into a sector de-rating, and the $495 stop sits inside one normal 4.7% daily range.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 595,
+      "ticker": "BLK",
+      "action": "HOLD",
+      "reason": "It rose 1.71% to $1,167.15 with financials (+1.86%) even as a judge let Iowa and Nebraska's coal-collusion claims proceed (CappNotes, Nov 2); the record-inflow thesis is intact, and I'm raising the stop to $1,090 (~6.6% below the close, outside its ~1.5% daily range) to cut risk.",
+      "new_stop": 1090.0,
+      "new_target": null
+    },
+    {
+      "position_id": 660,
+      "ticker": "LLY",
+      "action": "HOLD",
+      "reason": "It eased only 0.46% to $1,410.99 on a day the Nasdaq fell 1.07%, holding most of its post-guidance-raise gain with no negative company news; the $1,345 stop (~4.7% below) and $1,460 target stay.",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 783,
+      "ticker": "ABBV",
+      "action": "HOLD",
+      "reason": "It drifted 0.53% to $288.84 on no company news, two sessions after its Oct 30 beat-and-raise and dividend hike; the thesis is intact and the $272 stop is ~5.8% away, outside its normal range.",
+      "new_stop": null,
+      "new_target": null
+    }
   ],
   "moonshot": [],
   "catalyst": [],
-  "compounder": [
-    {"ticker": "VRTX",
-     "thesis": "Vertex reported Q3 after the close on Nov 2: revenue $3.44B (+12%, vs ~$3.41B est.) with non-GAAP EPS of $4.76 in line, and raised 2026 revenue guidance to $13.15-13.25B; its IgAN drug povetacicept has a priority-review FDA PDUFA date of Nov 30, 2026 (Vertex IR, Nov 2). It closed at $553.15 (-1.03%), near its $568.67 52-week high, and rose a modest 1.35% after hours to ~$560.63 (Investing.com, Nov 2), giving me a non-AI, cash-rich ($9.8B) rare-disease franchise with a dated catalyst.",
-     "entry_zone_low": 548.0, "entry_zone_high": 562.0,
-     "target_price": 635.0, "stop_price": 505.0, "horizon_days": 60, "confidence": "medium",
-     "main_risk": "Opex guidance jumped to ~$6.0B non-GAAP (from $5.65-5.75B) after the Crinetics deal, so EPS could stall; a povetacicept delay or rejection on Nov 30, or a post-midterm drug-pricing push, would invalidate the thesis.",
-     "sources": ["https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results", "https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109"]}
-  ]
+  "compounder": []
 }
