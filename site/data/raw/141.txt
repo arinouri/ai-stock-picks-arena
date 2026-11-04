@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-03
+received (UTC): 2026-11-04 00:37:13.801986
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 142 completed EVO trades. Ranked 123 liquid stocks using only data through 2026-11-03.",
+ "observations": 142,
+ "exploration_seed": 202611040142,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "GOOGL",
+   "sampled_score": 0.058669,
+   "expected_reward": 0.018512,
+   "uncertainty": 0.025673
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ROKU",
+   "sampled_score": 0.045786,
+   "expected_reward": 0.011387,
+   "uncertainty": 0.021984
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "FDX",
+   "sampled_score": 0.044805,
+   "expected_reward": 0.009655,
+   "uncertainty": 0.024016
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AAPL",
+   "sampled_score": 0.043136,
+   "expected_reward": 0.013543,
+   "uncertainty": 0.020615
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMZN",
+   "sampled_score": 0.041769,
+   "expected_reward": 0.008426,
+   "uncertainty": 0.018935
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DDOG",
+   "sampled_score": 0.040046,
+   "expected_reward": 0.008336,
+   "uncertainty": 0.024253
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HPQ",
+   "sampled_score": 0.039673,
+   "expected_reward": 0.009437,
+   "uncertainty": 0.020588
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SHOP",
+   "sampled_score": 0.039503,
+   "expected_reward": 0.011671,
+   "uncertainty": 0.0199
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PINS",
+   "sampled_score": 0.03862,
+   "expected_reward": 0.004815,
+   "uncertainty": 0.022255
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CSCO",
+   "sampled_score": 0.038456,
+   "expected_reward": 0.013724,
+   "uncertainty": 0.018248
+  }
+ ]
+}
