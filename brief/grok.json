@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-03T21:20:44.074239-05:00",
+ "generated_at": "2026-11-04T15:30:54.854610-05:00",
  "tonight": {
-  "run_date": "2026-11-03",
-  "session": "2026-11-04",
-  "deadline": "2026-11-03 23:59 ET",
-  "upload_path": "inbox/grok/2026-11-03.json"
+  "run_date": "2026-11-04",
+  "session": "2026-11-05",
+  "deadline": "2026-11-04 23:59 ET",
+  "upload_path": "inbox/grok/2026-11-04.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-03",
-   "session": "2026-11-04"
-  },
   {
    "run_date": "2026-11-04",
    "session": "2026-11-05"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-11-23",
    "session": "2026-11-24"
+  },
+  {
+   "run_date": "2026-11-24",
+   "session": "2026-11-25"
   }
  ],
  "rules": {
@@ -204,7 +204,7 @@
   },
   {
    "model": "fly",
-   "total_pnl": -26.72,
+   "total_pnl": -28.99,
    "win_rate": 0.43137254901960786,
    "positions": 166
   },
