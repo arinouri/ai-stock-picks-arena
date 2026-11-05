@@ -32,13 +32,13 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 82 | -1.14% | -2.09% to -0.19% | 4% | Losing to the market |
+| claude | 82 | -1.14% | -2.09% to -0.19% | 3% | Losing to the market |
 | chatgpt | 28 | +0.72% | -1.81% to +3.24% | 74% | Can't tell from luck yet |
 | grok | 25 | -2.19% | -4.41% to +0.03% | 4% | Can't tell from luck yet |
-| learner | 23 | -0.86% | -2.59% to +0.88% | 20% | Can't tell from luck yet |
-| fly | 150 | -0.14% | -0.72% to +0.45% | 49% | Can't tell from luck yet |
+| learner | 23 | -0.86% | -2.59% to +0.88% | 22% | Can't tell from luck yet |
+| fly | 151 | -0.12% | -0.71% to +0.46% | 49% | Can't tell from luck yet |
 | fly_evo | 150 | +0.42% | -0.12% to +0.96% | 91% | Can't tell from luck yet |
-| momentum | 153 | -0.72% | -1.30% to -0.15% | 9% | Losing to the market |
+| momentum | 154 | -0.76% | -1.34% to -0.18% | 5% | Losing to the market |
 
 ## Execution lab (shadow test, scores unchanged)
 
@@ -53,8 +53,8 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 160 trades, avg -0.3%, win rate 43.1%
-- **momentum**: 162 trades, avg -1.1%, win rate 39.5%
+- **fly**: 161 trades, avg -0.3%, win rate 43.5%
+- **momentum**: 163 trades, avg -1.1%, win rate 39.3%
 - **learner**: 27 trades, avg -1.2%, win rate 22.2%
 
 ## Recent winners
