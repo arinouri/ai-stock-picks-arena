@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-04
+received (UTC): 2026-11-05 00:53:25.103114
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 150 completed EVO trades. Ranked 118 liquid stocks using only data through 2026-11-04.",
+ "observations": 150,
+ "exploration_seed": 202611050150,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "GOOGL",
+   "sampled_score": 0.030024,
+   "expected_reward": 0.009374,
+   "uncertainty": 0.018893
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRVL",
+   "sampled_score": 0.026867,
+   "expected_reward": 0.002559,
+   "uncertainty": 0.026044
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DDOG",
+   "sampled_score": 0.02681,
+   "expected_reward": 0.004247,
+   "uncertainty": 0.024379
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMD",
+   "sampled_score": 0.024729,
+   "expected_reward": 0.004863,
+   "uncertainty": 0.01762
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LRCX",
+   "sampled_score": 0.024439,
+   "expected_reward": 0.004825,
+   "uncertainty": 0.015939
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ARM",
+   "sampled_score": 0.023624,
+   "expected_reward": 0.003512,
+   "uncertainty": 0.018098
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MU",
+   "sampled_score": 0.023597,
+   "expected_reward": 0.006388,
+   "uncertainty": 0.017609
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SMCI",
+   "sampled_score": 0.022613,
+   "expected_reward": 0.002182,
+   "uncertainty": 0.017895
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VST",
+   "sampled_score": 0.021771,
+   "expected_reward": 0.003167,
+   "uncertainty": 0.01634
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NVDA",
+   "sampled_score": 0.021669,
+   "expected_reward": 0.006992,
+   "uncertainty": 0.011824
+  }
+ ]
+}
