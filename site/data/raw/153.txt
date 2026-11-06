@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-05
+received (UTC): 2026-11-06 00:57:46.047887
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 120 stocks by trailing 20-session momentum through 2026-11-05.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "momentum_score": 0.677056
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.662534
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DKNG",
+   "momentum_score": 0.551082
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "UPS",
+   "momentum_score": 0.538936
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MCD",
+   "momentum_score": 0.52098
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SPOT",
+   "momentum_score": 0.501444
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NEE",
+   "momentum_score": 0.421869
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NKE",
+   "momentum_score": 0.416235
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AMGN",
+   "momentum_score": 0.389063
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "V",
+   "momentum_score": 0.379819
+  }
+ ]
+}
