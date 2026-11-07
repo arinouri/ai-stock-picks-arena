@@ -2,14 +2,14 @@
 
 Auto-generated after every scoring run. Every AI reads this before it picks.
 
-Closed AI trades so far: **148**. Patterns with fewer than 20 trades are noise.
+Closed AI trades so far: **149**. Patterns with fewer than 20 trades are noise.
 
 ## Results by AI
 
 | AI | Trades | Avg return | Win rate | Vs S&P | Stopped out |
 |---|---|---|---|---|---|
 | claude | 88 | -1.4% | 25.0% | -1.1% | 45.5% |
-| chatgpt | 34 | -0.1% | 41.2% | +0.7% | 26.5% |
+| chatgpt | 35 | -0.1% | 40.0% | +0.8% | 28.6% |
 | grok | 26 | -2.9% | 23.1% | -2.3% | 57.7% |
 
 ## By book, confidence and stop width
@@ -18,13 +18,13 @@ Closed AI trades so far: **148**. Patterns with fewer than 20 trades are noise.
 |---|---|---|---|---|
 | book: moonshot | 65 | -1.6% | 18.5% | yes |
 | book: catalyst | 69 | -0.7% | 37.7% | yes |
-| book: compounder | 14 | -3.7% | 28.6% | no (too few) |
+| book: compounder | 15 | -3.5% | 26.7% | no (too few) |
 | confidence: high | 4 | -7.6% | 25.0% | no (too few) |
-| confidence: medium | 65 | -1.5% | 32.3% | yes |
+| confidence: medium | 66 | -1.5% | 31.8% | yes |
 | confidence: low | 79 | -1.0% | 25.3% | yes |
 | stop: medium stop (4-8%) | 61 | -1.4% | 27.9% | yes |
 | stop: tight stop (under 4%) | 70 | -0.9% | 27.1% | yes |
-| stop: wide stop (8%+) | 17 | -2.9% | 35.3% | no (too few) |
+| stop: wide stop (8%+) | 18 | -2.8% | 33.3% | no (too few) |
 
 ## Is anyone actually good? (the skeptic)
 
@@ -32,13 +32,13 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 
 | Contestant | Trades | Avg vs S&P | 95% range | Beats random? | Verdict |
 |---|---|---|---|---|---|
-| claude | 82 | -1.14% | -2.09% to -0.19% | 4% | Losing to the market |
-| chatgpt | 28 | +0.72% | -1.81% to +3.24% | 74% | Can't tell from luck yet |
+| claude | 82 | -1.14% | -2.09% to -0.19% | 2% | Losing to the market |
+| chatgpt | 29 | +0.84% | -1.61% to +3.29% | 75% | Can't tell from luck yet |
 | grok | 26 | -2.30% | -4.44% to -0.15% | 3% | Losing to the market |
-| learner | 23 | -0.86% | -2.59% to +0.88% | 22% | Can't tell from luck yet |
-| fly | 164 | -0.14% | -0.71% to +0.43% | 51% | Can't tell from luck yet |
-| fly_evo | 166 | +0.49% | -0.02% to +1.01% | 95% | Can't tell from luck yet |
-| momentum | 163 | -0.57% | -1.14% to -0.00% | 14% | Losing to the market |
+| learner | 23 | -0.86% | -2.59% to +0.88% | 20% | Can't tell from luck yet |
+| fly | 175 | -0.08% | -0.63% to +0.47% | 51% | Can't tell from luck yet |
+| fly_evo | 175 | +0.58% | +0.07% to +1.08% | 96% | Beating the market (so far) |
+| momentum | 175 | -0.43% | -0.98% to +0.12% | 20% | Can't tell from luck yet |
 
 ## Execution lab (shadow test, scores unchanged)
 
@@ -53,8 +53,8 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 
 ## Baselines (luck and simple rules)
 
-- **fly**: 174 trades, avg -0.6%, win rate 41.4%
-- **momentum**: 172 trades, avg -1.1%, win rate 39.0%
+- **fly**: 185 trades, avg -0.6%, win rate 41.6%
+- **momentum**: 184 trades, avg -1.1%, win rate 39.1%
 - **learner**: 27 trades, avg -1.2%, win rate 22.2%
 
 ## Recent winners
