@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-08
+received (UTC): 2026-11-09 01:48:53.972627
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 175 completed EVO trades. Ranked 128 liquid stocks using only data through 2026-11-06.",
+ "observations": 175,
+ "exploration_seed": 202611090175,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "CAT",
+   "sampled_score": 0.022603,
+   "expected_reward": 0.009817,
+   "uncertainty": 0.021871
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MU",
+   "sampled_score": 0.022465,
+   "expected_reward": 0.009466,
+   "uncertainty": 0.021851
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMAT",
+   "sampled_score": 0.022014,
+   "expected_reward": 0.006159,
+   "uncertainty": 0.018656
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ARM",
+   "sampled_score": 0.019181,
+   "expected_reward": 0.005663,
+   "uncertainty": 0.017835
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "sampled_score": 0.016953,
+   "expected_reward": 0.008742,
+   "uncertainty": 0.024089
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SMCI",
+   "sampled_score": 0.016191,
+   "expected_reward": 0.006415,
+   "uncertainty": 0.019848
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "KLAC",
+   "sampled_score": 0.015709,
+   "expected_reward": 0.007334,
+   "uncertainty": 0.019358
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PANW",
+   "sampled_score": 0.015041,
+   "expected_reward": 0.010236,
+   "uncertainty": 0.019829
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DVN",
+   "sampled_score": 0.01377,
+   "expected_reward": 0.014161,
+   "uncertainty": 0.021714
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LRCX",
+   "sampled_score": 0.013311,
+   "expected_reward": -8.6e-05,
+   "uncertainty": 0.015392
+  }
+ ]
+}

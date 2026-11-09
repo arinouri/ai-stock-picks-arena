@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-08
+received (UTC): 2026-11-09 01:48:53.972627
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 124 stocks by trailing 20-session momentum through 2026-11-06.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.634166
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "momentum_score": 0.621774
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HD",
+   "momentum_score": 0.544095
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MCD",
+   "momentum_score": 0.526591
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LULU",
+   "momentum_score": 0.517143
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SBUX",
+   "momentum_score": 0.484628
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ABNB",
+   "momentum_score": 0.436245
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UPS",
+   "momentum_score": 0.43555
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "FSLR",
+   "momentum_score": 0.393431
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRNA",
+   "momentum_score": 0.3892
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-07T13:12:14.941916-05:00",
+ "generated_at": "2026-11-08T20:49:20.960578-05:00",
  "tonight": {
   "run_date": "2026-11-08",
   "session": "2026-11-09",
@@ -561,6 +561,15 @@
   "peer_lessons": [
    {
     "model": "claude",
+    "night": "2026-11-08",
+    "lessons": [
+     "I'm still losing to the market and to both baselines: alpha -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, p_beats_fly 0.024) versus -0.08% for the Fruit Fly and -0.43% for Momentum, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose. Tonight's only catalysts are Monday pre-market earnings (CEG, KKR, NRG), and the lab shows first-session buys lose 1.6% on ",
+     "My non-AI compounders made +$0.96 on Nov 6 and all three sit above entry (BLK +3.6%, LLY +3.6%, ABBV +0.1%) while AI-linked names keep breaking (my GOOGL -17.7% and NVDA -11.6% stops, ORCL -4% Friday on the Microsoft compute wind-down); compounder n=5 is a hunch, but it's the one place I'm not bleeding, so I keep it diversified and add no AI-capex or data-center-power name.",
+     "Friday's ranges show my LLY stop is still too tight: LLY traded $1,333-$1,377 (3.2%) on Nov 6, so 1.5x range is ~4.9%, and the $1,295 stop is only 4.4% under the $1,354 close; I'm moving it to $1,285 (5.1%). ChatGPT's compounder book (+1.89%, n=5) shows patience with empty slots costs nothing, so I keep my two free slots empty until the tape calms (VIX 25.5) instead of buying into a weak Nasdaq op"
+    ]
+   },
+   {
+    "model": "claude",
     "night": "2026-11-05",
     "lessons": [
      "I'm still losing to the market and to both baselines: alpha -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, p_beats_fly 0.041) versus -0.14% for the Fruit Fly, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose, so I claim no edge. Tonight's only movers are after-hours earnings gaps (Cloudflare ~+15-17%, Airbnb ~+7-11%) into a VIX-28 tape, and the lab shows",
@@ -584,15 +593,6 @@
      "I'm still losing to the market and both baselines: alpha -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, p_beats_fly 0.041) versus -0.14% for the Fruit Fly and -0.72% for Momentum, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose. Tonight's best ideas are big after-hours gaps (APP +23%, SEZL +33%) and the lab shows +2% opening gaps lose 5.4% open-to-close",
      "My three non-AI compounders made +$9.25 on Nov 4 (BLK +5.4%, ABBV +3.1%, LLY +0.6%) and sit at +7.6%, +1.3% and +8.5%, while my AI-capex compounders stopped out (GOOGL -17.7%, NVDA -11.6%) and AI data-center names fell hard again today (CoreWeave -9.9%); compounder n=5 is a hunch, but I keep diversified, cash-generating holdings and add no AI-capex name.",
      "ChatGPT has left two compounder slots empty for two nights rather than chase winners, and its alpha (+0.72%, n=28) beats mine; I'm keeping my two free slots empty too, because buying after a +1.6% S&P / +3.1% financials relief day means paying a gapped-up open, which the lab table shows is the worst entry. What I change: I raise stops on BLK and LLY to lock gains instead of adding risk."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-11-03",
-    "lessons": [
-     "I'm still losing to the market and to both baselines: my alpha is -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, only a 3.2% chance of beating the Fruit Fly) versus -0.08% for the Fruit Fly and -0.76% for Momentum, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose. Tonight's movers are big earnings gaps (Arista +11-15%, AMD +6.6-7.6% after hours) and the ",
-     "Selling MSFT was the right call for the book's thesis but not a cure: it closed my AI-capex run (GOOGL -17.7% stop, NVDA -11.6% stop, MSFT -4.0% after costs when it exited at the Nov 3 open), while my non-AI holdings are LLY +7.9% and BLK +2.0% with only ABBV -1.7% (compounder n=5, a hunch). I keep the three non-AI names and add no AI-capex compounder even after AMD's beat.",
-     "ChatGPT's Nov 2 lesson left two compounder slots empty rather than chase the latest winner, and its alpha (+0.72%, n=28) is ahead of mine; I'm copying that discipline. Amgen beat and raised tonight (adj. EPS $6.45 vs ~$5.76, revenue $10.4B, guidance lifted; ~-1.4% after hours to ~$455) and Visa sits at a record after peers took target hits, but Amgen would make my 5-slot book 3/4 healthcare into a"
     ]
    },
    {
