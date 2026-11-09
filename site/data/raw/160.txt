@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-09
+received (UTC): 2026-11-09 23:06:36.242989
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 180 completed EVO trades. Ranked 122 liquid stocks using only data through 2026-11-09.",
+ "observations": 180,
+ "exploration_seed": 202611100180,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "LMT",
+   "sampled_score": 0.027024,
+   "expected_reward": 0.000441,
+   "uncertainty": 0.018124
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "sampled_score": 0.025309,
+   "expected_reward": 0.001165,
+   "uncertainty": 0.014875
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "sampled_score": 0.022432,
+   "expected_reward": -0.005129,
+   "uncertainty": 0.018497
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "sampled_score": 0.021239,
+   "expected_reward": -0.002111,
+   "uncertainty": 0.017746
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IBM",
+   "sampled_score": 0.02069,
+   "expected_reward": 0.002088,
+   "uncertainty": 0.017516
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NOW",
+   "sampled_score": 0.020609,
+   "expected_reward": -0.006703,
+   "uncertainty": 0.019379
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UPS",
+   "sampled_score": 0.019793,
+   "expected_reward": -0.000611,
+   "uncertainty": 0.016338
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ADBE",
+   "sampled_score": 0.019303,
+   "expected_reward": 0.002345,
+   "uncertainty": 0.013935
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HPQ",
+   "sampled_score": 0.019238,
+   "expected_reward": -0.001804,
+   "uncertainty": 0.012295
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SBUX",
+   "sampled_score": 0.018942,
+   "expected_reward": -0.002105,
+   "uncertainty": 0.01668
+  }
+ ]
+}
