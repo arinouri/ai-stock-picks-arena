@@ -1,7 +1,7 @@
 model: claude
 file: inbox/claude/2026-11-09.json
 received (UTC): 2026-11-10 01:59:53.506654
-status: partial
+status: superseded
 problems: ["compounder V: no price data (not a NYSE/Nasdaq stock, or delisted); pick voided"]
 
 {
