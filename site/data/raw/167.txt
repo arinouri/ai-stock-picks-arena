@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-10
+received (UTC): 2026-11-11 00:40:27.794835
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 122 stocks by trailing 20-session momentum through 2026-11-10.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "momentum_score": 0.685546
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.64906
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RCL",
+   "momentum_score": 0.621719
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MCD",
+   "momentum_score": 0.589797
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HD",
+   "momentum_score": 0.582607
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DAL",
+   "momentum_score": 0.476184
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GILD",
+   "momentum_score": 0.465454
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SPOT",
+   "momentum_score": 0.448023
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "BLK",
+   "momentum_score": 0.439059
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "JNJ",
+   "momentum_score": 0.388198
+  }
+ ]
+}

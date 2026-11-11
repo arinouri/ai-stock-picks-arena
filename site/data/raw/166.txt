@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-10
+received (UTC): 2026-11-11 00:40:27.794835
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 190 completed EVO trades. Ranked 122 liquid stocks using only data through 2026-11-10.",
+ "observations": 190,
+ "exploration_seed": 202611110190,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "ENPH",
+   "sampled_score": 0.0221,
+   "expected_reward": 0.000292,
+   "uncertainty": 0.023463
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "VZ",
+   "sampled_score": 0.021646,
+   "expected_reward": -0.000223,
+   "uncertainty": 0.015251
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRK",
+   "sampled_score": 0.021153,
+   "expected_reward": -0.000903,
+   "uncertainty": 0.015051
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "C",
+   "sampled_score": 0.02064,
+   "expected_reward": 0.002629,
+   "uncertainty": 0.013175
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DHR",
+   "sampled_score": 0.020465,
+   "expected_reward": -0.000642,
+   "uncertainty": 0.014521
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RIVN",
+   "sampled_score": 0.019124,
+   "expected_reward": -0.003609,
+   "uncertainty": 0.016559
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PYPL",
+   "sampled_score": 0.019069,
+   "expected_reward": 0.000419,
+   "uncertainty": 0.014522
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MS",
+   "sampled_score": 0.019066,
+   "expected_reward": 7.8e-05,
+   "uncertainty": 0.012848
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "WFC",
+   "sampled_score": 0.01899,
+   "expected_reward": 0.00082,
+   "uncertainty": 0.014865
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TXN",
+   "sampled_score": 0.018578,
+   "expected_reward": -0.000292,
+   "uncertainty": 0.014731
+  }
+ ]
+}
