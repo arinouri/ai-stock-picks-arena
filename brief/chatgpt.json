@@ -1,22 +1,14 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-11-10T20:48:55.879521-05:00",
+ "generated_at": "2026-11-12T16:01:27.572964-05:00",
  "tonight": {
-  "run_date": "2026-11-10",
-  "session": "2026-11-11",
-  "deadline": "2026-11-10 23:59 ET",
-  "upload_path": "inbox/chatgpt/2026-11-10.json"
+  "run_date": "2026-11-12",
+  "session": "2026-11-13",
+  "deadline": "2026-11-12 23:59 ET",
+  "upload_path": "inbox/chatgpt/2026-11-12.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-10",
-   "session": "2026-11-11"
-  },
-  {
-   "run_date": "2026-11-11",
-   "session": "2026-11-12"
-  },
   {
    "run_date": "2026-11-12",
    "session": "2026-11-13"
@@ -68,6 +60,14 @@
   {
    "run_date": "2026-12-01",
    "session": "2026-12-02"
+  },
+  {
+   "run_date": "2026-12-02",
+   "session": "2026-12-03"
+  },
+  {
+   "run_date": "2026-12-03",
+   "session": "2026-12-04"
   }
  ],
  "rules": {
@@ -123,11 +123,11 @@
    "ticker": "ABBV",
    "entry_date": "2026-10-30",
    "entry_price": 290.38,
-   "last_price": 293.89,
-   "return_so_far": 0.0101,
-   "sessions_held": 7,
+   "last_price": 294.98,
+   "return_so_far": 0.0138,
+   "sessions_held": 8,
    "horizon_days": 60,
-   "sessions_left": 53,
+   "sessions_left": 52,
    "target": 326.0,
    "stop": 278.0,
    "your_thesis": "AbbVie's Oct 30 release reports $17.404B Q3 revenue (+10.3%), Skyrizi growth of 22.7% and Rinvoq growth of 23.9%, and raises 2026 adjusted EPS guidance to $13.95-$13.99 from $13.76-$13.96; these realized commercial results support a 60-session holding rather than a one-day earnings bet. Independently checked NYSE listing, Oct 30 close $294.89 (+1.41%), 20-session average volume 5.28M and 14-session mean daily range $6.45; $278 stop is over 1.5x range below close, and $326 target offers about 1.58:1 after 0.1% each-way costs at the $296 entry ceiling, although valuation near 21.1x guided adjust",
@@ -142,11 +142,11 @@
    "ticker": "VRTX",
    "entry_date": "2026-11-02",
    "entry_price": 558.44,
-   "last_price": 547.89,
-   "return_so_far": -0.0209,
-   "sessions_held": 6,
+   "last_price": 547.03,
+   "return_so_far": -0.0224,
+   "sessions_held": 7,
    "horizon_days": 60,
-   "sessions_left": 54,
+   "sessions_left": 53,
    "target": 620.0,
    "stop": 520.0,
    "your_thesis": "Vertex's Nov 2 release reports Q3 revenue $3.44B (+12%), raises 2026 revenue guidance to $13.15-$13.25B and confirms Nov 30's povetacicept FDA decision date, supporting 60-session diversification without assuming approval. Nasdaq close $553.15 (-1.03%), Yahoo avg20 volume 1.509M and mean14 daily range $14.83 support $520 stop (>1.5x range) and $620 target, with 1.56:1 net reward/risk at $558 entry ceiling; late quotes $554-$556 permit entry despite a roughly 7% weekly run.",
@@ -158,19 +158,19 @@
  ],
  "compounder_slots_free": 3,
  "last_session": {
-  "date": "2026-11-10",
-  "your_pnl": -0.33,
+  "date": "2026-11-11",
+  "your_pnl": 0.22,
   "positions": [
    {
     "position_id": 815,
     "ticker": "ABBV",
     "bucket": "compounder",
     "entry_price": 290.38,
-    "close": 293.8900146484375,
-    "high": 294.5,
-    "low": 291.0400085449219,
-    "session_move": 0.002,
-    "total_return": 0.0101,
+    "close": 294.9800109863281,
+    "high": 295.4599914550781,
+    "low": 289.7300109863281,
+    "session_move": 0.0037,
+    "total_return": 0.0138,
     "event": "held",
     "your_thesis": "AbbVie's Oct 30 release reports $17.404B Q3 revenue (+10.3%), Skyrizi growth of 22.7% and Rinvoq growth of 23.9%, and raises 2026 adjusted EPS guidance to $13.95-$13.99 from $13.76-$13.96; these realized commercial results support a 60-session holding rather than a one-day earnings bet. Independently checked NYSE listing, Oct 30 close $294.89 (+1.41%), 20-session average volume 5.28M and 14-session mean daily range $6.45; $278 stop is over 1.5x range below close, and $326 target offers about 1.58:1 after 0.1% each-way costs at the $296 entry ceiling, although valuation near 21.1x guided adjust"
    },
@@ -179,11 +179,11 @@
     "ticker": "VRTX",
     "bucket": "compounder",
     "entry_price": 558.44,
-    "close": 547.8900146484375,
-    "high": 551.8599853515625,
-    "low": 543.4400024414062,
-    "session_move": -0.0054,
-    "total_return": -0.0209,
+    "close": 547.030029296875,
+    "high": 548.6699829101562,
+    "low": 535.4600219726562,
+    "session_move": -0.0016,
+    "total_return": -0.0224,
     "event": "held",
     "your_thesis": "Vertex's Nov 2 release reports Q3 revenue $3.44B (+12%), raises 2026 revenue guidance to $13.15-$13.25B and confirms Nov 30's povetacicept FDA decision date, supporting 60-session diversification without assuming approval. Nasdaq close $553.15 (-1.03%), Yahoo avg20 volume 1.509M and mean14 daily range $14.83 support $520 stop (>1.5x range) and $620 target, with 1.56:1 net reward/risk at $558 entry ceiling; late quotes $554-$556 permit entry despite a roughly 7% weekly run."
    }
@@ -192,45 +192,45 @@
  "scoreboard": [
   {
    "model": "fly_evo",
-   "total_pnl": 48.38,
-   "win_rate": 0.45,
-   "positions": 214
+   "total_pnl": 82.12,
+   "win_rate": 0.4688995215311005,
+   "positions": 224
   },
   {
    "model": "chatgpt",
-   "total_pnl": -5.89,
+   "total_pnl": -5.67,
    "win_rate": 0.4,
    "positions": 37
   },
   {
    "model": "learner",
-   "total_pnl": -25.43,
+   "total_pnl": -24.84,
    "win_rate": 0.2222222222222222,
    "positions": 30
   },
   {
    "model": "fly",
-   "total_pnl": -69.28,
-   "win_rate": 0.4306930693069307,
-   "positions": 217
+   "total_pnl": -59.78,
+   "win_rate": 0.4507042253521127,
+   "positions": 227
   },
   {
    "model": "grok",
-   "total_pnl": -75.5,
+   "total_pnl": -77.77,
    "win_rate": 0.23076923076923078,
    "positions": 27
   },
   {
    "model": "claude",
-   "total_pnl": -104.26,
+   "total_pnl": -103.14,
    "win_rate": 0.25,
    "positions": 91
   },
   {
    "model": "momentum",
-   "total_pnl": -159.83,
-   "win_rate": 0.4039408866995074,
-   "positions": 217
+   "total_pnl": -159.13,
+   "win_rate": 0.41037735849056606,
+   "positions": 227
   }
  ],
  "your_recent_lessons": [
@@ -675,21 +675,21 @@
   ],
   "baselines": {
    "fly": {
-    "n": 202,
-    "avg_return": -0.0054,
-    "win_rate": 0.431,
-    "avg_vs_spy": -0.0013,
-    "stop_rate": 0.193,
-    "target_rate": 0.035,
+    "n": 213,
+    "avg_return": -0.0047,
+    "win_rate": 0.451,
+    "avg_vs_spy": -0.0017,
+    "stop_rate": 0.183,
+    "target_rate": 0.033,
     "reliable": true
    },
    "momentum": {
-    "n": 203,
-    "avg_return": -0.0092,
-    "win_rate": 0.404,
-    "avg_vs_spy": -0.0043,
-    "stop_rate": 0.241,
-    "target_rate": 0.01,
+    "n": 212,
+    "avg_return": -0.0089,
+    "win_rate": 0.41,
+    "avg_vs_spy": -0.0048,
+    "stop_rate": 0.231,
+    "target_rate": 0.009,
     "reliable": true
    },
    "learner": {
@@ -730,7 +730,7 @@
      "ci_low": -0.0209,
      "ci_high": -0.0019,
      "t": -2.35,
-     "p_beats_fly": 0.028,
+     "p_beats_fly": 0.035,
      "trades_needed": 77,
      "verdict": "Losing to the market"
     },
@@ -740,7 +740,7 @@
      "ci_low": -0.0161,
      "ci_high": 0.0329,
      "t": 0.67,
-     "p_beats_fly": 0.787,
+     "p_beats_fly": 0.779,
      "trades_needed": 181,
      "verdict": "Can't tell from luck yet"
     },
@@ -750,7 +750,7 @@
      "ci_low": -0.0444,
      "ci_high": -0.0015,
      "t": -2.1,
-     "p_beats_fly": 0.034,
+     "p_beats_fly": 0.029,
      "trades_needed": 124,
      "verdict": "Losing to the market"
     },
@@ -760,38 +760,38 @@
      "ci_low": -0.0259,
      "ci_high": 0.0088,
      "t": -0.97,
-     "p_beats_fly": 0.226,
+     "p_beats_fly": 0.234,
      "trades_needed": 71,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 192,
-     "avg_alpha": -0.0013,
-     "ci_low": -0.0064,
-     "ci_high": 0.0038,
-     "t": -0.5,
-     "p_beats_fly": 0.507,
-     "trades_needed": 52,
+     "n": 203,
+     "avg_alpha": -0.0017,
+     "ci_low": -0.0065,
+     "ci_high": 0.0032,
+     "t": -0.67,
+     "p_beats_fly": 0.496,
+     "trades_needed": 50,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 190,
-     "avg_alpha": 0.006,
-     "ci_low": 0.0011,
-     "ci_high": 0.0109,
-     "t": 2.41,
-     "p_beats_fly": 0.982,
-     "trades_needed": 47,
+     "n": 199,
+     "avg_alpha": 0.007,
+     "ci_low": 0.0021,
+     "ci_high": 0.0118,
+     "t": 2.82,
+     "p_beats_fly": 0.992,
+     "trades_needed": 48,
      "verdict": "Beating the market (so far)"
     },
     "momentum": {
-     "n": 194,
-     "avg_alpha": -0.0043,
-     "ci_low": -0.0093,
-     "ci_high": 0.0007,
-     "t": -1.69,
-     "p_beats_fly": 0.224,
-     "trades_needed": 50,
+     "n": 203,
+     "avg_alpha": -0.0048,
+     "ci_low": -0.0097,
+     "ci_high": 0.0002,
+     "t": -1.89,
+     "p_beats_fly": 0.179,
+     "trades_needed": 51,
      "verdict": "Can't tell from luck yet"
     }
    },

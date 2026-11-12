@@ -1,0 +1,24 @@
+model: claude
+file: inbox/claude/2026-11-11.json
+received (UTC): 2026-11-12 21:01:14.637585
+status: late
+problems: ["arrived 2026-11-12 16:01 ET, after the 23:59 ET deadline; not counted"]
+
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Stocks rebounded on Nov 11 (S&P 500 +1.31% to 7,619.38, Nasdaq +1.60%, tech +3.2%, health care +0.04%, financials +0.58%) on CoreWeave's beat-and-raise (+24.7%) with the cash bond market shut for Veterans Day (10-year 4.98% on Nov 10), but after hours Nvidia fell ~8% on a WSJ report that its board may remove Jensen Huang, dragging QQQ -0.85% and SPY -0.32% (StockTitan/TheStreet/CappNotes, Nov 11). With a December hike ~90% priced, jobless claims Thursday and PPI Friday, I expect a weak, AI-led open and pass on new short-term picks; no operator update asked for anything outside my inbox, so none were ignored.",
+  "lessons": [
+    "I'm still losing to the market and to both baselines: alpha -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, p_beats_fly 0.028) versus -0.13% for the Fruit Fly and -0.43% for Momentum; only Fruit Fly Evo is beating the market (+0.60%, n=190). My moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose, so I again submit zero short-term picks rather than chase tonight's after-hours gaps (AEVEX +10%, Tetra Tech +8%), since the lab shows +2% opening gaps lose 5.4% open-to-close (n=16, a hunch).",
+    "Tonight's Nvidia after-hours drop (~-8% on a CEO-removal report, after a Baird downgrade to Neutral) is the same single-name AI governance risk that stopped my NVDA compounder at -11.6% and GOOGL at -17.7%, while my non-AI book (LLY +9.6%, BLK +7.4%, ABBV +1.0% through Nov 10) keeps working, as did ChatGPT's LLY (+16%) and Visa (+14.5%) compounder winners. Compounder n=5 is a hunch, but I keep avoiding AI-capex names and will not refill the two free slots into an overnight AI shock with a December hike ~90% priced.",
+    "I could not get verified Nov 11 closes for LLY or BLK from my sources tonight (only ABBV: $293.97, range $289.73-$295.46), so I am not moving those stops: per my Nov 4 lesson, stops tightened to 0.35-1.8% got nearly shaken out, and adjusting levels without a verified price would just be guessing. I keep the stops set last night ($1,360 LLY, $1,165 BLK, both above entry and outside 1.5x recent ranges) and ABBV's $272 (~7.5% below, well outside its 1.9% daily range)."
+  ],
+  "review": [
+    {"position_id": 595, "ticker": "BLK", "action": "HOLD", "reason": "No negative BlackRock news on Nov 11 (the only item was a routine Danish holdings notice on its ChemoMetec stake) and financials rose 0.58% with the market, so the Q3 inflection thesis ($205B net inflows, $15.5T AUM) is intact; I keep the $1,165 stop set last night, above my $1,136 entry.", "new_stop": null, "new_target": null},
+    {"position_id": 660, "ticker": "LLY", "action": "HOLD", "reason": "Lilly closed a record-area $1,432.29 on Nov 10 after its guidance raise and health care was flat (+0.04%) on Nov 11 with no negative company news, so the GLP-1 thesis is intact; I keep the $1,460 target and the $1,360 stop (above entry) set last night.", "new_stop": null, "new_target": null},
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "AbbVie closed $293.97 on Nov 11 (range $289.73-$295.46, volume 3.18M vs 5.58M average) near its record with no negative news, so the raised 2026 EPS guide of $13.95-13.99 keeps the thesis intact and the $272 stop stays outside normal noise.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
