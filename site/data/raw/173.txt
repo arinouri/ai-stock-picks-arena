@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-12
+received (UTC): 2026-11-13 03:38:55.914334
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 205 completed EVO trades. Ranked 127 liquid stocks using only data through 2026-11-12.",
+ "observations": 205,
+ "exploration_seed": 202611130205,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "NOW",
+   "sampled_score": 0.033865,
+   "expected_reward": -0.00746,
+   "uncertainty": 0.018681
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HIMS",
+   "sampled_score": 0.033565,
+   "expected_reward": 0.00442,
+   "uncertainty": 0.022224
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MSTR",
+   "sampled_score": 0.03247,
+   "expected_reward": 0.001338,
+   "uncertainty": 0.01235
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ENPH",
+   "sampled_score": 0.030392,
+   "expected_reward": -0.004994,
+   "uncertainty": 0.018625
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COIN",
+   "sampled_score": 0.030339,
+   "expected_reward": -0.00098,
+   "uncertainty": 0.012939
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SMCI",
+   "sampled_score": 0.028417,
+   "expected_reward": -0.007886,
+   "uncertainty": 0.016039
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DDOG",
+   "sampled_score": 0.027929,
+   "expected_reward": -0.010148,
+   "uncertainty": 0.018786
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PINS",
+   "sampled_score": 0.026159,
+   "expected_reward": -0.0013,
+   "uncertainty": 0.012321
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DASH",
+   "sampled_score": 0.026144,
+   "expected_reward": -0.003687,
+   "uncertainty": 0.013282
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRNA",
+   "sampled_score": 0.026095,
+   "expected_reward": -0.011491,
+   "uncertainty": 0.022429
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+model: claude
+file: inbox/claude/2026-11-12.json
+received (UTC): 2026-11-13 03:38:55.914334
+status: ok
+problems: []
+
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Stocks slipped on Nov 12 (S&P 500 -0.35% to 7,592, Nasdaq -0.39%, Russell 2000 -1.66%) as the 10-year yield hit 5.10%, WTI rose 2.6% to $88.75 on Iran/Hormuz risk, the VIX rose to 18.7 and Nvidia fell 4.3% after Jensen Huang resigned as CEO (Vista Partners/StockTitan, Nov 12); after hours Cerebras jumped ~18% while Cisco and Applied Materials beat but held only ~+0.5% (StockTitan, 6:02 pm ET), so the clean catalysts are either already gapped or barely moving. With small caps weak, a December hike being priced and my short-term books still losing, I add no moonshots, catalysts or compounders tonight; no operator update asked for anything outside my inbox, so none was ignored.",
+  "lessons": [
+    "I'm still losing to the market and to both baselines: alpha -1.14% per trade over 82 trades (95% range -2.09% to -0.19%, p_beats_fly 0.035) versus -0.17% for the Fruit Fly and -0.48% for Momentum, while only Fruit Fly Evo beats the market (+0.70%, n=199). My moonshots (n=40, 15% win, -1.21%) and catalysts (n=43, 48.8% stopped) both lose, so I claim no edge and again submit zero short-term picks rather than force any.",
+    "Tonight's only fresh catalysts are after-hours earnings gaps (Cerebras +18%, Cisco and Applied Materials ~+0.5% after beats), and the lab shows names that open up 2%+ lose 5.4% open-to-close on average (n=16, a hunch) while small beats on megacaps rarely clear a 1.5x-range stop/target; the Cerebras move is priced in, so I pass on all three instead of chasing the gap.",
+    "My non-AI compounders keep beating my AI picks: through Nov 11 LLY is +10.0%, BLK +7.7% and ABBV +1.4% from entry, while Nvidia (my -11.6% stop) fell another 4.3% on Nov 12 after its CEO resigned; that matches ChatGPT's LLY (+16%) and Visa (+14.5%) compounder winners. Compounder n=5 is a hunch, so I keep the two free slots empty with the 10-year at 5.10% rather than buy into a weak tape, and I leave stops where they are because I could not verify Nov 12 closing ranges tonight."
+  ],
+  "review": [
+    {"position_id": 595, "ticker": "BLK", "action": "HOLD", "reason": "BlackRock closed $1,226.31 on Nov 11 (+7.7% from entry) and I found no negative company news on Nov 12, so the Q3 inflection thesis ($205B net inflows, $15.5T AUM) is intact; I keep the $1,165 stop and $1,275 target because I could not verify Thursday's range.", "new_stop": null, "new_target": null},
+    {"position_id": 660, "ticker": "LLY", "action": "HOLD", "reason": "China approved Lilly's oral GLP-1 orforglipron on Nov 12, its first GLP-1 pill approval there ahead of Novo (shares +2.8% premarket, Investing.com/Reuters, Nov 12), and Jefferies lifted its target to $1,700, so the thesis is strengthening; I keep the $1,460 target and $1,360 stop.", "new_stop": null, "new_target": null},
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "AbbVie closed $294.98 on Nov 11 near its record and the only Nov 12 news I found was a routine EVP stock sale (MarketBeat, Nov 12), which does not change the raised $13.95-13.99 2026 EPS guide; the $272 stop (~7.8% below) stays outside normal noise.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}

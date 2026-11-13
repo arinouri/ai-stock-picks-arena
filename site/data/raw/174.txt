@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-12
+received (UTC): 2026-11-13 03:38:55.914334
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 127 stocks by trailing 20-session momentum through 2026-11-12.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.583356
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "momentum_score": 0.486511
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "momentum_score": 0.478914
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.473466
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.450294
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RCL",
+   "momentum_score": 0.449769
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LLY",
+   "momentum_score": 0.421066
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LMT",
+   "momentum_score": 0.402429
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HD",
+   "momentum_score": 0.389502
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MCD",
+   "momentum_score": 0.385113
+  }
+ ]
+}

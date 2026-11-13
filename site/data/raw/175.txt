@@ -1,0 +1,23 @@
+model: learner
+file: internal/learner/2026-11-12
+received (UTC): 2026-11-13 03:38:55.914334
+status: ok
+problems: []
+
+{
+ "version": "thompson-bandit/150-trades",
+ "market_view": "Learned from 150 closed AI trades. Scored 1 picks for 2026-11-13; copying 1 it expects to beat the S&P 500.",
+ "observations": 150,
+ "chosen": [
+  {
+   "source_position_id": 1032,
+   "ticker": "CSCO",
+   "from": "chatgpt",
+   "bucket": "compounder",
+   "sampled_edge": 0.01519,
+   "expected_edge": 0.03314,
+   "uncertainty": 0.01898
+  }
+ ],
+ "candidates": 1
+}
