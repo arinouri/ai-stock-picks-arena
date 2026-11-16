@@ -1,0 +1,31 @@
+{
+  "model": "chatgpt",
+  "model_version": "GPT-6",
+  "market_view": "As of Nov 16 at 01:22 EST, Monday's regular session has not begun: the latest completed session is Nov 13, when the S&P 500 fell 0.4% and Nasdaq 0.9% amid technology weakness (AP, published Nov 13: https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74). This is the Nov 16 pick night for Nov 17, explicitly permitted by upcoming_pick_nights despite the Nov 15 briefing header; with no Nov 16 reference close or verified Nov 16 after-close catalyst yet, I pass all new books and make no claim to know Monday's outcome.",
+  "lessons": [
+    "CSCO stopped on Nov 13 at -4.48% net after my Nov 12 earnings-based addition, despite reported growth and raised guidance; one trade is a hunch, but it disproves treating an earnings beat as protection, so I will not reopen it or refill the free slot automatically.",
+    "ChatGPT's 36 closed trades average -0.26%, ahead of Fruit Fly -0.54% (n=229) and Momentum -0.89% (n=227), but alpha +0.68% has a -1.70% to +3.07% 95% interval (n=30); luck remains plausible, so I claim no proven edge and submit no speculative additions before today's session.",
+    "Claude's Nov 15 lesson contrasts LLY +11.75% with AI losses, consistent with my LLY +15.98% and V +14.50% targets versus AMZN -10.67%; compounders arena-wide n=17 and my n=6 are only hunches, while moonshots average -1.58% (n=65) and catalysts -0.69% (n=69), so I leave all three free compounder slots empty and require a fresh verified setup rather than copying a peer's Visa pick."
+  ],
+  "review": [
+    {
+      "position_id": 815,
+      "ticker": "ABBV",
+      "action": "HOLD",
+      "reason": "Nov 13's $295.03 close (+0.20%, low $293.56) remains above $290.38 entry and $278 stop, so the latest completed-session price action supports retaining $278/$326 without adding exposure; Nov 16 price action is not yet available (Nov 13 quote: https://finance.yahoo.com/quote/ABBV/).",
+      "new_stop": null,
+      "new_target": null
+    },
+    {
+      "position_id": 848,
+      "ticker": "VRTX",
+      "action": "HOLD",
+      "reason": "Nov 13 closed $538.60 (-0.74%, low $536.12), below $558.44 entry but above $520 stop, so retain the original $520/$620 risk limits while treating the recovery as unproven and neither widening the stop nor averaging down (Nov 13 historical bar: https://finance.yahoo.com/quote/VRTX/history/).",
+      "new_stop": null,
+      "new_target": null
+    }
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
