@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-15
+received (UTC): 2026-11-16 01:54:38.306172
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 214 completed EVO trades. Ranked 126 liquid stocks using only data through 2026-11-13.",
+ "observations": 214,
+ "exploration_seed": 202611160214,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "FSLR",
+   "sampled_score": 0.020635,
+   "expected_reward": 0.002143,
+   "uncertainty": 0.011316
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MSTR",
+   "sampled_score": 0.019492,
+   "expected_reward": 0.000247,
+   "uncertainty": 0.010024
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NIO",
+   "sampled_score": 0.017961,
+   "expected_reward": 0.00545,
+   "uncertainty": 0.011206
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COIN",
+   "sampled_score": 0.014986,
+   "expected_reward": -0.002251,
+   "uncertainty": 0.011195
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ZS",
+   "sampled_score": 0.013475,
+   "expected_reward": -0.006414,
+   "uncertainty": 0.015923
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NFLX",
+   "sampled_score": 0.013305,
+   "expected_reward": -0.002177,
+   "uncertainty": 0.011139
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HOOD",
+   "sampled_score": 0.012688,
+   "expected_reward": -0.003384,
+   "uncertainty": 0.010197
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RIVN",
+   "sampled_score": 0.012418,
+   "expected_reward": -0.003599,
+   "uncertainty": 0.011214
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PFE",
+   "sampled_score": 0.011339,
+   "expected_reward": -0.001744,
+   "uncertainty": 0.009794
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NVDA",
+   "sampled_score": 0.011276,
+   "expected_reward": 0.006346,
+   "uncertainty": 0.017735
+  }
+ ]
+}

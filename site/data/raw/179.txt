@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-15
+received (UTC): 2026-11-16 01:54:38.306172
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 126 stocks by trailing 20-session momentum through 2026-11-13.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.921535
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "momentum_score": 0.630802
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.624971
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.540984
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SPOT",
+   "momentum_score": 0.46471
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LOW",
+   "momentum_score": 0.461293
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UPS",
+   "momentum_score": 0.459171
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DAL",
+   "momentum_score": 0.433063
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UAL",
+   "momentum_score": 0.412383
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COST",
+   "momentum_score": 0.355168
+  }
+ ]
+}
