@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-16
+received (UTC): 2026-11-16 22:59:21.232076
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 223 completed EVO trades. Ranked 121 liquid stocks using only data through 2026-11-16.",
+ "observations": 223,
+ "exploration_seed": 202611170223,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "COIN",
+   "sampled_score": 0.0172,
+   "expected_reward": 0.004021,
+   "uncertainty": 0.013471
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "NIO",
+   "sampled_score": 0.015928,
+   "expected_reward": 0.012418,
+   "uncertainty": 0.013961
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "OXY",
+   "sampled_score": 0.012437,
+   "expected_reward": 7.2e-05,
+   "uncertainty": 0.01099
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "HOOD",
+   "sampled_score": 0.012269,
+   "expected_reward": 0.004671,
+   "uncertainty": 0.012937
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CRM",
+   "sampled_score": 0.01221,
+   "expected_reward": 0.001474,
+   "uncertainty": 0.013205
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MSTR",
+   "sampled_score": 0.010948,
+   "expected_reward": 0.005785,
+   "uncertainty": 0.014045
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AFRM",
+   "sampled_score": 0.007232,
+   "expected_reward": 0.003477,
+   "uncertainty": 0.009187
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DDOG",
+   "sampled_score": 0.006999,
+   "expected_reward": -0.005216,
+   "uncertainty": 0.015362
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ZS",
+   "sampled_score": 0.006879,
+   "expected_reward": -0.001908,
+   "uncertainty": 0.016933
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CAT",
+   "sampled_score": 0.006575,
+   "expected_reward": -0.000561,
+   "uncertainty": 0.011617
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-16
+received (UTC): 2026-11-16 22:59:21.232076
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 118 stocks by trailing 20-session momentum through 2026-11-16.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.835387
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.653522
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.61206
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SPOT",
+   "momentum_score": 0.537647
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AAL",
+   "momentum_score": 0.400685
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RKLB",
+   "momentum_score": 0.351051
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "FDX",
+   "momentum_score": 0.345871
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "BRK.B",
+   "momentum_score": 0.341694
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "JNJ",
+   "momentum_score": 0.339966
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HUM",
+   "momentum_score": 0.334498
+  }
+ ]
+}

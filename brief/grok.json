@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-16T04:42:30.590081-05:00",
+ "generated_at": "2026-11-16T18:00:00.160483-05:00",
  "tonight": {
   "run_date": "2026-11-16",
   "session": "2026-11-17",
@@ -123,11 +123,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 523.88,
-   "return_so_far": -0.0124,
-   "sessions_held": 27,
+   "last_price": 517.99,
+   "return_so_far": -0.0235,
+   "sessions_held": 28,
    "horizon_days": 60,
-   "sessions_left": 33,
+   "sessions_left": 32,
    "target": 600.0,
    "stop": 485.0,
    "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
@@ -139,19 +139,19 @@
  ],
  "compounder_slots_free": 4,
  "last_session": {
-  "date": "2026-11-13",
-  "your_pnl": 0.17,
+  "date": "2026-11-16",
+  "your_pnl": -1.11,
   "positions": [
    {
     "position_id": 57,
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 523.8800048828125,
-    "high": 526.4199829101562,
-    "low": 513.8200073242188,
-    "session_move": 0.0017,
-    "total_return": -0.0124,
+    "close": 517.989990234375,
+    "high": 527.9500122070312,
+    "low": 516.8300170898438,
+    "session_move": -0.0112,
+    "total_return": -0.0235,
     "event": "held",
     "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst."
    }
@@ -160,45 +160,45 @@
  "scoreboard": [
   {
    "model": "fly_evo",
-   "total_pnl": 47.62,
-   "win_rate": 0.46875,
-   "positions": 234
+   "total_pnl": 5.08,
+   "win_rate": 0.45493562231759654,
+   "positions": 244
   },
   {
    "model": "chatgpt",
-   "total_pnl": -11.65,
+   "total_pnl": -11.96,
    "win_rate": 0.3888888888888889,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -31.12,
+   "total_pnl": -34.57,
    "win_rate": 0.21428571428571427,
-   "positions": 31
+   "positions": 32
   },
   {
    "model": "grok",
-   "total_pnl": -77.25,
+   "total_pnl": -78.37,
    "win_rate": 0.23076923076923078,
    "positions": 27
   },
   {
-   "model": "fly",
-   "total_pnl": -85.86,
-   "win_rate": 0.4410480349344978,
-   "positions": 238
+   "model": "claude",
+   "total_pnl": -104.98,
+   "win_rate": 0.25842696629213485,
+   "positions": 92
   },
   {
-   "model": "claude",
-   "total_pnl": -101.68,
-   "win_rate": 0.25842696629213485,
-   "positions": 91
+   "model": "fly",
+   "total_pnl": -108.51,
+   "win_rate": 0.4340425531914894,
+   "positions": 248
   },
   {
    "model": "momentum",
-   "total_pnl": -183.45,
-   "win_rate": 0.41409691629955947,
-   "positions": 237
+   "total_pnl": -193.26,
+   "win_rate": 0.4051724137931034,
+   "positions": 247
   }
  ],
  "your_recent_lessons": [
@@ -643,19 +643,19 @@
   ],
   "baselines": {
    "fly": {
-    "n": 229,
-    "avg_return": -0.0054,
-    "win_rate": 0.441,
-    "avg_vs_spy": -0.0026,
-    "stop_rate": 0.183,
-    "target_rate": 0.031,
+    "n": 235,
+    "avg_return": -0.0058,
+    "win_rate": 0.434,
+    "avg_vs_spy": -0.0028,
+    "stop_rate": 0.187,
+    "target_rate": 0.03,
     "reliable": true
    },
    "momentum": {
-    "n": 227,
-    "avg_return": -0.0089,
-    "win_rate": 0.414,
-    "avg_vs_spy": -0.0051,
+    "n": 232,
+    "avg_return": -0.009,
+    "win_rate": 0.405,
+    "avg_vs_spy": -0.005,
     "stop_rate": 0.233,
     "target_rate": 0.009,
     "reliable": true
@@ -698,7 +698,7 @@
      "ci_low": -0.0197,
      "ci_high": 0.0001,
      "t": -1.94,
-     "p_beats_fly": 0.103,
+     "p_beats_fly": 0.115,
      "trades_needed": 84,
      "verdict": "Can't tell from luck yet"
     },
@@ -708,7 +708,7 @@
      "ci_low": -0.017,
      "ci_high": 0.0307,
      "t": 0.56,
-     "p_beats_fly": 0.77,
+     "p_beats_fly": 0.788,
      "trades_needed": 177,
      "verdict": "Can't tell from luck yet"
     },
@@ -718,7 +718,7 @@
      "ci_low": -0.0444,
      "ci_high": -0.0015,
      "t": -2.1,
-     "p_beats_fly": 0.037,
+     "p_beats_fly": 0.041,
      "trades_needed": 124,
      "verdict": "Losing to the market"
     },
@@ -728,38 +728,38 @@
      "ci_low": -0.0265,
      "ci_high": 0.007,
      "t": -1.14,
-     "p_beats_fly": 0.199,
+     "p_beats_fly": 0.221,
      "trades_needed": 70,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 219,
-     "avg_alpha": -0.0026,
-     "ci_low": -0.0072,
-     "ci_high": 0.002,
-     "t": -1.13,
-     "p_beats_fly": 0.502,
-     "trades_needed": 48,
+     "n": 225,
+     "avg_alpha": -0.0028,
+     "ci_low": -0.0073,
+     "ci_high": 0.0017,
+     "t": -1.22,
+     "p_beats_fly": 0.5,
+     "trades_needed": 47,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 214,
-     "avg_alpha": 0.0059,
-     "ci_low": 0.0013,
-     "ci_high": 0.0105,
-     "t": 2.52,
-     "p_beats_fly": 0.996,
+     "n": 223,
+     "avg_alpha": 0.0052,
+     "ci_low": 0.0007,
+     "ci_high": 0.0096,
+     "t": 2.28,
+     "p_beats_fly": 0.995,
      "trades_needed": 46,
      "verdict": "Beating the market (so far)"
     },
     "momentum": {
-     "n": 218,
-     "avg_alpha": -0.0051,
-     "ci_low": -0.0098,
+     "n": 223,
+     "avg_alpha": -0.005,
+     "ci_low": -0.0096,
      "ci_high": -0.0003,
-     "t": -2.09,
-     "p_beats_fly": 0.244,
-     "trades_needed": 51,
+     "t": -2.1,
+     "p_beats_fly": 0.261,
+     "trades_needed": 50,
      "verdict": "Losing to the market"
     }
    },
