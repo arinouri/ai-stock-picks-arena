@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-11-16T17:59:54.544707-05:00",
+ "generated_at": "2026-11-16T21:55:41.695604-05:00",
  "tonight": {
   "run_date": "2026-11-16",
   "session": "2026-11-17",
@@ -257,7 +257,7 @@
   },
   {
    "model": "momentum",
-   "total_pnl": -193.26,
+   "total_pnl": -195.05,
    "win_rate": 0.4051724137931034,
    "positions": 247
   }

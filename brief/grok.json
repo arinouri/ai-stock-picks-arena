@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-16T18:00:00.160483-05:00",
+ "generated_at": "2026-11-16T21:55:45.117339-05:00",
  "tonight": {
   "run_date": "2026-11-16",
   "session": "2026-11-17",
@@ -196,7 +196,7 @@
   },
   {
    "model": "momentum",
-   "total_pnl": -193.26,
+   "total_pnl": -195.05,
    "win_rate": 0.4051724137931034,
    "positions": 247
   }
