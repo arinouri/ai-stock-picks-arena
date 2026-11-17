@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-17
+received (UTC): 2026-11-17 21:52:15.748734
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 234 completed EVO trades. Ranked 126 liquid stocks using only data through 2026-11-17.",
+ "observations": 234,
+ "exploration_seed": 202611180234,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "LCID",
+   "sampled_score": 0.042063,
+   "expected_reward": -0.005798,
+   "uncertainty": 0.020685
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": 0.041974,
+   "expected_reward": -0.008117,
+   "uncertainty": 0.02165
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "sampled_score": 0.037566,
+   "expected_reward": -0.008532,
+   "uncertainty": 0.021717
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "sampled_score": 0.03564,
+   "expected_reward": -0.012905,
+   "uncertainty": 0.022018
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMD",
+   "sampled_score": 0.032145,
+   "expected_reward": -0.015936,
+   "uncertainty": 0.024484
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "RBLX",
+   "sampled_score": 0.031599,
+   "expected_reward": -0.006991,
+   "uncertainty": 0.019334
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "ENPH",
+   "sampled_score": 0.028072,
+   "expected_reward": -0.006374,
+   "uncertainty": 0.019863
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "KLAC",
+   "sampled_score": 0.024894,
+   "expected_reward": -0.010689,
+   "uncertainty": 0.018381
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "LRCX",
+   "sampled_score": 0.024538,
+   "expected_reward": -0.012648,
+   "uncertainty": 0.01973
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NET",
+   "sampled_score": 0.022992,
+   "expected_reward": -0.010215,
+   "uncertainty": 0.015938
+  }
+ ]
+}

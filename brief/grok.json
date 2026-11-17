@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-16T22:14:18.396445-05:00",
+ "generated_at": "2026-11-17T16:53:00.205361-05:00",
  "tonight": {
-  "run_date": "2026-11-16",
-  "session": "2026-11-17",
-  "deadline": "2026-11-16 23:59 ET",
-  "upload_path": "inbox/grok/2026-11-16.json"
+  "run_date": "2026-11-17",
+  "session": "2026-11-18",
+  "deadline": "2026-11-17 23:59 ET",
+  "upload_path": "inbox/grok/2026-11-17.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-16",
-   "session": "2026-11-17"
-  },
   {
    "run_date": "2026-11-17",
    "session": "2026-11-18"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-12-07",
    "session": "2026-12-08"
+  },
+  {
+   "run_date": "2026-12-08",
+   "session": "2026-12-09"
   }
  ],
  "rules": {
@@ -123,11 +123,11 @@
    "ticker": "MSFT",
    "entry_date": "2026-10-07",
    "entry_price": 529.39,
-   "last_price": 517.99,
-   "return_so_far": -0.0235,
-   "sessions_held": 28,
+   "last_price": 506.24,
+   "return_so_far": -0.0457,
+   "sessions_held": 29,
    "horizon_days": 60,
-   "sessions_left": 32,
+   "sessions_left": 31,
    "target": 600.0,
    "stop": 485.0,
    "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
@@ -139,19 +139,19 @@
  ],
  "compounder_slots_free": 4,
  "last_session": {
-  "date": "2026-11-16",
-  "your_pnl": -1.11,
+  "date": "2026-11-17",
+  "your_pnl": -2.22,
   "positions": [
    {
     "position_id": 57,
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 517.989990234375,
-    "high": 527.9500122070312,
-    "low": 516.8300170898438,
-    "session_move": -0.0112,
-    "total_return": -0.0235,
+    "close": 506.239990234375,
+    "high": 515.6400146484375,
+    "low": 496.510009765625,
+    "session_move": -0.0227,
+    "total_return": -0.0457,
     "event": "held",
     "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst."
    }
@@ -159,46 +159,46 @@
  },
  "scoreboard": [
   {
-   "model": "fly_evo",
-   "total_pnl": 5.08,
-   "win_rate": 0.45493562231759654,
-   "positions": 244
-  },
-  {
    "model": "chatgpt",
-   "total_pnl": -11.96,
+   "total_pnl": -13.19,
    "win_rate": 0.3888888888888889,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -34.57,
+   "total_pnl": -39.58,
    "win_rate": 0.21428571428571427,
    "positions": 32
   },
   {
+   "model": "fly_evo",
+   "total_pnl": -46.71,
+   "win_rate": 0.4344262295081967,
+   "positions": 254
+  },
+  {
    "model": "grok",
-   "total_pnl": -78.37,
+   "total_pnl": -80.59,
    "win_rate": 0.23076923076923078,
    "positions": 27
   },
   {
    "model": "claude",
-   "total_pnl": -104.98,
+   "total_pnl": -109.35,
    "win_rate": 0.25842696629213485,
    "positions": 92
   },
   {
    "model": "fly",
-   "total_pnl": -108.51,
-   "win_rate": 0.4340425531914894,
-   "positions": 248
+   "total_pnl": -142.92,
+   "win_rate": 0.4186991869918699,
+   "positions": 258
   },
   {
    "model": "momentum",
-   "total_pnl": -195.05,
-   "win_rate": 0.4051724137931034,
-   "positions": 247
+   "total_pnl": -239.95,
+   "win_rate": 0.39344262295081966,
+   "positions": 257
   }
  ],
  "your_recent_lessons": [
@@ -643,21 +643,21 @@
   ],
   "baselines": {
    "fly": {
-    "n": 235,
-    "avg_return": -0.0058,
-    "win_rate": 0.434,
-    "avg_vs_spy": -0.0028,
-    "stop_rate": 0.187,
-    "target_rate": 0.03,
+    "n": 246,
+    "avg_return": -0.0068,
+    "win_rate": 0.419,
+    "avg_vs_spy": -0.003,
+    "stop_rate": 0.199,
+    "target_rate": 0.028,
     "reliable": true
    },
    "momentum": {
-    "n": 232,
-    "avg_return": -0.009,
-    "win_rate": 0.405,
-    "avg_vs_spy": -0.005,
-    "stop_rate": 0.233,
-    "target_rate": 0.009,
+    "n": 244,
+    "avg_return": -0.0095,
+    "win_rate": 0.393,
+    "avg_vs_spy": -0.0048,
+    "stop_rate": 0.23,
+    "target_rate": 0.008,
     "reliable": true
    },
    "learner": {
@@ -698,7 +698,7 @@
      "ci_low": -0.0197,
      "ci_high": 0.0001,
      "t": -1.94,
-     "p_beats_fly": 0.115,
+     "p_beats_fly": 0.11,
      "trades_needed": 84,
      "verdict": "Can't tell from luck yet"
     },
@@ -708,7 +708,7 @@
      "ci_low": -0.017,
      "ci_high": 0.0307,
      "t": 0.56,
-     "p_beats_fly": 0.788,
+     "p_beats_fly": 0.796,
      "trades_needed": 177,
      "verdict": "Can't tell from luck yet"
     },
@@ -718,7 +718,7 @@
      "ci_low": -0.0444,
      "ci_high": -0.0015,
      "t": -2.1,
-     "p_beats_fly": 0.041,
+     "p_beats_fly": 0.045,
      "trades_needed": 124,
      "verdict": "Losing to the market"
     },
@@ -728,38 +728,38 @@
      "ci_low": -0.0265,
      "ci_high": 0.007,
      "t": -1.14,
-     "p_beats_fly": 0.221,
+     "p_beats_fly": 0.212,
      "trades_needed": 70,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 225,
-     "avg_alpha": -0.0028,
-     "ci_low": -0.0073,
-     "ci_high": 0.0017,
-     "t": -1.22,
-     "p_beats_fly": 0.5,
-     "trades_needed": 47,
+     "n": 236,
+     "avg_alpha": -0.003,
+     "ci_low": -0.0074,
+     "ci_high": 0.0015,
+     "t": -1.31,
+     "p_beats_fly": 0.509,
+     "trades_needed": 48,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 223,
-     "avg_alpha": 0.0052,
-     "ci_low": 0.0007,
-     "ci_high": 0.0096,
-     "t": 2.28,
-     "p_beats_fly": 0.995,
+     "n": 234,
+     "avg_alpha": 0.0037,
+     "ci_low": -0.0007,
+     "ci_high": 0.008,
+     "t": 1.65,
+     "p_beats_fly": 0.985,
      "trades_needed": 46,
-     "verdict": "Beating the market (so far)"
+     "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 223,
-     "avg_alpha": -0.005,
-     "ci_low": -0.0096,
+     "n": 235,
+     "avg_alpha": -0.0048,
+     "ci_low": -0.0092,
      "ci_high": -0.0003,
-     "t": -2.1,
-     "p_beats_fly": 0.261,
-     "trades_needed": 50,
+     "t": -2.09,
+     "p_beats_fly": 0.304,
+     "trades_needed": 48,
      "verdict": "Losing to the market"
     }
    },
