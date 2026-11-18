@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-18
+received (UTC): 2026-11-18 21:31:20.924225
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 242 completed EVO trades. Ranked 124 liquid stocks using only data through 2026-11-18.",
+ "observations": 242,
+ "exploration_seed": 202611190242,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "AMD",
+   "sampled_score": 0.023329,
+   "expected_reward": -0.021114,
+   "uncertainty": 0.025752
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SNAP",
+   "sampled_score": 0.012949,
+   "expected_reward": -0.012724,
+   "uncertainty": 0.01433
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMAT",
+   "sampled_score": 0.011918,
+   "expected_reward": -0.012272,
+   "uncertainty": 0.016492
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AVGO",
+   "sampled_score": 0.011459,
+   "expected_reward": -0.014304,
+   "uncertainty": 0.016096
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AMZN",
+   "sampled_score": 0.011283,
+   "expected_reward": -0.010033,
+   "uncertainty": 0.016187
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "CEG",
+   "sampled_score": 0.009937,
+   "expected_reward": -0.011386,
+   "uncertainty": 0.015704
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VST",
+   "sampled_score": 0.009633,
+   "expected_reward": -0.015881,
+   "uncertainty": 0.017433
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SCHW",
+   "sampled_score": 0.009125,
+   "expected_reward": -0.001229,
+   "uncertainty": 0.01484
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TSLA",
+   "sampled_score": 0.008219,
+   "expected_reward": -0.012331,
+   "uncertainty": 0.015499
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DHR",
+   "sampled_score": 0.00798,
+   "expected_reward": -0.003446,
+   "uncertainty": 0.015893
+  }
+ ]
+}
