@@ -1,18 +1,14 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-11-18T21:02:48.387076-05:00",
+ "generated_at": "2026-11-19T00:46:53.048712-05:00",
  "tonight": {
-  "run_date": "2026-11-18",
-  "session": "2026-11-19",
-  "deadline": "2026-11-18 23:59 ET",
-  "upload_path": "inbox/chatgpt/2026-11-18.json"
+  "run_date": "2026-11-19",
+  "session": "2026-11-20",
+  "deadline": "2026-11-19 23:59 ET",
+  "upload_path": "inbox/chatgpt/2026-11-19.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-18",
-   "session": "2026-11-19"
-  },
   {
    "run_date": "2026-11-19",
    "session": "2026-11-20"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-12-09",
    "session": "2026-12-10"
+  },
+  {
+   "run_date": "2026-12-10",
+   "session": "2026-12-11"
   }
  ],
  "rules": {
@@ -133,7 +133,7 @@
    "your_thesis": "AbbVie's Oct 30 release reports $17.404B Q3 revenue (+10.3%), Skyrizi growth of 22.7% and Rinvoq growth of 23.9%, and raises 2026 adjusted EPS guidance to $13.95-$13.99 from $13.76-$13.96; these realized commercial results support a 60-session holding rather than a one-day earnings bet. Independently checked NYSE listing, Oct 30 close $294.89 (+1.41%), 20-session average volume 5.28M and 14-session mean daily range $6.45; $278 stop is over 1.5x range below close, and $326 target offers about 1.58:1 after 0.1% each-way costs at the $296 entry ceiling, although valuation near 21.1x guided adjust",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Nov 13's $295.03 close (+0.20%, low $293.56) remains above $290.38 entry and $278 stop, so the latest completed-session price action supports retaining $278/$326 without adding exposure; Nov 16 price action is not yet available (Nov 13 quote: https://finance.yahoo.com/quote/ABBV/)."
+    "reason": "Nov 18 closed $286.01 (-2.33%), below $290.38 entry but still above the $278 stop, so the price decline warrants retaining $278/$326 without adding or widening risk; Nov 19 price action is not yet available (Nov 18 quote: https://finance.yahoo.com/quote/ABBV/)."
    }
   },
   {
@@ -152,7 +152,7 @@
    "your_thesis": "Vertex's Nov 2 release reports Q3 revenue $3.44B (+12%), raises 2026 revenue guidance to $13.15-$13.25B and confirms Nov 30's povetacicept FDA decision date, supporting 60-session diversification without assuming approval. Nasdaq close $553.15 (-1.03%), Yahoo avg20 volume 1.509M and mean14 daily range $14.83 support $520 stop (>1.5x range) and $620 target, with 1.56:1 net reward/risk at $558 entry ceiling; late quotes $554-$556 permit entry despite a roughly 7% weekly run.",
    "your_last_call": {
     "action": "HOLD",
-    "reason": "Nov 13 closed $538.60 (-0.74%, low $536.12), below $558.44 entry but above $520 stop, so retain the original $520/$620 risk limits while treating the recovery as unproven and neither widening the stop nor averaging down (Nov 13 historical bar: https://finance.yahoo.com/quote/VRTX/history/)."
+    "reason": "Nov 18 rebounded 0.42% to $536.45 but remains below $558.44 entry and above the $520 stop, so the unproven recovery supports retaining $520/$620 without adding exposure; Nov 19 price action is not yet available (Nov 18 bar: https://stockanalysis.com/stocks/vrtx/history/)."
    }
   }
  ],
@@ -234,12 +234,12 @@
   }
  ],
  "your_recent_lessons": [
+  "ChatGPT's 36 closed trades average -0.26%, ahead of Fruit Fly -0.67% (n=253) and Momentum -0.96% (n=254), but alpha +0.68% has a -1.70% to +3.07% 95% interval (n=30); luck remains plausible, so I claim no proven edge and pass new entries without the current reference close.",
+  "Nov 18 ABBV fell 2.33% to $286.01 while VRTX rose 0.42% to $536.45, costing the two-position book $1.94 and leaving both below entry; this two-holding pattern is a hunch, so I retain the original $278/$520 stops and do not add or widen risk in anticipation of a recovery.",
+  "Claude's Nov 18 lesson rejects earnings-gap chasing; first-session opening buys averaged -1.60% (n=134), and +2% gaps lost 5.40% intraday (n=16, a hunch). My moonshots average -1.21% (n=15, a hunch), while LLY +15.98% and V +14.50% beat AMZN -10.67% only in a small compounder sample (n=6), so I require a verified entry rather than copy winners or refill slots.",
   "CSCO stopped on Nov 13 at -4.48% net after my Nov 12 earnings-based addition, despite reported growth and raised guidance; one trade is a hunch, but it disproves treating an earnings beat as protection, so I will not reopen it or refill the free slot automatically.",
   "ChatGPT's 36 closed trades average -0.26%, ahead of Fruit Fly -0.54% (n=229) and Momentum -0.89% (n=227), but alpha +0.68% has a -1.70% to +3.07% 95% interval (n=30); luck remains plausible, so I claim no proven edge and submit no speculative additions before today's session.",
-  "Claude's Nov 15 lesson contrasts LLY +11.75% with AI losses, consistent with my LLY +15.98% and V +14.50% targets versus AMZN -10.67%; compounders arena-wide n=17 and my n=6 are only hunches, while moonshots average -1.58% (n=65) and catalysts -0.69% (n=69), so I leave all three free compounder slots empty and require a fresh verified setup rather than copying a peer's Visa pick.",
-  "ChatGPT's 35 closed trades average -0.14%, ahead of Fruit Fly -0.47% (n=213) and Momentum -0.89% (n=212), yet alpha +0.84% has a -1.61% to +3.29% 95% range (n=29): luck remains plausible, so I make only one medium-confidence addition and leave two slots empty.",
-  "LLY +15.98% and Visa +14.50% targets contrast with AMZN -10.67% and RXRX -11.39%; my compounder n=5 is only a hunch, so I require realized earnings and cash generation for Cisco and do not copy a peer's AI-growth narrative or assume guidance is cash collected.",
-  "Arena moonshots average -1.58% (n=65) and catalysts -0.69% (n=69); +2% opening gaps lost 5.40% intraday (n=16, a hunch), and VRTX filled above my ceiling before falling 5.16% on day one. Following Claude's Nov 10 caution, I pass both short books and keep VRTX's original risk cap."
+  "Claude's Nov 15 lesson contrasts LLY +11.75% with AI losses, consistent with my LLY +15.98% and V +14.50% targets versus AMZN -10.67%; compounders arena-wide n=17 and my n=6 are only hunches, while moonshots average -1.58% (n=65) and catalysts -0.69% (n=69), so I leave all three free compounder slots empty and require a fresh verified setup rather than copying a peer's Visa pick."
  ],
  "shared_playbook": {
   "how_to_use": [
@@ -592,6 +592,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "chatgpt",
+    "night": "2026-11-19",
+    "lessons": [
+     "ChatGPT's 36 closed trades average -0.26%, ahead of Fruit Fly -0.67% (n=253) and Momentum -0.96% (n=254), but alpha +0.68% has a -1.70% to +3.07% 95% interval (n=30); luck remains plausible, so I claim no proven edge and pass new entries without the current reference close.",
+     "Nov 18 ABBV fell 2.33% to $286.01 while VRTX rose 0.42% to $536.45, costing the two-position book $1.94 and leaving both below entry; this two-holding pattern is a hunch, so I retain the original $278/$520 stops and do not add or widen risk in anticipation of a recovery.",
+     "Claude's Nov 18 lesson rejects earnings-gap chasing; first-session opening buys averaged -1.60% (n=134), and +2% gaps lost 5.40% intraday (n=16, a hunch). My moonshots average -1.21% (n=15, a hunch), while LLY +15.98% and V +14.50% beat AMZN -10.67% only in a small compounder sample (n=6), so I require a verified entry rather than copy winners or refill slots."
+    ]
+   },
+   {
     "model": "claude",
     "night": "2026-11-18",
     "lessons": [
@@ -634,15 +643,6 @@
      "ChatGPT's 35 closed trades average -0.14%, ahead of Fruit Fly -0.47% (n=213) and Momentum -0.89% (n=212), yet alpha +0.84% has a -1.61% to +3.29% 95% range (n=29): luck remains plausible, so I make only one medium-confidence addition and leave two slots empty.",
      "LLY +15.98% and Visa +14.50% targets contrast with AMZN -10.67% and RXRX -11.39%; my compounder n=5 is only a hunch, so I require realized earnings and cash generation for Cisco and do not copy a peer's AI-growth narrative or assume guidance is cash collected.",
      "Arena moonshots average -1.58% (n=65) and catalysts -0.69% (n=69); +2% opening gaps lost 5.40% intraday (n=16, a hunch), and VRTX filled above my ceiling before falling 5.16% on day one. Following Claude's Nov 10 caution, I pass both short books and keep VRTX's original risk cap."
-    ]
-   },
-   {
-    "model": "chatgpt",
-    "night": "2026-11-04",
-    "lessons": [
-     "Nov 4 MSFT +6.68%, ABBV +3.09% and VRTX +3.44% added $12.89 after yesterday's $3.51 loss; VRTX remains -1.88% net from entry. This three-position rebound is a hunch, not proof the earnings entry worked, so I retain VRTX's $520 risk cap and raise MSFT's stop to $530 without adding exposure.",
-     "ChatGPT's 34 closed trades average -0.12%, ahead of Fruit Fly -0.33% (n=160) and Momentum -1.07% (n=162), but alpha +0.72% has a -1.81% to +3.24% 95% range (n=28). Luck remains plausible, so I leave two compounder slots empty and do not promote one strong session into high confidence.",
-     "LLY +15.98% and Visa +14.50% contrast with my AMZN -10.67%, but compounder n=4 is only a hunch; Claude's Nov 3 lesson also rejects earnings gaps. Arena moonshots average -1.58% (n=65) and catalysts -0.69% (n=69), so I pass APP's roughly 23% late gap rather than force a target above a stop constrained below today's close."
     ]
    },
    {
@@ -839,10 +839,10 @@
   ]
  },
  "your_last_upload": {
-  "path": "inbox/chatgpt/2026-11-16.json",
+  "path": "inbox/chatgpt/2026-11-19.json",
   "status": "ok",
   "errors": [],
-  "received_at": "2026-11-16T06:23:15.938410Z"
+  "received_at": "2026-11-19T05:46:48.032333Z"
  },
  "example_submission": {
   "model": "chatgpt",
