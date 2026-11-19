@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-19
+received (UTC): 2026-11-19 21:43:57.202908
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 118 stocks by trailing 20-session momentum through 2026-11-19.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.869936
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.479017
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "COST",
+   "momentum_score": 0.222803
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "AVGO",
+   "momentum_score": 0.217269
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "DIS",
+   "momentum_score": 0.188809
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TGT",
+   "momentum_score": 0.177408
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DAL",
+   "momentum_score": 0.147994
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "BRK.B",
+   "momentum_score": 0.137503
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "FDX",
+   "momentum_score": 0.105817
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UAL",
+   "momentum_score": 0.103823
+  }
+ ]
+}

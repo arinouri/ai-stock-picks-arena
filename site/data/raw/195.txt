@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-19
+received (UTC): 2026-11-19 21:43:57.202908
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 251 completed EVO trades. Ranked 120 liquid stocks using only data through 2026-11-19.",
+ "observations": 251,
+ "exploration_seed": 202611200251,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "NVDA",
+   "sampled_score": 0.02593,
+   "expected_reward": 0.008611,
+   "uncertainty": 0.018374
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ADBE",
+   "sampled_score": 0.025876,
+   "expected_reward": 0.004906,
+   "uncertainty": 0.017021
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SO",
+   "sampled_score": 0.023028,
+   "expected_reward": 0.002191,
+   "uncertainty": 0.016187
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "PFE",
+   "sampled_score": 0.022907,
+   "expected_reward": 0.002979,
+   "uncertainty": 0.016869
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "CRM",
+   "sampled_score": 0.022449,
+   "expected_reward": 0.009162,
+   "uncertainty": 0.017271
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "PINS",
+   "sampled_score": 0.020701,
+   "expected_reward": 0.002367,
+   "uncertainty": 0.018799
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "NFLX",
+   "sampled_score": 0.020493,
+   "expected_reward": 0.002109,
+   "uncertainty": 0.016315
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HPQ",
+   "sampled_score": 0.020144,
+   "expected_reward": -0.001669,
+   "uncertainty": 0.015104
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "IBM",
+   "sampled_score": 0.020121,
+   "expected_reward": 0.005048,
+   "uncertainty": 0.016583
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DUK",
+   "sampled_score": 0.019455,
+   "expected_reward": 0.002443,
+   "uncertainty": 0.016055
+  }
+ ]
+}
