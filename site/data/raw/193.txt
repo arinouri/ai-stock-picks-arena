@@ -1,7 +1,7 @@
 model: chatgpt
 file: inbox/chatgpt/2026-11-19.json
 received (UTC): 2026-11-19 05:46:48.032333
-status: ok
+status: superseded
 problems: []
 
 {
