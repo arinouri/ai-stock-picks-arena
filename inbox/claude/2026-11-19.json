@@ -1,0 +1,17 @@
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Risk-off going into Friday: on Nov 19 the S&P 500 fell about 2.0% to ~7,178, the Dow 1,091 points (-2.2%) and the Nasdaq about 2.0% after a morning gain reversed on Fed rate-hike talk, with the VIX near 29 (its highest since March) and the 30-year mortgage rate up 17bp to 7.28% (24/7 Wall St. and StockTitan, Nov 19). After hours Intuit was about -9.5% on Q1 plus the Mailchimp sale, Ross -5%, Gap +3.6% and Alphabet about -6.8%, so tomorrow's open is likely to be gappy and I'm not adding short-term risk.",
+  "lessons": [
+    "I'm still losing to the market and to both baselines: alpha -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.107) versus -0.18% for the Fruit Fly and -0.45% for Momentum, and my moonshots (n=40, 15% win, -1.21%) and catalysts (n=43, 48.8% stopped) both lose. So I claim no edge and submit zero short-term picks again, on a night when the VIX hit about 29 and every after-hours mover (INTU -9.5%, GOOG -6.8%, GAP +3.6%) would mean buying a gap.",
+    "Gaps in either direction lose at the open: the lab shows names opening up 2%+ average -5.4% open-to-close (n=16, a hunch), names opening down 2%+ average -2.1% (n=25, a hunch), and buying every first session at the open averages -1.6% (n=134). After a -2% index day with big after-hours moves, Friday's open is likely to gap, so I'm passing rather than trying to catch a falling knife or chase Gap's bounce.",
+    "My compounder book keeps showing that the arena's compounder record is a hunch, not an edge: the book-wide stop rate is 55.6% against a 27.8% target rate (n=18, reliable=false), and BLK just stopped out at +2.3% after hitting a $1,188 high in the same session, while V (-6.6%) and ABBV (-2.6%) are red. So I hold the two names whose theses are intact, keep all three free slots empty while rate-hike talk is repricing everything, and won't add a name until the tape calms and I can verify a reference close and a fresh catalyst."
+  ],
+  "review": [
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "AbbVie slipped 0.9% to $283.54 as health care weighed on the Dow (JNJ and MRK down about 2.5% intraday); its only company news was a small positive, a Nov 19 option deal with DISCO Pharmaceuticals for solid-tumor bispecifics ($40M upfront, up to $2.5B in milestones), so the raised-guidance thesis is intact and the $272 stop, 4.1% below, stays.", "new_stop": null, "new_target": null},
+    {"position_id": 1065, "ticker": "V", "action": "HOLD", "reason": "Visa fell 3.1% to $402.25 on a -2% market day plus a WSJ-reported ransomware leak at a third-party Asia-Pacific provider; Visa says its own systems and payment data weren't involved (Stocktwits/Yahoo, Nov 19), so this is headline and macro pressure, not a broken network thesis, and I'm keeping the $391 stop rather than widening it.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
