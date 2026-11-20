@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-19T23:06:27.412473-05:00",
+ "generated_at": "2026-11-20T16:26:46.186208-05:00",
  "tonight": {
-  "run_date": "2026-11-19",
-  "session": "2026-11-20",
-  "deadline": "2026-11-19 23:59 ET",
-  "upload_path": "inbox/grok/2026-11-19.json"
+  "run_date": "2026-11-22",
+  "session": "2026-11-23",
+  "deadline": "2026-11-22 23:59 ET",
+  "upload_path": "inbox/grok/2026-11-22.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-19",
-   "session": "2026-11-20"
-  },
   {
    "run_date": "2026-11-22",
    "session": "2026-11-23"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-12-10",
    "session": "2026-12-11"
+  },
+  {
+   "run_date": "2026-12-13",
+   "session": "2026-12-14"
   }
  ],
  "rules": {
@@ -116,43 +116,23 @@
    }
   }
  },
- "open_positions": [
-  {
-   "position_id": 57,
-   "bucket": "compounder",
-   "ticker": "MSFT",
-   "entry_date": "2026-10-07",
-   "entry_price": 529.39,
-   "last_price": 498.3,
-   "return_so_far": -0.0607,
-   "sessions_held": 31,
-   "horizon_days": 60,
-   "sessions_left": 29,
-   "target": 600.0,
-   "stop": 485.0,
-   "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst.",
-   "your_last_call": {
-    "action": "HOLD",
-    "reason": "Down 2.1% to 521.08 with megacap tech and no company news; the Azure thesis runs into Oct 28 earnings and the 485 stop is about 3x its 2.1% daily range away."
-   }
-  }
- ],
- "compounder_slots_free": 4,
+ "open_positions": [],
+ "compounder_slots_free": 5,
  "last_session": {
-  "date": "2026-11-19",
-  "your_pnl": -1.89,
+  "date": "2026-11-20",
+  "your_pnl": -2.51,
   "positions": [
    {
     "position_id": 57,
     "ticker": "MSFT",
     "bucket": "compounder",
     "entry_price": 529.39,
-    "close": 498.29998779296875,
-    "high": 526.489990234375,
-    "low": 498.1600036621094,
-    "session_move": -0.0197,
-    "total_return": -0.0607,
-    "event": "held",
+    "close": 484.5199890136719,
+    "high": 503.79998779296875,
+    "low": 481.0299987792969,
+    "session_move": -0.0267,
+    "total_return": -0.0859,
+    "event": "stop",
     "your_thesis": "Azure grew 43% last quarter and passed $100B annual revenue, guided to ~45%, with earnings Oct 28 as the next catalyst."
    }
   ]
@@ -160,45 +140,45 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -18.93,
+   "total_pnl": -18.02,
    "win_rate": 0.3783783783783784,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -50.08,
+   "total_pnl": -49.12,
    "win_rate": 0.23333333333333334,
    "positions": 32
   },
   {
    "model": "grok",
-   "total_pnl": -82.09,
-   "win_rate": 0.23076923076923078,
+   "total_pnl": -84.6,
+   "win_rate": 0.2222222222222222,
    "positions": 27
   },
   {
-   "model": "fly_evo",
-   "total_pnl": -101.35,
-   "win_rate": 0.42528735632183906,
-   "positions": 274
-  },
-  {
    "model": "claude",
-   "total_pnl": -117.31,
+   "total_pnl": -116.35,
    "win_rate": 0.26666666666666666,
    "positions": 92
   },
   {
+   "model": "fly_evo",
+   "total_pnl": -156.71,
+   "win_rate": 0.40808823529411764,
+   "positions": 284
+  },
+  {
    "model": "fly",
-   "total_pnl": -202.12,
-   "win_rate": 0.4128787878787879,
-   "positions": 278
+   "total_pnl": -228.57,
+   "win_rate": 0.4072727272727273,
+   "positions": 288
   },
   {
    "model": "momentum",
-   "total_pnl": -300.47,
-   "win_rate": 0.37786259541984735,
-   "positions": 277
+   "total_pnl": -340.52,
+   "win_rate": 0.36764705882352944,
+   "positions": 286
   }
  ],
  "your_recent_lessons": [
@@ -216,7 +196,7 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 153,
+  "closed_trades_total": 154,
   "by_model": {
    "claude": {
     "n": 90,
@@ -237,12 +217,12 @@
     "reliable": true
    },
    "grok": {
-    "n": 26,
-    "avg_return": -0.0292,
-    "win_rate": 0.231,
-    "avg_vs_spy": -0.023,
-    "stop_rate": 0.577,
-    "target_rate": 0.077,
+    "n": 27,
+    "avg_return": -0.0313,
+    "win_rate": 0.222,
+    "avg_vs_spy": -0.0213,
+    "stop_rate": 0.593,
+    "target_rate": 0.074,
     "reliable": true
    }
   },
@@ -266,13 +246,13 @@
     "reliable": true
    },
    "compounder": {
-    "n": 19,
-    "avg_return": -0.0264,
-    "win_rate": 0.316,
-    "avg_vs_spy": -0.0009,
-    "stop_rate": 0.579,
-    "target_rate": 0.263,
-    "reliable": false
+    "n": 20,
+    "avg_return": -0.0294,
+    "win_rate": 0.3,
+    "avg_vs_spy": 0.0003,
+    "stop_rate": 0.6,
+    "target_rate": 0.25,
+    "reliable": true
    }
   },
   "by_model_and_book": {
@@ -354,12 +334,12 @@
      "reliable": false
     },
     "compounder": {
-     "n": 5,
-     "avg_return": -0.0613,
-     "win_rate": 0.2,
-     "avg_vs_spy": -0.0381,
-     "stop_rate": 0.8,
-     "target_rate": 0.2,
+     "n": 6,
+     "avg_return": -0.0654,
+     "win_rate": 0.167,
+     "avg_vs_spy": -0.028,
+     "stop_rate": 0.833,
+     "target_rate": 0.167,
      "reliable": false
     }
    }
@@ -375,12 +355,12 @@
     "reliable": false
    },
    "medium": {
-    "n": 70,
-    "avg_return": -0.0133,
-    "win_rate": 0.329,
-    "avg_vs_spy": -0.0055,
-    "stop_rate": 0.386,
-    "target_rate": 0.1,
+    "n": 71,
+    "avg_return": -0.0143,
+    "win_rate": 0.324,
+    "avg_vs_spy": -0.0051,
+    "stop_rate": 0.394,
+    "target_rate": 0.099,
     "reliable": true
    },
    "low": {
@@ -413,12 +393,12 @@
     "reliable": true
    },
    "wide stop (8%+)": {
-    "n": 20,
-    "avg_return": -0.0184,
-    "win_rate": 0.4,
-    "avg_vs_spy": 0.0027,
-    "stop_rate": 0.55,
-    "target_rate": 0.3,
+    "n": 21,
+    "avg_return": -0.0216,
+    "win_rate": 0.381,
+    "avg_vs_spy": 0.0038,
+    "stop_rate": 0.571,
+    "target_rate": 0.286,
     "reliable": true
    }
   },
@@ -480,14 +460,14 @@
    },
    {
     "model": "claude",
-    "ticker": "CCI",
+    "ticker": "VIK",
     "book": "catalyst",
-    "return": 0.0745,
+    "return": 0.068,
     "exit": "time",
     "confidence": "low",
-    "thesis": "SpaceX's 800 MHz purchase is to support a hybrid Starlink Mobile network serving customers 'from both the ground and space', a potential new terrestrial tenant for towers. Crown Castle jumped about 7-9% after hours to $73.6-75.0 on more tha",
-    "main_risk": "The tower-tenant link is inferred, not stated by SpaceX. If the gap fades the stop sits below the prior close, and weaker carriers (T, VZ, TMUS down 7%) are tow",
-    "date": "2026-10-15"
+    "thesis": "Barclays upgraded Viking to Overweight on Oct 13, raised its target to $102 from $90 and made it its top cruise pick, calling the river-level pullback temporary (Investing.com, Oct 13). The stock only rose ~1.7% to ~$82.16 (~4.3M average vo",
+    "main_risk": "Per my CBOE lesson, upgrades alone often fade; BofA cut its target to $105 the same day, and European river levels could keep pressuring bookings.",
+    "date": "2026-10-20"
    }
   ],
   "recent_losers": [
@@ -643,21 +623,21 @@
   ],
   "baselines": {
    "fly": {
-    "n": 264,
-    "avg_return": -0.007,
-    "win_rate": 0.413,
-    "avg_vs_spy": -0.0018,
-    "stop_rate": 0.189,
-    "target_rate": 0.03,
+    "n": 275,
+    "avg_return": -0.0079,
+    "win_rate": 0.407,
+    "avg_vs_spy": -0.0012,
+    "stop_rate": 0.2,
+    "target_rate": 0.029,
     "reliable": true
    },
    "momentum": {
-    "n": 262,
-    "avg_return": -0.0104,
-    "win_rate": 0.378,
-    "avg_vs_spy": -0.0044,
-    "stop_rate": 0.225,
-    "target_rate": 0.008,
+    "n": 272,
+    "avg_return": -0.0111,
+    "win_rate": 0.368,
+    "avg_vs_spy": -0.0036,
+    "stop_rate": 0.224,
+    "target_rate": 0.007,
     "reliable": true
    },
    "learner": {
@@ -672,21 +652,21 @@
   },
   "consensus": {
    "agreed": {
-    "n": 37,
-    "avg_return": -0.0095,
-    "win_rate": 0.351,
-    "avg_vs_spy": -0.0073,
-    "stop_rate": 0.405,
-    "target_rate": 0.135,
+    "n": 39,
+    "avg_return": -0.0114,
+    "win_rate": 0.333,
+    "avg_vs_spy": -0.0051,
+    "stop_rate": 0.436,
+    "target_rate": 0.128,
     "reliable": true
    },
    "solo": {
-    "n": 116,
+    "n": 115,
     "avg_return": -0.0143,
-    "win_rate": 0.267,
-    "avg_vs_spy": -0.0083,
-    "stop_rate": 0.457,
-    "target_rate": 0.086,
+    "win_rate": 0.27,
+    "avg_vs_spy": -0.0087,
+    "stop_rate": 0.452,
+    "target_rate": 0.087,
     "reliable": true
    }
   },
@@ -698,7 +678,7 @@
      "ci_low": -0.0186,
      "ci_high": 0.0015,
      "t": -1.66,
-     "p_beats_fly": 0.111,
+     "p_beats_fly": 0.101,
      "trades_needed": 88,
      "verdict": "Can't tell from luck yet"
     },
@@ -708,18 +688,18 @@
      "ci_low": -0.0172,
      "ci_high": 0.0291,
      "t": 0.5,
-     "p_beats_fly": 0.769,
+     "p_beats_fly": 0.728,
      "trades_needed": 172,
      "verdict": "Can't tell from luck yet"
     },
     "grok": {
-     "n": 26,
-     "avg_alpha": -0.023,
-     "ci_low": -0.0444,
-     "ci_high": -0.0015,
-     "t": -2.1,
+     "n": 27,
+     "avg_alpha": -0.0213,
+     "ci_low": -0.0422,
+     "ci_high": -0.0004,
+     "t": -2.0,
      "p_beats_fly": 0.03,
-     "trades_needed": 124,
+     "trades_needed": 122,
      "verdict": "Losing to the market"
     },
     "learner": {
@@ -728,39 +708,39 @@
      "ci_low": -0.0236,
      "ci_high": 0.0112,
      "t": -0.7,
-     "p_beats_fly": 0.319,
+     "p_beats_fly": 0.299,
      "trades_needed": 81,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 254,
-     "avg_alpha": -0.0018,
-     "ci_low": -0.0061,
-     "ci_high": 0.0025,
-     "t": -0.82,
-     "p_beats_fly": 0.494,
+     "n": 265,
+     "avg_alpha": -0.0012,
+     "ci_low": -0.0054,
+     "ci_high": 0.003,
+     "t": -0.56,
+     "p_beats_fly": 0.506,
      "trades_needed": 49,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 251,
-     "avg_alpha": 0.0036,
-     "ci_low": -0.001,
-     "ci_high": 0.0083,
-     "t": 1.54,
-     "p_beats_fly": 0.953,
-     "trades_needed": 55,
+     "n": 262,
+     "avg_alpha": 0.0034,
+     "ci_low": -0.0011,
+     "ci_high": 0.0078,
+     "t": 1.48,
+     "p_beats_fly": 0.929,
+     "trades_needed": 54,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 253,
-     "avg_alpha": -0.0044,
-     "ci_low": -0.0086,
-     "ci_high": -0.0002,
-     "t": -2.06,
-     "p_beats_fly": 0.201,
+     "n": 263,
+     "avg_alpha": -0.0036,
+     "ci_low": -0.0077,
+     "ci_high": 0.0005,
+     "t": -1.72,
+     "p_beats_fly": 0.209,
      "trades_needed": 46,
-     "verdict": "Losing to the market"
+     "verdict": "Can't tell from luck yet"
     }
    },
    "lab": {
