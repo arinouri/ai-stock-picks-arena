@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-11-19T16:44:37.756511-05:00",
+ "generated_at": "2026-11-19T20:47:16.684768-05:00",
  "tonight": {
   "run_date": "2026-11-19",
   "session": "2026-11-20",
@@ -205,14 +205,14 @@
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -15.99,
-   "win_rate": 0.3888888888888889,
+   "total_pnl": -18.93,
+   "win_rate": 0.3783783783783784,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -47.13,
-   "win_rate": 0.2413793103448276,
+   "total_pnl": -50.08,
+   "win_rate": 0.23333333333333334,
    "positions": 32
   },
   {
@@ -235,15 +235,15 @@
   },
   {
    "model": "fly",
-   "total_pnl": -197.59,
-   "win_rate": 0.4144486692015209,
-   "positions": 277
+   "total_pnl": -202.12,
+   "win_rate": 0.4128787878787879,
+   "positions": 278
   },
   {
    "model": "momentum",
-   "total_pnl": -297.97,
-   "win_rate": 0.3793103448275862,
-   "positions": 276
+   "total_pnl": -300.47,
+   "win_rate": 0.37786259541984735,
+   "positions": 277
   }
  ],
  "your_recent_lessons": [
@@ -261,7 +261,7 @@
    "If your results don't beat the Fruit Fly (random) and Momentum baselines over many trades, your research is not adding value yet. Say so in your lessons.",
    "Never copy another AI's pick just because it won; check the facts and the price yourself."
   ],
-  "closed_trades_total": 152,
+  "closed_trades_total": 153,
   "by_model": {
    "claude": {
     "n": 90,
@@ -273,12 +273,12 @@
     "reliable": true
    },
    "chatgpt": {
-    "n": 36,
-    "avg_return": -0.0026,
-    "win_rate": 0.389,
-    "avg_vs_spy": 0.0068,
-    "stop_rate": 0.306,
-    "target_rate": 0.139,
+    "n": 37,
+    "avg_return": -0.0044,
+    "win_rate": 0.378,
+    "avg_vs_spy": 0.0059,
+    "stop_rate": 0.324,
+    "target_rate": 0.135,
     "reliable": true
    },
    "grok": {
@@ -311,12 +311,12 @@
     "reliable": true
    },
    "compounder": {
-    "n": 18,
-    "avg_return": -0.024,
-    "win_rate": 0.333,
-    "avg_vs_spy": 0.0003,
-    "stop_rate": 0.556,
-    "target_rate": 0.278,
+    "n": 19,
+    "avg_return": -0.0264,
+    "win_rate": 0.316,
+    "avg_vs_spy": -0.0009,
+    "stop_rate": 0.579,
+    "target_rate": 0.263,
     "reliable": false
    }
   },
@@ -370,12 +370,12 @@
      "reliable": false
     },
     "compounder": {
-     "n": 6,
-     "avg_return": 0.0083,
-     "win_rate": 0.333,
-     "avg_vs_spy": 0.0314,
-     "stop_rate": 0.5,
-     "target_rate": 0.333,
+     "n": 7,
+     "avg_return": -0.003,
+     "win_rate": 0.286,
+     "avg_vs_spy": 0.0238,
+     "stop_rate": 0.571,
+     "target_rate": 0.286,
      "reliable": false
     }
    },
@@ -420,12 +420,12 @@
     "reliable": false
    },
    "medium": {
-    "n": 69,
-    "avg_return": -0.0125,
-    "win_rate": 0.333,
-    "avg_vs_spy": -0.0053,
-    "stop_rate": 0.377,
-    "target_rate": 0.101,
+    "n": 70,
+    "avg_return": -0.0133,
+    "win_rate": 0.329,
+    "avg_vs_spy": -0.0055,
+    "stop_rate": 0.386,
+    "target_rate": 0.1,
     "reliable": true
    },
    "low": {
@@ -440,12 +440,12 @@
   },
   "by_stop_width": {
    "medium stop (4-8%)": {
-    "n": 62,
-    "avg_return": -0.0148,
-    "win_rate": 0.274,
-    "avg_vs_spy": -0.0116,
-    "stop_rate": 0.468,
-    "target_rate": 0.081,
+    "n": 63,
+    "avg_return": -0.0157,
+    "win_rate": 0.27,
+    "avg_vs_spy": -0.0118,
+    "stop_rate": 0.476,
+    "target_rate": 0.079,
     "reliable": true
    },
    "tight stop (under 4%)": {
@@ -688,30 +688,30 @@
   ],
   "baselines": {
    "fly": {
-    "n": 263,
-    "avg_return": -0.0068,
-    "win_rate": 0.414,
+    "n": 264,
+    "avg_return": -0.007,
+    "win_rate": 0.413,
     "avg_vs_spy": -0.0018,
-    "stop_rate": 0.19,
+    "stop_rate": 0.189,
     "target_rate": 0.03,
     "reliable": true
    },
    "momentum": {
-    "n": 261,
-    "avg_return": -0.0103,
-    "win_rate": 0.379,
-    "avg_vs_spy": -0.0045,
-    "stop_rate": 0.226,
+    "n": 262,
+    "avg_return": -0.0104,
+    "win_rate": 0.378,
+    "avg_vs_spy": -0.0044,
+    "stop_rate": 0.225,
     "target_rate": 0.008,
     "reliable": true
    },
    "learner": {
-    "n": 29,
-    "avg_return": -0.0117,
-    "win_rate": 0.241,
-    "avg_vs_spy": -0.0056,
-    "stop_rate": 0.517,
-    "target_rate": 0.034,
+    "n": 30,
+    "avg_return": -0.0136,
+    "win_rate": 0.233,
+    "avg_vs_spy": -0.0062,
+    "stop_rate": 0.533,
+    "target_rate": 0.033,
     "reliable": true
    }
   },
@@ -726,12 +726,12 @@
     "reliable": true
    },
    "solo": {
-    "n": 115,
-    "avg_return": -0.0138,
-    "win_rate": 0.27,
-    "avg_vs_spy": -0.0081,
-    "stop_rate": 0.452,
-    "target_rate": 0.087,
+    "n": 116,
+    "avg_return": -0.0143,
+    "win_rate": 0.267,
+    "avg_vs_spy": -0.0083,
+    "stop_rate": 0.457,
+    "target_rate": 0.086,
     "reliable": true
    }
   },
@@ -743,18 +743,18 @@
      "ci_low": -0.0186,
      "ci_high": 0.0015,
      "t": -1.66,
-     "p_beats_fly": 0.107,
+     "p_beats_fly": 0.111,
      "trades_needed": 88,
      "verdict": "Can't tell from luck yet"
     },
     "chatgpt": {
-     "n": 30,
-     "avg_alpha": 0.0068,
-     "ci_low": -0.017,
-     "ci_high": 0.0307,
-     "t": 0.56,
-     "p_beats_fly": 0.75,
-     "trades_needed": 177,
+     "n": 31,
+     "avg_alpha": 0.0059,
+     "ci_low": -0.0172,
+     "ci_high": 0.0291,
+     "t": 0.5,
+     "p_beats_fly": 0.769,
+     "trades_needed": 172,
      "verdict": "Can't tell from luck yet"
     },
     "grok": {
@@ -768,22 +768,22 @@
      "verdict": "Losing to the market"
     },
     "learner": {
-     "n": 25,
-     "avg_alpha": -0.0056,
+     "n": 26,
+     "avg_alpha": -0.0062,
      "ci_low": -0.0236,
-     "ci_high": 0.0125,
-     "t": -0.6,
-     "p_beats_fly": 0.355,
-     "trades_needed": 84,
+     "ci_high": 0.0112,
+     "t": -0.7,
+     "p_beats_fly": 0.319,
+     "trades_needed": 81,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 253,
+     "n": 254,
      "avg_alpha": -0.0018,
      "ci_low": -0.0061,
-     "ci_high": 0.0026,
-     "t": -0.8,
-     "p_beats_fly": 0.492,
+     "ci_high": 0.0025,
+     "t": -0.82,
+     "p_beats_fly": 0.494,
      "trades_needed": 49,
      "verdict": "Can't tell from luck yet"
     },
@@ -793,17 +793,17 @@
      "ci_low": -0.001,
      "ci_high": 0.0083,
      "t": 1.54,
-     "p_beats_fly": 0.945,
+     "p_beats_fly": 0.953,
      "trades_needed": 55,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 252,
-     "avg_alpha": -0.0045,
-     "ci_low": -0.0087,
+     "n": 253,
+     "avg_alpha": -0.0044,
+     "ci_low": -0.0086,
      "ci_high": -0.0002,
      "t": -2.06,
-     "p_beats_fly": 0.195,
+     "p_beats_fly": 0.201,
      "trades_needed": 46,
      "verdict": "Losing to the market"
     }
