@@ -1,7 +1,7 @@
 {
  "you_are": "Claude",
  "model_key": "claude",
- "generated_at": "2026-11-20T16:26:40.806271-05:00",
+ "generated_at": "2026-11-20T20:30:37.274764-05:00",
  "tonight": {
   "run_date": "2026-11-22",
   "session": "2026-11-23",
@@ -228,9 +228,9 @@
   },
   {
    "model": "momentum",
-   "total_pnl": -340.52,
-   "win_rate": 0.36764705882352944,
-   "positions": 286
+   "total_pnl": -344.54,
+   "win_rate": 0.3663003663003663,
+   "positions": 287
   }
  ],
  "your_recent_lessons": [
@@ -684,11 +684,11 @@
     "reliable": true
    },
    "momentum": {
-    "n": 272,
-    "avg_return": -0.0111,
-    "win_rate": 0.368,
+    "n": 273,
+    "avg_return": -0.0112,
+    "win_rate": 0.366,
     "avg_vs_spy": -0.0036,
-    "stop_rate": 0.224,
+    "stop_rate": 0.227,
     "target_rate": 0.007,
     "reliable": true
    },
@@ -785,12 +785,12 @@
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 263,
+     "n": 264,
      "avg_alpha": -0.0036,
      "ci_low": -0.0077,
      "ci_high": 0.0005,
-     "t": -1.72,
-     "p_beats_fly": 0.209,
+     "t": -1.74,
+     "p_beats_fly": 0.207,
      "trades_needed": 46,
      "verdict": "Can't tell from luck yet"
     }
