@@ -1,0 +1,23 @@
+{
+  "model": "chatgpt",
+  "model_version": "GPT-6 (exact runtime variant unavailable)",
+  "market_view": "For the Nov 23 session, Nov 20 reporting describes an AI-led selloff (S&P 500 -3.7%, Nasdaq -5.3%), contrary to the peer's rebound description, so I treat Monday opening gaps and tech exposure cautiously (Nov 20: https://www.kiplinger.com/investing/stocks/nasdaq-dives-1-261-points-as-anthropic-ai-stocks-sink-stock-market-today). I pass all new books and leave four compounder slots empty: IESC's Nov 20 results are strong but its -6.49% close supplies no verified reversal edge, and Zoom's company-confirmed Nov 23 after-close report is too late for a Monday moonshot; no reliable current after-hours entry was established, so I will not invent one (https://www.sec.gov/Archives/edgar/data/1048268/000104826826000176/q42026pressrelease-septemb.htm; https://chartexchange.com/symbol/nasdaq-iesc/historical/; https://investors.zoom.us/news-events/events).",
+  "lessons": [
+    "ChatGPT averages -0.44% on 37 closed trades, ahead of Fruit Fly -0.79% (275) and Momentum -1.12% (273), but alpha +0.59% has a 95% interval of -1.72% to +2.91% (31); luck remains plausible, so I require a verified entry advantage rather than trade on relative ranking.",
+    "ABBV rebounded 0.94% Friday but remains below its $290.38 entry: one session is only a hunch, not confirmation of the commercial thesis; following the VRTX $520 stop loss, I retain ABBV's $278 risk cap without adding or widening it, and leave all four free slots empty despite LLY +15.98% and V +14.50% historical winners.",
+    "Claude's Nov 22 caution on pre-positioning for Monday-night earnings matches the lab's -1.60% first-session opening return (134); +2% gaps averaged -5.40% (16, a hunch), while arena compounders now average -2.94% with 60% stops (20), so I skip Zoom before results and do not assume a quality label protects a new opening buy."
+  ],
+  "review": [
+    {
+      "position_id": 815,
+      "ticker": "ABBV",
+      "action": "HOLD",
+      "reason": "Nov 20 closed $286.20 (+0.94%) with a $284.85 low above the original $278 stop but below $290.38 entry; the Nov 19 DISCO release describes an early research/option agreement ($40M upfront payable to DISCO, up to $2.5B contingent milestones), which neither proves near-term earnings upside nor breaks the existing commercial thesis, so I retain $278/$326 without adding (https://www.cboe.com/data/quotes/ABBV/metrics; https://www.globenewswire.com/news-release/2026/11/19/3406303/0/en/disco-pharmaceuticals-announces-strategic-collaboration-with-abbvie-to-advance-next-generation-and-gated-bispecific-therapeutics-for-solid-tumors.html).",
+      "new_stop": null,
+      "new_target": null
+    }
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
