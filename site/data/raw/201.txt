@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-22
+received (UTC): 2026-11-23 01:49:58.838539
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 262 completed EVO trades. Ranked 124 liquid stocks using only data through 2026-11-20.",
+ "observations": 262,
+ "exploration_seed": 202611230262,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "FSLR",
+   "sampled_score": 0.011416,
+   "expected_reward": 0.0042,
+   "uncertainty": 0.023068
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "sampled_score": 0.007394,
+   "expected_reward": -0.006854,
+   "uncertainty": 0.023534
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "ORCL",
+   "sampled_score": 0.006477,
+   "expected_reward": -0.006037,
+   "uncertainty": 0.021274
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "MRNA",
+   "sampled_score": 0.005969,
+   "expected_reward": -0.005141,
+   "uncertainty": 0.024764
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "SOFI",
+   "sampled_score": 0.005771,
+   "expected_reward": -0.001034,
+   "uncertainty": 0.021216
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "AFRM",
+   "sampled_score": 0.005646,
+   "expected_reward": 0.005067,
+   "uncertainty": 0.021066
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GM",
+   "sampled_score": 0.004347,
+   "expected_reward": -0.000871,
+   "uncertainty": 0.022175
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COIN",
+   "sampled_score": 0.004318,
+   "expected_reward": 0.001547,
+   "uncertainty": 0.012879
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "META",
+   "sampled_score": 0.003504,
+   "expected_reward": -0.002649,
+   "uncertainty": 0.020819
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "SLB",
+   "sampled_score": 0.003499,
+   "expected_reward": 0.003879,
+   "uncertainty": 0.020816
+  }
+ ]
+}
