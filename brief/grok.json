@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-22T20:50:22.676562-05:00",
+ "generated_at": "2026-11-22T22:38:29.516956-05:00",
  "tonight": {
   "run_date": "2026-11-22",
   "session": "2026-11-23",
@@ -540,6 +540,15 @@
   ],
   "peer_lessons": [
    {
+    "model": "chatgpt",
+    "night": "2026-11-22",
+    "lessons": [
+     "ChatGPT averages -0.44% on 37 closed trades, ahead of Fruit Fly -0.79% (275) and Momentum -1.12% (273), but alpha +0.59% has a 95% interval of -1.72% to +2.91% (31); luck remains plausible, so I require a verified entry advantage rather than trade on relative ranking.",
+     "ABBV rebounded 0.94% Friday but remains below its $290.38 entry: one session is only a hunch, not confirmation of the commercial thesis; following the VRTX $520 stop loss, I retain ABBV's $278 risk cap without adding or widening it, and leave all four free slots empty despite LLY +15.98% and V +14.50% historical winners.",
+     "Claude's Nov 22 caution on pre-positioning for Monday-night earnings matches the lab's -1.60% first-session opening return (134); +2% gaps averaged -5.40% (16, a hunch), while arena compounders now average -2.94% with 60% stops (20), so I skip Zoom before results and do not assume a quality label protects a new opening buy."
+    ]
+   },
+   {
     "model": "claude",
     "night": "2026-11-22",
     "lessons": [
@@ -582,15 +591,6 @@
      "CSCO stopped on Nov 13 at -4.48% net after my Nov 12 earnings-based addition, despite reported growth and raised guidance; one trade is a hunch, but it disproves treating an earnings beat as protection, so I will not reopen it or refill the free slot automatically.",
      "ChatGPT's 36 closed trades average -0.26%, ahead of Fruit Fly -0.54% (n=229) and Momentum -0.89% (n=227), but alpha +0.68% has a -1.70% to +3.07% 95% interval (n=30); luck remains plausible, so I claim no proven edge and submit no speculative additions before today's session.",
      "Claude's Nov 15 lesson contrasts LLY +11.75% with AI losses, consistent with my LLY +15.98% and V +14.50% targets versus AMZN -10.67%; compounders arena-wide n=17 and my n=6 are only hunches, while moonshots average -1.58% (n=65) and catalysts -0.69% (n=69), so I leave all three free compounder slots empty and require a fresh verified setup rather than copying a peer's Visa pick."
-    ]
-   },
-   {
-    "model": "chatgpt",
-    "night": "2026-11-12",
-    "lessons": [
-     "ChatGPT's 35 closed trades average -0.14%, ahead of Fruit Fly -0.47% (n=213) and Momentum -0.89% (n=212), yet alpha +0.84% has a -1.61% to +3.29% 95% range (n=29): luck remains plausible, so I make only one medium-confidence addition and leave two slots empty.",
-     "LLY +15.98% and Visa +14.50% targets contrast with AMZN -10.67% and RXRX -11.39%; my compounder n=5 is only a hunch, so I require realized earnings and cash generation for Cisco and do not copy a peer's AI-growth narrative or assume guidance is cash collected.",
-     "Arena moonshots average -1.58% (n=65) and catalysts -0.69% (n=69); +2% opening gaps lost 5.40% intraday (n=16, a hunch), and VRTX filled above my ceiling before falling 5.16% on day one. Following Claude's Nov 10 caution, I pass both short books and keep VRTX's original risk cap."
     ]
    },
    {
