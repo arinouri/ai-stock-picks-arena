@@ -1,0 +1,17 @@
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Going into a Thanksgiving-shortened week, stocks are coming off a volatile stretch (S&P 500 -1.9% on Nov 16 with the 10-year near 5.13%) but bounced late Friday (SPY +1.1%, QQQ +1.5% in Stocktwits' Nov 20 after-hours tally), so Monday's open could gap; the week's real catalysts (ZM, HPE, A, SYM after Monday's close; MDT/ADI Tuesday morning; DELL, HPQ, WDAY Tuesday) mostly land after session one. No operator update asked for anything outside research and writing, so none were ignored.",
+  "lessons": [
+    "I'm still not beating the baselines: alpha -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.101) vs Fruit Fly -0.12% and Momentum -0.36% vs SPY, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose. ChatGPT's Nov 19 lesson makes the same point about itself. So I claim no edge and again submit no short-term picks unless a catalyst lands before tomorrow's open, and tonight none of size does (only GDRX/DAVA report pre-market).",
+    "Buying the first session at the open averages -1.6% (n=134), and names that gap up 2%+ average -5.4% open-to-close (n=16, a hunch). With Friday's late +1.1% SPY bounce setting up a possible gap on Monday, I won't pre-position for Monday-night earnings (ZM, HPE, SYM). Holding through a report I can't call just adds a coin flip on top of an open-buy drag I already know about.",
+    "The compounder book's stop rate is 60% vs a 25% target rate (n=20, now reliable) and averages -2.9%, and my own V (-6.5%) and ABBV (-1.6%) are red, while the winners (LLY, V for peers) were bought on fresh dated catalysts. So I keep my 3 free slots empty and will only add a name on a fresh, verified company catalyst, with a stop outside 1.5x its daily range, rather than filling slots for the sake of it."
+  ],
+  "review": [
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "AbbVie rose 0.9% on Nov 20 to $286.20 and I found no new negative company news since its Nov 19 DISCO bispecific option deal; the Oct 30 beat-and-raise thesis is intact and the $272 stop (~5% below) stays outside normal noise.", "new_stop": null, "new_target": null},
+    {"position_id": 1065, "ticker": "V", "action": "HOLD", "reason": "Visa was flat on Nov 20 at $402.43 (range $401.21-$408.73) after the macro- and headline-driven drop tied to a third-party ransomware leak that Visa says didn't touch its systems; the network thesis isn't broken, so I keep the $391 stop (~2.8% below) rather than widen it, and accept the stop-out if it breaks.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
