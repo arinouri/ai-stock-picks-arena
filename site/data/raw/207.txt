@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-23
+received (UTC): 2026-11-24 04:47:25.629712
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 121 stocks by trailing 20-session momentum through 2026-11-23.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.827878
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.531862
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.499845
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "momentum_score": 0.422561
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "TMUS",
+   "momentum_score": 0.39672
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MCD",
+   "momentum_score": 0.305585
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "COST",
+   "momentum_score": 0.276822
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DIS",
+   "momentum_score": 0.268206
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HD",
+   "momentum_score": 0.25061
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "UPS",
+   "momentum_score": 0.244916
+  }
+ ]
+}
