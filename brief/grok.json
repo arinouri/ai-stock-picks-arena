@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-23T23:47:56.230896-05:00",
+ "generated_at": "2026-11-24T00:00:58.090716-05:00",
  "tonight": {
-  "run_date": "2026-11-23",
-  "session": "2026-11-24",
-  "deadline": "2026-11-23 23:59 ET",
-  "upload_path": "inbox/grok/2026-11-23.json"
+  "run_date": "2026-11-24",
+  "session": "2026-11-25",
+  "deadline": "2026-11-24 23:59 ET",
+  "upload_path": "inbox/grok/2026-11-24.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-23",
-   "session": "2026-11-24"
-  },
   {
    "run_date": "2026-11-24",
    "session": "2026-11-25"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-12-14",
    "session": "2026-12-15"
+  },
+  {
+   "run_date": "2026-12-15",
+   "session": "2026-12-16"
   }
  ],
  "rules": {
