@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-24T00:00:58.090716-05:00",
+ "generated_at": "2026-11-24T18:13:31.423987-05:00",
  "tonight": {
   "run_date": "2026-11-24",
   "session": "2026-11-25",
@@ -119,20 +119,20 @@
  "open_positions": [],
  "compounder_slots_free": 5,
  "last_session": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "your_pnl": 0,
   "positions": []
  },
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -17.24,
+   "total_pnl": -13.17,
    "win_rate": 0.3783783783783784,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -46.72,
+   "total_pnl": -40.93,
    "win_rate": 0.23333333333333334,
    "positions": 32
   },
@@ -144,27 +144,27 @@
   },
   {
    "model": "claude",
-   "total_pnl": -113.95,
+   "total_pnl": -108.16,
    "win_rate": 0.26666666666666666,
    "positions": 92
   },
   {
    "model": "fly_evo",
-   "total_pnl": -131.23,
-   "win_rate": 0.4014336917562724,
-   "positions": 294
+   "total_pnl": -128.32,
+   "win_rate": 0.3979591836734694,
+   "positions": 304
   },
   {
    "model": "fly",
-   "total_pnl": -201.42,
-   "win_rate": 0.40350877192982454,
-   "positions": 298
+   "total_pnl": -173.58,
+   "win_rate": 0.42033898305084744,
+   "positions": 308
   },
   {
    "model": "momentum",
-   "total_pnl": -302.21,
-   "win_rate": 0.375886524822695,
-   "positions": 297
+   "total_pnl": -259.02,
+   "win_rate": 0.38831615120274915,
+   "positions": 306
   }
  ],
  "your_recent_lessons": [
@@ -609,20 +609,20 @@
   ],
   "baselines": {
    "fly": {
-    "n": 285,
-    "avg_return": -0.0077,
-    "win_rate": 0.404,
-    "avg_vs_spy": -0.0008,
-    "stop_rate": 0.193,
-    "target_rate": 0.039,
+    "n": 295,
+    "avg_return": -0.0067,
+    "win_rate": 0.42,
+    "avg_vs_spy": -0.0002,
+    "stop_rate": 0.19,
+    "target_rate": 0.037,
     "reliable": true
    },
    "momentum": {
-    "n": 282,
-    "avg_return": -0.0108,
-    "win_rate": 0.376,
-    "avg_vs_spy": -0.003,
-    "stop_rate": 0.22,
+    "n": 291,
+    "avg_return": -0.01,
+    "win_rate": 0.388,
+    "avg_vs_spy": -0.0027,
+    "stop_rate": 0.213,
     "target_rate": 0.007,
     "reliable": true
    },
@@ -664,7 +664,7 @@
      "ci_low": -0.0186,
      "ci_high": 0.0015,
      "t": -1.66,
-     "p_beats_fly": 0.089,
+     "p_beats_fly": 0.056,
      "trades_needed": 88,
      "verdict": "Can't tell from luck yet"
     },
@@ -674,7 +674,7 @@
      "ci_low": -0.0172,
      "ci_high": 0.0291,
      "t": 0.5,
-     "p_beats_fly": 0.713,
+     "p_beats_fly": 0.697,
      "trades_needed": 172,
      "verdict": "Can't tell from luck yet"
     },
@@ -684,7 +684,7 @@
      "ci_low": -0.0422,
      "ci_high": -0.0004,
      "t": -2.0,
-     "p_beats_fly": 0.034,
+     "p_beats_fly": 0.03,
      "trades_needed": 122,
      "verdict": "Losing to the market"
     },
@@ -694,38 +694,38 @@
      "ci_low": -0.0236,
      "ci_high": 0.0112,
      "t": -0.7,
-     "p_beats_fly": 0.289,
+     "p_beats_fly": 0.233,
      "trades_needed": 81,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 275,
-     "avg_alpha": -0.0008,
-     "ci_low": -0.0049,
-     "ci_high": 0.0033,
-     "t": -0.39,
-     "p_beats_fly": 0.511,
+     "n": 285,
+     "avg_alpha": -0.0002,
+     "ci_low": -0.0043,
+     "ci_high": 0.0038,
+     "t": -0.11,
+     "p_beats_fly": 0.502,
      "trades_needed": 48,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 269,
-     "avg_alpha": 0.0032,
+     "n": 284,
+     "avg_alpha": 0.0031,
      "ci_low": -0.0012,
-     "ci_high": 0.0075,
-     "t": 1.43,
-     "p_beats_fly": 0.901,
-     "trades_needed": 53,
+     "ci_high": 0.0073,
+     "t": 1.42,
+     "p_beats_fly": 0.878,
+     "trades_needed": 52,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 273,
-     "avg_alpha": -0.003,
-     "ci_low": -0.007,
-     "ci_high": 0.001,
-     "t": -1.49,
-     "p_beats_fly": 0.229,
-     "trades_needed": 45,
+     "n": 282,
+     "avg_alpha": -0.0027,
+     "ci_low": -0.0066,
+     "ci_high": 0.0011,
+     "t": -1.38,
+     "p_beats_fly": 0.199,
+     "trades_needed": 44,
      "verdict": "Can't tell from luck yet"
     }
    },
