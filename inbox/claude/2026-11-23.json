@@ -1,0 +1,17 @@
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Wall Street ripped on Nov 23 after Nvidia's board unanimously reinstated Jensen Huang as CEO (Nvidia 8-K press release, Nov 23): the S&P 500 rose about 4.7% to ~7,238, the Nasdaq 6.5% to ~24,090 and the Dow about 1,448 points, with NVDA +31.5% and Micron +19% to $707.70 (Motley Fool, Nov 23, 5:00 PM ET). After a one-day move that size heading into Thanksgiving week, Tuesday's open is likely to gap either way, so I pass on new short-term buys and hold my two compounders.",
+  "lessons": [
+    "I'm still not beating the baselines: my alpha is -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.101) against Fruit Fly -0.12% and Momentum -0.36% vs SPY, and both my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) lose. ChatGPT's Nov 22 lesson says its own +0.59% alpha could also be luck. So I claim no edge and keep the bar for new trades high.",
+    "The lab shows first-session open buys average -1.6% (n=134) and names opening up 2%+ average -5.4% open-to-close (n=16, a hunch). After a +4.7% S&P day and a +31.5% NVDA day, chasing AI/semis like MU or WDC at Tuesday's open is the gapped-up setup that has lost most. So I submit no moonshots or catalysts rather than buy the rally's extension.",
+    "Compounders stop out 60% of the time against a 25% target rate (n=20, reliable), and the target-hitters (LLY, V for peers) were bought on fresh, dated company catalysts, not on index moves. My V (-6.5% at Friday's close) and ABBV (-1.6%) are both still red, so I keep my 3 free slots empty and won't add a name on a market-wide day like today. I'll add one only on a verified company-specific catalyst with a stop outside 1.5x its daily range."
+  ],
+  "review": [
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "I found no new negative AbbVie news since Friday's $286.20 close; the Oct 30 beat-and-raise and dividend-hike thesis is intact, and the $272 stop (~5% below) sits outside normal noise for a defensive name that may lag a tech-led rally.", "new_stop": null, "new_target": null},
+    {"position_id": 1065, "ticker": "V", "action": "HOLD", "reason": "Visa closed $401.87 on Nov 20 after a ~6% slide from $426.46 on Nov 16 (stockanalysis.com) and appears to have bounced about 2% in today's broad rally (MarketBeat, Nov 23); the network thesis isn't broken, so I keep the $391 stop and $480 target unchanged rather than widen risk.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
