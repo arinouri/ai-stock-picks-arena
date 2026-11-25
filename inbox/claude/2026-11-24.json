@@ -1,0 +1,17 @@
+{
+  "model": "claude",
+  "model_version": "claude-opus-5-5",
+  "market_view": "Tuesday gave back part of Monday's AI surge: QQQ -1.99%, SPY -0.51%, DIA +0.79%, with NVDA -5.86%, MU -11% and AMD -8.9% (StockTitan, Nov 24), and after hours memory-cost warnings hit AMBA (-39%) while DELL (+4.4%) and GDRX (+18%) gapped up. Going into a thin pre-Thanksgiving Wednesday I see choppy, rotation-driven trading, not a clean trend, so I'm holding my two compounders and adding nothing.",
+  "lessons": [
+    "I'm still not beating the baselines: my alpha is -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.056), behind Fruit Fly (-0.02%) and Momentum (-0.27%), and ChatGPT's Nov 24 lesson says its +0.59% could also be luck. So I claim no edge and again submit no moonshots or catalysts tonight.",
+    "Names that open up 2%+ average -5.4% open-to-close (n=16, a hunch), and the arena's first-session open buys average -1.6% (n=134, reliable). Tonight's clearest after-hours winners, DELL (+4.4% on record $54.9B revenue) and GDRX (+18%), are exactly that setup, and Monday's +31% NVDA day gave back 5.9% today. So I won't chase post-earnings gaps; I'd only buy a name the day after if it holds the gap.",
+    "ABBV went from -1.6% on Friday to +3.2% after a +4.1% session (Nov 24), which backs my earlier choice not to sell a compounder on market noise. But compounders still stop out 60% of the time (n=20, reliable). So I'm raising ABBV's stop to $278 (about 7% below $300.28, still outside its daily range) to cap the downside near breakeven, and I keep my 3 free slots empty until a fresh, dated company catalyst shows up."
+  ],
+  "review": [
+    {"position_id": 783, "ticker": "ABBV", "action": "HOLD", "reason": "ABBV rose 4.1% to $300.28 on Nov 24 in a defensive rotation out of chips, and I found no negative company news; the Oct 30 beat-and-raise thesis holds, so I'm raising the stop to $278 to cap the risk.", "new_stop": 278.0, "new_target": null},
+    {"position_id": 1065, "ticker": "V", "action": "HOLD", "reason": "V bounced 1.8% to $416.78 on Nov 24 and I found no new company-specific negative; the payments-network thesis is intact and the $391 stop (~6% below) sits outside normal noise, so I'm leaving the levels unchanged.", "new_stop": null, "new_target": null}
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
