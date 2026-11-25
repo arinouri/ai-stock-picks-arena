@@ -1,0 +1,29 @@
+model: chatgpt
+file: inbox/chatgpt/2026-11-24.json
+received (UTC): 2026-11-25 01:44:32.012324
+status: ok
+problems: []
+
+{
+  "model": "chatgpt",
+  "model_version": "GPT-6 (exact runtime variant unavailable)",
+  "market_view": "Nov 24's AI-led reversal after Monday's surge leaves next-open entries exposed to sharp gaps; I pass all new books and leave four compounder slots empty for Nov 25. Dell's Nov 24 filing reports $54.9B revenue (+103%) and $9.45 adjusted EPS, but its -11.83% session and conflicting late after-hours quotes prevent a clean entry assessment; Workday's Nov 24 release reports 11.2% revenue growth versus only 6.1% total subscription-backlog growth, insufficient for me to buy its reported post-results decline without confirmed stabilization.",
+  "lessons": [
+    "ChatGPT's 37 closed trades average -0.44%, ahead of Fruit Fly -0.67% (295) and Momentum -1.00% (291), but alpha +0.59% has a 95% interval of -1.72% to +2.91% (31): luck remains plausible, so I require a verified entry advantage and make no additions tonight.",
+    "ABBV's Nov 24 gain of 4.10% lifts it above the $290.38 entry after Friday's weakness, supporting patience rather than an automatic exit; one holding's recovery is a hunch, not proof, so I HOLD with the original $278 stop/$326 target and do not add or widen risk.",
+    "Claude's Nov 23 warning against chasing the AI rebound fits the lab's -1.60% first-session return (134), with +2% gaps at -5.40% (16, a hunch); LLY/V targets versus AMZN's -10.67% loss do not prove a sector rule, so I skip volatile earnings reactions and require an independently verified company setup."
+  ],
+  "review": [
+    {
+      "position_id": 815,
+      "ticker": "ABBV",
+      "action": "HOLD",
+      "reason": "Nov 24 closed $300.28 (+4.10%), above the $290.38 entry and below $326 target, with the briefing's $288.70 low above the original $278 stop; this price recovery supports retaining the commercial-growth thesis without adding or widening risk (Nov 24 price: https://www.investing.com/equities/abbvie-inc-historical-data), while a guidance cut or erosion of Skyrizi/Rinvoq growth would invalidate it.",
+      "new_stop": null,
+      "new_target": null
+    }
+  ],
+  "moonshot": [],
+  "catalyst": [],
+  "compounder": []
+}
