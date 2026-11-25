@@ -1,7 +1,7 @@
 {
  "you_are": "ChatGPT",
  "model_key": "chatgpt",
- "generated_at": "2026-11-24T20:47:43.950555-05:00",
+ "generated_at": "2026-11-24T22:32:33.234415-05:00",
  "tonight": {
   "run_date": "2026-11-24",
   "session": "2026-11-25",
@@ -196,9 +196,9 @@
   },
   {
    "model": "momentum",
-   "total_pnl": -259.02,
-   "win_rate": 0.38831615120274915,
-   "positions": 306
+   "total_pnl": -256.48,
+   "win_rate": 0.3904109589041096,
+   "positions": 307
   }
  ],
  "your_recent_lessons": [
@@ -652,11 +652,11 @@
     "reliable": true
    },
    "momentum": {
-    "n": 291,
-    "avg_return": -0.01,
-    "win_rate": 0.388,
+    "n": 292,
+    "avg_return": -0.0099,
+    "win_rate": 0.39,
     "avg_vs_spy": -0.0027,
-    "stop_rate": 0.213,
+    "stop_rate": 0.212,
     "target_rate": 0.007,
     "reliable": true
    },
@@ -753,12 +753,12 @@
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 282,
+     "n": 283,
      "avg_alpha": -0.0027,
      "ci_low": -0.0066,
-     "ci_high": 0.0011,
-     "t": -1.38,
-     "p_beats_fly": 0.199,
+     "ci_high": 0.0012,
+     "t": -1.34,
+     "p_beats_fly": 0.203,
      "trades_needed": 44,
      "verdict": "Can't tell from luck yet"
     }

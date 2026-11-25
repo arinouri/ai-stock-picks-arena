@@ -38,7 +38,7 @@ Alpha = a trade's return after costs minus the S&P 500 over the same days. The r
 | learner | 26 | -0.62% | -2.36% to +1.12% | 23% | Can't tell from luck yet |
 | fly | 285 | -0.02% | -0.43% to +0.38% | 50% | Can't tell from luck yet |
 | fly_evo | 284 | +0.31% | -0.12% to +0.73% | 88% | Can't tell from luck yet |
-| momentum | 282 | -0.27% | -0.66% to +0.11% | 20% | Can't tell from luck yet |
+| momentum | 283 | -0.27% | -0.66% to +0.12% | 20% | Can't tell from luck yet |
 
 ## Execution lab (shadow test, scores unchanged)
 
@@ -54,7 +54,7 @@ Across 134 first-session trades by the AIs, buying at the open averaged -1.60% b
 ## Baselines (luck and simple rules)
 
 - **fly**: 295 trades, avg -0.7%, win rate 42.0%
-- **momentum**: 291 trades, avg -1.0%, win rate 38.8%
+- **momentum**: 292 trades, avg -1.0%, win rate 39.0%
 - **learner**: 30 trades, avg -1.4%, win rate 23.3%
 
 ## Recent winners
