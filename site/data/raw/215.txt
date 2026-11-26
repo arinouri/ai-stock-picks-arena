@@ -1,0 +1,63 @@
+model: momentum
+file: internal/momentum/2026-11-26
+received (UTC): 2026-11-26 22:30:44.835747
+status: ok
+problems: []
+
+{
+ "version": "simple-momentum/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Rules baseline ranked 122 stocks by trailing 20-session momentum through 2026-11-25.",
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "CMG",
+   "momentum_score": 0.905326
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "momentum_score": 0.663798
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "REGN",
+   "momentum_score": 0.621934
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LOW",
+   "momentum_score": 0.563256
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "TGT",
+   "momentum_score": 0.468448
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "TMUS",
+   "momentum_score": 0.368112
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "WMT",
+   "momentum_score": 0.33266
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "GILD",
+   "momentum_score": 0.330528
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "T",
+   "momentum_score": 0.328985
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "VZ",
+   "momentum_score": 0.284854
+  }
+ ]
+}

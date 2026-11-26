@@ -1,0 +1,85 @@
+model: fly_evo
+file: internal/fly_evo/2026-11-26
+received (UTC): 2026-11-26 22:30:44.835747
+status: ok
+problems: []
+
+{
+ "version": "bayesian-linear-bandit/1",
+ "data_version": "daily-ohlcv-v1",
+ "market_view": "Independent contextual bandit trained on 294 completed EVO trades. Ranked 126 liquid stocks using only data through 2026-11-25.",
+ "observations": 294,
+ "exploration_seed": 202611270294,
+ "picks": [
+  {
+   "bucket": "moonshot",
+   "ticker": "ENPH",
+   "sampled_score": 0.001423,
+   "expected_reward": -0.008323,
+   "uncertainty": 0.016034
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "U",
+   "sampled_score": -0.000323,
+   "expected_reward": -0.013574,
+   "uncertainty": 0.018026
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "LCID",
+   "sampled_score": -0.001172,
+   "expected_reward": -0.017227,
+   "uncertainty": 0.013256
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "RKLB",
+   "sampled_score": -0.00175,
+   "expected_reward": -0.019322,
+   "uncertainty": 0.013359
+  },
+  {
+   "bucket": "moonshot",
+   "ticker": "IONQ",
+   "sampled_score": -0.001881,
+   "expected_reward": -0.025568,
+   "uncertainty": 0.016706
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRNA",
+   "sampled_score": -0.002643,
+   "expected_reward": -0.01833,
+   "uncertainty": 0.018887
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "MRVL",
+   "sampled_score": -0.003196,
+   "expected_reward": -0.029666,
+   "uncertainty": 0.017834
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "DKNG",
+   "sampled_score": -0.003592,
+   "expected_reward": -0.016135,
+   "uncertainty": 0.012804
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "INTC",
+   "sampled_score": -0.003674,
+   "expected_reward": -0.032542,
+   "uncertainty": 0.018311
+  },
+  {
+   "bucket": "catalyst",
+   "ticker": "HIMS",
+   "sampled_score": -0.004272,
+   "expected_reward": -0.018871,
+   "uncertainty": 0.013316
+  }
+ ]
+}
