@@ -1,18 +1,14 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-26T22:40:25.378619-05:00",
+ "generated_at": "2026-11-27T17:15:03.259431-05:00",
  "tonight": {
-  "run_date": "2026-11-26",
-  "session": "2026-11-27",
-  "deadline": "2026-11-26 23:59 ET",
-  "upload_path": "inbox/grok/2026-11-26.json"
+  "run_date": "2026-11-29",
+  "session": "2026-11-30",
+  "deadline": "2026-11-29 23:59 ET",
+  "upload_path": "inbox/grok/2026-11-29.json"
  },
  "upcoming_pick_nights": [
-  {
-   "run_date": "2026-11-26",
-   "session": "2026-11-27"
-  },
   {
    "run_date": "2026-11-29",
    "session": "2026-11-30"
@@ -68,6 +64,10 @@
   {
    "run_date": "2026-12-16",
    "session": "2026-12-17"
+  },
+  {
+   "run_date": "2026-12-17",
+   "session": "2026-12-18"
   }
  ],
  "rules": {
@@ -119,20 +119,20 @@
  "open_positions": [],
  "compounder_slots_free": 5,
  "last_session": {
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "your_pnl": 0,
   "positions": []
  },
  "scoreboard": [
   {
    "model": "chatgpt",
-   "total_pnl": -15.17,
+   "total_pnl": -16.06,
    "win_rate": 0.3783783783783784,
    "positions": 38
   },
   {
    "model": "learner",
-   "total_pnl": -41.16,
+   "total_pnl": -40.85,
    "win_rate": 0.23333333333333334,
    "positions": 32
   },
@@ -143,28 +143,28 @@
    "positions": 27
   },
   {
+   "model": "fly_evo",
+   "total_pnl": -101.29,
+   "win_rate": 0.4045307443365696,
+   "positions": 324
+  },
+  {
    "model": "claude",
-   "total_pnl": -108.39,
+   "total_pnl": -108.08,
    "win_rate": 0.26666666666666666,
    "positions": 92
   },
   {
-   "model": "fly_evo",
-   "total_pnl": -111.49,
-   "win_rate": 0.40131578947368424,
-   "positions": 314
-  },
-  {
    "model": "fly",
-   "total_pnl": -165.39,
-   "win_rate": 0.41830065359477125,
-   "positions": 318
+   "total_pnl": -155.54,
+   "win_rate": 0.43312101910828027,
+   "positions": 328
   },
   {
    "model": "momentum",
-   "total_pnl": -254.04,
-   "win_rate": 0.39603960396039606,
-   "positions": 317
+   "total_pnl": -250.0,
+   "win_rate": 0.40764331210191085,
+   "positions": 327
   }
  ],
  "your_recent_lessons": [
@@ -609,21 +609,21 @@
   ],
   "baselines": {
    "fly": {
-    "n": 306,
-    "avg_return": -0.0068,
-    "win_rate": 0.418,
-    "avg_vs_spy": -0.0008,
-    "stop_rate": 0.196,
-    "target_rate": 0.036,
+    "n": 314,
+    "avg_return": -0.006,
+    "win_rate": 0.433,
+    "avg_vs_spy": -0.0005,
+    "stop_rate": 0.191,
+    "target_rate": 0.035,
     "reliable": true
    },
    "momentum": {
-    "n": 303,
-    "avg_return": -0.0093,
-    "win_rate": 0.396,
-    "avg_vs_spy": -0.0025,
-    "stop_rate": 0.208,
-    "target_rate": 0.007,
+    "n": 314,
+    "avg_return": -0.0087,
+    "win_rate": 0.408,
+    "avg_vs_spy": -0.0026,
+    "stop_rate": 0.204,
+    "target_rate": 0.006,
     "reliable": true
    },
    "learner": {
@@ -664,7 +664,7 @@
      "ci_low": -0.0186,
      "ci_high": 0.0015,
      "t": -1.66,
-     "p_beats_fly": 0.081,
+     "p_beats_fly": 0.07,
      "trades_needed": 88,
      "verdict": "Can't tell from luck yet"
     },
@@ -674,7 +674,7 @@
      "ci_low": -0.0172,
      "ci_high": 0.0291,
      "t": 0.5,
-     "p_beats_fly": 0.709,
+     "p_beats_fly": 0.703,
      "trades_needed": 172,
      "verdict": "Can't tell from luck yet"
     },
@@ -684,7 +684,7 @@
      "ci_low": -0.0422,
      "ci_high": -0.0004,
      "t": -2.0,
-     "p_beats_fly": 0.025,
+     "p_beats_fly": 0.031,
      "trades_needed": 122,
      "verdict": "Losing to the market"
     },
@@ -694,37 +694,37 @@
      "ci_low": -0.0236,
      "ci_high": 0.0112,
      "t": -0.7,
-     "p_beats_fly": 0.261,
+     "p_beats_fly": 0.254,
      "trades_needed": 81,
      "verdict": "Can't tell from luck yet"
     },
     "fly": {
-     "n": 296,
-     "avg_alpha": -0.0008,
-     "ci_low": -0.0048,
-     "ci_high": 0.0031,
-     "t": -0.41,
-     "p_beats_fly": 0.508,
-     "trades_needed": 48,
+     "n": 304,
+     "avg_alpha": -0.0005,
+     "ci_low": -0.0043,
+     "ci_high": 0.0034,
+     "t": -0.23,
+     "p_beats_fly": 0.5,
+     "trades_needed": 47,
      "verdict": "Can't tell from luck yet"
     },
     "fly_evo": {
-     "n": 294,
-     "avg_alpha": 0.0027,
+     "n": 299,
+     "avg_alpha": 0.0026,
      "ci_low": -0.0015,
-     "ci_high": 0.007,
-     "t": 1.28,
-     "p_beats_fly": 0.888,
-     "trades_needed": 54,
+     "ci_high": 0.0068,
+     "t": 1.24,
+     "p_beats_fly": 0.855,
+     "trades_needed": 53,
      "verdict": "Can't tell from luck yet"
     },
     "momentum": {
-     "n": 294,
-     "avg_alpha": -0.0025,
-     "ci_low": -0.0063,
-     "ci_high": 0.0013,
-     "t": -1.27,
-     "p_beats_fly": 0.273,
+     "n": 305,
+     "avg_alpha": -0.0026,
+     "ci_low": -0.0064,
+     "ci_high": 0.0012,
+     "t": -1.32,
+     "p_beats_fly": 0.233,
      "trades_needed": 45,
      "verdict": "Can't tell from luck yet"
     }
