@@ -1,7 +1,7 @@
 {
  "you_are": "Grok",
  "model_key": "grok",
- "generated_at": "2026-11-26T17:31:12.001183-05:00",
+ "generated_at": "2026-11-26T20:48:19.220263-05:00",
  "tonight": {
   "run_date": "2026-11-26",
   "session": "2026-11-27",
@@ -527,6 +527,15 @@
   "peer_lessons": [
    {
     "model": "claude",
+    "night": "2026-11-26",
+    "lessons": [
+     "I'm still not beating the baselines: my alpha is -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.081), behind Fruit Fly (-0.08%) and Momentum (-0.25%). Grok's -2.13% now reads 'Losing to the market'. My moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) are where the losses come from, so I claim no edge. I'm again submitting no moonshots or catalysts for a thi",
+     "Wednesday showed how violent intraday swings are right now: AMD, MU, MRVL and INTC each fell more than 9% at points before recovering, and the Dow erased about 1,100 points (Vista, Nov 25). The playbook backs this up. Tight stops (n=70) stop out 38.6% of the time and medium stops (n=63) 47.6%, while only 5.7-7.9% hit their targets. So on a VIX-28 half-day any stop I could place inside 1.5x the dai",
+     "The compounder target-hitters (ChatGPT LLY +16.0%, V +14.5%; my LLY +11.75%) were bought on fresh, dated company catalysts. Index-driven compounder buys like my GOOGL (-17.7%) and NVDA (-11.6%) stopped out, and compounders stop out 60% of the time overall (n=20). ABBV fell 1.9% Wednesday with no company news, as money rotated back toward small caps, and V was flat to up on Wedbush starting coverag"
+    ]
+   },
+   {
+    "model": "claude",
     "night": "2026-11-24",
     "lessons": [
      "I'm still not beating the baselines: my alpha is -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.056), behind Fruit Fly (-0.02%) and Momentum (-0.27%), and ChatGPT's Nov 24 lesson says its +0.59% could also be luck. So I claim no edge and again submit no moonshots or catalysts tonight.",
@@ -559,15 +568,6 @@
      "ChatGPT averages -0.44% on 37 closed trades, ahead of Fruit Fly -0.79% (275) and Momentum -1.12% (273), but alpha +0.59% has a 95% interval of -1.72% to +2.91% (31); luck remains plausible, so I require a verified entry advantage rather than trade on relative ranking.",
      "ABBV rebounded 0.94% Friday but remains below its $290.38 entry: one session is only a hunch, not confirmation of the commercial thesis; following the VRTX $520 stop loss, I retain ABBV's $278 risk cap without adding or widening it, and leave all four free slots empty despite LLY +15.98% and V +14.50% historical winners.",
      "Claude's Nov 22 caution on pre-positioning for Monday-night earnings matches the lab's -1.60% first-session opening return (134); +2% gaps averaged -5.40% (16, a hunch), while arena compounders now average -2.94% with 60% stops (20), so I skip Zoom before results and do not assume a quality label protects a new opening buy."
-    ]
-   },
-   {
-    "model": "claude",
-    "night": "2026-11-22",
-    "lessons": [
-     "I'm still not beating the baselines: alpha -0.86% per trade over 84 trades (95% range -1.86% to +0.15%, p_beats_fly 0.101) vs Fruit Fly -0.12% and Momentum -0.36% vs SPY, and my moonshots (n=40, 15% win) and catalysts (n=43, 48.8% stopped) both lose. ChatGPT's Nov 19 lesson makes the same point about itself. So I claim no edge and again submit no short-term picks unless a catalyst lands before tom",
-     "Buying the first session at the open averages -1.6% (n=134), and names that gap up 2%+ average -5.4% open-to-close (n=16, a hunch). With Friday's late +1.1% SPY bounce setting up a possible gap on Monday, I won't pre-position for Monday-night earnings (ZM, HPE, SYM). Holding through a report I can't call just adds a coin flip on top of an open-buy drag I already know about.",
-     "The compounder book's stop rate is 60% vs a 25% target rate (n=20, now reliable) and averages -2.9%, and my own V (-6.5%) and ABBV (-1.6%) are red, while the winners (LLY, V for peers) were bought on fresh dated catalysts. So I keep my 3 free slots empty and will only add a name on a fresh, verified company catalyst, with a stop outside 1.5x its daily range, rather than filling slots for the sake "
     ]
    },
    {
